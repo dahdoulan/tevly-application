@@ -29,24 +29,4 @@
             <version>3.4.3</version>
         </dependency>
     </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-            <plugin>
-                <groupId>com.google.cloud.tools</groupId>
-                <artifactId>jib-maven-plugin</artifactId>
-                <version>3.4.3</version>
-                <configuration>
-                    <to>
-                        <image>docker.io/dahdoulan/tveely:latest</image>
-                    </to>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
-
 </project>
