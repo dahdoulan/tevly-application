@@ -33,8 +33,8 @@
                             <tag>latest</tag>
                         </tags>
                         <auth>
-                            <username>${secrets.DOCKER_USERNAME}</username>
-                            <password>${secrets.DOCKER_PASSWORD}</password>
+                            <username>${env.DOCKER_USERNAME}</username>
+                            <password>${env.DOCKER_PASSWORD}</password>
                         </auth>
                     </to>
                 </configuration>
