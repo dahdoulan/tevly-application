@@ -25,7 +25,7 @@
                     <to>
                         <image>dahdoulan/tveely-app</image>
                         <tags>
-                            <tag>${env.GITHUB_SHA}</tag>
+                            <tag>${env.GITHUB_SHA} </tag>
                             <tag>latest</tag>
                         </tags>
                     </to>
