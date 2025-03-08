@@ -4,16 +4,21 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.example</groupId>
+    <groupId>org.group15</groupId>
     <artifactId>tevly-application</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <packaging>pom</packaging>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <modules>
+        <module>launcher</module>
+    </modules>
+
     <build>
         <plugins>
             <plugin>
@@ -22,7 +27,7 @@
                 <version>3.3.2</version>
                 <configuration>
                     <to>
-                        <image>dahdoulan/tveely-app</image>
+                        <image>docker.io/dahdoulan/tveely-app</image>
                         <tags>
                             <tag>${env.GITHUB_SHA}</tag>
                             <tag>latest</tag>
