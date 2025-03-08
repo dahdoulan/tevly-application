@@ -32,6 +32,10 @@
                             <tag>${env.GITHUB_SHA}</tag>
                             <tag>latest</tag>
                         </tags>
+                        <auth>
+                            <username>${env.DOCKER_USERNAME}</username>
+                            <password>${env.DOCKER_PASSWORD}</password>
+                        </auth>
                     </to>
                 </configuration>
             </plugin>
