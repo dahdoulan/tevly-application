@@ -13,10 +13,17 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <revision>1.0-SNAPSHOT</revision>
+        <springboot.version>3.4.3</springboot.version>
+        <postgres.version>42.7.5</postgres.version>
+        <springdata.version>3.3.4</springdata.version>
+        <liquibase.version>4.27.0</liquibase.version>
     </properties>
+
 
     <modules>
         <module>launcher</module>
+        <module>liquibase</module>
     </modules>
 
     <build>
