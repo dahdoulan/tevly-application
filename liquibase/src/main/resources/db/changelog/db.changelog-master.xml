@@ -6,4 +6,6 @@
     <include file="db/changelog/tables/video-table.xml"/>
     <include file="db/changelog/tables/user-table.xml"/>
     <include file="db/changelog/tables/subscription-table.xml"/>
+    <include file="db/changelog/tables/comment-table.xml"/>
+    <include file="db/changelog/tables/review-table.xml"/>
 </databaseChangeLog>
