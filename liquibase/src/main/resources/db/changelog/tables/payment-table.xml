@@ -26,15 +26,12 @@
             </column>
         </createTable>
 
-        <!-- Indexes for Performance Optimization -->
+
         <createIndex indexName="idx_payment_subscription_id" tableName="payment">
             <column name="subscription_id"/>
         </createIndex>
 
-        <!-- Drop Foreign Key if it Exists (for flexibility) -->
-        <dropForeignKeyConstraint baseTableName="payment" constraintName="fk_payment_subscription"/>
 
-        <!-- Add Foreign Key Constraint with Cascade Delete -->
         <addForeignKeyConstraint
                 constraintName="fk_payment_subscription"
                 baseTableName="payment"
