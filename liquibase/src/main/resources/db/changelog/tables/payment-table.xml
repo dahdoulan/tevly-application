@@ -5,32 +5,40 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.19.xsd">
 
-    <changeSet id="create-subscription-table" author="tveely">
-        <comment>Create subscription table with specified attributes</comment>
+    <changeSet id="create-payment-table" author="tveely">
+        <comment>Create payment table and establish foreign key constraints</comment>
 
-        <createTable tableName="subscription">
+        <createTable tableName="payment">
             <column name="id" type="BIGINT" autoIncrement="true">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
-            <column name="type" type="VARCHAR(255)">
-                <constraints nullable="false"/>
-            </column>
-            <column name="status" type="VARCHAR(50)">
+            <column name="subscription_id" type="BIGINT">
                 <constraints nullable="false"/>
             </column>
             <column name="amount" type="DOUBLE">
                 <constraints nullable="false"/>
             </column>
+            <column name="status" type="VARCHAR(50)">
+                <constraints nullable="false"/>
+            </column>
             <column name="created_at" type="TIMESTAMP" defaultValueComputed="CURRENT_TIMESTAMP">
                 <constraints nullable="false"/>
             </column>
-            <column name="updated_at" type="TIMESTAMP" defaultValueComputed="CURRENT_TIMESTAMP"/>
         </createTable>
+
+
+        <createIndex indexName="idx_payment_subscription_id" tableName="payment">
+            <column name="subscription_id"/>
+        </createIndex>
+
+
+        <addForeignKeyConstraint
+                constraintName="fk_payment_subscription"
+                baseTableName="payment"
+                baseColumnNames="subscription_id"
+                referencedTableName="subscription"
+                referencedColumnNames="id"
+                onDelete="CASCADE"/>
     </changeSet>
 
 </databaseChangeLog>
-
-
-
-
-
