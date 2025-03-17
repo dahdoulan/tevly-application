@@ -1,4 +1,4 @@
-package org.group15.entities;
+package org.group15.tveely.entities;
 
 import jakarta.persistence.*;
 import lombok.Data;
