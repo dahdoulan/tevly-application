@@ -44,5 +44,10 @@
             <artifactId>controllers</artifactId>
             <version>${revision}</version>
         </dependency>
+        <dependency>
+            <groupId>org.group15</groupId>
+            <artifactId>entities</artifactId>
+            <version>${revision}</version>
+        </dependency>
     </dependencies>
 </project>
