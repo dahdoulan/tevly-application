@@ -18,12 +18,17 @@
         <postgres.version>42.7.5</postgres.version>
         <springdata.version>3.3.4</springdata.version>
         <liquibase.version>4.27.0</liquibase.version>
+        <spring.data.version>3.3.5</spring.data.version>
+        <jakarta.persistence.version>3.1.0</jakarta.persistence.version>
+        <lombok.version>1.18.30</lombok.version>
     </properties>
 
 
     <modules>
         <module>launcher</module>
         <module>liquibase</module>
+        <module>controllers</module>
+        <module>entities</module>
     </modules>
 
     <build>
