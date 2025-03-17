@@ -49,6 +49,7 @@
                             <password>${env.DOCKER_PASSWORD}</password>
                         </auth>
                     </to>
+                    <mainClass>org.group15.LauncherApplication</mainClass>
                 </configuration>
             </plugin>
         </plugins>
