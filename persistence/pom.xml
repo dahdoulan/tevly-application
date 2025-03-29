@@ -9,8 +9,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <packaging>jar</packaging>
-    <artifactId>launcher</artifactId>
+    <artifactId>persistence</artifactId>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -20,14 +19,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
-            <version>${springboot.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-            <version>${springboot.version}</version>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-jpa</artifactId>
+            <version>${springdata.version}</version>
         </dependency>
         <dependency>
             <groupId>org.postgresql</groupId>
@@ -35,13 +29,8 @@
             <version>${postgres.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-jpa</artifactId>
-            <version>${springdata.version}</version>
-        </dependency>
-        <dependency>
             <groupId>org.group15</groupId>
-            <artifactId>controllers</artifactId>
+            <artifactId>core</artifactId>
             <version>${revision}</version>
         </dependency>
         <dependency>
@@ -51,18 +40,26 @@
         </dependency>
         <dependency>
             <groupId>org.group15</groupId>
-            <artifactId>services</artifactId>
-            <version>${revision}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.group15</groupId>
-            <artifactId>persistence</artifactId>
-            <version>${revision}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.group15</groupId>
             <artifactId>models</artifactId>
             <version>${revision}</version>
         </dependency>
+        <dependency>
+            <groupId>org.hibernate.orm</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>6.5.3.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+            <version>${mockito.version}</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
+
 </project>

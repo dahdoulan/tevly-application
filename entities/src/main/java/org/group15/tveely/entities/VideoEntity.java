@@ -14,7 +14,7 @@ import java.util.List;
         @Index(name = "idx_videos_status", columnList = "status"),
         @Index(name = "idx_videos_upload_date", columnList = "upload_date")
 })
-public class Video {
+public class VideoEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

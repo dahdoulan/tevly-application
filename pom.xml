@@ -15,12 +15,16 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <revision>1.0-SNAPSHOT</revision>
         <springboot.version>3.4.3</springboot.version>
+        <spring.data.version>3.3.5</spring.data.version>
+        <spring.context.version>6.2.3</spring.context.version>
         <postgres.version>42.7.5</postgres.version>
         <springdata.version>3.3.4</springdata.version>
         <liquibase.version>4.27.0</liquibase.version>
-        <spring.data.version>3.3.5</spring.data.version>
         <jakarta.persistence.version>3.1.0</jakarta.persistence.version>
         <lombok.version>1.18.30</lombok.version>
+        <jib.version>3.3.2</jib.version>
+        <mockito.version>5.14.2</mockito.version>
+        <junit.version>5.13.0-M2</junit.version>
     </properties>
 
 
@@ -29,6 +33,10 @@
         <module>liquibase</module>
         <module>controllers</module>
         <module>entities</module>
+        <module>services</module>
+        <module>persistence</module>
+        <module>core</module>
+        <module>models</module>
     </modules>
 
     <build>
@@ -36,7 +44,7 @@
             <plugin>
                 <groupId>com.google.cloud.tools</groupId>
                 <artifactId>jib-maven-plugin</artifactId>
-                <version>3.3.2</version>
+                <version>${jib.version}</version>
                 <configuration>
                     <to>
                         <image>docker.io/dahdoulan/tveely-app</image>

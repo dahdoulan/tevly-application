@@ -20,7 +20,7 @@ public class Comment {
 
     @ManyToOne
     @JoinColumn(name = "video_id", nullable = false, foreignKey = @ForeignKey(name = "fk_comment_video"))
-    private Video video;
+    private VideoEntity video;
 
     @Column(name = "comment", nullable = false, columnDefinition = "TEXT")
     private String comment;
@@ -29,5 +29,5 @@ public class Comment {
     private LocalDateTime createDate;
 
     @ManyToOne
-    private User createdBy;
+    private UserEntity createdBy;
 }

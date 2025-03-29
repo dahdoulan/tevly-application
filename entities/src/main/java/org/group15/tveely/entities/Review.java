@@ -20,7 +20,7 @@ public class Review {
 
     @ManyToOne
     @JoinColumn(name = "video_id", nullable = false, foreignKey = @ForeignKey(name = "fk_review_video"))
-    private Video video;
+    private VideoEntity video;
 
     @Column(name = "rating", nullable = false)
     private Long rating;
@@ -29,5 +29,5 @@ public class Review {
     private LocalDateTime createDate;
 
     @ManyToOne
-    private User createdBy;
+    private UserEntity createdBy;
 }
