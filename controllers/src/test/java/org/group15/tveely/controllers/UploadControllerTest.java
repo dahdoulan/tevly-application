@@ -40,7 +40,7 @@ class UploadControllerTest {
         @Override
         public ResponseEntity uploadVideo(MultipartFile video, String title, String description) {
             if(isValidRequest) {
-                return ResponseEntity.ok().build();
+                return ResponseEntity.noContent().build();
             }
             return ResponseEntity.badRequest().build();
         }
