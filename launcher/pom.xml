@@ -65,28 +65,4 @@
             <version>${revision}</version>
         </dependency>
     </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>com.google.cloud.tools</groupId>
-                <artifactId>jib-maven-plugin</artifactId>
-                <version>${jib.version}</version>
-                <configuration>
-                    <to>
-                        <image>docker.io/dahdoulan/tveely-app</image>
-                        <tags>
-                            <tag>${env.GITHUB_SHA}</tag>
-                            <tag>latest</tag>
-                        </tags>
-                        <auth>
-                            <username>${env.DOCKER_USERNAME}</username>
-                            <password>${env.DOCKER_PASSWORD}</password>
-                        </auth>
-                    </to>
-                    <mainClass>org.group15.LauncherApplication</mainClass>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
 </project>
