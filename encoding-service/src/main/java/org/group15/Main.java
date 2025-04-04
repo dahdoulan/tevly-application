@@ -4,10 +4,13 @@ import org.group15.tveely.ffmpeg.FfmpegWrapper;
 
 import java.io.IOException;
 
+import static org.group15.tveely.ffmpeg.FfmpegWrapper.CMD;
+import static org.group15.tveely.ffmpeg.FfmpegWrapper.POWERSHELL;
+
 public class Main {
     public static void main(String[] args) throws IOException, InterruptedException {
-        FfmpegWrapper ffmpeg = new FfmpegWrapper("fhjklsdkjf");
-        int exitCode = ffmpeg.encode("C:\\Users\\DELL\\Videos\\2025-03-29 02-06-27.mkv", "mp4");
+        FfmpegWrapper ffmpeg = new FfmpegWrapper(POWERSHELL);
+        int exitCode = ffmpeg.encode("\"E:\\hi.mp4\"", "mp4");
         System.out.println(exitCode);
     }
 }

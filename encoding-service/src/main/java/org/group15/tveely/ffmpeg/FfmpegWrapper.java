@@ -8,14 +8,15 @@ import java.time.LocalDateTime;
 public class FfmpegWrapper {
     public static String POWERSHELL = "powershell.exe";
     public static String BASH = "/bin/bash";
-
+    public static String CMD = "cmd.exe";
     private String terminal;
     private String expected;
 
     private final ProcessBuilder pb = new ProcessBuilder();
 
     public FfmpegWrapper(String terminal) {
-        pb.environment().put("PATH", "C:\\Users\\DELL\\ffmpeg\\bin\\");
+        pb.environment().put("PATH", "C:\\Program Files (x86)\\ffmpeg\\bin");
+
           if (terminal.equals(POWERSHELL)) {
               this.terminal = POWERSHELL;
               this.expected = "-Command";
@@ -23,7 +24,7 @@ public class FfmpegWrapper {
               this.terminal = BASH;
               this.expected = "-c";
           }else{
-              this.terminal = "cmd.exe";
+              this.terminal = CMD;
               this.expected = "/c";
           }
     }
@@ -33,8 +34,26 @@ public class FfmpegWrapper {
                 .toString()
                 .replace(":", "-")
                 .concat("." + extension);
+         pb.command(
+                terminal,
+                expected,
+                "ffmpeg",
+                "-i", path,
+                "-preset", "fast",
+                "-g", "48",
+                "-sc_threshold", "0",
+                "-map", "0:v:0",
+                "-map", "0:a:0",
+                "-c:v", "libx264",
+                "-b:v", "3000k",
+                "-c:a", "aac",
+                "-b:a", "128k",
+                "-f", "hls",
+                "-hls_time", "4",
+                "-hls_playlist_type", "vod",
+                outputFile
+        );
 
-        pb.command(terminal, expected, "ffmpeg", "-i", path, outputFile);
         pb.redirectErrorStream(true);
         Process process = pb.start();
 
