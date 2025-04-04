@@ -5,6 +5,8 @@
     <file url="file://$PROJECT_DIR$/controllers/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/core/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/core/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/encoding-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/encoding-service/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/entities/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/entities/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/launcher/src/main/java" charset="UTF-8" />

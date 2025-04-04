@@ -37,6 +37,7 @@
         <module>persistence</module>
         <module>core</module>
         <module>models</module>
+        <module>encoding-service</module>
     </modules>
 
     <build>
