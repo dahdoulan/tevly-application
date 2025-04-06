@@ -29,16 +29,37 @@ public class FfmpegWrapper {
           }
     }
 
-    public int encode(String path, String extension) throws IOException, InterruptedException {
+    public int encode(String path, String extension, String resolution) throws IOException, InterruptedException {
         String outputFile = LocalDateTime.now()
                 .toString()
                 .replace(":", "-")
                 .concat("." + extension);
-         pb.command(
+
+        String scale;
+        switch (resolution) {
+            case "1440p":
+                scale = "2560:1440";
+                break;
+            case "1080p":
+                scale = "1920:1080";
+                break;
+            case "720p":
+                scale = "1280:720";
+                break;
+            case "480p":
+                scale = "854:480";
+                break;
+            default:
+                throw new IllegalArgumentException("Unsupported resolution: " + resolution);
+        }
+
+        pb.command(
                 terminal,
                 expected,
                 "ffmpeg",
                 "-i", path,
+                "-c:v", "h264_nvenc",
+                "-vf", "scale=" + scale,
                 "-preset", "fast",
                 "-g", "48",
                 "-sc_threshold", "0",
@@ -51,21 +72,22 @@ public class FfmpegWrapper {
                 "-f", "hls",
                 "-hls_time", "4",
                 "-hls_playlist_type", "vod",
+                "-movflags", "+faststart",
+                "-threads", "0",
                 outputFile
         );
 
         pb.redirectErrorStream(true);
         Process process = pb.start();
 
-        // Read combined output
         try (BufferedReader reader = new BufferedReader(
                 new InputStreamReader(process.getInputStream()))) {
-
             String line;
             while ((line = reader.readLine()) != null) {
-                System.out.println(line); // Print to console, or collect in a list
+                System.out.println(line);
             }
         }
         return process.waitFor();
     }
+
 }
