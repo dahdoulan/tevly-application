@@ -16,7 +16,7 @@ public class Main {
                 .expected("/c")
                 .build();
 
-        int exitCode = build.encode("\"C:\\Users\\otoum\\Videos\\MarvelRivals\\Highlights\\marvel.mp4\"", "mp4");
+        int exitCode = build.encode("\"C:\\Users\\otoum\\Videos\\NVIDIA\\Desktop\\desk.mp4\"");
 
         long endTime = System.nanoTime();    // End timing
 

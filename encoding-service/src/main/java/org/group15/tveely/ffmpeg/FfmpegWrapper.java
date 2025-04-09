@@ -3,7 +3,6 @@ package org.group15.tveely.ffmpeg;
 import lombok.Builder;
 
 import java.io.*;
-import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,7 +16,7 @@ public class FfmpegWrapper {
     private String scale;
     private final ProcessBuilder pb = new ProcessBuilder();
 
-    public int encode(String path, String extension) throws IOException, InterruptedException {
+    public int encode(String path) throws IOException, InterruptedException {
         String outputDir = "E:\\encoded";
         new File(outputDir).mkdirs();
         pb.environment().put("PATH", "C:\\Program Files (x86)\\ffmpeg\\bin");
@@ -43,13 +42,14 @@ public class FfmpegWrapper {
                         "[v3]scale=w=854:h=480:force_original_aspect_ratio=decrease[v480]"
 
         ));
-
+        String baseName = new File(path).getName().replaceFirst("[.][^.]+$", "");
+        String videoOutputDir = outputDir + File.separator + baseName;
         for (int i = 0; i < 3; i++) {
             String name = names[i];
-            String resolutionTag = name.replace("p", "");
-            String streamPath = outputDir + "\\" + name;
+            String streamPath = videoOutputDir + File.separator + name;
             new File(streamPath).mkdirs();
 
+            String resolutionTag = name.replace("p", "");
             command.addAll(List.of(
                     "-map", "[v" + resolutionTag + "]",
                     "-map", "0:a",
@@ -63,9 +63,11 @@ public class FfmpegWrapper {
                     "-hls_time", "20",
                     "-hls_playlist_type", "vod",
                     "-hls_flags", "independent_segments",
-                    "-hls_segment_filename", streamPath + "\\segment_%03d.ts",
-                    streamPath + "\\stream.m3u8"
+                    "-hls_segment_filename", streamPath + File.separator + "segment_%03d.ts",
+                    streamPath + File.separator + "stream.m3u8"
+
             ));
+
         }
 
         pb.command(command);
@@ -85,7 +87,7 @@ public class FfmpegWrapper {
         int exitCode = process.waitFor();
 
 
-        File master = new File(outputDir + "\\master.m3u8");
+        File master = new File(videoOutputDir + File.separator + "master.m3u8");
         try (PrintWriter writer = new PrintWriter(master)) {
             writer.println("#EXTM3U");
             writer.println("#EXT-X-VERSION:3");
