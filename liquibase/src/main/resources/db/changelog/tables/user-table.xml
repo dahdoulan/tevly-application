@@ -1,25 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<databaseChangeLog
-        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
-        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.8.xsd">
 
     <changeSet id="create-user-table" author="tveely">
-        <createTable tableName="user">
-            <column name="id" type="BIGINT" autoIncrement="true">
+        <createTable tableName="_user">
+            <column name="id" type="INTEGER" autoIncrement="true">
                 <constraints primaryKey="true" nullable="false" />
             </column>
-            <column name="name" type="VARCHAR(255)">
-                <constraints nullable="false" />
-            </column>
+            <column name="firstname" type="VARCHAR(255)" />
+            <column name="lastname" type="VARCHAR(255)" />
+            <column name="date_of_birth" type="DATE" />
             <column name="email" type="VARCHAR(255)">
-                <constraints nullable="false" unique="true" />
+                <constraints unique="true" nullable="false" />
             </column>
-            <column name="role" type="VARCHAR(255)">
+            <column name="password" type="VARCHAR(255)" />
+            <column name="account_locked" type="BOOLEAN" defaultValue="false" />
+            <column name="enabled" type="BOOLEAN" defaultValue="true" />
+            <column name="created_date" type="TIMESTAMP">
                 <constraints nullable="false" />
             </column>
+            <column name="last_modified_date" type="TIMESTAMP" />
         </createTable>
-    </changeSet>
 
+        <!-- Many-to-Many Relationship Table: user_roles -->
+        <createTable tableName="user_roles">
+            <column name="user_id" type="INTEGER">
+                <constraints nullable="false" foreignKeyName="fk_user_roles_user" references="_user(id)" />
+            </column>
+            <column name="role_id" type="INTEGER">
+                <constraints nullable="false" foreignKeyName="fk_user_roles_role" references="role(id)" />
+            </column>
+
+        </createTable>
+
+    </changeSet>
 </databaseChangeLog>
