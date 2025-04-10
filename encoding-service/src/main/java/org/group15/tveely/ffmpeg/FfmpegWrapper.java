@@ -1,58 +1,53 @@
 package org.group15.tveely.ffmpeg;
 
+import lombok.AllArgsConstructor;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.time.LocalDateTime;
+import java.util.Map;
 
+@AllArgsConstructor
 public class FfmpegWrapper {
+
+    private final Map<String, String> resolutions = Map.of(
+            "1440p",
+            "2560:1440",
+            "1080p",
+            "1920:1080",
+            "720p",
+            "1280:720",
+            "480p",
+            "854:480"
+    );
+
     public static String POWERSHELL = "powershell.exe";
     public static String BASH = "/bin/bash";
     public static String CMD = "cmd.exe";
-    private String terminal;
-    private String expected;
 
-    private final ProcessBuilder pb = new ProcessBuilder();
+    private String terminal = BASH;
+    private String expected = "/c";
 
-    public FfmpegWrapper(String terminal) {
-        pb.environment().put("PATH", "C:\\Program Files (x86)\\ffmpeg\\bin");
-
-          if (terminal.equals(POWERSHELL)) {
-              this.terminal = POWERSHELL;
-              this.expected = "-Command";
-          } else if (terminal.equals(BASH)) {
-              this.terminal = BASH;
-              this.expected = "-c";
-          }else{
-              this.terminal = CMD;
-              this.expected = "/c";
-          }
-    }
+    private final ProcessBuilder pb;
 
     public int encode(String path, String extension, String resolution) throws IOException, InterruptedException {
-        String outputFile = LocalDateTime.now()
-                .toString()
-                .replace(":", "-")
-                .concat("." + extension);
+        String scale = resolveScale(resolution);
+        createCommand(path, extension, scale);
+        pb.redirectErrorStream(true);
+        Process process = pb.start();
 
-        String scale;
-        switch (resolution) {
-            case "1440p":
-                scale = "2560:1440";
-                break;
-            case "1080p":
-                scale = "1920:1080";
-                break;
-            case "720p":
-                scale = "1280:720";
-                break;
-            case "480p":
-                scale = "854:480";
-                break;
-            default:
-                throw new IllegalArgumentException("Unsupported resolution: " + resolution);
+        try (BufferedReader reader = new BufferedReader(
+                new InputStreamReader(process.getInputStream()))) {
+            String line;
+            while ((line = reader.readLine()) != null) {
+                System.out.println(line);
+            }
         }
+        return process.waitFor();
+    }
 
+    private void createCommand(String path, String extension, String scale) {
         pb.command(
                 terminal,
                 expected,
@@ -70,24 +65,23 @@ public class FfmpegWrapper {
                 "-c:a", "aac",
                 "-b:a", "128k",
                 "-f", "hls",
-                "-hls_time", "4",
+                "-hls_time", "20",
                 "-hls_playlist_type", "vod",
                 "-movflags", "+faststart",
                 "-threads", "0",
-                outputFile
+                "-vf", "yuv422p",
+                generateFileName(extension)
         );
-
-        pb.redirectErrorStream(true);
-        Process process = pb.start();
-
-        try (BufferedReader reader = new BufferedReader(
-                new InputStreamReader(process.getInputStream()))) {
-            String line;
-            while ((line = reader.readLine()) != null) {
-                System.out.println(line);
-            }
-        }
-        return process.waitFor();
     }
 
+    private String resolveScale(String resolution) {
+        return resolutions.getOrDefault(resolution, resolutions.get("720"));
+    }
+
+    private String generateFileName(String extension) {
+        return LocalDateTime.now()
+                .toString()
+                .replace(":", "-")
+                .concat("." + extension);
+    }
 }
