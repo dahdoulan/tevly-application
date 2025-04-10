@@ -17,5 +17,18 @@ spring.liquibase.enabled=true;
 spring.liquibase.change-log=classpath:db/changelog/db.changelog-master.xml;
 spring.liquibase.default-schema=tveely;spring.liquibase.drop-first=false;
 spring.liquibase.contexts=development;spring.liquibase.labels=version-1;
+
+SPRING_MAIL_HOST=localhost; SPRING_MAIL_PORT=1025;
+SPRING_MAIL_USERNAME=Teveely;
+SPRING_MAIL_PASSWORD=Teveely;
+SPRING_MAIL_PROPERTIES_MAIL_SMTP_TRUST=*;
+SPRING_MAIL_PROPERTIES_MAIL_SMTP_AUTH=true;
+SPRING_MAIL_PROPERTIES_MAIL_SMTP_STARTTLS_ENABLED=true;
+SPRING_MAIL_PROPERTIES_MAIL_CONNECTIONTIMEOUT=5000;
+SPRING_MAIL_PROPERTIES_MAIL_TIMEOUT=3000;
+SPRING_MAIL_PROPERTIES_MAIL_WRITETIMEOUT=5000;
+APPLICATION_SECURITY_JWT_SECRET_KEY=cfd6cd3cb5a78bece694e9a8a58fbd875a7308b337c526ea787815c7dade888b;
+APPLICATION_SECURITY_JWT_EXPIRATION=8640000;
+APPLICATION_MAILING_FRONTEND_ACTIVATION_URL=http://localhost:4200/activate-account;
 ## Add this on the liquibase module only.
 spring.main.web-application-type=NONE;

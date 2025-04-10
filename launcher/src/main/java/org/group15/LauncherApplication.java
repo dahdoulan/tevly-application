@@ -31,6 +31,12 @@ public class LauncherApplication {
             if (roleRepository.findByName("USER").isEmpty()) {
                 roleRepository.save(RoleEntity.builder().name("USER").build());
             }
+            if (roleRepository.findByName("FILMMAKER").isEmpty()) {
+                roleRepository.save(RoleEntity.builder().name("FILMMAKER").build());
+            }
+            if (roleRepository.findByName("ADMIN").isEmpty()) {
+                roleRepository.save(RoleEntity.builder().name("ADMIN").build());
+            }
         };
     }
 

@@ -1,10 +1,9 @@
 package org.group15.tveely.entities;
 
-import jakarta.validation.constraints.Email;
-import jakarta.validation.constraints.NotEmpty;
-import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.Size;
+import jakarta.validation.constraints.*;
 import lombok.*;
+
+import java.time.LocalDate;
 
 @Getter
 @Setter
@@ -29,4 +28,9 @@ public class RegistrationRequest {
     @NotNull(message = "Password is mandatory")
     @Size(min = 8, message = "Password should be 8 characters long minimum")
     private String password;
+
+    @Past(message = "Birthday must be in the past") // Ensures valid date
+    @NotNull(message = "Birthday is mandatory")
+    private LocalDate dateOfBirth; // Add this field
+
 }

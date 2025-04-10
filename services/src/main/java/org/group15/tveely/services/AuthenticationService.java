@@ -16,7 +16,6 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 
 import java.security.SecureRandom;
@@ -39,17 +38,53 @@ public class AuthenticationService {
     @Value("${application.mailing.frontend.activation-url}")
     private String activationUrl;
 
-    public void register(RegistrationRequest request) throws MessagingException {
+    public void registerUser(RegistrationRequest request) throws MessagingException {
         var userRole = roleRepository.findByName("USER")
                 .orElseThrow(() -> new IllegalStateException("ROLE USER was not initiated"));
         var user = UserEntity.builder()
                 .firstname(request.getFirstname())
                 .lastname(request.getLastname())
                 .email(request.getEmail())
+                .dateOfBirth(request.getDateOfBirth())
                 .password(passwordEncoder.encode(request.getPassword()))
                 .accountLocked(false)
                 .enabled(false)
                 .roles(List.of(userRole))
+                .build();
+
+        userRepository.save(user);
+        sendValidationEmail(user);
+    }
+
+    public void registerFilmmaker(RegistrationRequest request) throws MessagingException {
+        var filmmakerRole = roleRepository.findByName("FILMMAKER")
+                .orElseThrow(() -> new IllegalStateException("ROLE FILMMAKER was not initialized"));
+        var user = UserEntity.builder()
+                .firstname(request.getFirstname())
+                .lastname(request.getLastname())
+                .email(request.getEmail())
+                .dateOfBirth(request.getDateOfBirth())
+                .password(passwordEncoder.encode(request.getPassword()))
+                .accountLocked(false)
+                .enabled(false)
+                .roles(List.of(filmmakerRole)) // Assign FILMMAKER role
+                .build();
+
+        userRepository.save(user);
+        sendValidationEmail(user);
+    }
+    public void registerAdmin(RegistrationRequest request) throws MessagingException {
+        var adminRole = roleRepository.findByName("ADMIN")
+                .orElseThrow(() -> new IllegalStateException("ROLE ADMIN was not initialized"));
+        var user = UserEntity.builder()
+                .firstname(request.getFirstname())
+                .lastname(request.getLastname())
+                .email(request.getEmail())
+                .dateOfBirth(request.getDateOfBirth())
+                .password(passwordEncoder.encode(request.getPassword()))
+                .accountLocked(false)
+                .enabled(false)
+                .roles(List.of(adminRole)) // Assign FILMMAKER role
                 .build();
 
         userRepository.save(user);

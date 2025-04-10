@@ -47,8 +47,8 @@ public class JwtService {
             long expiration
     ) {
         var authorities = userDetails.getAuthorities()
-                .stream().
-                map(GrantedAuthority::getAuthority)
+                .stream()
+                .map(a -> a.getAuthority().startsWith("ROLE_") ? a.getAuthority() : "ROLE_" + a.getAuthority())
                 .toList();
         return Jwts
                 .builder()

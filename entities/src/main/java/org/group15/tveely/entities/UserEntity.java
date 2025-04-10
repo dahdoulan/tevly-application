@@ -37,6 +37,7 @@ public class UserEntity implements UserDetails, Principal {
 
     private String firstname;
     private String lastname;
+    @Getter
     private LocalDate dateOfBirth;
 
     @Column(unique = true, nullable = false)
@@ -65,9 +66,10 @@ public class UserEntity implements UserDetails, Principal {
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return this.roles.stream()
-                .map(r -> new SimpleGrantedAuthority(r.getName()))
+                .map(r -> new SimpleGrantedAuthority("ROLE_" + r.getName()))
                 .collect(Collectors.toList());
     }
+
 
     @Override
     public String getPassword() {
