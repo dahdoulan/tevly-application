@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.*;
 public class AdminSignupController {
     private final AuthenticationService service;
 
-    //@PreAuthorize("hasAnyRole('ADMIN')")
+    @PreAuthorize("hasAnyRole('ADMIN')")
     @PostMapping("/admin")
     @ResponseStatus(HttpStatus.ACCEPTED)
     public ResponseEntity<?> registerAdmin(
