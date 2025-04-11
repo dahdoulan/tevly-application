@@ -1,0 +1,1209 @@
+ffmpeg version 2025-03-31-git-35c091f4b7-full_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 14.2.0 (Rev1, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint
+  libavutil      60.  0.100 / 60.  0.100
+  libavcodec     62.  0.100 / 62.  0.100
+  libavformat    62.  0.100 / 62.  0.100
+  libavdevice    62.  0.100 / 62.  0.100
+  libavfilter    11.  0.100 / 11.  0.100
+  libswscale      9.  0.100 /  9.  0.100
+  libswresample   6.  0.100 /  6.  0.100
+  libpostproc    59.  0.100 / 59.  0.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\Users\otoum\Downloads\login.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : https://clipchamp.com
+    comment         : Create videos with https://clipchamp.com/en/video-editor - free online video editor, video compressor, video converter.
+  Duration: 00:00:29.43, start: 0.000000, bitrate: 2405 kb/s
+  Stream #0:0[0x1](und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(progressive), 1920x1080, 2207 kb/s, 30 fps, 30 tbr, 15360 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 192 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (h264_nvenc))
+  Stream #0:1 -> #0:1 (aac (native) -> aac (native))
+Press [q] to stop, [?] for help
+Output #0, hls, to 'E:\encoded\login\1080p\stream.m3u8':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    comment         : Create videos with https://clipchamp.com/en/video-editor - free online video editor, video compressor, video converter.
+    encoder         : Lavf62.0.100
+  Stream #0:0(und): Video: h264 (Main), yuv420p(tv, progressive), 1920x1080, q=2-31, 5000 kb/s, 30 fps, 90k tbn (default)
+    Metadata:
+      encoder         : Lavc62.0.100 h264_nvenc
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+    Side data:
+      cpb: bitrate max/min/avg: 5500000/0/5000000 buffer size: 10000000 vbv_delay: N/A
+  Stream #0:1(und): Audio: aac (LC), 48000 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      encoder         : Lavc62.0.100 aac
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+frame=   40 fps=0.0 q=12.0 size=N/A time=00:00:01.23 bitrate=N/A speed=2.39x    frame=  108 fps=105 q=12.0 size=N/A time=00:00:03.50 bitrate=N/A speed=3.41x    frame=  176 fps=114 q=12.0 size=N/A time=00:00:05.76 bitrate=N/A speed=3.75x    frame=  244 fps=119 q=12.0 size=N/A time=00:00:08.03 bitrate=N/A speed=3.92x    frame=  313 fps=122 q=11.0 size=N/A time=00:00:10.33 bitrate=N/A speed=4.01x    frame=  379 fps=123 q=12.0 size=N/A time=00:00:12.53 bitrate=N/A speed=4.06x    frame=  445 fps=124 q=11.0 size=N/A time=00:00:14.73 bitrate=N/A speed= 4.1x    frame=  517 fps=125 q=12.0 size=N/A time=00:00:17.13 bitrate=N/A speed=4.16x    frame=  582 fps=126 q=9.0 size=N/A time=00:00:19.30 bitrate=N/A speed=4.17x    frame=  654 fps=127 q=9.0 size=N/A time=00:00:21.70 bitrate=N/A speed=4.21x    frame=  720 fps=127 q=12.0 size=N/A time=00:00:23.90 bitrate=N/A speed=4.22x    [hls @ 000001cd6305a080] Opening 'E:\encoded\login\1080p\segment_000.ts' for writing
+frame=  789 fps=128 q=11.0 size=N/A time=00:00:26.20 bitrate=N/A speed=4.24x    frame=  858 fps=128 q=12.0 size=N/A time=00:00:28.50 bitrate=N/A speed=4.25x    [hls @ 000001cd6305a080] Opening 'E:\encoded\login\1080p\segment_001.ts' for writing
+[out#0/hls @ 000001cd63084580] video:1252KiB audio:8KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame=  883 fps=128 q=12.0 Lsize=N/A time=00:00:29.33 bitrate=N/A speed=4.26x    
+[aac @ 000001cd63924f40] Qavg: 65536.000
+ffmpeg version 2025-03-31-git-35c091f4b7-full_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 14.2.0 (Rev1, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint
+  libavutil      60.  0.100 / 60.  0.100
+  libavcodec     62.  0.100 / 62.  0.100
+  libavformat    62.  0.100 / 62.  0.100
+  libavdevice    62.  0.100 / 62.  0.100
+  libavfilter    11.  0.100 / 11.  0.100
+  libswscale      9.  0.100 /  9.  0.100
+  libswresample   6.  0.100 /  6.  0.100
+  libpostproc    59.  0.100 / 59.  0.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\Users\otoum\Downloads\login.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : https://clipchamp.com
+    comment         : Create videos with https://clipchamp.com/en/video-editor - free online video editor, video compressor, video converter.
+  Duration: 00:00:29.43, start: 0.000000, bitrate: 2405 kb/s
+  Stream #0:0[0x1](und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(progressive), 1920x1080, 2207 kb/s, 30 fps, 30 tbr, 15360 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 192 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (h264_nvenc))
+  Stream #0:1 -> #0:1 (aac (native) -> aac (native))
+Press [q] to stop, [?] for help
+Output #0, hls, to 'E:\encoded\login\720p\stream.m3u8':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    comment         : Create videos with https://clipchamp.com/en/video-editor - free online video editor, video compressor, video converter.
+    encoder         : Lavf62.0.100
+  Stream #0:0(und): Video: h264 (Main), yuv420p(tv, progressive), 1280x720, q=2-31, 2800 kb/s, 30 fps, 90k tbn (default)
+    Metadata:
+      encoder         : Lavc62.0.100 h264_nvenc
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+    Side data:
+      cpb: bitrate max/min/avg: 3000000/0/2800000 buffer size: 6000000 vbv_delay: N/A
+  Stream #0:1(und): Audio: aac (LC), 48000 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      encoder         : Lavc62.0.100 aac
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+frame=  107 fps=0.0 q=10.0 size=N/A time=00:00:03.46 bitrate=N/A speed=6.65x    frame=  251 fps=243 q=6.0 size=N/A time=00:00:08.26 bitrate=N/A speed=   8x    frame=  399 fps=256 q=11.0 size=N/A time=00:00:13.20 bitrate=N/A speed=8.47x    frame=  544 fps=263 q=11.0 size=N/A time=00:00:18.03 bitrate=N/A speed=8.72x    frame=  689 fps=267 q=11.0 size=N/A time=00:00:22.86 bitrate=N/A speed=8.86x    [hls @ 000002637755a680] Opening 'E:\encoded\login\720p\segment_000.ts' for writing
+frame=  831 fps=269 q=11.0 size=N/A time=00:00:27.60 bitrate=N/A speed=8.93x    [hls @ 000002637755a680] Opening 'E:\encoded\login\720p\segment_001.ts' for writing
+[out#0/hls @ 000002637755a4c0] video:820KiB audio:8KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame=  883 fps=270 q=11.0 Lsize=N/A time=00:00:29.33 bitrate=N/A speed=8.98x    
+[aac @ 00000263775aca80] Qavg: 65536.000
+ffmpeg version 2025-03-31-git-35c091f4b7-full_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 14.2.0 (Rev1, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint
+  libavutil      60.  0.100 / 60.  0.100
+  libavcodec     62.  0.100 / 62.  0.100
+  libavformat    62.  0.100 / 62.  0.100
+  libavdevice    62.  0.100 / 62.  0.100
+  libavfilter    11.  0.100 / 11.  0.100
+  libswscale      9.  0.100 /  9.  0.100
+  libswresample   6.  0.100 /  6.  0.100
+  libpostproc    59.  0.100 / 59.  0.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\Users\otoum\Downloads\login.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : https://clipchamp.com
+    comment         : Create videos with https://clipchamp.com/en/video-editor - free online video editor, video compressor, video converter.
+  Duration: 00:00:29.43, start: 0.000000, bitrate: 2405 kb/s
+  Stream #0:0[0x1](und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(progressive), 1920x1080, 2207 kb/s, 30 fps, 30 tbr, 15360 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 192 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (h264_nvenc))
+  Stream #0:1 -> #0:1 (aac (native) -> aac (native))
+Press [q] to stop, [?] for help
+Output #0, hls, to 'E:\encoded\login\480p\stream.m3u8':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    comment         : Create videos with https://clipchamp.com/en/video-editor - free online video editor, video compressor, video converter.
+    encoder         : Lavf62.0.100
+  Stream #0:0(und): Video: h264 (Main), yuv420p(tv, progressive), 853x480, q=2-31, 1400 kb/s, 30 fps, 90k tbn (default)
+    Metadata:
+      encoder         : Lavc62.0.100 h264_nvenc
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+    Side data:
+      cpb: bitrate max/min/avg: 1600000/0/1400000 buffer size: 3000000 vbv_delay: N/A
+  Stream #0:1(und): Audio: aac (LC), 48000 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      encoder         : Lavc62.0.100 aac
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+frame=  218 fps=0.0 q=8.0 size=N/A time=00:00:07.16 bitrate=N/A speed=  14x    frame=  540 fps=528 q=10.0 size=N/A time=00:00:17.90 bitrate=N/A speed=17.5x    [hls @ 0000029edc5ca680] Opening 'E:\encoded\login\480p\segment_000.ts' for writing
+frame=  851 fps=554 q=10.0 size=N/A time=00:00:28.26 bitrate=N/A speed=18.4x    [hls @ 0000029edc5ca680] Opening 'E:\encoded\login\480p\segment_001.ts' for writing
+[out#0/hls @ 0000029edc5ca4c0] video:546KiB audio:8KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame=  883 fps=553 q=10.0 Lsize=N/A time=00:00:29.33 bitrate=N/A speed=18.4x    
+[aac @ 0000029edc61c340] Qavg: 65536.000
+ffmpeg version 2025-03-31-git-35c091f4b7-full_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 14.2.0 (Rev1, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint
+  libavutil      60.  0.100 / 60.  0.100
+  libavcodec     62.  0.100 / 62.  0.100
+  libavformat    62.  0.100 / 62.  0.100
+  libavdevice    62.  0.100 / 62.  0.100
+  libavfilter    11.  0.100 / 11.  0.100
+  libswscale      9.  0.100 /  9.  0.100
+  libswresample   6.  0.100 /  6.  0.100
+  libpostproc    59.  0.100 / 59.  0.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\Users\otoum\Videos\MarvelRivals\Highlights\marvel.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp41isom
+    creation_time   : 2025-01-06T23:50:14.000000Z
+  Duration: 00:00:37.51, start: 0.000000, bitrate: 26976 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1920x1080 [SAR 1:1 DAR 16:9], 26786 kb/s, 60.06 fps, 120 tbr, 60k tbn (default)
+    Metadata:
+      creation_time   : 2025-01-06T23:50:14.000000Z
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+      encoder         : AVC Coding
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 191 kb/s (default)
+    Metadata:
+      creation_time   : 2025-01-06T23:50:14.000000Z
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (h264_nvenc))
+  Stream #0:1 -> #0:1 (aac (native) -> aac (native))
+Press [q] to stop, [?] for help
+Output #0, hls, to 'E:\encoded\marvel\1080p\stream.m3u8':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp41isom
+    encoder         : Lavf62.0.100
+  Stream #0:0(und): Video: h264 (Main), yuv420p(tv, progressive), 1920x1080 [SAR 1:1 DAR 16:9], q=2-31, 5000 kb/s, 60 fps, 90k tbn (default)
+    Metadata:
+      encoder         : Lavc62.0.100 h264_nvenc
+      creation_time   : 2025-01-06T23:50:14.000000Z
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+    Side data:
+      cpb: bitrate max/min/avg: 5500000/0/5000000 buffer size: 10000000 vbv_delay: N/A
+  Stream #0:1(und): Audio: aac (LC), 48000 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      encoder         : Lavc62.0.100 aac
+      creation_time   : 2025-01-06T23:50:14.000000Z
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+frame=   65 fps=0.0 q=32.0 size=N/A time=00:00:01.03 bitrate=N/A dup=12 drop=6 speed=2.02x    frame=  135 fps=131 q=30.0 size=N/A time=00:00:02.20 bitrate=N/A dup=12 drop=12 speed=2.13x    frame=  199 fps=129 q=29.0 size=N/A time=00:00:03.26 bitrate=N/A dup=12 drop=12 speed=2.11x    frame=  267 fps=130 q=35.0 size=N/A time=00:00:04.40 bitrate=N/A dup=12 drop=12 speed=2.14x    frame=  333 fps=130 q=31.0 size=N/A time=00:00:05.50 bitrate=N/A dup=21 drop=12 speed=2.14x    frame=  401 fps=130 q=31.0 size=N/A time=00:00:06.63 bitrate=N/A dup=28 drop=12 speed=2.14x    frame=  467 fps=130 q=34.0 size=N/A time=00:00:07.73 bitrate=N/A dup=33 drop=12 speed=2.15x    frame=  537 fps=130 q=37.0 size=N/A time=00:00:08.90 bitrate=N/A dup=38 drop=12 speed=2.16x    frame=  602 fps=130 q=30.0 size=N/A time=00:00:09.98 bitrate=N/A dup=45 drop=12 speed=2.15x    frame=  671 fps=130 q=35.0 size=N/A time=00:00:11.13 bitrate=N/A dup=52 drop=12 speed=2.16x    frame=  737 fps=130 q=37.0 size=N/A time=00:00:12.23 bitrate=N/A dup=59 drop=12 speed=2.16x    frame=  806 fps=130 q=37.0 size=N/A time=00:00:13.38 bitrate=N/A dup=64 drop=12 speed=2.16x    frame=  870 fps=130 q=37.0 size=N/A time=00:00:14.45 bitrate=N/A dup=70 drop=12 speed=2.16x    frame=  940 fps=130 q=35.0 size=N/A time=00:00:15.61 bitrate=N/A dup=77 drop=12 speed=2.16x    frame= 1008 fps=130 q=41.0 size=N/A time=00:00:16.75 bitrate=N/A dup=85 drop=12 speed=2.17x    frame= 1073 fps=130 q=38.0 size=N/A time=00:00:17.83 bitrate=N/A dup=88 drop=12 speed=2.16x    frame= 1144 fps=130 q=43.0 size=N/A time=00:00:19.01 bitrate=N/A dup=90 drop=12 speed=2.17x    frame= 1211 fps=130 q=35.0 size=N/A time=00:00:20.13 bitrate=N/A dup=91 drop=14 speed=2.17x    [hls @ 000002677dc5f040] Opening 'E:\encoded\marvel\1080p\segment_000.ts' for writing
+frame= 1277 fps=130 q=35.0 size=N/A time=00:00:21.23 bitrate=N/A dup=91 drop=14 speed=2.17x    frame= 1343 fps=130 q=38.0 size=N/A time=00:00:22.33 bitrate=N/A dup=91 drop=14 speed=2.17x    frame= 1412 fps=131 q=36.0 size=N/A time=00:00:23.48 bitrate=N/A dup=91 drop=14 speed=2.17x    frame= 1479 fps=130 q=37.0 size=N/A time=00:00:24.60 bitrate=N/A dup=91 drop=17 speed=2.17x    frame= 1546 fps=130 q=30.0 size=N/A time=00:00:25.71 bitrate=N/A dup=91 drop=20 speed=2.17x    frame= 1613 fps=130 q=36.0 size=N/A time=00:00:26.83 bitrate=N/A dup=92 drop=20 speed=2.17x    frame= 1681 fps=131 q=36.0 size=N/A time=00:00:27.96 bitrate=N/A dup=92 drop=20 speed=2.17x    frame= 1748 fps=130 q=37.0 size=N/A time=00:00:29.08 bitrate=N/A dup=92 drop=20 speed=2.17x    frame= 1817 fps=130 q=34.0 size=N/A time=00:00:30.23 bitrate=N/A dup=92 drop=20 speed=2.17x    frame= 1883 fps=130 q=37.0 size=N/A time=00:00:31.33 bitrate=N/A dup=92 drop=20 speed=2.17x    frame= 1949 fps=130 q=26.0 size=N/A time=00:00:32.43 bitrate=N/A dup=92 drop=41 speed=2.17x    frame= 2015 fps=130 q=27.0 size=N/A time=00:00:33.53 bitrate=N/A dup=92 drop=67 speed=2.17x    frame= 2085 fps=130 q=28.0 size=N/A time=00:00:34.70 bitrate=N/A dup=92 drop=92 speed=2.17x    frame= 2150 fps=130 q=9.0 size=N/A time=00:00:35.78 bitrate=N/A dup=92 drop=92 speed=2.17x    frame= 2217 fps=130 q=27.0 size=N/A time=00:00:36.90 bitrate=N/A dup=92 drop=92 speed=2.17x    [hls @ 000002677dc5f040] Opening 'E:\encoded\marvel\1080p\segment_001.ts' for writing
+[out#0/hls @ 000002677cc373c0] video:20840KiB audio:598KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame= 2252 fps=130 q=17.0 Lsize=N/A time=00:00:37.48 bitrate=N/A dup=92 drop=92 speed=2.17x    
+[aac @ 000002677ccc9440] Qavg: 692.505
+ffmpeg version 2025-03-31-git-35c091f4b7-full_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 14.2.0 (Rev1, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint
+  libavutil      60.  0.100 / 60.  0.100
+  libavcodec     62.  0.100 / 62.  0.100
+  libavformat    62.  0.100 / 62.  0.100
+  libavdevice    62.  0.100 / 62.  0.100
+  libavfilter    11.  0.100 / 11.  0.100
+  libswscale      9.  0.100 /  9.  0.100
+  libswresample   6.  0.100 /  6.  0.100
+  libpostproc    59.  0.100 / 59.  0.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\Users\otoum\Videos\MarvelRivals\Highlights\marvel.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp41isom
+    creation_time   : 2025-01-06T23:50:14.000000Z
+  Duration: 00:00:37.51, start: 0.000000, bitrate: 26976 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1920x1080 [SAR 1:1 DAR 16:9], 26786 kb/s, 60.06 fps, 120 tbr, 60k tbn (default)
+    Metadata:
+      creation_time   : 2025-01-06T23:50:14.000000Z
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+      encoder         : AVC Coding
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 191 kb/s (default)
+    Metadata:
+      creation_time   : 2025-01-06T23:50:14.000000Z
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (h264_nvenc))
+  Stream #0:1 -> #0:1 (aac (native) -> aac (native))
+Press [q] to stop, [?] for help
+Output #0, hls, to 'E:\encoded\marvel\720p\stream.m3u8':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp41isom
+    encoder         : Lavf62.0.100
+  Stream #0:0(und): Video: h264 (Main), yuv420p(tv, progressive), 1280x720 [SAR 1:1 DAR 16:9], q=2-31, 2800 kb/s, 60 fps, 90k tbn (default)
+    Metadata:
+      encoder         : Lavc62.0.100 h264_nvenc
+      creation_time   : 2025-01-06T23:50:14.000000Z
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+    Side data:
+      cpb: bitrate max/min/avg: 3000000/0/2800000 buffer size: 6000000 vbv_delay: N/A
+  Stream #0:1(und): Audio: aac (LC), 48000 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      encoder         : Lavc62.0.100 aac
+      creation_time   : 2025-01-06T23:50:14.000000Z
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+frame=  102 fps=0.0 q=26.0 size=N/A time=00:00:01.65 bitrate=N/A dup=12 drop=10 speed=3.19x    frame=  245 fps=238 q=32.0 size=N/A time=00:00:04.03 bitrate=N/A dup=12 drop=12 speed=3.92x    frame=  383 fps=249 q=34.0 size=N/A time=00:00:06.33 bitrate=N/A dup=28 drop=12 speed=4.12x    frame=  532 fps=258 q=37.0 size=N/A time=00:00:08.81 bitrate=N/A dup=38 drop=12 speed=4.27x    frame=  671 fps=261 q=34.0 size=N/A time=00:00:11.13 bitrate=N/A dup=52 drop=12 speed=4.32x    frame=  818 fps=264 q=37.0 size=N/A time=00:00:13.58 bitrate=N/A dup=66 drop=12 speed=4.39x    frame=  959 fps=266 q=39.0 size=N/A time=00:00:15.93 bitrate=N/A dup=79 drop=12 speed=4.42x    frame= 1100 fps=267 q=39.0 size=N/A time=00:00:18.28 bitrate=N/A dup=89 drop=12 speed=4.44x    frame= 1240 fps=268 q=39.0 size=N/A time=00:00:20.61 bitrate=N/A dup=91 drop=14 speed=4.45x    [hls @ 000002da5e31ec00] Opening 'E:\encoded\marvel\720p\segment_000.ts' for writing
+frame= 1383 fps=268 q=38.0 size=N/A time=00:00:23.00 bitrate=N/A dup=91 drop=14 speed=4.46x    frame= 1526 fps=270 q=30.0 size=N/A time=00:00:25.38 bitrate=N/A dup=91 drop=20 speed=4.48x    frame= 1670 fps=270 q=30.0 size=N/A time=00:00:27.78 bitrate=N/A dup=92 drop=20 speed=4.49x    frame= 1811 fps=270 q=37.0 size=N/A time=00:00:30.13 bitrate=N/A dup=92 drop=20 speed= 4.5x    frame= 1955 fps=271 q=29.0 size=N/A time=00:00:32.53 bitrate=N/A dup=92 drop=43 speed=4.51x    frame= 2097 fps=271 q=26.0 size=N/A time=00:00:34.90 bitrate=N/A dup=92 drop=92 speed=4.51x    frame= 2241 fps=272 q=25.0 size=N/A time=N/A bitrate=N/A dup=92 drop=92 speed=N/A    [hls @ 000002da5e31ec00] Opening 'E:\encoded\marvel\720p\segment_001.ts' for writing
+[out#0/hls @ 000002da5e92ecc0] video:11021KiB audio:598KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame= 2252 fps=272 q=16.0 Lsize=N/A time=00:00:37.48 bitrate=N/A dup=92 drop=92 speed=4.52x    
+[aac @ 000002da5ed2c980] Qavg: 692.505
+ffmpeg version 2025-03-31-git-35c091f4b7-full_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 14.2.0 (Rev1, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint
+  libavutil      60.  0.100 / 60.  0.100
+  libavcodec     62.  0.100 / 62.  0.100
+  libavformat    62.  0.100 / 62.  0.100
+  libavdevice    62.  0.100 / 62.  0.100
+  libavfilter    11.  0.100 / 11.  0.100
+  libswscale      9.  0.100 /  9.  0.100
+  libswresample   6.  0.100 /  6.  0.100
+  libpostproc    59.  0.100 / 59.  0.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\Users\otoum\Videos\MarvelRivals\Highlights\marvel.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp41isom
+    creation_time   : 2025-01-06T23:50:14.000000Z
+  Duration: 00:00:37.51, start: 0.000000, bitrate: 26976 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1920x1080 [SAR 1:1 DAR 16:9], 26786 kb/s, 60.06 fps, 120 tbr, 60k tbn (default)
+    Metadata:
+      creation_time   : 2025-01-06T23:50:14.000000Z
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+      encoder         : AVC Coding
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 191 kb/s (default)
+    Metadata:
+      creation_time   : 2025-01-06T23:50:14.000000Z
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (h264_nvenc))
+  Stream #0:1 -> #0:1 (aac (native) -> aac (native))
+Press [q] to stop, [?] for help
+Output #0, hls, to 'E:\encoded\marvel\480p\stream.m3u8':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp41isom
+    encoder         : Lavf62.0.100
+  Stream #0:0(und): Video: h264 (Main), yuv420p(tv, progressive), 853x480 [SAR 2560:2559 DAR 16:9], q=2-31, 1400 kb/s, 60 fps, 90k tbn (default)
+    Metadata:
+      encoder         : Lavc62.0.100 h264_nvenc
+      creation_time   : 2025-01-06T23:50:14.000000Z
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+    Side data:
+      cpb: bitrate max/min/avg: 1600000/0/1400000 buffer size: 3000000 vbv_delay: N/A
+  Stream #0:1(und): Audio: aac (LC), 48000 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      encoder         : Lavc62.0.100 aac
+      creation_time   : 2025-01-06T23:50:14.000000Z
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+frame=  218 fps=0.0 q=26.0 size=N/A time=00:00:03.58 bitrate=N/A dup=12 drop=12 speed=6.93x    frame=  514 fps=499 q=31.0 size=N/A time=00:00:08.51 bitrate=N/A dup=36 drop=12 speed=8.27x    frame=  825 fps=532 q=35.0 size=N/A time=00:00:13.70 bitrate=N/A dup=66 drop=12 speed=8.83x    frame= 1123 fps=544 q=38.0 size=N/A time=00:00:18.66 bitrate=N/A dup=90 drop=12 speed=9.03x    [hls @ 000001fb623aec00] Opening 'E:\encoded\marvel\480p\segment_000.ts' for writing
+frame= 1426 fps=553 q=38.0 size=N/A time=00:00:23.71 bitrate=N/A dup=91 drop=15 speed= 9.2x    frame= 1721 fps=557 q=38.0 size=N/A time=00:00:28.63 bitrate=N/A dup=92 drop=20 speed=9.27x    frame= 1996 fps=554 q=16.0 size=N/A time=00:00:33.21 bitrate=N/A dup=92 drop=59 speed=9.22x    [hls @ 000001fb623aec00] Opening 'E:\encoded\marvel\480p\segment_001.ts' for writing
+[out#0/hls @ 000001fb628fecc0] video:5813KiB audio:598KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame= 2252 fps=557 q=15.0 Lsize=N/A time=00:00:37.48 bitrate=N/A dup=92 drop=92 speed=9.27x    
+[aac @ 000001fb62cfbac0] Qavg: 692.505
+ffmpeg version 2025-03-31-git-35c091f4b7-full_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 14.2.0 (Rev1, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint
+  libavutil      60.  0.100 / 60.  0.100
+  libavcodec     62.  0.100 / 62.  0.100
+  libavformat    62.  0.100 / 62.  0.100
+  libavdevice    62.  0.100 / 62.  0.100
+  libavfilter    11.  0.100 / 11.  0.100
+  libswscale      9.  0.100 /  9.  0.100
+  libswresample   6.  0.100 /  6.  0.100
+  libpostproc    59.  0.100 / 59.  0.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\Users\otoum\Videos\MarvelRivals\Highlights\marvel.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp41isom
+    creation_time   : 2025-01-06T23:50:14.000000Z
+  Duration: 00:00:37.51, start: 0.000000, bitrate: 26976 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1920x1080 [SAR 1:1 DAR 16:9], 26786 kb/s, 60.06 fps, 120 tbr, 60k tbn (default)
+    Metadata:
+      creation_time   : 2025-01-06T23:50:14.000000Z
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+      encoder         : AVC Coding
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 191 kb/s (default)
+    Metadata:
+      creation_time   : 2025-01-06T23:50:14.000000Z
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (h264_nvenc))
+  Stream #0:1 -> #0:1 (aac (native) -> aac (native))
+Press [q] to stop, [?] for help
+Output #0, hls, to 'E:\encoded\marvel\1080p\stream.m3u8':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp41isom
+    encoder         : Lavf62.0.100
+  Stream #0:0(und): Video: h264 (Main), yuv420p(tv, progressive), 1920x1080 [SAR 1:1 DAR 16:9], q=2-31, 5000 kb/s, 60 fps, 90k tbn (default)
+    Metadata:
+      encoder         : Lavc62.0.100 h264_nvenc
+      creation_time   : 2025-01-06T23:50:14.000000Z
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+    Side data:
+      cpb: bitrate max/min/avg: 5500000/0/5000000 buffer size: 10000000 vbv_delay: N/A
+  Stream #0:1(und): Audio: aac (LC), 48000 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      encoder         : Lavc62.0.100 aac
+      creation_time   : 2025-01-06T23:50:14.000000Z
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+frame=   43 fps=0.0 q=30.0 size=N/A time=00:00:00.66 bitrate=N/A dup=12 drop=4 speed=1.29x    frame=  113 fps=110 q=32.0 size=N/A time=00:00:01.83 bitrate=N/A dup=12 drop=11 speed=1.78x    frame=  179 fps=116 q=29.0 size=N/A time=00:00:02.93 bitrate=N/A dup=12 drop=12 speed= 1.9x    frame=  250 fps=122 q=26.0 size=N/A time=00:00:04.11 bitrate=N/A dup=12 drop=12 speed=   2x    frame=  318 fps=124 q=35.0 size=N/A time=00:00:05.25 bitrate=N/A dup=19 drop=12 speed=2.04x    frame=  390 fps=126 q=34.0 size=N/A time=00:00:06.45 bitrate=N/A dup=28 drop=12 speed=2.08x    frame=  456 fps=126 q=28.0 size=N/A time=00:00:07.55 bitrate=N/A dup=32 drop=12 speed=2.09x    frame=  524 fps=127 q=37.0 size=N/A time=00:00:08.68 bitrate=N/A dup=37 drop=12 speed=2.11x    frame=  593 fps=128 q=37.0 size=N/A time=00:00:09.83 bitrate=N/A dup=44 drop=12 speed=2.12x    frame=  661 fps=129 q=37.0 size=N/A time=00:00:10.96 bitrate=N/A dup=51 drop=12 speed=2.13x    frame=  733 fps=129 q=37.0 size=N/A time=00:00:12.16 bitrate=N/A dup=58 drop=12 speed=2.14x    frame=  800 fps=129 q=30.0 size=N/A time=00:00:13.28 bitrate=N/A dup=64 drop=12 speed=2.15x    frame=  869 fps=130 q=34.0 size=N/A time=00:00:14.43 bitrate=N/A dup=70 drop=12 speed=2.16x    frame=  939 fps=130 q=40.0 size=N/A time=00:00:15.60 bitrate=N/A dup=77 drop=12 speed=2.16x    frame= 1008 fps=130 q=41.0 size=N/A time=00:00:16.75 bitrate=N/A dup=85 drop=12 speed=2.17x    frame= 1076 fps=131 q=39.0 size=N/A time=00:00:17.88 bitrate=N/A dup=88 drop=12 speed=2.17x    frame= 1144 fps=130 q=43.0 size=N/A time=00:00:19.01 bitrate=N/A dup=90 drop=12 speed=2.17x    frame= 1214 fps=131 q=31.0 size=N/A time=00:00:20.18 bitrate=N/A dup=91 drop=14 speed=2.18x    [hls @ 000001e6dfd7f040] Opening 'E:\encoded\marvel\1080p\segment_000.ts' for writing
+frame= 1285 fps=131 q=35.0 size=N/A time=00:00:21.36 bitrate=N/A dup=91 drop=14 speed=2.18x    frame= 1355 fps=131 q=38.0 size=N/A time=00:00:22.53 bitrate=N/A dup=91 drop=14 speed=2.19x    frame= 1426 fps=132 q=38.0 size=N/A time=00:00:23.71 bitrate=N/A dup=91 drop=15 speed=2.19x    frame= 1494 fps=132 q=37.0 size=N/A time=00:00:24.85 bitrate=N/A dup=91 drop=18 speed=2.19x    frame= 1564 fps=132 q=36.0 size=N/A time=00:00:26.01 bitrate=N/A dup=91 drop=20 speed= 2.2x    frame= 1636 fps=132 q=37.0 size=N/A time=00:00:27.21 bitrate=N/A dup=92 drop=20 speed= 2.2x    frame= 1702 fps=132 q=33.0 size=N/A time=00:00:28.31 bitrate=N/A dup=92 drop=20 speed= 2.2x    frame= 1771 fps=132 q=37.0 size=N/A time=00:00:29.46 bitrate=N/A dup=92 drop=20 speed= 2.2x    frame= 1839 fps=132 q=36.0 size=N/A time=00:00:30.60 bitrate=N/A dup=92 drop=20 speed= 2.2x    frame= 1907 fps=132 q=37.0 size=N/A time=00:00:31.73 bitrate=N/A dup=92 drop=25 speed= 2.2x    frame= 1976 fps=132 q=19.0 size=N/A time=00:00:32.88 bitrate=N/A dup=92 drop=52 speed= 2.2x    frame= 2046 fps=132 q=9.0 size=N/A time=00:00:34.05 bitrate=N/A dup=92 drop=79 speed= 2.2x    frame= 2113 fps=132 q=28.0 size=N/A time=00:00:35.16 bitrate=N/A dup=92 drop=92 speed= 2.2x    frame= 2181 fps=132 q=27.0 size=N/A time=00:00:36.30 bitrate=N/A dup=92 drop=92 speed= 2.2x    frame= 2251 fps=132 q=18.0 size=N/A time=N/A bitrate=N/A dup=92 drop=92 speed=N/A    [hls @ 000001e6dfd7f040] Opening 'E:\encoded\marvel\1080p\segment_001.ts' for writing
+[out#0/hls @ 000001e6ded873c0] video:20840KiB audio:598KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame= 2252 fps=132 q=17.0 Lsize=N/A time=00:00:37.48 bitrate=N/A dup=92 drop=92 speed= 2.2x    
+[aac @ 000001e6dee18940] Qavg: 692.505
+ffmpeg version 2025-03-31-git-35c091f4b7-full_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 14.2.0 (Rev1, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint
+  libavutil      60.  0.100 / 60.  0.100
+  libavcodec     62.  0.100 / 62.  0.100
+  libavformat    62.  0.100 / 62.  0.100
+  libavdevice    62.  0.100 / 62.  0.100
+  libavfilter    11.  0.100 / 11.  0.100
+  libswscale      9.  0.100 /  9.  0.100
+  libswresample   6.  0.100 /  6.  0.100
+  libpostproc    59.  0.100 / 59.  0.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\Users\otoum\Videos\MarvelRivals\Highlights\marvel.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp41isom
+    creation_time   : 2025-01-06T23:50:14.000000Z
+  Duration: 00:00:37.51, start: 0.000000, bitrate: 26976 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1920x1080 [SAR 1:1 DAR 16:9], 26786 kb/s, 60.06 fps, 120 tbr, 60k tbn (default)
+    Metadata:
+      creation_time   : 2025-01-06T23:50:14.000000Z
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+      encoder         : AVC Coding
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 191 kb/s (default)
+    Metadata:
+      creation_time   : 2025-01-06T23:50:14.000000Z
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (h264_nvenc))
+  Stream #0:1 -> #0:1 (aac (native) -> aac (native))
+Press [q] to stop, [?] for help
+Output #0, hls, to 'E:\encoded\marvel\720p\stream.m3u8':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp41isom
+    encoder         : Lavf62.0.100
+  Stream #0:0(und): Video: h264 (Main), yuv420p(tv, progressive), 1280x720 [SAR 1:1 DAR 16:9], q=2-31, 2800 kb/s, 60 fps, 90k tbn (default)
+    Metadata:
+      encoder         : Lavc62.0.100 h264_nvenc
+      creation_time   : 2025-01-06T23:50:14.000000Z
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+    Side data:
+      cpb: bitrate max/min/avg: 3000000/0/2800000 buffer size: 6000000 vbv_delay: N/A
+  Stream #0:1(und): Audio: aac (LC), 48000 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      encoder         : Lavc62.0.100 aac
+      creation_time   : 2025-01-06T23:50:14.000000Z
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+frame=  109 fps=0.0 q=33.0 size=N/A time=00:00:01.76 bitrate=N/A dup=12 drop=11 speed=3.34x    frame=  249 fps=239 q=32.0 size=N/A time=00:00:04.10 bitrate=N/A dup=12 drop=12 speed=3.94x    frame=  396 fps=255 q=28.0 size=N/A time=00:00:06.55 bitrate=N/A dup=28 drop=12 speed=4.22x    frame=  542 fps=262 q=30.0 size=N/A time=00:00:08.98 bitrate=N/A dup=38 drop=12 speed=4.35x    frame=  687 fps=267 q=34.0 size=N/A time=00:00:11.40 bitrate=N/A dup=53 drop=12 speed=4.42x    frame=  838 fps=270 q=37.0 size=N/A time=00:00:13.91 bitrate=N/A dup=68 drop=12 speed=4.48x    frame=  986 fps=273 q=45.0 size=N/A time=00:00:16.38 bitrate=N/A dup=82 drop=12 speed=4.53x    frame= 1132 fps=274 q=40.0 size=N/A time=00:00:18.81 bitrate=N/A dup=90 drop=12 speed=4.56x    [hls @ 000001e678d3ec00] Opening 'E:\encoded\marvel\720p\segment_000.ts' for writing
+frame= 1275 fps=275 q=38.0 size=N/A time=00:00:21.20 bitrate=N/A dup=91 drop=14 speed=4.57x    frame= 1419 fps=275 q=38.0 size=N/A time=00:00:23.60 bitrate=N/A dup=91 drop=15 speed=4.58x    frame= 1570 fps=276 q=30.0 size=N/A time=00:00:26.11 bitrate=N/A dup=91 drop=20 speed= 4.6x    frame= 1717 fps=277 q=38.0 size=N/A time=00:00:28.56 bitrate=N/A dup=92 drop=20 speed=4.61x    frame= 1860 fps=277 q=30.0 size=N/A time=00:00:30.95 bitrate=N/A dup=92 drop=20 speed=4.61x    frame= 2007 fps=278 q=25.0 size=N/A time=00:00:33.40 bitrate=N/A dup=92 drop=64 speed=4.62x    frame= 2151 fps=278 q=24.0 size=N/A time=00:00:35.80 bitrate=N/A dup=92 drop=92 speed=4.63x    [hls @ 000001e678d3ec00] Opening 'E:\encoded\marvel\720p\segment_001.ts' for writing
+[out#0/hls @ 000001e6792fecc0] video:11021KiB audio:598KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame= 2252 fps=278 q=16.0 Lsize=N/A time=00:00:37.48 bitrate=N/A dup=92 drop=92 speed=4.63x    
+[aac @ 000001e6796fc980] Qavg: 692.505
+ffmpeg version 2025-03-31-git-35c091f4b7-full_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 14.2.0 (Rev1, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint
+  libavutil      60.  0.100 / 60.  0.100
+  libavcodec     62.  0.100 / 62.  0.100
+  libavformat    62.  0.100 / 62.  0.100
+  libavdevice    62.  0.100 / 62.  0.100
+  libavfilter    11.  0.100 / 11.  0.100
+  libswscale      9.  0.100 /  9.  0.100
+  libswresample   6.  0.100 /  6.  0.100
+  libpostproc    59.  0.100 / 59.  0.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\Users\otoum\Videos\MarvelRivals\Highlights\marvel.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp41isom
+    creation_time   : 2025-01-06T23:50:14.000000Z
+  Duration: 00:00:37.51, start: 0.000000, bitrate: 26976 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1920x1080 [SAR 1:1 DAR 16:9], 26786 kb/s, 60.06 fps, 120 tbr, 60k tbn (default)
+    Metadata:
+      creation_time   : 2025-01-06T23:50:14.000000Z
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+      encoder         : AVC Coding
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 191 kb/s (default)
+    Metadata:
+      creation_time   : 2025-01-06T23:50:14.000000Z
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (h264_nvenc))
+  Stream #0:1 -> #0:1 (aac (native) -> aac (native))
+Press [q] to stop, [?] for help
+Output #0, hls, to 'E:\encoded\marvel\480p\stream.m3u8':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp41isom
+    encoder         : Lavf62.0.100
+  Stream #0:0(und): Video: h264 (Main), yuv420p(tv, progressive), 853x480 [SAR 2560:2559 DAR 16:9], q=2-31, 1400 kb/s, 60 fps, 90k tbn (default)
+    Metadata:
+      encoder         : Lavc62.0.100 h264_nvenc
+      creation_time   : 2025-01-06T23:50:14.000000Z
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+    Side data:
+      cpb: bitrate max/min/avg: 1600000/0/1400000 buffer size: 3000000 vbv_delay: N/A
+  Stream #0:1(und): Audio: aac (LC), 48000 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      encoder         : Lavc62.0.100 aac
+      creation_time   : 2025-01-06T23:50:14.000000Z
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+frame=  231 fps=0.0 q=33.0 size=N/A time=00:00:03.80 bitrate=N/A dup=12 drop=12 speed=7.33x    frame=  534 fps=518 q=31.0 size=N/A time=00:00:08.85 bitrate=N/A dup=38 drop=12 speed=8.59x    frame=  843 fps=546 q=37.0 size=N/A time=00:00:14.00 bitrate=N/A dup=68 drop=12 speed=9.07x    frame= 1155 fps=561 q=37.0 size=N/A time=00:00:19.20 bitrate=N/A dup=91 drop=12 speed=9.32x    [hls @ 00000283f340ec00] Opening 'E:\encoded\marvel\480p\segment_000.ts' for writing
+frame= 1462 fps=568 q=38.0 size=N/A time=00:00:24.31 bitrate=N/A dup=91 drop=16 speed=9.45x    frame= 1775 fps=574 q=37.0 size=N/A time=00:00:29.53 bitrate=N/A dup=92 drop=20 speed=9.56x    frame= 2069 fps=575 q=26.0 size=N/A time=00:00:34.43 bitrate=N/A dup=92 drop=87 speed=9.56x    [hls @ 00000283f340ec00] Opening 'E:\encoded\marvel\480p\segment_001.ts' for writing
+[out#0/hls @ 00000283f394ecc0] video:5813KiB audio:598KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame= 2252 fps=577 q=15.0 Lsize=N/A time=00:00:37.48 bitrate=N/A dup=92 drop=92 speed=9.61x    
+[aac @ 00000283f3d4c980] Qavg: 692.505
+ffmpeg version 2025-03-31-git-35c091f4b7-full_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 14.2.0 (Rev1, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint
+  libavutil      60.  0.100 / 60.  0.100
+  libavcodec     62.  0.100 / 62.  0.100
+  libavformat    62.  0.100 / 62.  0.100
+  libavdevice    62.  0.100 / 62.  0.100
+  libavfilter    11.  0.100 / 11.  0.100
+  libswscale      9.  0.100 /  9.  0.100
+  libswresample   6.  0.100 /  6.  0.100
+  libpostproc    59.  0.100 / 59.  0.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\Users\otoum\Videos\MarvelRivals\Highlights\marvel.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp41isom
+    creation_time   : 2025-01-06T23:50:14.000000Z
+  Duration: 00:00:37.51, start: 0.000000, bitrate: 26976 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1920x1080 [SAR 1:1 DAR 16:9], 26786 kb/s, 60.06 fps, 120 tbr, 60k tbn (default)
+    Metadata:
+      creation_time   : 2025-01-06T23:50:14.000000Z
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+      encoder         : AVC Coding
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 191 kb/s (default)
+    Metadata:
+      creation_time   : 2025-01-06T23:50:14.000000Z
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (h264_nvenc))
+  Stream #0:1 -> #0:1 (aac (native) -> aac (native))
+Press [q] to stop, [?] for help
+Output #0, hls, to 'E:\encoded\marvel\1080p\stream.m3u8':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp41isom
+    encoder         : Lavf62.0.100
+  Stream #0:0(und): Video: h264 (Main), yuv420p(tv, progressive), 1920x1080 [SAR 1:1 DAR 16:9], q=2-31, 5000 kb/s, 60 fps, 90k tbn (default)
+    Metadata:
+      encoder         : Lavc62.0.100 h264_nvenc
+      creation_time   : 2025-01-06T23:50:14.000000Z
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+    Side data:
+      cpb: bitrate max/min/avg: 5500000/0/5000000 buffer size: 10000000 vbv_delay: N/A
+  Stream #0:1(und): Audio: aac (LC), 48000 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      encoder         : Lavc62.0.100 aac
+      creation_time   : 2025-01-06T23:50:14.000000Z
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+frame=   46 fps=0.0 q=26.0 size=N/A time=00:00:00.71 bitrate=N/A dup=12 drop=4 speed= 1.4x    frame=  112 fps=109 q=33.0 size=N/A time=00:00:01.81 bitrate=N/A dup=12 drop=11 speed=1.77x    frame=  179 fps=116 q=29.0 size=N/A time=00:00:02.93 bitrate=N/A dup=12 drop=12 speed=1.91x    frame=  249 fps=120 q=32.0 size=N/A time=00:00:04.10 bitrate=N/A dup=12 drop=12 speed=1.98x    frame=  314 fps=122 q=34.0 size=N/A time=00:00:05.18 bitrate=N/A dup=18 drop=12 speed=2.01x    frame=  382 fps=124 q=34.0 size=N/A time=00:00:06.31 bitrate=N/A dup=28 drop=12 speed=2.05x    frame=  449 fps=124 q=32.0 size=N/A time=00:00:07.43 bitrate=N/A dup=32 drop=12 speed=2.06x    frame=  517 fps=125 q=37.0 size=N/A time=00:00:08.56 bitrate=N/A dup=36 drop=12 speed=2.08x    frame=  584 fps=126 q=37.0 size=N/A time=00:00:09.68 bitrate=N/A dup=43 drop=12 speed=2.08x    frame=  651 fps=126 q=34.0 size=N/A time=00:00:10.80 bitrate=N/A dup=50 drop=12 speed=2.09x    frame=  717 fps=126 q=37.0 size=N/A time=00:00:11.90 bitrate=N/A dup=56 drop=12 speed= 2.1x    frame=  788 fps=127 q=30.0 size=N/A time=00:00:13.08 bitrate=N/A dup=63 drop=12 speed=2.11x    frame=  849 fps=127 q=34.0 size=N/A time=00:00:14.10 bitrate=N/A dup=68 drop=12 speed= 2.1x    frame=  914 fps=127 q=38.0 size=N/A time=00:00:15.18 bitrate=N/A dup=73 drop=12 speed=2.11x    frame=  984 fps=127 q=41.0 size=N/A time=00:00:16.35 bitrate=N/A dup=82 drop=12 speed=2.11x    frame= 1053 fps=128 q=39.0 size=N/A time=00:00:17.50 bitrate=N/A dup=86 drop=12 speed=2.12x    frame= 1116 fps=127 q=41.0 size=N/A time=00:00:18.55 bitrate=N/A dup=90 drop=12 speed=2.12x    frame= 1181 fps=127 q=39.0 size=N/A time=00:00:19.63 bitrate=N/A dup=91 drop=12 speed=2.12x    frame= 1248 fps=127 q=39.0 size=N/A time=00:00:20.75 bitrate=N/A dup=91 drop=14 speed=2.12x    [hls @ 000002e2a189f040] Opening 'E:\encoded\marvel\1080p\segment_000.ts' for writing
+frame= 1319 fps=128 q=36.0 size=N/A time=00:00:21.93 bitrate=N/A dup=91 drop=14 speed=2.13x    frame= 1383 fps=128 q=37.0 size=N/A time=00:00:23.00 bitrate=N/A dup=91 drop=14 speed=2.12x    frame= 1451 fps=128 q=38.0 size=N/A time=00:00:24.13 bitrate=N/A dup=91 drop=16 speed=2.13x    frame= 1518 fps=128 q=30.0 size=N/A time=00:00:25.25 bitrate=N/A dup=91 drop=20 speed=2.13x    frame= 1586 fps=128 q=29.0 size=N/A time=00:00:26.38 bitrate=N/A dup=91 drop=20 speed=2.13x    frame= 1652 fps=128 q=37.0 size=N/A time=00:00:27.48 bitrate=N/A dup=92 drop=20 speed=2.13x    frame= 1720 fps=128 q=38.0 size=N/A time=00:00:28.61 bitrate=N/A dup=92 drop=20 speed=2.14x    frame= 1786 fps=128 q=37.0 size=N/A time=00:00:29.71 bitrate=N/A dup=92 drop=20 speed=2.14x    frame= 1852 fps=128 q=30.0 size=N/A time=00:00:30.81 bitrate=N/A dup=92 drop=20 speed=2.13x    frame= 1919 fps=128 q=34.0 size=N/A time=00:00:31.93 bitrate=N/A dup=92 drop=29 speed=2.14x    frame= 1983 fps=128 q=29.0 size=N/A time=00:00:33.00 bitrate=N/A dup=92 drop=54 speed=2.13x    frame= 2047 fps=128 q=26.0 size=N/A time=00:00:34.06 bitrate=N/A dup=92 drop=79 speed=2.13x    frame= 2116 fps=128 q=28.0 size=N/A time=00:00:35.21 bitrate=N/A dup=92 drop=92 speed=2.13x    frame= 2179 fps=128 q=25.0 size=N/A time=00:00:36.26 bitrate=N/A dup=92 drop=92 speed=2.13x    frame= 2243 fps=128 q=24.0 size=N/A time=N/A bitrate=N/A dup=92 drop=92 speed=N/A    [hls @ 000002e2a189f040] Opening 'E:\encoded\marvel\1080p\segment_001.ts' for writing
+[out#0/hls @ 000002e2a08973c0] video:20840KiB audio:598KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame= 2252 fps=128 q=17.0 Lsize=N/A time=00:00:37.48 bitrate=N/A dup=92 drop=92 speed=2.13x    
+[aac @ 000002e2a0929b80] Qavg: 692.505
+ffmpeg version 2025-03-31-git-35c091f4b7-full_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 14.2.0 (Rev1, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint
+  libavutil      60.  0.100 / 60.  0.100
+  libavcodec     62.  0.100 / 62.  0.100
+  libavformat    62.  0.100 / 62.  0.100
+  libavdevice    62.  0.100 / 62.  0.100
+  libavfilter    11.  0.100 / 11.  0.100
+  libswscale      9.  0.100 /  9.  0.100
+  libswresample   6.  0.100 /  6.  0.100
+  libpostproc    59.  0.100 / 59.  0.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\Users\otoum\Videos\MarvelRivals\Highlights\marvel.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp41isom
+    creation_time   : 2025-01-06T23:50:14.000000Z
+  Duration: 00:00:37.51, start: 0.000000, bitrate: 26976 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1920x1080 [SAR 1:1 DAR 16:9], 26786 kb/s, 60.06 fps, 120 tbr, 60k tbn (default)
+    Metadata:
+      creation_time   : 2025-01-06T23:50:14.000000Z
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+      encoder         : AVC Coding
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 191 kb/s (default)
+    Metadata:
+      creation_time   : 2025-01-06T23:50:14.000000Z
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (h264_nvenc))
+  Stream #0:1 -> #0:1 (aac (native) -> aac (native))
+Press [q] to stop, [?] for help
+Output #0, hls, to 'E:\encoded\marvel\720p\stream.m3u8':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp41isom
+    encoder         : Lavf62.0.100
+  Stream #0:0(und): Video: h264 (Main), yuv420p(tv, progressive), 1280x720 [SAR 1:1 DAR 16:9], q=2-31, 2800 kb/s, 60 fps, 90k tbn (default)
+    Metadata:
+      encoder         : Lavc62.0.100 h264_nvenc
+      creation_time   : 2025-01-06T23:50:14.000000Z
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+    Side data:
+      cpb: bitrate max/min/avg: 3000000/0/2800000 buffer size: 6000000 vbv_delay: N/A
+  Stream #0:1(und): Audio: aac (LC), 48000 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      encoder         : Lavc62.0.100 aac
+      creation_time   : 2025-01-06T23:50:14.000000Z
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+frame=  102 fps=0.0 q=26.0 size=N/A time=00:00:01.65 bitrate=N/A dup=12 drop=10 speed=3.24x    frame=  243 fps=238 q=30.0 size=N/A time=00:00:04.00 bitrate=N/A dup=12 drop=12 speed=3.92x    frame=  384 fps=251 q=28.0 size=N/A time=00:00:06.35 bitrate=N/A dup=28 drop=12 speed=4.14x    frame=  533 fps=258 q=37.0 size=N/A time=00:00:08.83 bitrate=N/A dup=38 drop=12 speed=4.28x    frame=  671 fps=261 q=34.0 size=N/A time=00:00:11.13 bitrate=N/A dup=52 drop=12 speed=4.32x    frame=  814 fps=264 q=37.0 size=N/A time=00:00:13.51 bitrate=N/A dup=65 drop=12 speed=4.38x    frame=  954 fps=265 q=40.0 size=N/A time=00:00:15.85 bitrate=N/A dup=78 drop=12 speed= 4.4x    frame= 1098 fps=267 q=32.0 size=N/A time=00:00:18.25 bitrate=N/A dup=89 drop=12 speed=4.44x    frame= 1240 fps=267 q=39.0 size=N/A time=00:00:20.61 bitrate=N/A dup=91 drop=14 speed=4.44x    [hls @ 000001ad9d48ec00] Opening 'E:\encoded\marvel\720p\segment_000.ts' for writing
+frame= 1384 fps=269 q=31.0 size=N/A time=00:00:23.01 bitrate=N/A dup=91 drop=14 speed=4.47x    frame= 1528 fps=270 q=36.0 size=N/A time=00:00:25.41 bitrate=N/A dup=91 drop=20 speed=4.49x    frame= 1669 fps=270 q=36.0 size=N/A time=00:00:27.76 bitrate=N/A dup=92 drop=20 speed= 4.5x    frame= 1815 fps=271 q=36.0 size=N/A time=00:00:30.20 bitrate=N/A dup=92 drop=20 speed=4.51x    frame= 1963 fps=272 q=29.0 size=N/A time=00:00:32.66 bitrate=N/A dup=92 drop=47 speed=4.53x    frame= 2104 fps=272 q=26.0 size=N/A time=00:00:35.01 bitrate=N/A dup=92 drop=92 speed=4.53x    frame= 2248 fps=272 q=25.0 size=N/A time=N/A bitrate=N/A dup=92 drop=92 speed=N/A    [hls @ 000001ad9d48ec00] Opening 'E:\encoded\marvel\720p\segment_001.ts' for writing
+[out#0/hls @ 000001ad9d9cecc0] video:11021KiB audio:598KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame= 2252 fps=273 q=16.0 Lsize=N/A time=00:00:37.48 bitrate=N/A dup=92 drop=92 speed=4.54x    
+[aac @ 000001ad9ddcd100] Qavg: 692.505
+ffmpeg version 2025-03-31-git-35c091f4b7-full_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 14.2.0 (Rev1, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint
+  libavutil      60.  0.100 / 60.  0.100
+  libavcodec     62.  0.100 / 62.  0.100
+  libavformat    62.  0.100 / 62.  0.100
+  libavdevice    62.  0.100 / 62.  0.100
+  libavfilter    11.  0.100 / 11.  0.100
+  libswscale      9.  0.100 /  9.  0.100
+  libswresample   6.  0.100 /  6.  0.100
+  libpostproc    59.  0.100 / 59.  0.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\Users\otoum\Videos\MarvelRivals\Highlights\marvel.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp41isom
+    creation_time   : 2025-01-06T23:50:14.000000Z
+  Duration: 00:00:37.51, start: 0.000000, bitrate: 26976 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1920x1080 [SAR 1:1 DAR 16:9], 26786 kb/s, 60.06 fps, 120 tbr, 60k tbn (default)
+    Metadata:
+      creation_time   : 2025-01-06T23:50:14.000000Z
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+      encoder         : AVC Coding
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 191 kb/s (default)
+    Metadata:
+      creation_time   : 2025-01-06T23:50:14.000000Z
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (h264_nvenc))
+  Stream #0:1 -> #0:1 (aac (native) -> aac (native))
+Press [q] to stop, [?] for help
+Output #0, hls, to 'E:\encoded\marvel\480p\stream.m3u8':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp41isom
+    encoder         : Lavf62.0.100
+  Stream #0:0(und): Video: h264 (Main), yuv420p(tv, progressive), 853x480 [SAR 2560:2559 DAR 16:9], q=2-31, 1400 kb/s, 60 fps, 90k tbn (default)
+    Metadata:
+      encoder         : Lavc62.0.100 h264_nvenc
+      creation_time   : 2025-01-06T23:50:14.000000Z
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+    Side data:
+      cpb: bitrate max/min/avg: 1600000/0/1400000 buffer size: 3000000 vbv_delay: N/A
+  Stream #0:1(und): Audio: aac (LC), 48000 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      encoder         : Lavc62.0.100 aac
+      creation_time   : 2025-01-06T23:50:14.000000Z
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+frame=  214 fps=0.0 q=26.0 size=N/A time=00:00:03.51 bitrate=N/A dup=12 drop=12 speed=6.82x    frame=  505 fps=493 q=38.0 size=N/A time=00:00:08.36 bitrate=N/A dup=35 drop=12 speed=8.17x    frame=  775 fps=503 q=37.0 size=N/A time=00:00:12.86 bitrate=N/A dup=62 drop=12 speed=8.35x    frame= 1067 fps=519 q=36.0 size=N/A time=00:00:17.73 bitrate=N/A dup=88 drop=12 speed=8.63x    [hls @ 000001f77dcaec00] Opening 'E:\encoded\marvel\480p\segment_000.ts' for writing
+frame= 1392 fps=542 q=32.0 size=N/A time=00:00:23.15 bitrate=N/A dup=91 drop=14 speed=9.02x    frame= 1576 fps=511 q=37.0 size=N/A time=00:00:26.23 bitrate=N/A dup=91 drop=20 speed=8.51x    frame= 1838 fps=509 q=36.0 size=N/A time=00:00:30.58 bitrate=N/A dup=92 drop=20 speed=8.46x    frame= 2120 fps=515 q=25.0 size=N/A time=00:00:35.28 bitrate=N/A dup=92 drop=92 speed=8.57x    [hls @ 000001f77dcaec00] Opening 'E:\encoded\marvel\480p\segment_001.ts' for writing
+[out#0/hls @ 000001f77e42ecc0] video:5813KiB audio:598KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame= 2252 fps=517 q=15.0 Lsize=N/A time=00:00:37.48 bitrate=N/A dup=92 drop=92 speed=8.61x    
+[aac @ 000001f77e82c600] Qavg: 692.505
+ffmpeg version 2025-03-31-git-35c091f4b7-full_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 14.2.0 (Rev1, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint
+  libavutil      60.  0.100 / 60.  0.100
+  libavcodec     62.  0.100 / 62.  0.100
+  libavformat    62.  0.100 / 62.  0.100
+  libavdevice    62.  0.100 / 62.  0.100
+  libavfilter    11.  0.100 / 11.  0.100
+  libswscale      9.  0.100 /  9.  0.100
+  libswresample   6.  0.100 /  6.  0.100
+  libpostproc    59.  0.100 / 59.  0.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\Users\otoum\Videos\MarvelRivals\Highlights\marvel.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp41isom
+    creation_time   : 2025-01-06T23:50:14.000000Z
+  Duration: 00:00:37.51, start: 0.000000, bitrate: 26976 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1920x1080 [SAR 1:1 DAR 16:9], 26786 kb/s, 60.06 fps, 120 tbr, 60k tbn (default)
+    Metadata:
+      creation_time   : 2025-01-06T23:50:14.000000Z
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+      encoder         : AVC Coding
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 191 kb/s (default)
+    Metadata:
+      creation_time   : 2025-01-06T23:50:14.000000Z
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (h264_nvenc))
+  Stream #0:1 -> #0:1 (aac (native) -> aac (native))
+Press [q] to stop, [?] for help
+Output #0, hls, to 'E:\encoded\marvel\1080p\stream.m3u8':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp41isom
+    encoder         : Lavf62.0.100
+  Stream #0:0(und): Video: h264 (Main), yuv420p(tv, progressive), 1920x1080 [SAR 1:1 DAR 16:9], q=2-31, 5000 kb/s, 60 fps, 90k tbn (default)
+    Metadata:
+      encoder         : Lavc62.0.100 h264_nvenc
+      creation_time   : 2025-01-06T23:50:14.000000Z
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+    Side data:
+      cpb: bitrate max/min/avg: 5500000/0/5000000 buffer size: 10000000 vbv_delay: N/A
+  Stream #0:1(und): Audio: aac (LC), 48000 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      encoder         : Lavc62.0.100 aac
+      creation_time   : 2025-01-06T23:50:14.000000Z
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+frame=   47 fps=0.0 q=29.0 size=N/A time=00:00:00.73 bitrate=N/A dup=12 drop=4 speed=1.42x    frame=  115 fps=110 q=30.0 size=N/A time=00:00:01.86 bitrate=N/A dup=12 drop=12 speed=1.79x    frame=  182 fps=117 q=25.0 size=N/A time=00:00:02.98 bitrate=N/A dup=12 drop=12 speed=1.92x    frame=  248 fps=120 q=32.0 size=N/A time=00:00:04.08 bitrate=N/A dup=12 drop=12 speed=1.98x    frame=  318 fps=123 q=35.0 size=N/A time=00:00:05.25 bitrate=N/A dup=19 drop=12 speed=2.03x    frame=  384 fps=124 q=28.0 size=N/A time=00:00:06.35 bitrate=N/A dup=28 drop=12 speed=2.05x    frame=  455 fps=126 q=34.0 size=N/A time=00:00:07.53 bitrate=N/A dup=32 drop=12 speed=2.09x    frame=  522 fps=127 q=30.0 size=N/A time=00:00:08.65 bitrate=N/A dup=37 drop=12 speed= 2.1x    frame=  588 fps=126 q=37.0 size=N/A time=00:00:09.75 bitrate=N/A dup=43 drop=12 speed= 2.1x    frame=  654 fps=127 q=31.0 size=N/A time=00:00:10.85 bitrate=N/A dup=50 drop=12 speed= 2.1x    frame=  723 fps=127 q=34.0 size=N/A time=00:00:12.00 bitrate=N/A dup=57 drop=12 speed=2.12x    frame=  788 fps=127 q=30.0 size=N/A time=00:00:13.08 bitrate=N/A dup=63 drop=12 speed=2.12x    frame=  858 fps=128 q=37.0 size=N/A time=00:00:14.25 bitrate=N/A dup=69 drop=12 speed=2.12x    frame=  924 fps=128 q=34.0 size=N/A time=00:00:15.35 bitrate=N/A dup=75 drop=12 speed=2.13x    frame=  992 fps=128 q=39.0 size=N/A time=00:00:16.48 bitrate=N/A dup=83 drop=12 speed=2.13x    frame= 1058 fps=128 q=33.0 size=N/A time=00:00:17.58 bitrate=N/A dup=86 drop=12 speed=2.13x    frame= 1127 fps=128 q=39.0 size=N/A time=00:00:18.73 bitrate=N/A dup=90 drop=12 speed=2.13x    frame= 1192 fps=128 q=39.0 size=N/A time=00:00:19.81 bitrate=N/A dup=91 drop=14 speed=2.13x    [hls @ 000001bebe37f040] Opening 'E:\encoded\marvel\1080p\segment_000.ts' for writing
+frame= 1256 fps=128 q=31.0 size=N/A time=00:00:20.88 bitrate=N/A dup=91 drop=14 speed=2.13x    frame= 1322 fps=128 q=35.0 size=N/A time=00:00:21.98 bitrate=N/A dup=91 drop=14 speed=2.13x    frame= 1389 fps=128 q=35.0 size=N/A time=00:00:23.10 bitrate=N/A dup=91 drop=14 speed=2.13x    frame= 1453 fps=128 q=35.0 size=N/A time=00:00:24.16 bitrate=N/A dup=91 drop=16 speed=2.13x    frame= 1517 fps=128 q=36.0 size=N/A time=00:00:25.23 bitrate=N/A dup=91 drop=19 speed=2.13x    frame= 1584 fps=128 q=36.0 size=N/A time=00:00:26.35 bitrate=N/A dup=91 drop=20 speed=2.13x    frame= 1651 fps=128 q=34.0 size=N/A time=00:00:27.46 bitrate=N/A dup=92 drop=20 speed=2.13x    frame= 1718 fps=128 q=32.0 size=N/A time=00:00:28.58 bitrate=N/A dup=92 drop=20 speed=2.13x    frame= 1785 fps=128 q=35.0 size=N/A time=00:00:29.70 bitrate=N/A dup=92 drop=20 speed=2.13x    frame= 1854 fps=128 q=37.0 size=N/A time=00:00:30.85 bitrate=N/A dup=92 drop=20 speed=2.14x    frame= 1923 fps=129 q=34.0 size=N/A time=00:00:32.00 bitrate=N/A dup=92 drop=31 speed=2.14x    frame= 1993 fps=129 q=27.0 size=N/A time=00:00:33.16 bitrate=N/A dup=92 drop=58 speed=2.14x    frame= 2060 fps=129 q=28.0 size=N/A time=00:00:34.28 bitrate=N/A dup=92 drop=84 speed=2.14x    frame= 2128 fps=129 q=28.0 size=N/A time=00:00:35.41 bitrate=N/A dup=92 drop=92 speed=2.15x    frame= 2197 fps=129 q=27.0 size=N/A time=00:00:36.56 bitrate=N/A dup=92 drop=92 speed=2.15x    [hls @ 000001bebe37f040] Opening 'E:\encoded\marvel\1080p\segment_001.ts' for writing
+[out#0/hls @ 000001bebd3773c0] video:20840KiB audio:598KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame= 2252 fps=129 q=17.0 Lsize=N/A time=00:00:37.48 bitrate=N/A dup=92 drop=92 speed=2.15x    
+[aac @ 000001bebd408cc0] Qavg: 692.505
+ffmpeg version 2025-03-31-git-35c091f4b7-full_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 14.2.0 (Rev1, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint
+  libavutil      60.  0.100 / 60.  0.100
+  libavcodec     62.  0.100 / 62.  0.100
+  libavformat    62.  0.100 / 62.  0.100
+  libavdevice    62.  0.100 / 62.  0.100
+  libavfilter    11.  0.100 / 11.  0.100
+  libswscale      9.  0.100 /  9.  0.100
+  libswresample   6.  0.100 /  6.  0.100
+  libpostproc    59.  0.100 / 59.  0.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\Users\otoum\Videos\MarvelRivals\Highlights\marvel.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp41isom
+    creation_time   : 2025-01-06T23:50:14.000000Z
+  Duration: 00:00:37.51, start: 0.000000, bitrate: 26976 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1920x1080 [SAR 1:1 DAR 16:9], 26786 kb/s, 60.06 fps, 120 tbr, 60k tbn (default)
+    Metadata:
+      creation_time   : 2025-01-06T23:50:14.000000Z
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+      encoder         : AVC Coding
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 191 kb/s (default)
+    Metadata:
+      creation_time   : 2025-01-06T23:50:14.000000Z
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (h264_nvenc))
+  Stream #0:1 -> #0:1 (aac (native) -> aac (native))
+Press [q] to stop, [?] for help
+Output #0, hls, to 'E:\encoded\marvel\720p\stream.m3u8':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp41isom
+    encoder         : Lavf62.0.100
+  Stream #0:0(und): Video: h264 (Main), yuv420p(tv, progressive), 1280x720 [SAR 1:1 DAR 16:9], q=2-31, 2800 kb/s, 60 fps, 90k tbn (default)
+    Metadata:
+      encoder         : Lavc62.0.100 h264_nvenc
+      creation_time   : 2025-01-06T23:50:14.000000Z
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+    Side data:
+      cpb: bitrate max/min/avg: 3000000/0/2800000 buffer size: 6000000 vbv_delay: N/A
+  Stream #0:1(und): Audio: aac (LC), 48000 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      encoder         : Lavc62.0.100 aac
+      creation_time   : 2025-01-06T23:50:14.000000Z
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+frame=  103 fps=0.0 q=30.0 size=N/A time=00:00:01.66 bitrate=N/A dup=12 drop=10 speed=3.25x    frame=  247 fps=241 q=30.0 size=N/A time=00:00:04.06 bitrate=N/A dup=12 drop=12 speed=3.97x    frame=  394 fps=256 q=34.0 size=N/A time=00:00:06.51 bitrate=N/A dup=28 drop=12 speed=4.23x    frame=  540 fps=262 q=37.0 size=N/A time=00:00:08.95 bitrate=N/A dup=38 drop=12 speed=4.33x    frame=  690 fps=268 q=30.0 size=N/A time=00:00:11.45 bitrate=N/A dup=53 drop=12 speed=4.44x    frame=  832 fps=269 q=30.0 size=N/A time=00:00:13.81 bitrate=N/A dup=67 drop=12 speed=4.47x    frame=  979 fps=271 q=43.0 size=N/A time=00:00:16.26 bitrate=N/A dup=82 drop=12 speed= 4.5x    frame= 1125 fps=273 q=40.0 size=N/A time=00:00:18.70 bitrate=N/A dup=90 drop=12 speed=4.53x    [hls @ 00000251d93aec00] Opening 'E:\encoded\marvel\720p\segment_000.ts' for writing
+frame= 1272 fps=274 q=31.0 size=N/A time=00:00:21.15 bitrate=N/A dup=91 drop=14 speed=4.56x    frame= 1413 fps=274 q=37.0 size=N/A time=00:00:23.50 bitrate=N/A dup=91 drop=14 speed=4.56x    frame= 1565 fps=276 q=37.0 size=N/A time=00:00:26.03 bitrate=N/A dup=91 drop=20 speed=4.59x    frame= 1704 fps=276 q=38.0 size=N/A time=00:00:28.35 bitrate=N/A dup=92 drop=20 speed=4.58x    frame= 1852 fps=277 q=30.0 size=N/A time=00:00:30.81 bitrate=N/A dup=92 drop=20 speed= 4.6x    frame= 2001 fps=277 q=19.0 size=N/A time=00:00:33.30 bitrate=N/A dup=92 drop=60 speed=4.61x    frame= 2152 fps=278 q=26.0 size=N/A time=00:00:35.81 bitrate=N/A dup=92 drop=92 speed=4.63x    [hls @ 00000251d93aec00] Opening 'E:\encoded\marvel\720p\segment_001.ts' for writing
+[out#0/hls @ 00000251d98eecc0] video:11021KiB audio:598KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame= 2252 fps=278 q=16.0 Lsize=N/A time=00:00:37.48 bitrate=N/A dup=92 drop=92 speed=4.63x    
+[aac @ 00000251d9cec600] Qavg: 692.505
+ffmpeg version 2025-03-31-git-35c091f4b7-full_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 14.2.0 (Rev1, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint
+  libavutil      60.  0.100 / 60.  0.100
+  libavcodec     62.  0.100 / 62.  0.100
+  libavformat    62.  0.100 / 62.  0.100
+  libavdevice    62.  0.100 / 62.  0.100
+  libavfilter    11.  0.100 / 11.  0.100
+  libswscale      9.  0.100 /  9.  0.100
+  libswresample   6.  0.100 /  6.  0.100
+  libpostproc    59.  0.100 / 59.  0.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\Users\otoum\Videos\MarvelRivals\Highlights\marvel.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp41isom
+    creation_time   : 2025-01-06T23:50:14.000000Z
+  Duration: 00:00:37.51, start: 0.000000, bitrate: 26976 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1920x1080 [SAR 1:1 DAR 16:9], 26786 kb/s, 60.06 fps, 120 tbr, 60k tbn (default)
+    Metadata:
+      creation_time   : 2025-01-06T23:50:14.000000Z
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+      encoder         : AVC Coding
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 191 kb/s (default)
+    Metadata:
+      creation_time   : 2025-01-06T23:50:14.000000Z
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (h264_nvenc))
+  Stream #0:1 -> #0:1 (aac (native) -> aac (native))
+Press [q] to stop, [?] for help
+Output #0, hls, to 'E:\encoded\marvel\480p\stream.m3u8':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp41isom
+    encoder         : Lavf62.0.100
+  Stream #0:0(und): Video: h264 (Main), yuv420p(tv, progressive), 853x480 [SAR 2560:2559 DAR 16:9], q=2-31, 1400 kb/s, 60 fps, 90k tbn (default)
+    Metadata:
+      encoder         : Lavc62.0.100 h264_nvenc
+      creation_time   : 2025-01-06T23:50:14.000000Z
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+    Side data:
+      cpb: bitrate max/min/avg: 1600000/0/1400000 buffer size: 3000000 vbv_delay: N/A
+  Stream #0:1(und): Audio: aac (LC), 48000 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      encoder         : Lavc62.0.100 aac
+      creation_time   : 2025-01-06T23:50:14.000000Z
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+frame=  212 fps=0.0 q=32.0 size=N/A time=00:00:03.48 bitrate=N/A dup=12 drop=12 speed=6.79x    frame=  527 fps=508 q=35.0 size=N/A time=00:00:08.73 bitrate=N/A dup=37 drop=12 speed=8.42x    frame=  832 fps=537 q=34.0 size=N/A time=00:00:13.83 bitrate=N/A dup=67 drop=12 speed=8.93x    frame= 1139 fps=553 q=38.0 size=N/A time=00:00:18.93 bitrate=N/A dup=90 drop=12 speed=9.19x    [hls @ 000002272c7dec00] Opening 'E:\encoded\marvel\480p\segment_000.ts' for writing
+frame= 1454 fps=562 q=38.0 size=N/A time=00:00:24.18 bitrate=N/A dup=91 drop=16 speed=9.35x    frame= 1762 fps=569 q=38.0 size=N/A time=00:00:29.31 bitrate=N/A dup=92 drop=20 speed=9.47x    frame= 2069 fps=573 q=26.0 size=N/A time=00:00:34.43 bitrate=N/A dup=92 drop=88 speed=9.54x    [hls @ 000002272c7dec00] Opening 'E:\encoded\marvel\480p\segment_001.ts' for writing
+[out#0/hls @ 000002272cdeecc0] video:5813KiB audio:598KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame= 2252 fps=574 q=15.0 Lsize=N/A time=00:00:37.48 bitrate=N/A dup=92 drop=92 speed=9.55x    
+[aac @ 000002272d1ed4c0] Qavg: 692.505
+ffmpeg version 2025-03-31-git-35c091f4b7-full_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 14.2.0 (Rev1, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint
+  libavutil      60.  0.100 / 60.  0.100
+  libavcodec     62.  0.100 / 62.  0.100
+  libavformat    62.  0.100 / 62.  0.100
+  libavdevice    62.  0.100 / 62.  0.100
+  libavfilter    11.  0.100 / 11.  0.100
+  libswscale      9.  0.100 /  9.  0.100
+  libswresample   6.  0.100 /  6.  0.100
+  libpostproc    59.  0.100 / 59.  0.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\Users\otoum\Videos\MarvelRivals\Highlights\marvel.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp41isom
+    creation_time   : 2025-01-06T23:50:14.000000Z
+  Duration: 00:00:37.51, start: 0.000000, bitrate: 26976 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1920x1080 [SAR 1:1 DAR 16:9], 26786 kb/s, 60.06 fps, 120 tbr, 60k tbn (default)
+    Metadata:
+      creation_time   : 2025-01-06T23:50:14.000000Z
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+      encoder         : AVC Coding
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 191 kb/s (default)
+    Metadata:
+      creation_time   : 2025-01-06T23:50:14.000000Z
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (h264_nvenc))
+  Stream #0:1 -> #0:1 (aac (native) -> aac (native))
+Press [q] to stop, [?] for help
+Output #0, hls, to 'E:\encoded\marvel\1080p\stream.m3u8':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp41isom
+    encoder         : Lavf62.0.100
+  Stream #0:0(und): Video: h264 (Main), yuv420p(tv, progressive), 1920x1080 [SAR 1:1 DAR 16:9], q=2-31, 5000 kb/s, 60 fps, 90k tbn (default)
+    Metadata:
+      encoder         : Lavc62.0.100 h264_nvenc
+      creation_time   : 2025-01-06T23:50:14.000000Z
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+    Side data:
+      cpb: bitrate max/min/avg: 5500000/0/5000000 buffer size: 10000000 vbv_delay: N/A
+  Stream #0:1(und): Audio: aac (LC), 48000 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      encoder         : Lavc62.0.100 aac
+      creation_time   : 2025-01-06T23:50:14.000000Z
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+frame=   48 fps=0.0 q=32.0 size=N/A time=00:00:00.75 bitrate=N/A dup=12 drop=4 speed=1.44x    frame=  117 fps=113 q=32.0 size=N/A time=00:00:01.90 bitrate=N/A dup=12 drop=12 speed=1.84x    frame=  187 fps=120 q=29.0 size=N/A time=00:00:03.06 bitrate=N/A dup=12 drop=12 speed=1.97x    frame=  256 fps=124 q=27.0 size=N/A time=00:00:04.21 bitrate=N/A dup=12 drop=12 speed=2.04x    frame=  323 fps=125 q=35.0 size=N/A time=00:00:05.33 bitrate=N/A dup=19 drop=12 speed=2.07x    frame=  394 fps=127 q=34.0 size=N/A time=00:00:06.51 bitrate=N/A dup=28 drop=12 speed=2.11x    frame=  463 fps=128 q=34.0 size=N/A time=00:00:07.66 bitrate=N/A dup=32 drop=12 speed=2.12x    frame=  532 fps=129 q=37.0 size=N/A time=00:00:08.81 bitrate=N/A dup=38 drop=12 speed=2.13x    frame=  600 fps=129 q=37.0 size=N/A time=00:00:09.95 bitrate=N/A dup=45 drop=12 speed=2.14x    frame=  668 fps=130 q=37.0 size=N/A time=00:00:11.08 bitrate=N/A dup=51 drop=12 speed=2.15x    frame=  738 fps=130 q=31.0 size=N/A time=00:00:12.25 bitrate=N/A dup=59 drop=12 speed=2.16x    frame=  807 fps=130 q=37.0 size=N/A time=00:00:13.40 bitrate=N/A dup=64 drop=12 speed=2.16x    frame=  876 fps=131 q=30.0 size=N/A time=00:00:14.55 bitrate=N/A dup=70 drop=12 speed=2.17x    frame=  943 fps=131 q=41.0 size=N/A time=00:00:15.66 bitrate=N/A dup=77 drop=12 speed=2.17x    frame= 1015 fps=131 q=37.0 size=N/A time=00:00:16.86 bitrate=N/A dup=85 drop=12 speed=2.18x    frame= 1082 fps=131 q=35.0 size=N/A time=00:00:17.98 bitrate=N/A dup=88 drop=12 speed=2.18x    frame= 1154 fps=131 q=36.0 size=N/A time=00:00:19.18 bitrate=N/A dup=91 drop=12 speed=2.19x    frame= 1222 fps=131 q=31.0 size=N/A time=00:00:20.31 bitrate=N/A dup=91 drop=14 speed=2.19x    [hls @ 00000234a24f2d00] Opening 'E:\encoded\marvel\1080p\segment_000.ts' for writing
+frame= 1291 fps=132 q=37.0 size=N/A time=00:00:21.46 bitrate=N/A dup=91 drop=14 speed=2.19x    frame= 1359 fps=132 q=38.0 size=N/A time=00:00:22.60 bitrate=N/A dup=91 drop=14 speed=2.19x    frame= 1429 fps=132 q=36.0 size=N/A time=00:00:23.76 bitrate=N/A dup=91 drop=15 speed= 2.2x    frame= 1497 fps=132 q=35.0 size=N/A time=00:00:24.90 bitrate=N/A dup=91 drop=19 speed= 2.2x    frame= 1567 fps=132 q=34.0 size=N/A time=00:00:26.06 bitrate=N/A dup=91 drop=20 speed= 2.2x    frame= 1636 fps=132 q=37.0 size=N/A time=00:00:27.21 bitrate=N/A dup=92 drop=20 speed= 2.2x    frame= 1705 fps=132 q=38.0 size=N/A time=00:00:28.36 bitrate=N/A dup=92 drop=20 speed= 2.2x    frame= 1774 fps=132 q=37.0 size=N/A time=00:00:29.51 bitrate=N/A dup=92 drop=20 speed= 2.2x    frame= 1845 fps=132 q=34.0 size=N/A time=00:00:30.70 bitrate=N/A dup=92 drop=20 speed= 2.2x    frame= 1913 fps=132 q=30.0 size=N/A time=00:00:31.83 bitrate=N/A dup=92 drop=27 speed= 2.2x    frame= 1982 fps=133 q=29.0 size=N/A time=00:00:32.98 bitrate=N/A dup=92 drop=54 speed=2.21x    frame= 2049 fps=132 q=28.0 size=N/A time=00:00:34.10 bitrate=N/A dup=92 drop=80 speed= 2.2x    frame= 2120 fps=133 q=28.0 size=N/A time=00:00:35.28 bitrate=N/A dup=92 drop=92 speed=2.21x    frame= 2187 fps=132 q=25.0 size=N/A time=00:00:36.40 bitrate=N/A dup=92 drop=92 speed=2.21x    [hls @ 00000234a24f2d00] Opening 'E:\encoded\marvel\1080p\segment_001.ts' for writing
+[out#0/hls @ 00000234a1b22180] video:20840KiB audio:598KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame= 2252 fps=133 q=17.0 Lsize=N/A time=00:00:37.48 bitrate=N/A dup=92 drop=92 speed=2.21x    
+[aac @ 00000234a23e1980] Qavg: 692.505
+ffmpeg version 2025-03-31-git-35c091f4b7-full_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 14.2.0 (Rev1, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint
+  libavutil      60.  0.100 / 60.  0.100
+  libavcodec     62.  0.100 / 62.  0.100
+  libavformat    62.  0.100 / 62.  0.100
+  libavdevice    62.  0.100 / 62.  0.100
+  libavfilter    11.  0.100 / 11.  0.100
+  libswscale      9.  0.100 /  9.  0.100
+  libswresample   6.  0.100 /  6.  0.100
+  libpostproc    59.  0.100 / 59.  0.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\Users\otoum\Videos\MarvelRivals\Highlights\marvel.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp41isom
+    creation_time   : 2025-01-06T23:50:14.000000Z
+  Duration: 00:00:37.51, start: 0.000000, bitrate: 26976 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1920x1080 [SAR 1:1 DAR 16:9], 26786 kb/s, 60.06 fps, 120 tbr, 60k tbn (default)
+    Metadata:
+      creation_time   : 2025-01-06T23:50:14.000000Z
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+      encoder         : AVC Coding
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 191 kb/s (default)
+    Metadata:
+      creation_time   : 2025-01-06T23:50:14.000000Z
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (h264_nvenc))
+  Stream #0:1 -> #0:1 (aac (native) -> aac (native))
+Press [q] to stop, [?] for help
+Output #0, hls, to 'E:\encoded\marvel\720p\stream.m3u8':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp41isom
+    encoder         : Lavf62.0.100
+  Stream #0:0(und): Video: h264 (Main), yuv420p(tv, progressive), 1280x720 [SAR 1:1 DAR 16:9], q=2-31, 2800 kb/s, 60 fps, 90k tbn (default)
+    Metadata:
+      encoder         : Lavc62.0.100 h264_nvenc
+      creation_time   : 2025-01-06T23:50:14.000000Z
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+    Side data:
+      cpb: bitrate max/min/avg: 3000000/0/2800000 buffer size: 6000000 vbv_delay: N/A
+  Stream #0:1(und): Audio: aac (LC), 48000 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      encoder         : Lavc62.0.100 aac
+      creation_time   : 2025-01-06T23:50:14.000000Z
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+frame=  103 fps=0.0 q=30.0 size=N/A time=00:00:01.66 bitrate=N/A dup=12 drop=10 speed=3.24x    frame=  247 fps=241 q=30.0 size=N/A time=00:00:04.06 bitrate=N/A dup=12 drop=12 speed=3.96x    frame=  396 fps=255 q=28.0 size=N/A time=00:00:06.55 bitrate=N/A dup=28 drop=12 speed=4.22x    frame=  545 fps=262 q=37.0 size=N/A time=00:00:09.03 bitrate=N/A dup=39 drop=12 speed=4.35x    frame=  693 fps=267 q=37.0 size=N/A time=00:00:11.50 bitrate=N/A dup=54 drop=12 speed=4.44x    frame=  835 fps=269 q=37.0 size=N/A time=00:00:13.86 bitrate=N/A dup=67 drop=12 speed=4.47x    frame=  983 fps=272 q=45.0 size=N/A time=00:00:16.33 bitrate=N/A dup=82 drop=12 speed=4.52x    frame= 1133 fps=273 q=40.0 size=N/A time=00:00:18.83 bitrate=N/A dup=90 drop=12 speed=4.55x    [hls @ 00000261235ce640] Opening 'E:\encoded\marvel\720p\segment_000.ts' for writing
+frame= 1276 fps=274 q=30.0 size=N/A time=00:00:21.21 bitrate=N/A dup=91 drop=14 speed=4.56x    frame= 1420 fps=275 q=33.0 size=N/A time=00:00:23.61 bitrate=N/A dup=91 drop=15 speed=4.57x    frame= 1569 fps=276 q=36.0 size=N/A time=00:00:26.10 bitrate=N/A dup=91 drop=20 speed=4.59x    frame= 1713 fps=276 q=38.0 size=N/A time=00:00:28.50 bitrate=N/A dup=92 drop=20 speed=4.59x    frame= 1862 fps=277 q=36.0 size=N/A time=00:00:30.98 bitrate=N/A dup=92 drop=20 speed=4.62x    frame= 2003 fps=277 q=26.0 size=N/A time=00:00:33.33 bitrate=N/A dup=92 drop=62 speed=4.61x    frame= 2154 fps=278 q=8.0 size=N/A time=00:00:35.85 bitrate=N/A dup=92 drop=92 speed=4.63x    [hls @ 00000261235ce640] Opening 'E:\encoded\marvel\720p\segment_001.ts' for writing
+[out#0/hls @ 0000026123fa2e80] video:11021KiB audio:598KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame= 2252 fps=278 q=16.0 Lsize=N/A time=00:00:37.48 bitrate=N/A dup=92 drop=92 speed=4.62x    
+[aac @ 0000026123e91ec0] Qavg: 692.505
+ffmpeg version 2025-03-31-git-35c091f4b7-full_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 14.2.0 (Rev1, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint
+  libavutil      60.  0.100 / 60.  0.100
+  libavcodec     62.  0.100 / 62.  0.100
+  libavformat    62.  0.100 / 62.  0.100
+  libavdevice    62.  0.100 / 62.  0.100
+  libavfilter    11.  0.100 / 11.  0.100
+  libswscale      9.  0.100 /  9.  0.100
+  libswresample   6.  0.100 /  6.  0.100
+  libpostproc    59.  0.100 / 59.  0.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\Users\otoum\Videos\MarvelRivals\Highlights\marvel.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp41isom
+    creation_time   : 2025-01-06T23:50:14.000000Z
+  Duration: 00:00:37.51, start: 0.000000, bitrate: 26976 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1920x1080 [SAR 1:1 DAR 16:9], 26786 kb/s, 60.06 fps, 120 tbr, 60k tbn (default)
+    Metadata:
+      creation_time   : 2025-01-06T23:50:14.000000Z
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+      encoder         : AVC Coding
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 191 kb/s (default)
+    Metadata:
+      creation_time   : 2025-01-06T23:50:14.000000Z
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (h264_nvenc))
+  Stream #0:1 -> #0:1 (aac (native) -> aac (native))
+Press [q] to stop, [?] for help
+Output #0, hls, to 'E:\encoded\marvel\480p\stream.m3u8':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp41isom
+    encoder         : Lavf62.0.100
+  Stream #0:0(und): Video: h264 (Main), yuv420p(tv, progressive), 853x480 [SAR 2560:2559 DAR 16:9], q=2-31, 1400 kb/s, 60 fps, 90k tbn (default)
+    Metadata:
+      encoder         : Lavc62.0.100 h264_nvenc
+      creation_time   : 2025-01-06T23:50:14.000000Z
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+    Side data:
+      cpb: bitrate max/min/avg: 1600000/0/1400000 buffer size: 3000000 vbv_delay: N/A
+  Stream #0:1(und): Audio: aac (LC), 48000 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      encoder         : Lavc62.0.100 aac
+      creation_time   : 2025-01-06T23:50:14.000000Z
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+frame=  212 fps=0.0 q=32.0 size=N/A time=00:00:03.48 bitrate=N/A dup=12 drop=12 speed=6.75x    frame=  524 fps=504 q=38.0 size=N/A time=00:00:08.68 bitrate=N/A dup=37 drop=12 speed=8.34x    frame=  823 fps=530 q=37.0 size=N/A time=00:00:13.66 bitrate=N/A dup=66 drop=12 speed=8.79x    frame= 1135 fps=549 q=38.0 size=N/A time=00:00:18.86 bitrate=N/A dup=90 drop=12 speed=9.13x    [hls @ 0000024f820ae640] Opening 'E:\encoded\marvel\480p\segment_000.ts' for writing
+frame= 1445 fps=560 q=36.0 size=N/A time=00:00:24.03 bitrate=N/A dup=91 drop=15 speed=9.31x    frame= 1756 fps=567 q=31.0 size=N/A time=00:00:29.21 bitrate=N/A dup=92 drop=20 speed=9.43x    frame= 2066 fps=572 q=8.0 size=N/A time=00:00:34.38 bitrate=N/A dup=92 drop=86 speed=9.51x    [hls @ 0000024f820ae640] Opening 'E:\encoded\marvel\480p\segment_001.ts' for writing
+[out#0/hls @ 0000024f82a82e80] video:5813KiB audio:598KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame= 2252 fps=574 q=15.0 Lsize=N/A time=00:00:37.48 bitrate=N/A dup=92 drop=92 speed=9.56x    
+[aac @ 0000024f82973140] Qavg: 692.505
+ffmpeg version 2025-03-31-git-35c091f4b7-full_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 14.2.0 (Rev1, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint
+  libavutil      60.  0.100 / 60.  0.100
+  libavcodec     62.  0.100 / 62.  0.100
+  libavformat    62.  0.100 / 62.  0.100
+  libavdevice    62.  0.100 / 62.  0.100
+  libavfilter    11.  0.100 / 11.  0.100
+  libswscale      9.  0.100 /  9.  0.100
+  libswresample   6.  0.100 /  6.  0.100
+  libpostproc    59.  0.100 / 59.  0.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\Users\otoum\Videos\MarvelRivals\Highlights\marvel.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp41isom
+    creation_time   : 2025-01-06T23:50:14.000000Z
+  Duration: 00:00:37.51, start: 0.000000, bitrate: 26976 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1920x1080 [SAR 1:1 DAR 16:9], 26786 kb/s, 60.06 fps, 120 tbr, 60k tbn (default)
+    Metadata:
+      creation_time   : 2025-01-06T23:50:14.000000Z
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+      encoder         : AVC Coding
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 191 kb/s (default)
+    Metadata:
+      creation_time   : 2025-01-06T23:50:14.000000Z
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (h264_nvenc))
+  Stream #0:1 -> #0:1 (aac (native) -> aac (native))
+Press [q] to stop, [?] for help
+Output #0, hls, to 'E:\encoded\marvel\1080p\stream.m3u8':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp41isom
+    encoder         : Lavf62.0.100
+  Stream #0:0(und): Video: h264 (Main), yuv420p(tv, progressive), 1920x1080 [SAR 1:1 DAR 16:9], q=2-31, 5000 kb/s, 60 fps, 90k tbn (default)
+    Metadata:
+      encoder         : Lavc62.0.100 h264_nvenc
+      creation_time   : 2025-01-06T23:50:14.000000Z
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+    Side data:
+      cpb: bitrate max/min/avg: 5500000/0/5000000 buffer size: 10000000 vbv_delay: N/A
+  Stream #0:1(und): Audio: aac (LC), 48000 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      encoder         : Lavc62.0.100 aac
+      creation_time   : 2025-01-06T23:50:14.000000Z
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+frame=   46 fps=0.0 q=26.0 size=N/A time=00:00:00.71 bitrate=N/A dup=12 drop=4 speed=1.42x    frame=  117 fps=113 q=32.0 size=N/A time=00:00:01.90 bitrate=N/A dup=12 drop=12 speed=1.84x    frame=  185 fps=120 q=32.0 size=N/A time=00:00:03.03 bitrate=N/A dup=12 drop=12 speed=1.97x    frame=  253 fps=123 q=31.0 size=N/A time=00:00:04.16 bitrate=N/A dup=12 drop=12 speed=2.03x    frame=  325 fps=126 q=32.0 size=N/A time=00:00:05.36 bitrate=N/A dup=19 drop=12 speed=2.08x    frame=  391 fps=126 q=34.0 size=N/A time=00:00:06.46 bitrate=N/A dup=28 drop=12 speed=2.09x    frame=  461 fps=128 q=32.0 size=N/A time=00:00:07.63 bitrate=N/A dup=32 drop=12 speed=2.12x    frame=  529 fps=128 q=37.0 size=N/A time=00:00:08.76 bitrate=N/A dup=38 drop=12 speed=2.13x    frame=  599 fps=129 q=34.0 size=N/A time=00:00:09.93 bitrate=N/A dup=45 drop=12 speed=2.14x    frame=  668 fps=130 q=37.0 size=N/A time=00:00:11.08 bitrate=N/A dup=51 drop=12 speed=2.15x    frame=  738 fps=130 q=31.0 size=N/A time=00:00:12.25 bitrate=N/A dup=59 drop=12 speed=2.16x    frame=  807 fps=131 q=37.0 size=N/A time=00:00:13.40 bitrate=N/A dup=64 drop=12 speed=2.17x    frame=  875 fps=131 q=37.0 size=N/A time=00:00:14.53 bitrate=N/A dup=70 drop=12 speed=2.17x    frame=  945 fps=131 q=39.0 size=N/A time=00:00:15.70 bitrate=N/A dup=77 drop=12 speed=2.17x    frame= 1014 fps=131 q=34.0 size=N/A time=00:00:16.85 bitrate=N/A dup=85 drop=12 speed=2.18x    frame= 1082 fps=131 q=35.0 size=N/A time=00:00:17.98 bitrate=N/A dup=88 drop=12 speed=2.18x    frame= 1151 fps=131 q=40.0 size=N/A time=00:00:19.13 bitrate=N/A dup=91 drop=12 speed=2.19x    frame= 1222 fps=132 q=31.0 size=N/A time=00:00:20.31 bitrate=N/A dup=91 drop=14 speed=2.19x    [hls @ 000001fe84e32d00] Opening 'E:\encoded\marvel\1080p\segment_000.ts' for writing
+frame= 1290 fps=132 q=38.0 size=N/A time=00:00:21.45 bitrate=N/A dup=91 drop=14 speed=2.19x    frame= 1362 fps=132 q=37.0 size=N/A time=00:00:22.65 bitrate=N/A dup=91 drop=14 speed= 2.2x    frame= 1428 fps=132 q=32.0 size=N/A time=00:00:23.75 bitrate=N/A dup=91 drop=15 speed=2.19x    frame= 1498 fps=132 q=37.0 size=N/A time=00:00:24.91 bitrate=N/A dup=91 drop=19 speed= 2.2x    frame= 1566 fps=132 q=30.0 size=N/A time=00:00:26.05 bitrate=N/A dup=91 drop=20 speed= 2.2x    frame= 1636 fps=132 q=37.0 size=N/A time=00:00:27.21 bitrate=N/A dup=92 drop=20 speed= 2.2x    frame= 1705 fps=132 q=38.0 size=N/A time=00:00:28.36 bitrate=N/A dup=92 drop=20 speed= 2.2x    frame= 1775 fps=132 q=37.0 size=N/A time=00:00:29.53 bitrate=N/A dup=92 drop=20 speed= 2.2x    frame= 1843 fps=132 q=36.0 size=N/A time=00:00:30.66 bitrate=N/A dup=92 drop=20 speed= 2.2x    frame= 1913 fps=133 q=30.0 size=N/A time=00:00:31.83 bitrate=N/A dup=92 drop=27 speed=2.21x    frame= 1981 fps=133 q=27.0 size=N/A time=00:00:32.96 bitrate=N/A dup=92 drop=54 speed=2.21x    frame= 2048 fps=132 q=28.0 size=N/A time=00:00:34.08 bitrate=N/A dup=92 drop=80 speed= 2.2x    frame= 2118 fps=132 q=9.0 size=N/A time=00:00:35.25 bitrate=N/A dup=92 drop=92 speed=2.21x    frame= 2187 fps=133 q=25.0 size=N/A time=00:00:36.40 bitrate=N/A dup=92 drop=92 speed=2.21x    [hls @ 000001fe84e32d00] Opening 'E:\encoded\marvel\1080p\segment_001.ts' for writing
+[out#0/hls @ 000001fe843b2180] video:20840KiB audio:598KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame= 2252 fps=132 q=17.0 Lsize=N/A time=00:00:37.48 bitrate=N/A dup=92 drop=92 speed=2.21x    
+[aac @ 000001fe84d22f80] Qavg: 692.505
+ffmpeg version 2025-03-31-git-35c091f4b7-full_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 14.2.0 (Rev1, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint
+  libavutil      60.  0.100 / 60.  0.100
+  libavcodec     62.  0.100 / 62.  0.100
+  libavformat    62.  0.100 / 62.  0.100
+  libavdevice    62.  0.100 / 62.  0.100
+  libavfilter    11.  0.100 / 11.  0.100
+  libswscale      9.  0.100 /  9.  0.100
+  libswresample   6.  0.100 /  6.  0.100
+  libpostproc    59.  0.100 / 59.  0.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\Users\otoum\Videos\MarvelRivals\Highlights\marvel.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp41isom
+    creation_time   : 2025-01-06T23:50:14.000000Z
+  Duration: 00:00:37.51, start: 0.000000, bitrate: 26976 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1920x1080 [SAR 1:1 DAR 16:9], 26786 kb/s, 60.06 fps, 120 tbr, 60k tbn (default)
+    Metadata:
+      creation_time   : 2025-01-06T23:50:14.000000Z
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+      encoder         : AVC Coding
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 191 kb/s (default)
+    Metadata:
+      creation_time   : 2025-01-06T23:50:14.000000Z
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (h264_nvenc))
+  Stream #0:1 -> #0:1 (aac (native) -> aac (native))
+Press [q] to stop, [?] for help
+Output #0, hls, to 'E:\encoded\marvel\720p\stream.m3u8':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp41isom
+    encoder         : Lavf62.0.100
+  Stream #0:0(und): Video: h264 (Main), yuv420p(tv, progressive), 1280x720 [SAR 1:1 DAR 16:9], q=2-31, 2800 kb/s, 60 fps, 90k tbn (default)
+    Metadata:
+      encoder         : Lavc62.0.100 h264_nvenc
+      creation_time   : 2025-01-06T23:50:14.000000Z
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+    Side data:
+      cpb: bitrate max/min/avg: 3000000/0/2800000 buffer size: 6000000 vbv_delay: N/A
+  Stream #0:1(und): Audio: aac (LC), 48000 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      encoder         : Lavc62.0.100 aac
+      creation_time   : 2025-01-06T23:50:14.000000Z
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+frame=  100 fps=0.0 q=32.0 size=N/A time=00:00:01.61 bitrate=N/A dup=12 drop=10 speed=3.17x    frame=  244 fps=240 q=32.0 size=N/A time=00:00:04.01 bitrate=N/A dup=12 drop=12 speed=3.94x    frame=  392 fps=254 q=28.0 size=N/A time=00:00:06.48 bitrate=N/A dup=28 drop=12 speed= 4.2x    frame=  540 fps=263 q=37.0 size=N/A time=00:00:08.95 bitrate=N/A dup=38 drop=12 speed=4.35x    frame=  683 fps=266 q=34.0 size=N/A time=00:00:11.33 bitrate=N/A dup=53 drop=12 speed=4.41x    frame=  835 fps=270 q=37.0 size=N/A time=00:00:13.86 bitrate=N/A dup=67 drop=12 speed=4.48x    frame=  979 fps=271 q=43.0 size=N/A time=00:00:16.26 bitrate=N/A dup=82 drop=12 speed=4.51x    frame= 1125 fps=273 q=40.0 size=N/A time=00:00:18.70 bitrate=N/A dup=90 drop=12 speed=4.54x    [hls @ 000002165ff6e640] Opening 'E:\encoded\marvel\720p\segment_000.ts' for writing
+frame= 1270 fps=274 q=38.0 size=N/A time=00:00:21.11 bitrate=N/A dup=91 drop=14 speed=4.56x    frame= 1415 fps=275 q=39.0 size=N/A time=00:00:23.53 bitrate=N/A dup=91 drop=14 speed=4.57x    frame= 1566 fps=276 q=30.0 size=N/A time=00:00:26.05 bitrate=N/A dup=91 drop=20 speed=4.59x    frame= 1711 fps=277 q=35.0 size=N/A time=00:00:28.46 bitrate=N/A dup=92 drop=20 speed= 4.6x    frame= 1855 fps=277 q=36.0 size=N/A time=00:00:30.86 bitrate=N/A dup=92 drop=20 speed=4.61x    frame= 2005 fps=278 q=28.0 size=N/A time=00:00:33.36 bitrate=N/A dup=92 drop=63 speed=4.63x    frame= 2147 fps=278 q=24.0 size=N/A time=00:00:35.73 bitrate=N/A dup=92 drop=92 speed=4.63x    [hls @ 000002165ff6e640] Opening 'E:\encoded\marvel\720p\segment_001.ts' for writing
+[out#0/hls @ 0000021660942e80] video:11021KiB audio:598KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame= 2252 fps=278 q=16.0 Lsize=N/A time=00:00:37.48 bitrate=N/A dup=92 drop=92 speed=4.63x    
+[aac @ 0000021660831ec0] Qavg: 692.505
+ffmpeg version 2025-03-31-git-35c091f4b7-full_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 14.2.0 (Rev1, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint
+  libavutil      60.  0.100 / 60.  0.100
+  libavcodec     62.  0.100 / 62.  0.100
+  libavformat    62.  0.100 / 62.  0.100
+  libavdevice    62.  0.100 / 62.  0.100
+  libavfilter    11.  0.100 / 11.  0.100
+  libswscale      9.  0.100 /  9.  0.100
+  libswresample   6.  0.100 /  6.  0.100
+  libpostproc    59.  0.100 / 59.  0.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\Users\otoum\Videos\MarvelRivals\Highlights\marvel.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp41isom
+    creation_time   : 2025-01-06T23:50:14.000000Z
+  Duration: 00:00:37.51, start: 0.000000, bitrate: 26976 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1920x1080 [SAR 1:1 DAR 16:9], 26786 kb/s, 60.06 fps, 120 tbr, 60k tbn (default)
+    Metadata:
+      creation_time   : 2025-01-06T23:50:14.000000Z
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+      encoder         : AVC Coding
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 191 kb/s (default)
+    Metadata:
+      creation_time   : 2025-01-06T23:50:14.000000Z
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (h264_nvenc))
+  Stream #0:1 -> #0:1 (aac (native) -> aac (native))
+Press [q] to stop, [?] for help
+Output #0, hls, to 'E:\encoded\marvel\480p\stream.m3u8':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp41isom
+    encoder         : Lavf62.0.100
+  Stream #0:0(und): Video: h264 (Main), yuv420p(tv, progressive), 853x480 [SAR 2560:2559 DAR 16:9], q=2-31, 1400 kb/s, 60 fps, 90k tbn (default)
+    Metadata:
+      encoder         : Lavc62.0.100 h264_nvenc
+      creation_time   : 2025-01-06T23:50:14.000000Z
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+    Side data:
+      cpb: bitrate max/min/avg: 1600000/0/1400000 buffer size: 3000000 vbv_delay: N/A
+  Stream #0:1(und): Audio: aac (LC), 48000 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      encoder         : Lavc62.0.100 aac
+      creation_time   : 2025-01-06T23:50:14.000000Z
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+frame=  221 fps=0.0 q=33.0 size=N/A time=00:00:03.63 bitrate=N/A dup=12 drop=12 speed=7.16x    frame=  523 fps=512 q=35.0 size=N/A time=00:00:08.66 bitrate=N/A dup=37 drop=12 speed=8.49x    frame=  831 fps=537 q=37.0 size=N/A time=00:00:13.80 bitrate=N/A dup=67 drop=12 speed=8.92x    frame= 1135 fps=552 q=38.0 size=N/A time=00:00:18.86 bitrate=N/A dup=90 drop=12 speed=9.18x    [hls @ 000002797f75e640] Opening 'E:\encoded\marvel\480p\segment_000.ts' for writing
+frame= 1432 fps=558 q=32.0 size=N/A time=00:00:23.81 bitrate=N/A dup=91 drop=15 speed=9.29x    frame= 1747 fps=565 q=35.0 size=N/A time=00:00:29.06 bitrate=N/A dup=92 drop=20 speed= 9.4x    frame= 2059 fps=571 q=24.0 size=N/A time=00:00:34.26 bitrate=N/A dup=92 drop=82 speed= 9.5x    [hls @ 000002797f75e640] Opening 'E:\encoded\marvel\480p\segment_001.ts' for writing
+[out#0/hls @ 0000027901802e80] video:5813KiB audio:598KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame= 2252 fps=570 q=15.0 Lsize=N/A time=00:00:37.48 bitrate=N/A dup=92 drop=92 speed=9.48x    
+[aac @ 00000279016f2d80] Qavg: 692.505

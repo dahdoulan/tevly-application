@@ -4,19 +4,18 @@ import org.group15.tveely.ffmpeg.FfmpegWrapper;
 
 import java.io.IOException;
 
-import static org.group15.tveely.ffmpeg.FfmpegWrapper.CMD;
-import static org.group15.tveely.ffmpeg.FfmpegWrapper.POWERSHELL;
+import static org.group15.tveely.ffmpeg.FfmpegWrapper.*;
 
 public class Main {
     public static void main(String[] args) throws IOException, InterruptedException {
          long startTime = System.nanoTime();  // Start timing
         FfmpegWrapper build = FfmpegWrapper.builder()
                 .scale("1920:1080")
-                .terminal(CMD)
-                .expected("/c")
+                .terminal(BASH)
+                .expected("-c")
                 .build();
 
-        int exitCode = build.encode("\"C:\\Users\\otoum\\Videos\\NVIDIA\\Desktop\\desk.mp4\"");
+        int exitCode = build.encode("\"C:\\Users\\otoum\\Videos\\MarvelRivals\\Highlights\\marvel.mp4\"");
 
         long endTime = System.nanoTime();    // End timing
 

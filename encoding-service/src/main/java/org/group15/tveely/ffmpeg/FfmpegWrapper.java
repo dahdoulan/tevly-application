@@ -17,38 +17,38 @@ public class FfmpegWrapper {
     private String terminal;
     private String expected;
     private String scale;
-    private final ProcessBuilder pb = new ProcessBuilder();
+
 
     public int encode(String path) throws IOException, InterruptedException {
-        String outputDir = "C:\\encoded";
+        String outputDir = "E:\\encoded";
         new File(outputDir).mkdirs();
-        pb.environment().put("PATH", "C:\\Users\\DELL\\ffmpeg\\bin");
 
-        List<String> command = new ArrayList<>();
-        command.addAll(List.of(
-                terminal,
-                expected,
-                "ffmpeg",
-                "-i", path,
-                "-filter_complex",
-                "[0:v]split=3[v1][v2][v3];" +
-                        "[v1]scale=w=1920:h=1080:force_original_aspect_ratio=decrease[v1080];" +
-                        "[v2]scale=w=1280:h=720:force_original_aspect_ratio=decrease[v720];" +
-                        "[v3]scale=w=854:h=480:force_original_aspect_ratio=decrease[v480]"
 
-        ));
         String baseName = new File(path).getName().replaceFirst("[.][^.]+$", "");
         String videoOutputDir = outputDir + File.separator + baseName;
+        new File(videoOutputDir).mkdirs();
 
-        createCommand("1080p", videoOutputDir);
-        createCommand("720p", videoOutputDir);
-        createCommand("480p", videoOutputDir);
+        List<String> resolutions = List.of("1080p", "720p", "480p");
 
-        Process process = startProcess();
-        logProcess(process);
-        int exitCode = process.waitFor();
+        for (String resolution : resolutions) {
+            ProcessBuilder pb = createCommand(resolution, videoOutputDir, path);
+
+            Process process = pb.start();
+            logProcess(process);
+            int exitCode = process.waitFor();
+
+            if (exitCode != 0) {
+                System.err.println("Encoding failed for: " + resolution);
+                return exitCode;
+            }
+        }
+
+        createMasterPlaylist(videoOutputDir);
+        return 0;
+    }
 
 
+    private void createMasterPlaylist(String videoOutputDir) throws IOException {
         File master = new File(videoOutputDir + File.separator + "master.m3u8");
         try (PrintWriter writer = new PrintWriter(master)) {
             writer.println("#EXTM3U");
@@ -63,39 +63,25 @@ public class FfmpegWrapper {
             writer.println("#EXT-X-STREAM-INF:BANDWIDTH=1600000,RESOLUTION=854x480");
             writer.println("480p/stream.m3u8");
         }
-
-        return exitCode;
     }
 
-    private void logProcess(Process process) throws IOException {
-        try (BufferedReader reader = new BufferedReader(
-                new InputStreamReader(process.getInputStream()))) {
-            String line;
-            while ((line = reader.readLine()) != null) {
-                Logger logger = Logger.getLogger(FfmpegWrapper.class.getName());
-                logger.info(line);
-            }
-        }
-    }
-
-    private Process startProcess() throws IOException {
-        pb.redirectOutput(ProcessBuilder.Redirect.appendTo(new File("logs/ffmpeg_output.txt")));
-        pb.redirectErrorStream(true);
-        Process process = pb.start();
-        return process;
-    }
-
-    private void createCommand(String resolution, String directory){
-        String name = resolution;
-        String streamPath = directory + File.separator + name;
+    private ProcessBuilder createCommand(String resolution, String directory, String inputPath) {
+        String streamPath = directory + File.separator + resolution;
         new File(streamPath).mkdirs();
-        Bitrate bitrate = Bitrate.bitrates.get(resolution);
 
-        String resolutionTag = name.replace("p", "");
-        List<String> command = new ArrayList<>();
-        command.addAll(List.of(
-                "-map", "[v" + resolutionTag + "]",
-                "-map", "0:a",
+        Bitrate bitrate = Bitrate.bitrates.get(resolution);
+        String width = "", height = "";
+
+        switch (resolution) {
+            case "1080p" -> { width = "1920"; height = "1080"; }
+            case "720p" -> { width = "1280"; height = "720"; }
+            case "480p" -> { width = "854"; height = "480"; }
+        }
+
+        List<String> command = new ArrayList<>(List.of(
+                "ffmpeg",
+                "-i", inputPath,
+                "-vf", "scale=w=" + width + ":h=" + height + ":force_original_aspect_ratio=decrease",
                 "-c:v", "h264_nvenc",
                 "-b:v", bitrate.getBitrate(),
                 "-maxrate", bitrate.getMaxRate(),
@@ -107,8 +93,23 @@ public class FfmpegWrapper {
                 "-hls_playlist_type", "vod",
                 "-hls_flags", "independent_segments",
                 "-hls_segment_filename", streamPath + File.separator + "segment_%03d.ts",
+
                 streamPath + File.separator + "stream.m3u8"
         ));
-        pb.command(command);
+
+        ProcessBuilder pb = new ProcessBuilder(command);
+        pb.redirectOutput(ProcessBuilder.Redirect.appendTo(new File("logs/ffmpeg_output.txt")));
+        pb.redirectErrorStream(true);
+        return pb;
+    }
+
+    private void logProcess(Process process) throws IOException {
+        Logger logger = Logger.getLogger(FfmpegWrapper.class.getName());
+        try (BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()))) {
+            String line;
+            while ((line = reader.readLine()) != null) {
+                logger.info(line);
+            }
+        }
     }
 }
