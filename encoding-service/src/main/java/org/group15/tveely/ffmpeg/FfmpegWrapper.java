@@ -1,13 +1,16 @@
 package org.group15.tveely.ffmpeg;
 
 import lombok.Builder;
+import org.group15.tveely.ffmpeg.models.Bitrate;
 
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Logger;
 
 @Builder
 public class FfmpegWrapper {
+
     public static String POWERSHELL = "powershell.exe";
     public static String BASH = "/bin/bash";
     public static String CMD = "cmd.exe";
@@ -17,17 +20,9 @@ public class FfmpegWrapper {
     private final ProcessBuilder pb = new ProcessBuilder();
 
     public int encode(String path) throws IOException, InterruptedException {
-        String outputDir = "E:\\encoded";
+        String outputDir = "C:\\encoded";
         new File(outputDir).mkdirs();
-        pb.environment().put("PATH", "C:\\Program Files (x86)\\ffmpeg\\bin");
-
-
-        String[] resolutions = {"1920x1080", "1280x720", "854x480"};
-        String[] names = {"1080p", "720p", "480p"};
-        String[] bitrates = {"5000k", "2800k", "1400k"};
-        String[] maxrates = {"5500k", "3000k", "1600k"};
-        String[] bufsizes = {"10000k", "6000k", "3000k"};
-
+        pb.environment().put("PATH", "C:\\Users\\DELL\\ffmpeg\\bin");
 
         List<String> command = new ArrayList<>();
         command.addAll(List.of(
@@ -44,46 +39,13 @@ public class FfmpegWrapper {
         ));
         String baseName = new File(path).getName().replaceFirst("[.][^.]+$", "");
         String videoOutputDir = outputDir + File.separator + baseName;
-        for (int i = 0; i < 3; i++) {
-            String name = names[i];
-            String streamPath = videoOutputDir + File.separator + name;
-            new File(streamPath).mkdirs();
 
-            String resolutionTag = name.replace("p", "");
-            command.addAll(List.of(
-                    "-map", "[v" + resolutionTag + "]",
-                    "-map", "0:a",
-                    "-c:v", "h264_nvenc",
-                    "-b:v", bitrates[i],
-                    "-maxrate", maxrates[i],
-                    "-bufsize", bufsizes[i],
-                    "-c:a", "aac",
-                    "-b:a", "128k",
-                    "-f", "hls",
-                    "-hls_time", "20",
-                    "-hls_playlist_type", "vod",
-                    "-hls_flags", "independent_segments",
-                    "-hls_segment_filename", streamPath + File.separator + "segment_%03d.ts",
-                    streamPath + File.separator + "stream.m3u8"
+        createCommand("1080p", videoOutputDir);
+        createCommand("720p", videoOutputDir);
+        createCommand("480p", videoOutputDir);
 
-            ));
-
-        }
-
-        pb.command(command);
-        pb.redirectOutput(ProcessBuilder.Redirect.appendTo(new File("logs/ffmpeg_output.txt")));
-        pb.redirectErrorStream(true);
-
-        Process process = pb.start();
-
-        try (BufferedReader reader = new BufferedReader(
-                new InputStreamReader(process.getInputStream()))) {
-            String line;
-            while ((line = reader.readLine()) != null) {
-                System.out.println(line);
-            }
-        }
-
+        Process process = startProcess();
+        logProcess(process);
         int exitCode = process.waitFor();
 
 
@@ -105,4 +67,48 @@ public class FfmpegWrapper {
         return exitCode;
     }
 
+    private void logProcess(Process process) throws IOException {
+        try (BufferedReader reader = new BufferedReader(
+                new InputStreamReader(process.getInputStream()))) {
+            String line;
+            while ((line = reader.readLine()) != null) {
+                Logger logger = Logger.getLogger(FfmpegWrapper.class.getName());
+                logger.info(line);
+            }
+        }
+    }
+
+    private Process startProcess() throws IOException {
+        pb.redirectOutput(ProcessBuilder.Redirect.appendTo(new File("logs/ffmpeg_output.txt")));
+        pb.redirectErrorStream(true);
+        Process process = pb.start();
+        return process;
+    }
+
+    private void createCommand(String resolution, String directory){
+        String name = resolution;
+        String streamPath = directory + File.separator + name;
+        new File(streamPath).mkdirs();
+        Bitrate bitrate = Bitrate.bitrates.get(resolution);
+
+        String resolutionTag = name.replace("p", "");
+        List<String> command = new ArrayList<>();
+        command.addAll(List.of(
+                "-map", "[v" + resolutionTag + "]",
+                "-map", "0:a",
+                "-c:v", "h264_nvenc",
+                "-b:v", bitrate.getBitrate(),
+                "-maxrate", bitrate.getMaxRate(),
+                "-bufsize", bitrate.getBufferSize(),
+                "-c:a", "aac",
+                "-b:a", "128k",
+                "-f", "hls",
+                "-hls_time", "20",
+                "-hls_playlist_type", "vod",
+                "-hls_flags", "independent_segments",
+                "-hls_segment_filename", streamPath + File.separator + "segment_%03d.ts",
+                streamPath + File.separator + "stream.m3u8"
+        ));
+        pb.command(command);
+    }
 }
