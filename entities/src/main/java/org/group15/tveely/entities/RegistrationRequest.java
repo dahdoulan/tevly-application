@@ -10,7 +10,6 @@ import java.time.LocalDate;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-
 public class RegistrationRequest {
 
 
