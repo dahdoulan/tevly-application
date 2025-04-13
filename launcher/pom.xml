@@ -64,5 +64,10 @@
             <artifactId>models</artifactId>
             <version>${revision}</version>
         </dependency>
+        <dependency>
+            <groupId>org.group15</groupId>
+            <artifactId>encoding-service</artifactId>
+            <version>${revision}</version>
+        </dependency>
     </dependencies>
 </project>

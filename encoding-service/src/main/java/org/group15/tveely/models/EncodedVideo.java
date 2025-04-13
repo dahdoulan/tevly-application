@@ -1,12 +1,11 @@
 package org.group15.tveely.models;
 
-
 import lombok.Data;
 
 import java.time.LocalDateTime;
 
 @Data
-public class Video {
+public class EncodedVideo implements VideoAdapter{
     private String title;
     private LocalDateTime uploadDate;
     private String status;
@@ -14,4 +13,5 @@ public class Video {
     private String thumbnailUrl;
     private String videoUrl;
     private byte[] content;
+
 }
