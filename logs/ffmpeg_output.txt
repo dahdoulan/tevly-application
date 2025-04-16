@@ -1207,3 +1207,1097 @@ frame= 1432 fps=558 q=32.0 size=N/A time=00:00:23.81 bitrate=N/A dup=91 drop=15 
 [out#0/hls @ 0000027901802e80] video:5813KiB audio:598KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
 frame= 2252 fps=570 q=15.0 Lsize=N/A time=00:00:37.48 bitrate=N/A dup=92 drop=92 speed=9.48x    
 [aac @ 00000279016f2d80] Qavg: 692.505
+ffmpeg version N-119137-g46762c8b82-20250404 Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 14.2.0 (crosstool-NG 1.27.0.18_7458341)
+  configuration: --prefix=/ffbuild/prefix --pkg-config-flags=--static --pkg-config=pkg-config --cross-prefix=x86_64-w64-mingw32- --arch=x86_64 --target-os=mingw32 --enable-gpl --enable-version3 --disable-debug --enable-shared --disable-static --disable-w32threads --enable-pthreads --enable-iconv --enable-zlib --enable-libfreetype --enable-libfribidi --enable-gmp --enable-libxml2 --enable-lzma --enable-fontconfig --enable-libharfbuzz --enable-libvorbis --enable-opencl --disable-libpulse --enable-libvmaf --disable-libxcb --disable-xlib --enable-amf --enable-libaom --enable-libaribb24 --enable-avisynth --enable-chromaprint --enable-libdav1d --enable-libdavs2 --enable-libdvdread --enable-libdvdnav --disable-libfdk-aac --enable-ffnvcodec --enable-cuda-llvm --enable-frei0r --enable-libgme --enable-libkvazaar --enable-libaribcaption --enable-libass --enable-libbluray --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librist --enable-libssh --enable-libtheora --enable-libvpx --enable-libwebp --enable-libzmq --enable-lv2 --enable-libvpl --enable-openal --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenh264 --enable-libopenjpeg --enable-libopenmpt --enable-librav1e --enable-librubberband --enable-schannel --enable-sdl2 --enable-libsnappy --enable-libsoxr --enable-libsrt --enable-libsvtav1 --enable-libtwolame --enable-libuavs3d --disable-libdrm --enable-vaapi --enable-libvidstab --enable-vulkan --enable-libshaderc --enable-libplacebo --enable-libvvenc --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxvid --enable-libzimg --enable-libzvbi --extra-cflags=-DLIBTWOLAME_STATIC --extra-cxxflags= --extra-libs=-lgomp --extra-ldflags=-pthread --extra-ldexeflags= --cc=x86_64-w64-mingw32-gcc --cxx=x86_64-w64-mingw32-g++ --ar=x86_64-w64-mingw32-gcc-ar --ranlib=x86_64-w64-mingw32-gcc-ranlib --nm=x86_64-w64-mingw32-gcc-nm --extra-version=20250404
+  libavutil      60.  0.100 / 60.  0.100
+  libavcodec     62.  0.101 / 62.  0.101
+  libavformat    62.  0.100 / 62.  0.100
+  libavdevice    62.  0.100 / 62.  0.100
+  libavfilter    11.  0.100 / 11.  0.100
+  libswscale      9.  0.100 /  9.  0.100
+  libswresample   6.  0.100 /  6.  0.100
+  libpostproc    59.  0.100 / 59.  0.100
+[in#0 @ 000001f297ce3ec0] Error opening input: No such file or directory
+Error opening input file C:\Users\otoum\Videos\MarvelRivals\Highlights\marvel.mp4.
+Error opening input files: No such file or directory
+ffmpeg version N-119137-g46762c8b82-20250404 Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 14.2.0 (crosstool-NG 1.27.0.18_7458341)
+  configuration: --prefix=/ffbuild/prefix --pkg-config-flags=--static --pkg-config=pkg-config --cross-prefix=x86_64-w64-mingw32- --arch=x86_64 --target-os=mingw32 --enable-gpl --enable-version3 --disable-debug --enable-shared --disable-static --disable-w32threads --enable-pthreads --enable-iconv --enable-zlib --enable-libfreetype --enable-libfribidi --enable-gmp --enable-libxml2 --enable-lzma --enable-fontconfig --enable-libharfbuzz --enable-libvorbis --enable-opencl --disable-libpulse --enable-libvmaf --disable-libxcb --disable-xlib --enable-amf --enable-libaom --enable-libaribb24 --enable-avisynth --enable-chromaprint --enable-libdav1d --enable-libdavs2 --enable-libdvdread --enable-libdvdnav --disable-libfdk-aac --enable-ffnvcodec --enable-cuda-llvm --enable-frei0r --enable-libgme --enable-libkvazaar --enable-libaribcaption --enable-libass --enable-libbluray --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librist --enable-libssh --enable-libtheora --enable-libvpx --enable-libwebp --enable-libzmq --enable-lv2 --enable-libvpl --enable-openal --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenh264 --enable-libopenjpeg --enable-libopenmpt --enable-librav1e --enable-librubberband --enable-schannel --enable-sdl2 --enable-libsnappy --enable-libsoxr --enable-libsrt --enable-libsvtav1 --enable-libtwolame --enable-libuavs3d --disable-libdrm --enable-vaapi --enable-libvidstab --enable-vulkan --enable-libshaderc --enable-libplacebo --enable-libvvenc --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxvid --enable-libzimg --enable-libzvbi --extra-cflags=-DLIBTWOLAME_STATIC --extra-cxxflags= --extra-libs=-lgomp --extra-ldflags=-pthread --extra-ldexeflags= --cc=x86_64-w64-mingw32-gcc --cxx=x86_64-w64-mingw32-g++ --ar=x86_64-w64-mingw32-gcc-ar --ranlib=x86_64-w64-mingw32-gcc-ranlib --nm=x86_64-w64-mingw32-gcc-nm --extra-version=20250404
+  libavutil      60.  0.100 / 60.  0.100
+  libavcodec     62.  0.101 / 62.  0.101
+  libavformat    62.  0.100 / 62.  0.100
+  libavdevice    62.  0.100 / 62.  0.100
+  libavfilter    11.  0.100 / 11.  0.100
+  libswscale      9.  0.100 /  9.  0.100
+  libswresample   6.  0.100 /  6.  0.100
+  libpostproc    59.  0.100 / 59.  0.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\Users\DELL\Videos\el-negro.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf62.0.100
+  Duration: 00:00:40.42, start: 0.000000, bitrate: 335 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1920x1080 [SAR 1:1 DAR 16:9], 320 kb/s, 60 fps, 60 tbr, 15360 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+      encoder         : Lavc62.0.101 libx264
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 2 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (h264_nvenc))
+  Stream #0:1 -> #0:1 (aac (native) -> aac (native))
+Press [q] to stop, [?] for help
+Output #0, hls, to 'C:\encoded\el-negro\1080p\stream.m3u8':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf62.0.100
+  Stream #0:0(und): Video: h264 (Main), yuv420p(tv, bt709, progressive), 1920x1080 [SAR 1:1 DAR 16:9], q=2-31, 5000 kb/s, 60 fps, 90k tbn (default)
+    Metadata:
+      encoder         : Lavc62.0.101 h264_nvenc
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+    Side data:
+      cpb: bitrate max/min/avg: 5500000/0/5000000 buffer size: 10000000 vbv_delay: N/A
+  Stream #0:1(und): Audio: aac (LC), 48000 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      encoder         : Lavc62.0.101 aac
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+frame=    9 fps=0.0 q=34.0 size=N/A time=00:00:00.10 bitrate=N/A speed=0.191x    frame=  154 fps=148 q=9.0 size=N/A time=00:00:02.51 bitrate=N/A speed=2.42x    frame=  300 fps=191 q=9.0 size=N/A time=00:00:04.95 bitrate=N/A speed=3.16x    frame=  446 fps=214 q=12.0 size=N/A time=00:00:07.38 bitrate=N/A speed=3.55x    frame=  588 fps=227 q=12.0 size=N/A time=00:00:09.75 bitrate=N/A speed=3.77x    frame=  737 fps=237 q=12.0 size=N/A time=00:00:12.23 bitrate=N/A speed=3.93x    frame=  882 fps=243 q=12.0 size=N/A time=00:00:14.65 bitrate=N/A speed=4.04x    frame= 1030 fps=249 q=9.0 size=N/A time=00:00:17.11 bitrate=N/A speed=4.14x    frame= 1175 fps=252 q=11.0 size=N/A time=00:00:19.53 bitrate=N/A speed=4.19x    [hls @ 00000229615c26c0] Opening 'C:\encoded\el-negro\1080p\segment_000.ts' for writing
+frame= 1323 fps=256 q=12.0 size=N/A time=00:00:22.00 bitrate=N/A speed=4.26x    frame= 1466 fps=258 q=12.0 size=N/A time=00:00:24.38 bitrate=N/A speed=4.29x    frame= 1619 fps=261 q=11.0 size=N/A time=00:00:26.93 bitrate=N/A speed=4.34x    frame= 1765 fps=262 q=11.0 size=N/A time=00:00:29.36 bitrate=N/A speed=4.37x    frame= 1912 fps=264 q=9.0 size=N/A time=00:00:31.81 bitrate=N/A speed= 4.4x    frame= 2054 fps=265 q=9.0 size=N/A time=00:00:34.18 bitrate=N/A speed=4.41x    frame= 2204 fps=267 q=12.0 size=N/A time=00:00:36.68 bitrate=N/A speed=4.44x    frame= 2342 fps=267 q=12.0 size=N/A time=00:00:38.98 bitrate=N/A speed=4.44x    [hls @ 00000229615c26c0] Opening 'C:\encoded\el-negro\1080p\segment_001.ts' for writing
+[out#0/hls @ 000002295f760480] video:3675KiB audio:11KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame= 2425 fps=267 q=11.0 Lsize=N/A time=00:00:40.36 bitrate=N/A speed=4.45x    
+[aac @ 0000022962148f80] Qavg: 65536.000
+ffmpeg version N-119137-g46762c8b82-20250404 Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 14.2.0 (crosstool-NG 1.27.0.18_7458341)
+  configuration: --prefix=/ffbuild/prefix --pkg-config-flags=--static --pkg-config=pkg-config --cross-prefix=x86_64-w64-mingw32- --arch=x86_64 --target-os=mingw32 --enable-gpl --enable-version3 --disable-debug --enable-shared --disable-static --disable-w32threads --enable-pthreads --enable-iconv --enable-zlib --enable-libfreetype --enable-libfribidi --enable-gmp --enable-libxml2 --enable-lzma --enable-fontconfig --enable-libharfbuzz --enable-libvorbis --enable-opencl --disable-libpulse --enable-libvmaf --disable-libxcb --disable-xlib --enable-amf --enable-libaom --enable-libaribb24 --enable-avisynth --enable-chromaprint --enable-libdav1d --enable-libdavs2 --enable-libdvdread --enable-libdvdnav --disable-libfdk-aac --enable-ffnvcodec --enable-cuda-llvm --enable-frei0r --enable-libgme --enable-libkvazaar --enable-libaribcaption --enable-libass --enable-libbluray --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librist --enable-libssh --enable-libtheora --enable-libvpx --enable-libwebp --enable-libzmq --enable-lv2 --enable-libvpl --enable-openal --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenh264 --enable-libopenjpeg --enable-libopenmpt --enable-librav1e --enable-librubberband --enable-schannel --enable-sdl2 --enable-libsnappy --enable-libsoxr --enable-libsrt --enable-libsvtav1 --enable-libtwolame --enable-libuavs3d --disable-libdrm --enable-vaapi --enable-libvidstab --enable-vulkan --enable-libshaderc --enable-libplacebo --enable-libvvenc --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxvid --enable-libzimg --enable-libzvbi --extra-cflags=-DLIBTWOLAME_STATIC --extra-cxxflags= --extra-libs=-lgomp --extra-ldflags=-pthread --extra-ldexeflags= --cc=x86_64-w64-mingw32-gcc --cxx=x86_64-w64-mingw32-g++ --ar=x86_64-w64-mingw32-gcc-ar --ranlib=x86_64-w64-mingw32-gcc-ranlib --nm=x86_64-w64-mingw32-gcc-nm --extra-version=20250404
+  libavutil      60.  0.100 / 60.  0.100
+  libavcodec     62.  0.101 / 62.  0.101
+  libavformat    62.  0.100 / 62.  0.100
+  libavdevice    62.  0.100 / 62.  0.100
+  libavfilter    11.  0.100 / 11.  0.100
+  libswscale      9.  0.100 /  9.  0.100
+  libswresample   6.  0.100 /  6.  0.100
+  libpostproc    59.  0.100 / 59.  0.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\Users\DELL\Videos\el-negro.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf62.0.100
+  Duration: 00:00:40.42, start: 0.000000, bitrate: 335 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1920x1080 [SAR 1:1 DAR 16:9], 320 kb/s, 60 fps, 60 tbr, 15360 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+      encoder         : Lavc62.0.101 libx264
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 2 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (h264_nvenc))
+  Stream #0:1 -> #0:1 (aac (native) -> aac (native))
+Press [q] to stop, [?] for help
+Output #0, hls, to 'C:\encoded\el-negro\720p\stream.m3u8':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf62.0.100
+  Stream #0:0(und): Video: h264 (Main), yuv420p(tv, bt709, progressive), 1280x720 [SAR 1:1 DAR 16:9], q=2-31, 2800 kb/s, 60 fps, 90k tbn (default)
+    Metadata:
+      encoder         : Lavc62.0.101 h264_nvenc
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+    Side data:
+      cpb: bitrate max/min/avg: 3000000/0/2800000 buffer size: 6000000 vbv_delay: N/A
+  Stream #0:1(und): Audio: aac (LC), 48000 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      encoder         : Lavc62.0.101 aac
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+frame=  111 fps=0.0 q=11.0 size=N/A time=00:00:01.80 bitrate=N/A speed=3.49x    frame=  348 fps=334 q=9.0 size=N/A time=00:00:05.75 bitrate=N/A speed=5.53x    frame=  577 fps=373 q=12.0 size=N/A time=00:00:09.56 bitrate=N/A speed=6.18x    frame=  795 fps=383 q=12.0 size=N/A time=00:00:13.20 bitrate=N/A speed=6.36x    frame= 1000 fps=386 q=8.0 size=N/A time=00:00:16.61 bitrate=N/A speed=6.42x    frame= 1176 fps=380 q=12.0 size=N/A time=00:00:19.55 bitrate=N/A speed=6.32x    [hls @ 0000028c51bb0ac0] Opening 'C:\encoded\el-negro\720p\segment_000.ts' for writing
+frame= 1373 fps=379 q=11.0 size=N/A time=00:00:22.83 bitrate=N/A speed=6.31x    frame= 1606 fps=389 q=8.0 size=N/A time=00:00:26.71 bitrate=N/A speed=6.47x    frame= 1834 fps=394 q=12.0 size=N/A time=00:00:30.51 bitrate=N/A speed=6.56x    frame= 2059 fps=399 q=11.0 size=N/A time=00:00:34.26 bitrate=N/A speed=6.63x    frame= 2276 fps=400 q=9.0 size=N/A time=00:00:37.88 bitrate=N/A speed=6.66x    [hls @ 0000028c51bb0ac0] Opening 'C:\encoded\el-negro\720p\segment_001.ts' for writing
+[out#0/hls @ 0000028c51b3ea80] video:2640KiB audio:11KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame= 2425 fps=406 q=11.0 Lsize=N/A time=00:00:40.36 bitrate=N/A speed=6.76x    
+[aac @ 0000028c53aacc00] Qavg: 65536.000
+ffmpeg version N-119137-g46762c8b82-20250404 Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 14.2.0 (crosstool-NG 1.27.0.18_7458341)
+  configuration: --prefix=/ffbuild/prefix --pkg-config-flags=--static --pkg-config=pkg-config --cross-prefix=x86_64-w64-mingw32- --arch=x86_64 --target-os=mingw32 --enable-gpl --enable-version3 --disable-debug --enable-shared --disable-static --disable-w32threads --enable-pthreads --enable-iconv --enable-zlib --enable-libfreetype --enable-libfribidi --enable-gmp --enable-libxml2 --enable-lzma --enable-fontconfig --enable-libharfbuzz --enable-libvorbis --enable-opencl --disable-libpulse --enable-libvmaf --disable-libxcb --disable-xlib --enable-amf --enable-libaom --enable-libaribb24 --enable-avisynth --enable-chromaprint --enable-libdav1d --enable-libdavs2 --enable-libdvdread --enable-libdvdnav --disable-libfdk-aac --enable-ffnvcodec --enable-cuda-llvm --enable-frei0r --enable-libgme --enable-libkvazaar --enable-libaribcaption --enable-libass --enable-libbluray --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librist --enable-libssh --enable-libtheora --enable-libvpx --enable-libwebp --enable-libzmq --enable-lv2 --enable-libvpl --enable-openal --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenh264 --enable-libopenjpeg --enable-libopenmpt --enable-librav1e --enable-librubberband --enable-schannel --enable-sdl2 --enable-libsnappy --enable-libsoxr --enable-libsrt --enable-libsvtav1 --enable-libtwolame --enable-libuavs3d --disable-libdrm --enable-vaapi --enable-libvidstab --enable-vulkan --enable-libshaderc --enable-libplacebo --enable-libvvenc --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxvid --enable-libzimg --enable-libzvbi --extra-cflags=-DLIBTWOLAME_STATIC --extra-cxxflags= --extra-libs=-lgomp --extra-ldflags=-pthread --extra-ldexeflags= --cc=x86_64-w64-mingw32-gcc --cxx=x86_64-w64-mingw32-g++ --ar=x86_64-w64-mingw32-gcc-ar --ranlib=x86_64-w64-mingw32-gcc-ranlib --nm=x86_64-w64-mingw32-gcc-nm --extra-version=20250404
+  libavutil      60.  0.100 / 60.  0.100
+  libavcodec     62.  0.101 / 62.  0.101
+  libavformat    62.  0.100 / 62.  0.100
+  libavdevice    62.  0.100 / 62.  0.100
+  libavfilter    11.  0.100 / 11.  0.100
+  libswscale      9.  0.100 /  9.  0.100
+  libswresample   6.  0.100 /  6.  0.100
+  libpostproc    59.  0.100 / 59.  0.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\Users\DELL\Videos\el-negro.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf62.0.100
+  Duration: 00:00:40.42, start: 0.000000, bitrate: 335 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1920x1080 [SAR 1:1 DAR 16:9], 320 kb/s, 60 fps, 60 tbr, 15360 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+      encoder         : Lavc62.0.101 libx264
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 2 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (h264_nvenc))
+  Stream #0:1 -> #0:1 (aac (native) -> aac (native))
+Press [q] to stop, [?] for help
+Output #0, hls, to 'C:\encoded\el-negro\480p\stream.m3u8':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf62.0.100
+  Stream #0:0(und): Video: h264 (Main), yuv420p(tv, bt709, progressive), 853x480 [SAR 2560:2559 DAR 16:9], q=2-31, 1400 kb/s, 60 fps, 90k tbn (default)
+    Metadata:
+      encoder         : Lavc62.0.101 h264_nvenc
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+    Side data:
+      cpb: bitrate max/min/avg: 1600000/0/1400000 buffer size: 3000000 vbv_delay: N/A
+  Stream #0:1(und): Audio: aac (LC), 48000 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      encoder         : Lavc62.0.101 aac
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+frame=  119 fps=0.0 q=12.0 size=N/A time=00:00:01.93 bitrate=N/A speed=3.68x    frame=  324 fps=311 q=8.0 size=N/A time=00:00:05.35 bitrate=N/A speed=5.13x    frame=  539 fps=347 q=12.0 size=N/A time=00:00:08.95 bitrate=N/A speed=5.77x    frame=  772 fps=372 q=8.0 size=N/A time=00:00:12.81 bitrate=N/A speed=6.17x    frame= 1028 fps=398 q=12.0 size=N/A time=00:00:17.08 bitrate=N/A speed=6.61x    [hls @ 0000018451b0ed00] Opening 'C:\encoded\el-negro\480p\segment_000.ts' for writing
+frame= 1287 fps=413 q=12.0 size=N/A time=00:00:21.40 bitrate=N/A speed=6.87x    frame= 1538 fps=419 q=8.0 size=N/A time=00:00:25.58 bitrate=N/A speed=6.97x    frame= 1784 fps=426 q=8.0 size=N/A time=00:00:29.68 bitrate=N/A speed=7.09x    frame= 2040 fps=435 q=8.0 size=N/A time=00:00:33.96 bitrate=N/A speed=7.24x    frame= 2283 fps=438 q=12.0 size=N/A time=00:00:38.00 bitrate=N/A speed=7.29x    [hls @ 0000018451b0ed00] Opening 'C:\encoded\el-negro\480p\segment_001.ts' for writing
+[out#0/hls @ 0000018451a80d00] video:1613KiB audio:11KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame= 2425 fps=443 q=11.0 Lsize=N/A time=00:00:40.36 bitrate=N/A speed=7.38x    
+[aac @ 0000018453a302c0] Qavg: 65536.000
+ffmpeg version N-119137-g46762c8b82-20250404 Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 14.2.0 (crosstool-NG 1.27.0.18_7458341)
+  configuration: --prefix=/ffbuild/prefix --pkg-config-flags=--static --pkg-config=pkg-config --cross-prefix=x86_64-w64-mingw32- --arch=x86_64 --target-os=mingw32 --enable-gpl --enable-version3 --disable-debug --enable-shared --disable-static --disable-w32threads --enable-pthreads --enable-iconv --enable-zlib --enable-libfreetype --enable-libfribidi --enable-gmp --enable-libxml2 --enable-lzma --enable-fontconfig --enable-libharfbuzz --enable-libvorbis --enable-opencl --disable-libpulse --enable-libvmaf --disable-libxcb --disable-xlib --enable-amf --enable-libaom --enable-libaribb24 --enable-avisynth --enable-chromaprint --enable-libdav1d --enable-libdavs2 --enable-libdvdread --enable-libdvdnav --disable-libfdk-aac --enable-ffnvcodec --enable-cuda-llvm --enable-frei0r --enable-libgme --enable-libkvazaar --enable-libaribcaption --enable-libass --enable-libbluray --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librist --enable-libssh --enable-libtheora --enable-libvpx --enable-libwebp --enable-libzmq --enable-lv2 --enable-libvpl --enable-openal --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenh264 --enable-libopenjpeg --enable-libopenmpt --enable-librav1e --enable-librubberband --enable-schannel --enable-sdl2 --enable-libsnappy --enable-libsoxr --enable-libsrt --enable-libsvtav1 --enable-libtwolame --enable-libuavs3d --disable-libdrm --enable-vaapi --enable-libvidstab --enable-vulkan --enable-libshaderc --enable-libplacebo --enable-libvvenc --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxvid --enable-libzimg --enable-libzvbi --extra-cflags=-DLIBTWOLAME_STATIC --extra-cxxflags= --extra-libs=-lgomp --extra-ldflags=-pthread --extra-ldexeflags= --cc=x86_64-w64-mingw32-gcc --cxx=x86_64-w64-mingw32-g++ --ar=x86_64-w64-mingw32-gcc-ar --ranlib=x86_64-w64-mingw32-gcc-ranlib --nm=x86_64-w64-mingw32-gcc-nm --extra-version=20250404
+  libavutil      60.  0.100 / 60.  0.100
+  libavcodec     62.  0.101 / 62.  0.101
+  libavformat    62.  0.100 / 62.  0.100
+  libavdevice    62.  0.100 / 62.  0.100
+  libavfilter    11.  0.100 / 11.  0.100
+  libswscale      9.  0.100 /  9.  0.100
+  libswresample   6.  0.100 /  6.  0.100
+  libpostproc    59.  0.100 / 59.  0.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\Users\DELL\Videos\el-negro.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf62.0.100
+  Duration: 00:00:40.42, start: 0.000000, bitrate: 335 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1920x1080 [SAR 1:1 DAR 16:9], 320 kb/s, 60 fps, 60 tbr, 15360 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+      encoder         : Lavc62.0.101 libx264
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 2 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (h264_nvenc))
+  Stream #0:1 -> #0:1 (aac (native) -> aac (native))
+Press [q] to stop, [?] for help
+Output #0, hls, to 'C:\encoded\el-negro\1080p\stream.m3u8':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf62.0.100
+  Stream #0:0(und): Video: h264 (Main), yuv420p(tv, bt709, progressive), 1920x1080 [SAR 1:1 DAR 16:9], q=2-31, 5000 kb/s, 60 fps, 90k tbn (default)
+    Metadata:
+      encoder         : Lavc62.0.101 h264_nvenc
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+    Side data:
+      cpb: bitrate max/min/avg: 5500000/0/5000000 buffer size: 10000000 vbv_delay: N/A
+  Stream #0:1(und): Audio: aac (LC), 48000 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      encoder         : Lavc62.0.101 aac
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+frame=   47 fps=0.0 q=20.0 size=N/A time=00:00:00.73 bitrate=N/A speed=1.44x    frame=  190 fps=184 q=9.0 size=N/A time=00:00:03.11 bitrate=N/A speed=3.02x    frame=  337 fps=217 q=11.0 size=N/A time=00:00:05.56 bitrate=N/A speed=3.58x    frame=  484 fps=232 q=9.0 size=N/A time=00:00:08.01 bitrate=N/A speed=3.85x    frame=  630 fps=243 q=9.0 size=N/A time=00:00:10.45 bitrate=N/A speed=4.03x    frame=  774 fps=249 q=12.0 size=N/A time=00:00:12.85 bitrate=N/A speed=4.14x    frame=  924 fps=255 q=9.0 size=N/A time=00:00:15.35 bitrate=N/A speed=4.23x    frame= 1070 fps=258 q=9.0 size=N/A time=00:00:17.78 bitrate=N/A speed= 4.3x    frame= 1218 fps=262 q=9.0 size=N/A time=00:00:20.25 bitrate=N/A speed=4.35x    [hls @ 0000017902f7ecc0] Opening 'C:\encoded\el-negro\1080p\segment_000.ts' for writing
+frame= 1369 fps=264 q=11.0 size=N/A time=00:00:22.76 bitrate=N/A speed= 4.4x    frame= 1516 fps=267 q=12.0 size=N/A time=00:00:25.21 bitrate=N/A speed=4.44x    frame= 1667 fps=269 q=11.0 size=N/A time=00:00:27.73 bitrate=N/A speed=4.47x    frame= 1815 fps=270 q=12.0 size=N/A time=00:00:30.20 bitrate=N/A speed=4.49x    frame= 1962 fps=271 q=12.0 size=N/A time=00:00:32.65 bitrate=N/A speed=4.51x    frame= 2111 fps=272 q=11.0 size=N/A time=00:00:35.13 bitrate=N/A speed=4.53x    frame= 2254 fps=273 q=12.0 size=N/A time=00:00:37.51 bitrate=N/A speed=4.54x    frame= 2413 fps=275 q=11.0 size=N/A time=N/A bitrate=N/A speed=N/A    [hls @ 0000017902f7ecc0] Opening 'C:\encoded\el-negro\1080p\segment_001.ts' for writing
+[out#0/hls @ 0000017900d21040] video:3675KiB audio:11KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame= 2425 fps=274 q=11.0 Lsize=N/A time=00:00:40.36 bitrate=N/A speed=4.57x    
+[aac @ 00000179032112c0] Qavg: 65536.000
+ffmpeg version N-119137-g46762c8b82-20250404 Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 14.2.0 (crosstool-NG 1.27.0.18_7458341)
+  configuration: --prefix=/ffbuild/prefix --pkg-config-flags=--static --pkg-config=pkg-config --cross-prefix=x86_64-w64-mingw32- --arch=x86_64 --target-os=mingw32 --enable-gpl --enable-version3 --disable-debug --enable-shared --disable-static --disable-w32threads --enable-pthreads --enable-iconv --enable-zlib --enable-libfreetype --enable-libfribidi --enable-gmp --enable-libxml2 --enable-lzma --enable-fontconfig --enable-libharfbuzz --enable-libvorbis --enable-opencl --disable-libpulse --enable-libvmaf --disable-libxcb --disable-xlib --enable-amf --enable-libaom --enable-libaribb24 --enable-avisynth --enable-chromaprint --enable-libdav1d --enable-libdavs2 --enable-libdvdread --enable-libdvdnav --disable-libfdk-aac --enable-ffnvcodec --enable-cuda-llvm --enable-frei0r --enable-libgme --enable-libkvazaar --enable-libaribcaption --enable-libass --enable-libbluray --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librist --enable-libssh --enable-libtheora --enable-libvpx --enable-libwebp --enable-libzmq --enable-lv2 --enable-libvpl --enable-openal --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenh264 --enable-libopenjpeg --enable-libopenmpt --enable-librav1e --enable-librubberband --enable-schannel --enable-sdl2 --enable-libsnappy --enable-libsoxr --enable-libsrt --enable-libsvtav1 --enable-libtwolame --enable-libuavs3d --disable-libdrm --enable-vaapi --enable-libvidstab --enable-vulkan --enable-libshaderc --enable-libplacebo --enable-libvvenc --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxvid --enable-libzimg --enable-libzvbi --extra-cflags=-DLIBTWOLAME_STATIC --extra-cxxflags= --extra-libs=-lgomp --extra-ldflags=-pthread --extra-ldexeflags= --cc=x86_64-w64-mingw32-gcc --cxx=x86_64-w64-mingw32-g++ --ar=x86_64-w64-mingw32-gcc-ar --ranlib=x86_64-w64-mingw32-gcc-ranlib --nm=x86_64-w64-mingw32-gcc-nm --extra-version=20250404
+  libavutil      60.  0.100 / 60.  0.100
+  libavcodec     62.  0.101 / 62.  0.101
+  libavformat    62.  0.100 / 62.  0.100
+  libavdevice    62.  0.100 / 62.  0.100
+  libavfilter    11.  0.100 / 11.  0.100
+  libswscale      9.  0.100 /  9.  0.100
+  libswresample   6.  0.100 /  6.  0.100
+  libpostproc    59.  0.100 / 59.  0.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\Users\DELL\Videos\el-negro.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf62.0.100
+  Duration: 00:00:40.42, start: 0.000000, bitrate: 335 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1920x1080 [SAR 1:1 DAR 16:9], 320 kb/s, 60 fps, 60 tbr, 15360 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+      encoder         : Lavc62.0.101 libx264
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 2 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (h264_nvenc))
+  Stream #0:1 -> #0:1 (aac (native) -> aac (native))
+Press [q] to stop, [?] for help
+ffmpeg version N-119137-g46762c8b82-20250404 Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 14.2.0 (crosstool-NG 1.27.0.18_7458341)
+  configuration: --prefix=/ffbuild/prefix --pkg-config-flags=--static --pkg-config=pkg-config --cross-prefix=x86_64-w64-mingw32- --arch=x86_64 --target-os=mingw32 --enable-gpl --enable-version3 --disable-debug --enable-shared --disable-static --disable-w32threads --enable-pthreads --enable-iconv --enable-zlib --enable-libfreetype --enable-libfribidi --enable-gmp --enable-libxml2 --enable-lzma --enable-fontconfig --enable-libharfbuzz --enable-libvorbis --enable-opencl --disable-libpulse --enable-libvmaf --disable-libxcb --disable-xlib --enable-amf --enable-libaom --enable-libaribb24 --enable-avisynth --enable-chromaprint --enable-libdav1d --enable-libdavs2 --enable-libdvdread --enable-libdvdnav --disable-libfdk-aac --enable-ffnvcodec --enable-cuda-llvm --enable-frei0r --enable-libgme --enable-libkvazaar --enable-libaribcaption --enable-libass --enable-libbluray --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librist --enable-libssh --enable-libtheora --enable-libvpx --enable-libwebp --enable-libzmq --enable-lv2 --enable-libvpl --enable-openal --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenh264 --enable-libopenjpeg --enable-libopenmpt --enable-librav1e --enable-librubberband --enable-schannel --enable-sdl2 --enable-libsnappy --enable-libsoxr --enable-libsrt --enable-libsvtav1 --enable-libtwolame --enable-libuavs3d --disable-libdrm --enable-vaapi --enable-libvidstab --enable-vulkan --enable-libshaderc --enable-libplacebo --enable-libvvenc --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxvid --enable-libzimg --enable-libzvbi --extra-cflags=-DLIBTWOLAME_STATIC --extra-cxxflags= --extra-libs=-lgomp --extra-ldflags=-pthread --extra-ldexeflags= --cc=x86_64-w64-mingw32-gcc --cxx=x86_64-w64-mingw32-g++ --ar=x86_64-w64-mingw32-gcc-ar --ranlib=x86_64-w64-mingw32-gcc-ranlib --nm=x86_64-w64-mingw32-gcc-nm --extra-version=20250404
+  libavutil      60.  0.100 / 60.  0.100
+  libavcodec     62.  0.101 / 62.  0.101
+  libavformat    62.  0.100 / 62.  0.100
+  libavdevice    62.  0.100 / 62.  0.100
+  libavfilter    11.  0.100 / 11.  0.100
+  libswscale      9.  0.100 /  9.  0.100
+  libswresample   6.  0.100 /  6.  0.100
+  libpostproc    59.  0.100 / 59.  0.100
+ffmpeg version N-119137-g46762c8b82-20250404 Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 14.2.0 (crosstool-NG 1.27.0.18_7458341)
+  configuration: --prefix=/ffbuild/prefix --pkg-config-flags=--static --pkg-config=pkg-config --cross-prefix=x86_64-w64-mingw32- --arch=x86_64 --target-os=mingw32 --enable-gpl --enable-version3 --disable-debug --enable-shared --disable-static --disable-w32threads --enable-pthreads --enable-iconv --enable-zlib --enable-libfreetype --enable-libfribidi --enable-gmp --enable-libxml2 --enable-lzma --enable-fontconfig --enable-libharfbuzz --enable-libvorbis --enable-opencl --disable-libpulse --enable-libvmaf --disable-libxcb --disable-xlib --enable-amf --enable-libaom --enable-libaribb24 --enable-avisynth --enable-chromaprint --enable-libdav1d --enable-libdavs2 --enable-libdvdread --enable-libdvdnav --disable-libfdk-aac --enable-ffnvcodec --enable-cuda-llvm --enable-frei0r --enable-libgme --enable-libkvazaar --enable-libaribcaption --enable-libass --enable-libbluray --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librist --enable-libssh --enable-libtheora --enable-libvpx --enable-libwebp --enable-libzmq --enable-lv2 --enable-libvpl --enable-openal --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenh264 --enable-libopenjpeg --enable-libopenmpt --enable-librav1e --enable-librubberband --enable-schannel --enable-sdl2 --enable-libsnappy --enable-libsoxr --enable-libsrt --enable-libsvtav1 --enable-libtwolame --enable-libuavs3d --disable-libdrm --enable-vaapi --enable-libvidstab --enable-vulkan --enable-libshaderc --enable-libplacebo --enable-libvvenc --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxvid --enable-libzimg --enable-libzvbi --extra-cflags=-DLIBTWOLAME_STATIC --extra-cxxflags= --extra-libs=-lgomp --extra-ldflags=-pthread --extra-ldexeflags= --cc=x86_64-w64-mingw32-gcc --cxx=x86_64-w64-mingw32-g++ --ar=x86_64-w64-mingw32-gcc-ar --ranlib=x86_64-w64-mingw32-gcc-ranlib --nm=x86_64-w64-mingw32-gcc-nm --extra-version=20250404
+  libavutil      60.  0.100 / 60.  0.100
+  libavcodec     62.  0.101 / 62.  0.101
+  libavformat    62.  0.100 / 62.  0.100
+  libavdevice    62.  0.100 / 62.  0.100
+  libavfilter    11.  0.100 / 11.  0.100
+  libswscale      9.  0.100 /  9.  0.100
+  libswresample   6.  0.100 /  6.  0.100
+  libpostproc    59.  0.100 / 59.  0.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\Users\DELL\Videos\el-negro.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf62.0.100
+  Duration: 00:00:40.42, start: 0.000000, bitrate: 335 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1920x1080 [SAR 1:1 DAR 16:9], 320 kb/s, 60 fps, 60 tbr, 15360 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+      encoder         : Lavc62.0.101 libx264
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 2 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\Users\DELL\Videos\el-negro.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf62.0.100
+  Duration: 00:00:40.42, start: 0.000000, bitrate: 335 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1920x1080 [SAR 1:1 DAR 16:9], 320 kb/s, 60 fps, 60 tbr, 15360 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+      encoder         : Lavc62.0.101 libx264
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 2 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (h264_nvenc))
+  Stream #0:1 -> #0:1 (aac (native) -> aac (native))
+Press [q] to stop, [?] for help
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (h264_nvenc))
+  Stream #0:1 -> #0:1 (aac (native) -> aac (native))
+Press [q] to stop, [?] for help
+Output #0, hls, to 'C:\encoded\el-negro\1080p\stream.m3u8':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf62.0.100
+  Stream #0:0(und): Video: h264 (Main), yuv420p(tv, bt709, progressive), 1920x1080 [SAR 1:1 DAR 16:9], q=2-31, 5000 kb/s, 60 fps, 90k tbn (default)
+    Metadata:
+      encoder         : Lavc62.0.101 h264_nvenc
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+    Side data:
+      cpb: bitrate max/min/avg: 5500000/0/5000000 buffer size: 10000000 vbv_delay: N/A
+  Stream #0:1(und): Audio: aac (LC), 48000 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      encoder         : Lavc62.0.101 aac
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+Output #0, hls, to 'C:\encoded\el-negro\480p\stream.m3u8':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf62.0.100
+  Stream #0:0(und): Video: h264 (Main), yuv420p(tv, bt709, progressive), 853x480 [SAR 2560:2559 DAR 16:9], q=2-31, 1400 kb/s, 60 fps, 90k tbn (default)
+    Metadata:
+      encoder         : Lavc62.0.101 h264_nvenc
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+    Side data:
+      cpb: bitrate max/min/avg: 1600000/0/1400000 buffer size: 3000000 vbv_delay: N/A
+  Stream #0:1(und): Audio: aac (LC), 48000 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      encoder         : Lavc62.0.101 aac
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+Output #0, hls, to 'C:\encoded\el-negro\720p\stream.m3u8':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf62.0.100
+  Stream #0:0(und): Video: h264 (Main), yuv420p(tv, bt709, progressive), 1280x720 [SAR 1:1 DAR 16:9], q=2-31, 2800 kb/s, 60 fps, 90k tbn (default)
+    Metadata:
+      encoder         : Lavc62.0.101 h264_nvenc
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+    Side data:
+      cpb: bitrate max/min/avg: 3000000/0/2800000 buffer size: 6000000 vbv_delay: N/A
+  Stream #0:1(und): Audio: aac (LC), 48000 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      encoder         : Lavc62.0.101 aac
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+frame=   28 fps= 27 q=28.0 size=N/A time=00:00:00.41 bitrate=N/A speed=0.398x    frame=   45 fps= 44 q=21.0 size=N/A time=00:00:00.70 bitrate=N/A speed=0.681x    frame=   53 fps= 51 q=19.0 size=N/A time=00:00:00.83 bitrate=N/A speed=0.798x    frame=   78 fps= 50 q=11.0 size=N/A time=00:00:01.25 bitrate=N/A speed=0.803x    frame=  115 fps= 75 q=11.0 size=N/A time=00:00:01.86 bitrate=N/A speed=1.21x    frame=  151 fps= 97 q=11.0 size=N/A time=00:00:02.46 bitrate=N/A speed=1.59x    frame=  140 fps= 67 q=12.0 size=N/A time=00:00:02.28 bitrate=N/A speed=1.09x    frame=  206 fps=100 q=9.0 size=N/A time=00:00:03.38 bitrate=N/A speed=1.64x    frame=  230 fps=111 q=8.0 size=N/A time=00:00:03.78 bitrate=N/A speed=1.82x    frame=  204 fps= 78 q=12.0 size=N/A time=00:00:03.35 bitrate=N/A speed=1.28x    frame=  280 fps=109 q=9.0 size=N/A time=00:00:04.61 bitrate=N/A speed= 1.8x    frame=  319 fps=123 q=8.0 size=N/A time=00:00:05.28 bitrate=N/A speed=2.03x    frame=  262 fps= 83 q=12.0 size=N/A time=00:00:04.31 bitrate=N/A speed=1.37x    frame=  412 fps=131 q=8.0 size=N/A time=00:00:06.80 bitrate=N/A speed=2.16x    frame=  380 fps=120 q=9.0 size=N/A time=00:00:06.28 bitrate=N/A speed=1.99x    frame=  323 fps= 88 q=12.0 size=N/A time=00:00:05.33 bitrate=N/A speed=1.46x    frame=  472 fps=128 q=9.0 size=N/A time=00:00:07.81 bitrate=N/A speed=2.12x    frame=  512 fps=139 q=12.0 size=N/A time=00:00:08.50 bitrate=N/A speed=2.31x    frame=  373 fps= 89 q=11.0 size=N/A time=00:00:06.16 bitrate=N/A speed=1.48x    frame=  620 fps=147 q=12.0 size=N/A time=00:00:10.28 bitrate=N/A speed=2.44x    frame=  570 fps=135 q=8.0 size=N/A time=00:00:09.45 bitrate=N/A speed=2.24x    frame=  435 fps= 92 q=12.0 size=N/A time=00:00:07.20 bitrate=N/A speed=1.53x    frame=  646 fps=136 q=8.0 size=N/A time=00:00:10.71 bitrate=N/A speed=2.26x    frame=  727 fps=154 q=11.0 size=N/A time=00:00:12.06 bitrate=N/A speed=2.55x    frame=  491 fps= 94 q=12.0 size=N/A time=00:00:08.13 bitrate=N/A speed=1.56x    frame=  823 fps=157 q=8.0 size=N/A time=00:00:13.68 bitrate=N/A speed= 2.6x    frame=  739 fps=141 q=12.0 size=N/A time=00:00:12.28 bitrate=N/A speed=2.34x    frame=  559 fps= 97 q=11.0 size=N/A time=00:00:09.26 bitrate=N/A speed=1.61x    frame=  904 fps=157 q=8.0 size=N/A time=00:00:15.01 bitrate=N/A speed= 2.6x    frame=  815 fps=141 q=12.0 size=N/A time=00:00:13.53 bitrate=N/A speed=2.34x    frame=  612 fps= 98 q=12.0 size=N/A time=00:00:10.15 bitrate=N/A speed=1.62x    frame=  888 fps=141 q=8.0 size=N/A time=00:00:14.75 bitrate=N/A speed=2.34x    frame=  986 fps=157 q=11.0 size=N/A time=00:00:16.38 bitrate=N/A speed=2.61x    frame=  665 fps= 98 q=9.0 size=N/A time=00:00:11.03 bitrate=N/A speed=1.62x    frame= 1087 fps=160 q=11.0 size=N/A time=00:00:18.06 bitrate=N/A speed=2.65x    frame=  958 fps=141 q=12.0 size=N/A time=00:00:15.91 bitrate=N/A speed=2.34x    frame=  709 fps= 97 q=9.0 size=N/A time=00:00:11.78 bitrate=N/A speed=1.61x    frame= 1046 fps=143 q=8.0 size=N/A time=00:00:17.38 bitrate=N/A speed=2.37x    frame= 1190 fps=163 q=8.0 size=N/A time=00:00:19.78 bitrate=N/A speed= 2.7x    [hls @ 00000250e7ed9880] Opening 'C:\encoded\el-negro\480p\segment_000.ts' for writing
+frame=  745 fps= 95 q=12.0 size=N/A time=00:00:12.36 bitrate=N/A speed=1.57x    frame= 1279 fps=163 q=8.0 size=N/A time=00:00:21.28 bitrate=N/A speed=2.72x    frame= 1126 fps=144 q=8.0 size=N/A time=00:00:18.71 bitrate=N/A speed=2.39x    frame=  810 fps= 97 q=12.0 size=N/A time=00:00:13.46 bitrate=N/A speed=1.61x    frame= 1203 fps=144 q=11.0 size=N/A time=00:00:20.00 bitrate=N/A speed=2.39x    frame= 1372 fps=164 q=8.0 size=N/A time=00:00:22.81 bitrate=N/A speed=2.73x    [hls @ 000001f65b4ec2c0] Opening 'C:\encoded\el-negro\720p\segment_000.ts' for writing
+frame=  851 fps= 96 q=12.0 size=N/A time=00:00:14.13 bitrate=N/A speed=1.59x    frame= 1470 fps=165 q=12.0 size=N/A time=00:00:24.45 bitrate=N/A speed=2.74x    frame= 1298 fps=145 q=12.0 size=N/A time=00:00:21.58 bitrate=N/A speed=2.42x    frame=  910 fps= 97 q=12.0 size=N/A time=00:00:15.11 bitrate=N/A speed=1.61x    frame= 1368 fps=145 q=8.0 size=N/A time=00:00:22.75 bitrate=N/A speed=2.41x    frame= 1563 fps=165 q=11.0 size=N/A time=00:00:26.00 bitrate=N/A speed=2.75x    frame=  980 fps= 99 q=9.0 size=N/A time=00:00:16.28 bitrate=N/A speed=1.64x    frame= 1456 fps=146 q=11.0 size=N/A time=00:00:24.23 bitrate=N/A speed=2.43x    frame= 1648 fps=165 q=12.0 size=N/A time=00:00:27.41 bitrate=N/A speed=2.75x    frame= 1056 fps=101 q=12.0 size=N/A time=00:00:17.55 bitrate=N/A speed=1.68x    frame= 1512 fps=144 q=12.0 size=N/A time=00:00:25.15 bitrate=N/A speed=2.39x    frame= 1700 fps=161 q=12.0 size=N/A time=00:00:28.28 bitrate=N/A speed=2.69x    frame= 1107 fps=100 q=11.0 size=N/A time=00:00:18.40 bitrate=N/A speed=1.67x    frame= 1571 fps=141 q=12.0 size=N/A time=00:00:26.03 bitrate=N/A speed=2.34x    frame= 1784 fps=160 q=8.0 size=N/A time=00:00:29.68 bitrate=N/A speed=2.66x    frame= 1178 fps=101 q=9.0 size=N/A time=00:00:19.58 bitrate=N/A speed=1.69x    frame= 1874 fps=160 q=12.0 size=N/A time=00:00:31.20 bitrate=N/A speed=2.66x    frame= 1612 fps=138 q=12.0 size=N/A time=00:00:26.81 bitrate=N/A speed=2.29x    frame= 1230 fps=101 q=11.0 size=N/A time=00:00:20.46 bitrate=N/A speed=1.69x    [hls @ 0000015c8869c540] Opening 'C:\encoded\el-negro\1080p\segment_000.ts' for writing
+frame= 1683 fps=137 q=11.0 size=N/A time=00:00:28.00 bitrate=N/A speed=2.28x    frame= 1960 fps=159 q=11.0 size=N/A time=00:00:32.63 bitrate=N/A speed=2.65x    frame= 1284 fps=101 q=11.0 size=N/A time=00:00:21.35 bitrate=N/A speed=1.69x    frame= 1768 fps=137 q=8.0 size=N/A time=00:00:29.41 bitrate=N/A speed=2.28x    frame= 2047 fps=158 q=12.0 size=N/A time=00:00:34.08 bitrate=N/A speed=2.64x    frame= 1334 fps=101 q=12.0 size=N/A time=00:00:22.18 bitrate=N/A speed=1.68x    frame= 2111 fps=156 q=11.0 size=N/A time=00:00:35.13 bitrate=N/A speed=2.59x    frame= 1845 fps=136 q=11.0 size=N/A time=00:00:30.70 bitrate=N/A speed=2.26x    frame= 1365 fps= 99 q=11.0 size=N/A time=00:00:22.70 bitrate=N/A speed=1.65x    frame= 1925 fps=137 q=12.0 size=N/A time=00:00:32.05 bitrate=N/A speed=2.28x    frame= 2203 fps=156 q=12.0 size=N/A time=00:00:36.68 bitrate=N/A speed=2.61x    frame= 1431 fps=100 q=12.0 size=N/A time=00:00:23.80 bitrate=N/A speed=1.66x    frame= 2290 fps=157 q=12.0 size=N/A time=00:00:38.11 bitrate=N/A speed=2.61x    frame= 1999 fps=137 q=12.0 size=N/A time=00:00:33.26 bitrate=N/A speed=2.28x    frame= 1489 fps=100 q=12.0 size=N/A time=00:00:24.78 bitrate=N/A speed=1.67x    frame= 2361 fps=156 q=11.0 size=N/A time=00:00:39.30 bitrate=N/A speed= 2.6x    frame= 2078 fps=137 q=11.0 size=N/A time=00:00:34.60 bitrate=N/A speed=2.27x    frame= 1565 fps=102 q=12.0 size=N/A time=00:00:26.03 bitrate=N/A speed=1.69x    [hls @ 00000250e7ed9880] Opening 'C:\encoded\el-negro\480p\segment_001.ts' for writing
+[out#0/hls @ 00000250e61be9c0] video:1613KiB audio:11KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame= 2425 fps=157 q=11.0 Lsize=N/A time=00:00:40.36 bitrate=N/A speed=2.62x    
+[aac @ 00000250e8a714c0] Qavg: 65536.000
+frame= 2174 fps=138 q=9.0 size=N/A time=00:00:36.18 bitrate=N/A speed=2.29x    frame= 1628 fps=102 q=12.0 size=N/A time=00:00:27.10 bitrate=N/A speed= 1.7x    frame= 2240 fps=137 q=12.0 size=N/A time=00:00:37.28 bitrate=N/A speed=2.29x    frame= 1673 fps=102 q=12.0 size=N/A time=00:00:27.83 bitrate=N/A speed= 1.7x    frame= 2343 fps=139 q=12.0 size=N/A time=00:00:39.00 bitrate=N/A speed=2.32x    frame= 1752 fps=103 q=11.0 size=N/A time=00:00:29.16 bitrate=N/A speed=1.72x    [hls @ 000001f65b4ec2c0] Opening 'C:\encoded\el-negro\720p\segment_001.ts' for writing
+[out#0/hls @ 000001f65b480180] video:2640KiB audio:11KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame= 2425 fps=142 q=11.0 Lsize=N/A time=00:00:40.36 bitrate=N/A speed=2.36x    
+[aac @ 000001f65d2f0d80] Qavg: 65536.000
+frame= 1878 fps=108 q=12.0 size=N/A time=00:00:31.25 bitrate=N/A speed=1.79x    frame= 2019 fps=112 q=11.0 size=N/A time=00:00:33.60 bitrate=N/A speed=1.87x    frame= 2158 fps=117 q=9.0 size=N/A time=00:00:35.91 bitrate=N/A speed=1.94x    frame= 2302 fps=121 q=12.0 size=N/A time=00:00:38.31 bitrate=N/A speed=2.02x    [hls @ 0000015c8869c540] Opening 'C:\encoded\el-negro\1080p\segment_001.ts' for writing
+[out#0/hls @ 0000015c8863cf40] video:3675KiB audio:11KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame= 2425 fps=125 q=11.0 Lsize=N/A time=00:00:40.36 bitrate=N/A speed=2.08x    
+[aac @ 0000015c8b1a5dc0] Qavg: 65536.000
+ffmpeg version N-119137-g46762c8b82-20250404 Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 14.2.0 (crosstool-NG 1.27.0.18_7458341)
+  configuration: --prefix=/ffbuild/prefix --pkg-config-flags=--static --pkg-config=pkg-config --cross-prefix=x86_64-w64-mingw32- --arch=x86_64 --target-os=mingw32 --enable-gpl --enable-version3 --disable-debug --enable-shared --disable-static --disable-w32threads --enable-pthreads --enable-iconv --enable-zlib --enable-libfreetype --enable-libfribidi --enable-gmp --enable-libxml2 --enable-lzma --enable-fontconfig --enable-libharfbuzz --enable-libvorbis --enable-opencl --disable-libpulse --enable-libvmaf --disable-libxcb --disable-xlib --enable-amf --enable-libaom --enable-libaribb24 --enable-avisynth --enable-chromaprint --enable-libdav1d --enable-libdavs2 --enable-libdvdread --enable-libdvdnav --disable-libfdk-aac --enable-ffnvcodec --enable-cuda-llvm --enable-frei0r --enable-libgme --enable-libkvazaar --enable-libaribcaption --enable-libass --enable-libbluray --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librist --enable-libssh --enable-libtheora --enable-libvpx --enable-libwebp --enable-libzmq --enable-lv2 --enable-libvpl --enable-openal --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenh264 --enable-libopenjpeg --enable-libopenmpt --enable-librav1e --enable-librubberband --enable-schannel --enable-sdl2 --enable-libsnappy --enable-libsoxr --enable-libsrt --enable-libsvtav1 --enable-libtwolame --enable-libuavs3d --disable-libdrm --enable-vaapi --enable-libvidstab --enable-vulkan --enable-libshaderc --enable-libplacebo --enable-libvvenc --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxvid --enable-libzimg --enable-libzvbi --extra-cflags=-DLIBTWOLAME_STATIC --extra-cxxflags= --extra-libs=-lgomp --extra-ldflags=-pthread --extra-ldexeflags= --cc=x86_64-w64-mingw32-gcc --cxx=x86_64-w64-mingw32-g++ --ar=x86_64-w64-mingw32-gcc-ar --ranlib=x86_64-w64-mingw32-gcc-ranlib --nm=x86_64-w64-mingw32-gcc-nm --extra-version=20250404
+  libavutil      60.  0.100 / 60.  0.100
+  libavcodec     62.  0.101 / 62.  0.101
+  libavformat    62.  0.100 / 62.  0.100
+  libavdevice    62.  0.100 / 62.  0.100
+  libavfilter    11.  0.100 / 11.  0.100
+  libswscale      9.  0.100 /  9.  0.100
+  libswresample   6.  0.100 /  6.  0.100
+  libpostproc    59.  0.100 / 59.  0.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\Users\DELL\Videos\el-negro.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf62.0.100
+  Duration: 00:00:40.42, start: 0.000000, bitrate: 335 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1920x1080 [SAR 1:1 DAR 16:9], 320 kb/s, 60 fps, 60 tbr, 15360 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+      encoder         : Lavc62.0.101 libx264
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 2 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (h264_nvenc))
+  Stream #0:1 -> #0:1 (aac (native) -> aac (native))
+Press [q] to stop, [?] for help
+ffmpeg version N-119137-g46762c8b82-20250404 Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 14.2.0 (crosstool-NG 1.27.0.18_7458341)
+  configuration: --prefix=/ffbuild/prefix --pkg-config-flags=--static --pkg-config=pkg-config --cross-prefix=x86_64-w64-mingw32- --arch=x86_64 --target-os=mingw32 --enable-gpl --enable-version3 --disable-debug --enable-shared --disable-static --disable-w32threads --enable-pthreads --enable-iconv --enable-zlib --enable-libfreetype --enable-libfribidi --enable-gmp --enable-libxml2 --enable-lzma --enable-fontconfig --enable-libharfbuzz --enable-libvorbis --enable-opencl --disable-libpulse --enable-libvmaf --disable-libxcb --disable-xlib --enable-amf --enable-libaom --enable-libaribb24 --enable-avisynth --enable-chromaprint --enable-libdav1d --enable-libdavs2 --enable-libdvdread --enable-libdvdnav --disable-libfdk-aac --enable-ffnvcodec --enable-cuda-llvm --enable-frei0r --enable-libgme --enable-libkvazaar --enable-libaribcaption --enable-libass --enable-libbluray --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librist --enable-libssh --enable-libtheora --enable-libvpx --enable-libwebp --enable-libzmq --enable-lv2 --enable-libvpl --enable-openal --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenh264 --enable-libopenjpeg --enable-libopenmpt --enable-librav1e --enable-librubberband --enable-schannel --enable-sdl2 --enable-libsnappy --enable-libsoxr --enable-libsrt --enable-libsvtav1 --enable-libtwolame --enable-libuavs3d --disable-libdrm --enable-vaapi --enable-libvidstab --enable-vulkan --enable-libshaderc --enable-libplacebo --enable-libvvenc --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxvid --enable-libzimg --enable-libzvbi --extra-cflags=-DLIBTWOLAME_STATIC --extra-cxxflags= --extra-libs=-lgomp --extra-ldflags=-pthread --extra-ldexeflags= --cc=x86_64-w64-mingw32-gcc --cxx=x86_64-w64-mingw32-g++ --ar=x86_64-w64-mingw32-gcc-ar --ranlib=x86_64-w64-mingw32-gcc-ranlib --nm=x86_64-w64-mingw32-gcc-nm --extra-version=20250404
+  libavutil      60.  0.100 / 60.  0.100
+  libavcodec     62.  0.101 / 62.  0.101
+  libavformat    62.  0.100 / 62.  0.100
+  libavdevice    62.  0.100 / 62.  0.100
+  libavfilter    11.  0.100 / 11.  0.100
+  libswscale      9.  0.100 /  9.  0.100
+  libswresample   6.  0.100 /  6.  0.100
+  libpostproc    59.  0.100 / 59.  0.100
+ffmpeg version N-119137-g46762c8b82-20250404 Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 14.2.0 (crosstool-NG 1.27.0.18_7458341)
+  configuration: --prefix=/ffbuild/prefix --pkg-config-flags=--static --pkg-config=pkg-config --cross-prefix=x86_64-w64-mingw32- --arch=x86_64 --target-os=mingw32 --enable-gpl --enable-version3 --disable-debug --enable-shared --disable-static --disable-w32threads --enable-pthreads --enable-iconv --enable-zlib --enable-libfreetype --enable-libfribidi --enable-gmp --enable-libxml2 --enable-lzma --enable-fontconfig --enable-libharfbuzz --enable-libvorbis --enable-opencl --disable-libpulse --enable-libvmaf --disable-libxcb --disable-xlib --enable-amf --enable-libaom --enable-libaribb24 --enable-avisynth --enable-chromaprint --enable-libdav1d --enable-libdavs2 --enable-libdvdread --enable-libdvdnav --disable-libfdk-aac --enable-ffnvcodec --enable-cuda-llvm --enable-frei0r --enable-libgme --enable-libkvazaar --enable-libaribcaption --enable-libass --enable-libbluray --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librist --enable-libssh --enable-libtheora --enable-libvpx --enable-libwebp --enable-libzmq --enable-lv2 --enable-libvpl --enable-openal --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenh264 --enable-libopenjpeg --enable-libopenmpt --enable-librav1e --enable-librubberband --enable-schannel --enable-sdl2 --enable-libsnappy --enable-libsoxr --enable-libsrt --enable-libsvtav1 --enable-libtwolame --enable-libuavs3d --disable-libdrm --enable-vaapi --enable-libvidstab --enable-vulkan --enable-libshaderc --enable-libplacebo --enable-libvvenc --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxvid --enable-libzimg --enable-libzvbi --extra-cflags=-DLIBTWOLAME_STATIC --extra-cxxflags= --extra-libs=-lgomp --extra-ldflags=-pthread --extra-ldexeflags= --cc=x86_64-w64-mingw32-gcc --cxx=x86_64-w64-mingw32-g++ --ar=x86_64-w64-mingw32-gcc-ar --ranlib=x86_64-w64-mingw32-gcc-ranlib --nm=x86_64-w64-mingw32-gcc-nm --extra-version=20250404
+  libavutil      60.  0.100 / 60.  0.100
+  libavcodec     62.  0.101 / 62.  0.101
+  libavformat    62.  0.100 / 62.  0.100
+  libavdevice    62.  0.100 / 62.  0.100
+  libavfilter    11.  0.100 / 11.  0.100
+  libswscale      9.  0.100 /  9.  0.100
+  libswresample   6.  0.100 /  6.  0.100
+  libpostproc    59.  0.100 / 59.  0.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\Users\DELL\Videos\el-negro.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf62.0.100
+  Duration: 00:00:40.42, start: 0.000000, bitrate: 335 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1920x1080 [SAR 1:1 DAR 16:9], 320 kb/s, 60 fps, 60 tbr, 15360 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+      encoder         : Lavc62.0.101 libx264
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 2 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (h264_nvenc))
+  Stream #0:1 -> #0:1 (aac (native) -> aac (native))
+Press [q] to stop, [?] for help
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\Users\DELL\Videos\el-negro.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf62.0.100
+  Duration: 00:00:40.42, start: 0.000000, bitrate: 335 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1920x1080 [SAR 1:1 DAR 16:9], 320 kb/s, 60 fps, 60 tbr, 15360 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+      encoder         : Lavc62.0.101 libx264
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 2 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (h264_nvenc))
+  Stream #0:1 -> #0:1 (aac (native) -> aac (native))
+Press [q] to stop, [?] for help
+Output #0, hls, to 'C:\encoded\el-negro\1080p\stream.m3u8':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf62.0.100
+  Stream #0:0(und): Video: h264 (Main), yuv420p(tv, bt709, progressive), 1920x1080 [SAR 1:1 DAR 16:9], q=2-31, 5000 kb/s, 60 fps, 90k tbn (default)
+    Metadata:
+      encoder         : Lavc62.0.101 h264_nvenc
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+    Side data:
+      cpb: bitrate max/min/avg: 5500000/0/5000000 buffer size: 10000000 vbv_delay: N/A
+  Stream #0:1(und): Audio: aac (LC), 48000 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      encoder         : Lavc62.0.101 aac
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+Output #0, hls, to 'C:\encoded\el-negro\480p\stream.m3u8':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf62.0.100
+  Stream #0:0(und): Video: h264 (Main), yuv420p(tv, bt709, progressive), 853x480 [SAR 2560:2559 DAR 16:9], q=2-31, 1400 kb/s, 60 fps, 90k tbn (default)
+    Metadata:
+      encoder         : Lavc62.0.101 h264_nvenc
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+    Side data:
+      cpb: bitrate max/min/avg: 1600000/0/1400000 buffer size: 3000000 vbv_delay: N/A
+  Stream #0:1(und): Audio: aac (LC), 48000 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      encoder         : Lavc62.0.101 aac
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+Output #0, hls, to 'C:\encoded\el-negro\720p\stream.m3u8':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf62.0.100
+  Stream #0:0(und): Video: h264 (Main), yuv420p(tv, bt709, progressive), 1280x720 [SAR 1:1 DAR 16:9], q=2-31, 2800 kb/s, 60 fps, 90k tbn (default)
+    Metadata:
+      encoder         : Lavc62.0.101 h264_nvenc
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+    Side data:
+      cpb: bitrate max/min/avg: 3000000/0/2800000 buffer size: 6000000 vbv_delay: N/A
+  Stream #0:1(und): Audio: aac (LC), 48000 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      encoder         : Lavc62.0.101 aac
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+frame=    2 fps=0.0 q=33.0 size=N/A time=00:00:00.06 bitrate=N/A speed=0.112x    frame=   33 fps= 32 q=24.0 size=N/A time=00:00:00.50 bitrate=N/A speed=0.478x    frame=   45 fps= 43 q=19.0 size=N/A time=00:00:00.71 bitrate=N/A speed=0.69x    frame=  104 fps= 93 q=12.0 size=N/A time=00:00:01.70 bitrate=N/A speed=1.52x    frame=   89 fps= 57 q=9.0 size=N/A time=00:00:01.45 bitrate=N/A speed=0.931x    frame=  140 fps= 89 q=12.0 size=N/A time=00:00:02.30 bitrate=N/A speed=1.46x    frame=  178 fps=109 q=8.0 size=N/A time=00:00:02.91 bitrate=N/A speed=1.78x    frame=  154 fps= 74 q=9.0 size=N/A time=00:00:02.51 bitrate=N/A speed=1.21x    frame=  204 fps= 97 q=9.0 size=N/A time=00:00:03.38 bitrate=N/A speed=1.61x    frame=  279 fps=127 q=12.0 size=N/A time=00:00:04.60 bitrate=N/A speed= 2.1x    frame=  206 fps= 78 q=9.0 size=N/A time=00:00:03.38 bitrate=N/A speed=1.28x    frame=  293 fps=112 q=12.0 size=N/A time=00:00:04.85 bitrate=N/A speed=1.85x    frame=  364 fps=134 q=8.0 size=N/A time=00:00:06.01 bitrate=N/A speed=2.22x    frame=  282 fps= 88 q=12.0 size=N/A time=00:00:04.65 bitrate=N/A speed=1.45x    frame=  353 fps=108 q=11.0 size=N/A time=00:00:05.83 bitrate=N/A speed=1.79x    frame=  455 fps=136 q=12.0 size=N/A time=00:00:07.53 bitrate=N/A speed=2.25x    frame=  376 fps=100 q=12.0 size=N/A time=00:00:06.25 bitrate=N/A speed=1.67x    frame=  409 fps=108 q=12.0 size=N/A time=00:00:06.78 bitrate=N/A speed= 1.8x    frame=  524 fps=136 q=12.0 size=N/A time=00:00:08.68 bitrate=N/A speed=2.25x    frame=  449 fps=105 q=12.0 size=N/A time=00:00:07.43 bitrate=N/A speed=1.74x    frame=  477 fps=111 q=11.0 size=N/A time=00:00:07.90 bitrate=N/A speed=1.83x    frame=  595 fps=136 q=11.0 size=N/A time=00:00:09.86 bitrate=N/A speed=2.25x    frame=  505 fps=105 q=12.0 size=N/A time=00:00:08.36 bitrate=N/A speed=1.74x    frame=  549 fps=114 q=12.0 size=N/A time=00:00:09.10 bitrate=N/A speed=1.89x    frame=  674 fps=138 q=8.0 size=N/A time=00:00:11.18 bitrate=N/A speed=2.28x    frame=  543 fps=102 q=11.0 size=N/A time=00:00:09.00 bitrate=N/A speed=1.69x    frame=  622 fps=117 q=8.0 size=N/A time=00:00:10.31 bitrate=N/A speed=1.94x    frame=  751 fps=139 q=8.0 size=N/A time=00:00:12.48 bitrate=N/A speed=2.31x    frame=  612 fps=104 q=12.0 size=N/A time=00:00:10.15 bitrate=N/A speed=1.73x    frame=  690 fps=118 q=8.0 size=N/A time=00:00:11.45 bitrate=N/A speed=1.96x    frame=  824 fps=139 q=11.0 size=N/A time=00:00:13.70 bitrate=N/A speed=2.31x    frame=  663 fps=104 q=11.0 size=N/A time=00:00:11.00 bitrate=N/A speed=1.72x    frame=  769 fps=121 q=12.0 size=N/A time=00:00:12.78 bitrate=N/A speed=2.01x    frame=  929 fps=144 q=11.0 size=N/A time=00:00:15.43 bitrate=N/A speed= 2.4x    frame=  722 fps=104 q=9.0 size=N/A time=00:00:11.98 bitrate=N/A speed=1.73x    frame=  853 fps=124 q=12.0 size=N/A time=00:00:14.18 bitrate=N/A speed=2.06x    frame= 1015 fps=146 q=12.0 size=N/A time=00:00:16.88 bitrate=N/A speed=2.42x    frame=  928 fps=125 q=8.0 size=N/A time=00:00:15.41 bitrate=N/A speed=2.08x    frame=  788 fps=105 q=9.0 size=N/A time=00:00:13.08 bitrate=N/A speed=1.75x    frame= 1104 fps=148 q=12.0 size=N/A time=00:00:18.36 bitrate=N/A speed=2.46x    frame= 1019 fps=129 q=11.0 size=N/A time=00:00:16.93 bitrate=N/A speed=2.14x    frame=  849 fps=106 q=11.0 size=N/A time=00:00:14.10 bitrate=N/A speed=1.76x    frame= 1191 fps=149 q=12.0 size=N/A time=00:00:19.81 bitrate=N/A speed=2.48x    frame= 1092 fps=130 q=12.0 size=N/A time=00:00:18.15 bitrate=N/A speed=2.15x    frame=  928 fps=109 q=9.0 size=N/A time=00:00:15.41 bitrate=N/A speed=1.81x    [hls @ 00000168e858e380] Opening 'C:\encoded\el-negro\480p\segment_000.ts' for writing
+frame= 1263 fps=148 q=8.0 size=N/A time=00:00:21.01 bitrate=N/A speed=2.47x    frame= 1162 fps=130 q=8.0 size=N/A time=00:00:19.31 bitrate=N/A speed=2.16x    frame= 1319 fps=146 q=12.0 size=N/A time=00:00:21.93 bitrate=N/A speed=2.43x    frame= 1011 fps=110 q=11.0 size=N/A time=00:00:16.80 bitrate=N/A speed=1.83x    frame= 1237 fps=131 q=11.0 size=N/A time=00:00:20.60 bitrate=N/A speed=2.18x    frame= 1416 fps=149 q=8.0 size=N/A time=00:00:23.55 bitrate=N/A speed=2.47x    [hls @ 0000026366713bc0] Opening 'C:\encoded\el-negro\720p\segment_000.ts' for writing
+frame= 1043 fps=106 q=12.0 size=N/A time=00:00:17.33 bitrate=N/A speed=1.77x    frame= 1299 fps=130 q=12.0 size=N/A time=00:00:21.60 bitrate=N/A speed=2.17x    frame= 1486 fps=148 q=12.0 size=N/A time=00:00:24.71 bitrate=N/A speed=2.46x    frame= 1120 fps=107 q=12.0 size=N/A time=00:00:18.61 bitrate=N/A speed=1.79x    frame= 1373 fps=131 q=11.0 size=N/A time=00:00:22.83 bitrate=N/A speed=2.18x    frame= 1563 fps=148 q=12.0 size=N/A time=00:00:26.01 bitrate=N/A speed=2.46x    frame= 1151 fps=105 q=11.0 size=N/A time=00:00:19.13 bitrate=N/A speed=1.75x    frame= 1438 fps=131 q=12.0 size=N/A time=00:00:23.91 bitrate=N/A speed=2.17x    frame= 1658 fps=150 q=8.0 size=N/A time=00:00:27.58 bitrate=N/A speed=2.49x    frame= 1194 fps=104 q=9.0 size=N/A time=00:00:19.85 bitrate=N/A speed=1.73x    frame= 1522 fps=132 q=8.0 size=N/A time=00:00:25.31 bitrate=N/A speed= 2.2x    frame= 1735 fps=150 q=11.0 size=N/A time=00:00:28.86 bitrate=N/A speed=2.49x    frame= 1246 fps=104 q=9.0 size=N/A time=00:00:20.71 bitrate=N/A speed=1.72x    frame= 1607 fps=134 q=11.0 size=N/A time=00:00:26.73 bitrate=N/A speed=2.22x    [hls @ 000001f18f63ed40] Opening 'C:\encoded\el-negro\1080p\segment_000.ts' for writing
+frame= 1817 fps=150 q=11.0 size=N/A time=00:00:30.23 bitrate=N/A speed= 2.5x    frame= 1283 fps=102 q=12.0 size=N/A time=00:00:21.33 bitrate=N/A speed=1.69x    frame= 1681 fps=134 q=8.0 size=N/A time=00:00:27.98 bitrate=N/A speed=2.23x    frame= 1885 fps=149 q=11.0 size=N/A time=00:00:31.36 bitrate=N/A speed=2.48x    frame= 1361 fps=104 q=12.0 size=N/A time=00:00:22.65 bitrate=N/A speed=1.72x    frame= 1729 fps=132 q=12.0 size=N/A time=00:00:28.76 bitrate=N/A speed= 2.2x    frame= 1940 fps=147 q=8.0 size=N/A time=00:00:32.28 bitrate=N/A speed=2.45x    frame= 1783 fps=131 q=8.0 size=N/A time=00:00:29.68 bitrate=N/A speed=2.19x    frame= 1449 fps=106 q=12.0 size=N/A time=00:00:24.11 bitrate=N/A speed=1.76x    frame= 1995 fps=146 q=12.0 size=N/A time=00:00:33.20 bitrate=N/A speed=2.43x    frame= 1832 fps=130 q=11.0 size=N/A time=00:00:30.50 bitrate=N/A speed=2.16x    frame= 1541 fps=109 q=12.0 size=N/A time=00:00:25.63 bitrate=N/A speed=1.81x    frame= 2041 fps=144 q=8.0 size=N/A time=00:00:33.98 bitrate=N/A speed= 2.4x    frame= 1889 fps=129 q=11.0 size=N/A time=00:00:31.43 bitrate=N/A speed=2.15x    frame= 1648 fps=112 q=12.0 size=N/A time=00:00:27.41 bitrate=N/A speed=1.86x    frame= 2075 fps=141 q=11.0 size=N/A time=00:00:34.53 bitrate=N/A speed=2.35x    frame= 1938 fps=128 q=12.0 size=N/A time=00:00:32.25 bitrate=N/A speed=2.13x    frame= 1722 fps=113 q=9.0 size=N/A time=00:00:28.65 bitrate=N/A speed=1.88x    frame= 2112 fps=139 q=12.0 size=N/A time=00:00:35.16 bitrate=N/A speed=2.31x    frame= 2012 fps=129 q=11.0 size=N/A time=00:00:33.53 bitrate=N/A speed=2.14x    frame= 1782 fps=113 q=12.0 size=N/A time=00:00:29.65 bitrate=N/A speed=1.88x    frame= 2183 fps=139 q=11.0 size=N/A time=00:00:36.33 bitrate=N/A speed=2.31x    frame= 2073 fps=128 q=12.0 size=N/A time=00:00:34.50 bitrate=N/A speed=2.14x    frame= 1818 fps=112 q=12.0 size=N/A time=00:00:30.25 bitrate=N/A speed=1.86x    frame= 2264 fps=139 q=8.0 size=N/A time=00:00:37.68 bitrate=N/A speed=2.32x    frame= 2132 fps=128 q=12.0 size=N/A time=00:00:35.48 bitrate=N/A speed=2.13x    frame= 1854 fps=110 q=12.0 size=N/A time=00:00:30.85 bitrate=N/A speed=1.83x    frame= 2360 fps=141 q=8.0 size=N/A time=00:00:39.28 bitrate=N/A speed=2.34x    frame= 2218 fps=129 q=9.0 size=N/A time=00:00:36.91 bitrate=N/A speed=2.15x    [hls @ 00000168e858e380] Opening 'C:\encoded\el-negro\480p\segment_001.ts' for writing
+[out#0/hls @ 00000168e8522b80] video:1613KiB audio:11KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame= 2425 fps=141 q=11.0 Lsize=N/A time=00:00:40.36 bitrate=N/A speed=2.35x    
+frame= 1904 fps=110 q=9.0 size=N/A time=00:00:31.68 bitrate=N/A speed=1.82x    [aac @ 00000168eaeb5c40] Qavg: 65536.000
+frame= 2295 fps=130 q=12.0 size=N/A time=00:00:38.20 bitrate=N/A speed=2.16x    frame= 2018 fps=113 q=9.0 size=N/A time=00:00:33.58 bitrate=N/A speed=1.88x    frame= 2358 fps=129 q=12.0 size=N/A time=00:00:39.25 bitrate=N/A speed=2.15x    frame= 2140 fps=116 q=12.0 size=N/A time=00:00:35.61 bitrate=N/A speed=1.93x    [hls @ 0000026366713bc0] Opening 'C:\encoded\el-negro\720p\segment_001.ts' for writing
+[out#0/hls @ 0000026364900400] video:2640KiB audio:11KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame= 2425 fps=130 q=11.0 Lsize=N/A time=00:00:40.36 bitrate=N/A speed=2.16x    
+frame= 2237 fps=118 q=12.0 size=N/A time=00:00:37.23 bitrate=N/A speed=1.97x    [aac @ 0000026366bf8740] Qavg: 65536.000
+frame= 2375 fps=122 q=12.0 size=N/A time=00:00:39.53 bitrate=N/A speed=2.03x    [hls @ 000001f18f63ed40] Opening 'C:\encoded\el-negro\1080p\segment_001.ts' for writing
+[out#0/hls @ 000001f18d6dd300] video:3675KiB audio:11KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame= 2425 fps=124 q=11.0 Lsize=N/A time=00:00:40.36 bitrate=N/A speed=2.06x    
+[aac @ 000001f18fa799c0] Qavg: 65536.000
+ffmpeg version N-119137-g46762c8b82-20250404 Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 14.2.0 (crosstool-NG 1.27.0.18_7458341)
+  configuration: --prefix=/ffbuild/prefix --pkg-config-flags=--static --pkg-config=pkg-config --cross-prefix=x86_64-w64-mingw32- --arch=x86_64 --target-os=mingw32 --enable-gpl --enable-version3 --disable-debug --enable-shared --disable-static --disable-w32threads --enable-pthreads --enable-iconv --enable-zlib --enable-libfreetype --enable-libfribidi --enable-gmp --enable-libxml2 --enable-lzma --enable-fontconfig --enable-libharfbuzz --enable-libvorbis --enable-opencl --disable-libpulse --enable-libvmaf --disable-libxcb --disable-xlib --enable-amf --enable-libaom --enable-libaribb24 --enable-avisynth --enable-chromaprint --enable-libdav1d --enable-libdavs2 --enable-libdvdread --enable-libdvdnav --disable-libfdk-aac --enable-ffnvcodec --enable-cuda-llvm --enable-frei0r --enable-libgme --enable-libkvazaar --enable-libaribcaption --enable-libass --enable-libbluray --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librist --enable-libssh --enable-libtheora --enable-libvpx --enable-libwebp --enable-libzmq --enable-lv2 --enable-libvpl --enable-openal --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenh264 --enable-libopenjpeg --enable-libopenmpt --enable-librav1e --enable-librubberband --enable-schannel --enable-sdl2 --enable-libsnappy --enable-libsoxr --enable-libsrt --enable-libsvtav1 --enable-libtwolame --enable-libuavs3d --disable-libdrm --enable-vaapi --enable-libvidstab --enable-vulkan --enable-libshaderc --enable-libplacebo --enable-libvvenc --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxvid --enable-libzimg --enable-libzvbi --extra-cflags=-DLIBTWOLAME_STATIC --extra-cxxflags= --extra-libs=-lgomp --extra-ldflags=-pthread --extra-ldexeflags= --cc=x86_64-w64-mingw32-gcc --cxx=x86_64-w64-mingw32-g++ --ar=x86_64-w64-mingw32-gcc-ar --ranlib=x86_64-w64-mingw32-gcc-ranlib --nm=x86_64-w64-mingw32-gcc-nm --extra-version=20250404
+  libavutil      60.  0.100 / 60.  0.100
+  libavcodec     62.  0.101 / 62.  0.101
+  libavformat    62.  0.100 / 62.  0.100
+  libavdevice    62.  0.100 / 62.  0.100
+  libavfilter    11.  0.100 / 11.  0.100
+  libswscale      9.  0.100 /  9.  0.100
+  libswresample   6.  0.100 /  6.  0.100
+  libpostproc    59.  0.100 / 59.  0.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\Users\DELL\Videos\el-negro.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf62.0.100
+  Duration: 00:00:40.42, start: 0.000000, bitrate: 335 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1920x1080 [SAR 1:1 DAR 16:9], 320 kb/s, 60 fps, 60 tbr, 15360 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+      encoder         : Lavc62.0.101 libx264
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 2 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (h264_nvenc))
+  Stream #0:1 -> #0:1 (aac (native) -> aac (native))
+Press [q] to stop, [?] for help
+Output #0, hls, to 'C:\encoded\el-negro\1080p\stream.m3u8':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf62.0.100
+  Stream #0:0(und): Video: h264 (Main), yuv420p(tv, bt709, progressive), 1920x1080 [SAR 1:1 DAR 16:9], q=2-31, 5000 kb/s, 60 fps, 90k tbn (default)
+    Metadata:
+      encoder         : Lavc62.0.101 h264_nvenc
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+    Side data:
+      cpb: bitrate max/min/avg: 5500000/0/5000000 buffer size: 10000000 vbv_delay: N/A
+  Stream #0:1(und): Audio: aac (LC), 48000 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      encoder         : Lavc62.0.101 aac
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+frame=   59 fps=0.0 q=17.0 size=N/A time=00:00:00.93 bitrate=N/A speed=1.79x    frame=  204 fps=195 q=12.0 size=N/A time=00:00:03.35 bitrate=N/A speed= 3.2x    frame=  350 fps=225 q=12.0 size=N/A time=00:00:05.78 bitrate=N/A speed=3.71x    frame=  498 fps=240 q=12.0 size=N/A time=00:00:08.25 bitrate=N/A speed=3.98x    frame=  645 fps=250 q=12.0 size=N/A time=00:00:10.70 bitrate=N/A speed=4.15x    frame=  799 fps=257 q=12.0 size=N/A time=00:00:13.26 bitrate=N/A speed=4.27x    frame=  947 fps=262 q=12.0 size=N/A time=00:00:15.73 bitrate=N/A speed=4.35x    frame= 1096 fps=266 q=12.0 size=N/A time=00:00:18.21 bitrate=N/A speed=4.41x    frame= 1250 fps=269 q=9.0 size=N/A time=00:00:20.78 bitrate=N/A speed=4.47x    [hls @ 0000015d4a3eb740] Opening 'C:\encoded\el-negro\1080p\segment_000.ts' for writing
+frame= 1399 fps=271 q=12.0 size=N/A time=00:00:23.26 bitrate=N/A speed= 4.5x    frame= 1549 fps=273 q=12.0 size=N/A time=00:00:25.76 bitrate=N/A speed=4.54x    frame= 1699 fps=274 q=11.0 size=N/A time=00:00:28.26 bitrate=N/A speed=4.57x    frame= 1849 fps=276 q=11.0 size=N/A time=00:00:30.76 bitrate=N/A speed=4.59x    frame= 2000 fps=277 q=9.0 size=N/A time=00:00:33.28 bitrate=N/A speed= 4.6x    frame= 2147 fps=277 q=11.0 size=N/A time=00:00:35.73 bitrate=N/A speed=4.62x    frame= 2296 fps=278 q=9.0 size=N/A time=00:00:38.21 bitrate=N/A speed=4.62x    [hls @ 0000015d4a3eb740] Opening 'C:\encoded\el-negro\1080p\segment_001.ts' for writing
+[out#0/hls @ 0000015d4a380580] video:3675KiB audio:11KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame= 2425 fps=278 q=11.0 Lsize=N/A time=00:00:40.36 bitrate=N/A speed=4.63x    
+[aac @ 0000015d4a40c4c0] Qavg: 65536.000
+ffmpeg version N-119137-g46762c8b82-20250404 Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 14.2.0 (crosstool-NG 1.27.0.18_7458341)
+  configuration: --prefix=/ffbuild/prefix --pkg-config-flags=--static --pkg-config=pkg-config --cross-prefix=x86_64-w64-mingw32- --arch=x86_64 --target-os=mingw32 --enable-gpl --enable-version3 --disable-debug --enable-shared --disable-static --disable-w32threads --enable-pthreads --enable-iconv --enable-zlib --enable-libfreetype --enable-libfribidi --enable-gmp --enable-libxml2 --enable-lzma --enable-fontconfig --enable-libharfbuzz --enable-libvorbis --enable-opencl --disable-libpulse --enable-libvmaf --disable-libxcb --disable-xlib --enable-amf --enable-libaom --enable-libaribb24 --enable-avisynth --enable-chromaprint --enable-libdav1d --enable-libdavs2 --enable-libdvdread --enable-libdvdnav --disable-libfdk-aac --enable-ffnvcodec --enable-cuda-llvm --enable-frei0r --enable-libgme --enable-libkvazaar --enable-libaribcaption --enable-libass --enable-libbluray --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librist --enable-libssh --enable-libtheora --enable-libvpx --enable-libwebp --enable-libzmq --enable-lv2 --enable-libvpl --enable-openal --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenh264 --enable-libopenjpeg --enable-libopenmpt --enable-librav1e --enable-librubberband --enable-schannel --enable-sdl2 --enable-libsnappy --enable-libsoxr --enable-libsrt --enable-libsvtav1 --enable-libtwolame --enable-libuavs3d --disable-libdrm --enable-vaapi --enable-libvidstab --enable-vulkan --enable-libshaderc --enable-libplacebo --enable-libvvenc --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxvid --enable-libzimg --enable-libzvbi --extra-cflags=-DLIBTWOLAME_STATIC --extra-cxxflags= --extra-libs=-lgomp --extra-ldflags=-pthread --extra-ldexeflags= --cc=x86_64-w64-mingw32-gcc --cxx=x86_64-w64-mingw32-g++ --ar=x86_64-w64-mingw32-gcc-ar --ranlib=x86_64-w64-mingw32-gcc-ranlib --nm=x86_64-w64-mingw32-gcc-nm --extra-version=20250404
+  libavutil      60.  0.100 / 60.  0.100
+  libavcodec     62.  0.101 / 62.  0.101
+  libavformat    62.  0.100 / 62.  0.100
+  libavdevice    62.  0.100 / 62.  0.100
+  libavfilter    11.  0.100 / 11.  0.100
+  libswscale      9.  0.100 /  9.  0.100
+  libswresample   6.  0.100 /  6.  0.100
+  libpostproc    59.  0.100 / 59.  0.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\Users\DELL\Videos\el-negro.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf62.0.100
+  Duration: 00:00:40.42, start: 0.000000, bitrate: 335 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1920x1080 [SAR 1:1 DAR 16:9], 320 kb/s, 60 fps, 60 tbr, 15360 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+      encoder         : Lavc62.0.101 libx264
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 2 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (h264_nvenc))
+  Stream #0:1 -> #0:1 (aac (native) -> aac (native))
+Press [q] to stop, [?] for help
+Output #0, hls, to 'C:\encoded\el-negro\720p\stream.m3u8':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf62.0.100
+  Stream #0:0(und): Video: h264 (Main), yuv420p(tv, bt709, progressive), 1280x720 [SAR 1:1 DAR 16:9], q=2-31, 2800 kb/s, 60 fps, 90k tbn (default)
+    Metadata:
+      encoder         : Lavc62.0.101 h264_nvenc
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+    Side data:
+      cpb: bitrate max/min/avg: 3000000/0/2800000 buffer size: 6000000 vbv_delay: N/A
+  Stream #0:1(und): Audio: aac (LC), 48000 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      encoder         : Lavc62.0.101 aac
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+frame=   97 fps=0.0 q=12.0 size=N/A time=00:00:01.56 bitrate=N/A speed=3.06x    frame=  265 fps=256 q=11.0 size=N/A time=00:00:04.36 bitrate=N/A speed=4.21x    frame=  455 fps=294 q=12.0 size=N/A time=00:00:07.53 bitrate=N/A speed=4.87x    frame=  644 fps=313 q=12.0 size=N/A time=00:00:10.68 bitrate=N/A speed=5.19x    frame=  832 fps=323 q=8.0 size=N/A time=00:00:13.81 bitrate=N/A speed=5.37x    frame= 1024 fps=330 q=12.0 size=N/A time=00:00:17.01 bitrate=N/A speed=5.49x    frame= 1197 fps=332 q=12.0 size=N/A time=00:00:19.90 bitrate=N/A speed=5.52x    [hls @ 00000211b6055500] Opening 'C:\encoded\el-negro\720p\segment_000.ts' for writing
+frame= 1448 fps=350 q=8.0 size=N/A time=00:00:24.08 bitrate=N/A speed=5.83x    frame= 1640 fps=353 q=12.0 size=N/A time=00:00:27.28 bitrate=N/A speed=5.88x    frame= 1837 fps=356 q=11.0 size=N/A time=00:00:30.56 bitrate=N/A speed=5.93x    frame= 2010 fps=355 q=9.0 size=N/A time=00:00:33.45 bitrate=N/A speed= 5.9x    frame= 2251 fps=364 q=8.0 size=N/A time=00:00:37.46 bitrate=N/A speed=6.05x    [hls @ 00000211b6055500] Opening 'C:\encoded\el-negro\720p\segment_001.ts' for writing
+[out#0/hls @ 00000211b5fef500] video:2640KiB audio:11KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame= 2425 fps=371 q=11.0 Lsize=N/A time=00:00:40.36 bitrate=N/A speed=6.17x    
+[aac @ 00000211b7d9bdc0] Qavg: 65536.000
+ffmpeg version N-119137-g46762c8b82-20250404 Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 14.2.0 (crosstool-NG 1.27.0.18_7458341)
+  configuration: --prefix=/ffbuild/prefix --pkg-config-flags=--static --pkg-config=pkg-config --cross-prefix=x86_64-w64-mingw32- --arch=x86_64 --target-os=mingw32 --enable-gpl --enable-version3 --disable-debug --enable-shared --disable-static --disable-w32threads --enable-pthreads --enable-iconv --enable-zlib --enable-libfreetype --enable-libfribidi --enable-gmp --enable-libxml2 --enable-lzma --enable-fontconfig --enable-libharfbuzz --enable-libvorbis --enable-opencl --disable-libpulse --enable-libvmaf --disable-libxcb --disable-xlib --enable-amf --enable-libaom --enable-libaribb24 --enable-avisynth --enable-chromaprint --enable-libdav1d --enable-libdavs2 --enable-libdvdread --enable-libdvdnav --disable-libfdk-aac --enable-ffnvcodec --enable-cuda-llvm --enable-frei0r --enable-libgme --enable-libkvazaar --enable-libaribcaption --enable-libass --enable-libbluray --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librist --enable-libssh --enable-libtheora --enable-libvpx --enable-libwebp --enable-libzmq --enable-lv2 --enable-libvpl --enable-openal --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenh264 --enable-libopenjpeg --enable-libopenmpt --enable-librav1e --enable-librubberband --enable-schannel --enable-sdl2 --enable-libsnappy --enable-libsoxr --enable-libsrt --enable-libsvtav1 --enable-libtwolame --enable-libuavs3d --disable-libdrm --enable-vaapi --enable-libvidstab --enable-vulkan --enable-libshaderc --enable-libplacebo --enable-libvvenc --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxvid --enable-libzimg --enable-libzvbi --extra-cflags=-DLIBTWOLAME_STATIC --extra-cxxflags= --extra-libs=-lgomp --extra-ldflags=-pthread --extra-ldexeflags= --cc=x86_64-w64-mingw32-gcc --cxx=x86_64-w64-mingw32-g++ --ar=x86_64-w64-mingw32-gcc-ar --ranlib=x86_64-w64-mingw32-gcc-ranlib --nm=x86_64-w64-mingw32-gcc-nm --extra-version=20250404
+  libavutil      60.  0.100 / 60.  0.100
+  libavcodec     62.  0.101 / 62.  0.101
+  libavformat    62.  0.100 / 62.  0.100
+  libavdevice    62.  0.100 / 62.  0.100
+  libavfilter    11.  0.100 / 11.  0.100
+  libswscale      9.  0.100 /  9.  0.100
+  libswresample   6.  0.100 /  6.  0.100
+  libpostproc    59.  0.100 / 59.  0.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\Users\DELL\Videos\el-negro.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf62.0.100
+  Duration: 00:00:40.42, start: 0.000000, bitrate: 335 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1920x1080 [SAR 1:1 DAR 16:9], 320 kb/s, 60 fps, 60 tbr, 15360 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+      encoder         : Lavc62.0.101 libx264
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 2 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (h264_nvenc))
+  Stream #0:1 -> #0:1 (aac (native) -> aac (native))
+Press [q] to stop, [?] for help
+Output #0, hls, to 'C:\encoded\el-negro\480p\stream.m3u8':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf62.0.100
+  Stream #0:0(und): Video: h264 (Main), yuv420p(tv, bt709, progressive), 853x480 [SAR 2560:2559 DAR 16:9], q=2-31, 1400 kb/s, 60 fps, 90k tbn (default)
+    Metadata:
+      encoder         : Lavc62.0.101 h264_nvenc
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+    Side data:
+      cpb: bitrate max/min/avg: 1600000/0/1400000 buffer size: 3000000 vbv_delay: N/A
+  Stream #0:1(und): Audio: aac (LC), 48000 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      encoder         : Lavc62.0.101 aac
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+frame=  162 fps=0.0 q=11.0 size=N/A time=00:00:02.66 bitrate=N/A speed=5.24x    frame=  440 fps=428 q=8.0 size=N/A time=00:00:07.28 bitrate=N/A speed=7.09x    frame=  749 fps=482 q=12.0 size=N/A time=00:00:12.43 bitrate=N/A speed=8.01x    frame= 1030 fps=496 q=8.0 size=N/A time=00:00:17.11 bitrate=N/A speed=8.24x    [hls @ 00000217d365e040] Opening 'C:\encoded\el-negro\480p\segment_000.ts' for writing
+frame= 1335 fps=516 q=12.0 size=N/A time=00:00:22.20 bitrate=N/A speed=8.58x    frame= 1615 fps=519 q=11.0 size=N/A time=00:00:26.85 bitrate=N/A speed=8.63x    frame= 1895 fps=523 q=8.0 size=N/A time=00:00:31.53 bitrate=N/A speed= 8.7x    frame= 2166 fps=523 q=8.0 size=N/A time=00:00:36.05 bitrate=N/A speed= 8.7x    [hls @ 00000217d365e040] Opening 'C:\encoded\el-negro\480p\segment_001.ts' for writing
+[out#0/hls @ 00000217d15ffbc0] video:1613KiB audio:11KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame= 2425 fps=534 q=11.0 Lsize=N/A time=00:00:40.36 bitrate=N/A speed=8.89x    
+[aac @ 00000217d3383380] Qavg: 65536.000
+ffmpeg version N-119137-g46762c8b82-20250404 Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 14.2.0 (crosstool-NG 1.27.0.18_7458341)
+  configuration: --prefix=/ffbuild/prefix --pkg-config-flags=--static --pkg-config=pkg-config --cross-prefix=x86_64-w64-mingw32- --arch=x86_64 --target-os=mingw32 --enable-gpl --enable-version3 --disable-debug --enable-shared --disable-static --disable-w32threads --enable-pthreads --enable-iconv --enable-zlib --enable-libfreetype --enable-libfribidi --enable-gmp --enable-libxml2 --enable-lzma --enable-fontconfig --enable-libharfbuzz --enable-libvorbis --enable-opencl --disable-libpulse --enable-libvmaf --disable-libxcb --disable-xlib --enable-amf --enable-libaom --enable-libaribb24 --enable-avisynth --enable-chromaprint --enable-libdav1d --enable-libdavs2 --enable-libdvdread --enable-libdvdnav --disable-libfdk-aac --enable-ffnvcodec --enable-cuda-llvm --enable-frei0r --enable-libgme --enable-libkvazaar --enable-libaribcaption --enable-libass --enable-libbluray --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librist --enable-libssh --enable-libtheora --enable-libvpx --enable-libwebp --enable-libzmq --enable-lv2 --enable-libvpl --enable-openal --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenh264 --enable-libopenjpeg --enable-libopenmpt --enable-librav1e --enable-librubberband --enable-schannel --enable-sdl2 --enable-libsnappy --enable-libsoxr --enable-libsrt --enable-libsvtav1 --enable-libtwolame --enable-libuavs3d --disable-libdrm --enable-vaapi --enable-libvidstab --enable-vulkan --enable-libshaderc --enable-libplacebo --enable-libvvenc --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxvid --enable-libzimg --enable-libzvbi --extra-cflags=-DLIBTWOLAME_STATIC --extra-cxxflags= --extra-libs=-lgomp --extra-ldflags=-pthread --extra-ldexeflags= --cc=x86_64-w64-mingw32-gcc --cxx=x86_64-w64-mingw32-g++ --ar=x86_64-w64-mingw32-gcc-ar --ranlib=x86_64-w64-mingw32-gcc-ranlib --nm=x86_64-w64-mingw32-gcc-nm --extra-version=20250404
+  libavutil      60.  0.100 / 60.  0.100
+  libavcodec     62.  0.101 / 62.  0.101
+  libavformat    62.  0.100 / 62.  0.100
+  libavdevice    62.  0.100 / 62.  0.100
+  libavfilter    11.  0.100 / 11.  0.100
+  libswscale      9.  0.100 /  9.  0.100
+  libswresample   6.  0.100 /  6.  0.100
+  libpostproc    59.  0.100 / 59.  0.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\Users\DELL\Videos\el-negro.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf62.0.100
+  Duration: 00:00:40.42, start: 0.000000, bitrate: 335 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1920x1080 [SAR 1:1 DAR 16:9], 320 kb/s, 60 fps, 60 tbr, 15360 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+      encoder         : Lavc62.0.101 libx264
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 2 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (h264_nvenc))
+  Stream #0:1 -> #0:1 (aac (native) -> aac (native))
+Press [q] to stop, [?] for help
+Output #0, hls, to 'C:\encoded\el-negro\1080p\stream.m3u8':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf62.0.100
+  Stream #0:0(und): Video: h264 (Main), yuv420p(tv, bt709, progressive), 1920x1080 [SAR 1:1 DAR 16:9], q=2-31, 5000 kb/s, 60 fps, 90k tbn (default)
+    Metadata:
+      encoder         : Lavc62.0.101 h264_nvenc
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+    Side data:
+      cpb: bitrate max/min/avg: 5500000/0/5000000 buffer size: 10000000 vbv_delay: N/A
+  Stream #0:1(und): Audio: aac (LC), 48000 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      encoder         : Lavc62.0.101 aac
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+frame=   53 fps=0.0 q=19.0 size=N/A time=00:00:00.83 bitrate=N/A speed=1.62x    frame=  203 fps=197 q=11.0 size=N/A time=00:00:03.33 bitrate=N/A speed=3.24x    frame=  348 fps=226 q=9.0 size=N/A time=00:00:05.75 bitrate=N/A speed=3.73x    frame=  494 fps=241 q=12.0 size=N/A time=00:00:08.18 bitrate=N/A speed=3.99x    frame=  637 fps=248 q=12.0 size=N/A time=00:00:10.56 bitrate=N/A speed=4.11x    frame=  785 fps=254 q=11.0 size=N/A time=00:00:13.03 bitrate=N/A speed=4.22x    frame=  934 fps=259 q=12.0 size=N/A time=00:00:15.51 bitrate=N/A speed= 4.3x    frame= 1079 fps=262 q=11.0 size=N/A time=00:00:17.93 bitrate=N/A speed=4.35x    frame= 1225 fps=264 q=12.0 size=N/A time=00:00:20.36 bitrate=N/A speed= 4.4x    [hls @ 0000022b49645d80] Opening 'C:\encoded\el-negro\1080p\segment_000.ts' for writing
+frame= 1372 fps=267 q=9.0 size=N/A time=00:00:22.81 bitrate=N/A speed=4.43x    frame= 1523 fps=269 q=11.0 size=N/A time=00:00:25.33 bitrate=N/A speed=4.47x    frame= 1670 fps=270 q=9.0 size=N/A time=00:00:27.78 bitrate=N/A speed=4.49x    frame= 1816 fps=271 q=9.0 size=N/A time=00:00:30.21 bitrate=N/A speed=4.51x    frame= 1960 fps=272 q=9.0 size=N/A time=00:00:32.61 bitrate=N/A speed=4.53x    frame= 2105 fps=272 q=12.0 size=N/A time=00:00:35.03 bitrate=N/A speed=4.53x    frame= 2250 fps=273 q=9.0 size=N/A time=00:00:37.45 bitrate=N/A speed=4.54x    frame= 2399 fps=274 q=12.0 size=N/A time=00:00:39.93 bitrate=N/A speed=4.56x    [hls @ 0000022b49645d80] Opening 'C:\encoded\el-negro\1080p\segment_001.ts' for writing
+[out#0/hls @ 0000022b47aef1c0] video:3675KiB audio:11KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame= 2425 fps=274 q=11.0 Lsize=N/A time=00:00:40.36 bitrate=N/A speed=4.56x    
+[aac @ 0000022b4a591100] Qavg: 65536.000
+ffmpeg version N-119137-g46762c8b82-20250404 Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 14.2.0 (crosstool-NG 1.27.0.18_7458341)
+  configuration: --prefix=/ffbuild/prefix --pkg-config-flags=--static --pkg-config=pkg-config --cross-prefix=x86_64-w64-mingw32- --arch=x86_64 --target-os=mingw32 --enable-gpl --enable-version3 --disable-debug --enable-shared --disable-static --disable-w32threads --enable-pthreads --enable-iconv --enable-zlib --enable-libfreetype --enable-libfribidi --enable-gmp --enable-libxml2 --enable-lzma --enable-fontconfig --enable-libharfbuzz --enable-libvorbis --enable-opencl --disable-libpulse --enable-libvmaf --disable-libxcb --disable-xlib --enable-amf --enable-libaom --enable-libaribb24 --enable-avisynth --enable-chromaprint --enable-libdav1d --enable-libdavs2 --enable-libdvdread --enable-libdvdnav --disable-libfdk-aac --enable-ffnvcodec --enable-cuda-llvm --enable-frei0r --enable-libgme --enable-libkvazaar --enable-libaribcaption --enable-libass --enable-libbluray --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librist --enable-libssh --enable-libtheora --enable-libvpx --enable-libwebp --enable-libzmq --enable-lv2 --enable-libvpl --enable-openal --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenh264 --enable-libopenjpeg --enable-libopenmpt --enable-librav1e --enable-librubberband --enable-schannel --enable-sdl2 --enable-libsnappy --enable-libsoxr --enable-libsrt --enable-libsvtav1 --enable-libtwolame --enable-libuavs3d --disable-libdrm --enable-vaapi --enable-libvidstab --enable-vulkan --enable-libshaderc --enable-libplacebo --enable-libvvenc --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxvid --enable-libzimg --enable-libzvbi --extra-cflags=-DLIBTWOLAME_STATIC --extra-cxxflags= --extra-libs=-lgomp --extra-ldflags=-pthread --extra-ldexeflags= --cc=x86_64-w64-mingw32-gcc --cxx=x86_64-w64-mingw32-g++ --ar=x86_64-w64-mingw32-gcc-ar --ranlib=x86_64-w64-mingw32-gcc-ranlib --nm=x86_64-w64-mingw32-gcc-nm --extra-version=20250404
+  libavutil      60.  0.100 / 60.  0.100
+  libavcodec     62.  0.101 / 62.  0.101
+  libavformat    62.  0.100 / 62.  0.100
+  libavdevice    62.  0.100 / 62.  0.100
+  libavfilter    11.  0.100 / 11.  0.100
+  libswscale      9.  0.100 /  9.  0.100
+  libswresample   6.  0.100 /  6.  0.100
+  libpostproc    59.  0.100 / 59.  0.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\Users\DELL\Videos\el-negro.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf62.0.100
+  Duration: 00:00:40.42, start: 0.000000, bitrate: 335 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1920x1080 [SAR 1:1 DAR 16:9], 320 kb/s, 60 fps, 60 tbr, 15360 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+      encoder         : Lavc62.0.101 libx264
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 2 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (h264_nvenc))
+  Stream #0:1 -> #0:1 (aac (native) -> aac (native))
+Press [q] to stop, [?] for help
+Output #0, hls, to 'C:\encoded\el-negro\1080p\stream.m3u8':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf62.0.100
+  Stream #0:0(und): Video: h264 (Main), yuv420p(tv, bt709, progressive), 1920x1080 [SAR 1:1 DAR 16:9], q=2-31, 5000 kb/s, 60 fps, 90k tbn (default)
+    Metadata:
+      encoder         : Lavc62.0.101 h264_nvenc
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+    Side data:
+      cpb: bitrate max/min/avg: 5500000/0/5000000 buffer size: 10000000 vbv_delay: N/A
+  Stream #0:1(und): Audio: aac (LC), 48000 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      encoder         : Lavc62.0.101 aac
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+frame=   39 fps=0.0 q=22.0 size=N/A time=00:00:00.60 bitrate=N/A speed=1.14x    frame=  183 fps=176 q=11.0 size=N/A time=00:00:03.00 bitrate=N/A speed=2.88x    frame=  329 fps=211 q=11.0 size=N/A time=00:00:05.41 bitrate=N/A speed=3.48x    frame=  476 fps=230 q=9.0 size=N/A time=00:00:07.88 bitrate=N/A speed=3.82x    frame=  626 fps=243 q=9.0 size=N/A time=00:00:10.38 bitrate=N/A speed=4.03x    frame=  776 fps=250 q=9.0 size=N/A time=00:00:12.88 bitrate=N/A speed=4.16x    frame=  923 fps=256 q=12.0 size=N/A time=00:00:15.33 bitrate=N/A speed=4.25x    frame= 1070 fps=260 q=9.0 size=N/A time=00:00:17.78 bitrate=N/A speed=4.31x    frame= 1222 fps=263 q=9.0 size=N/A time=00:00:20.31 bitrate=N/A speed=4.37x    [hls @ 00000234c8443bc0] Opening 'C:\encoded\el-negro\1080p\segment_000.ts' for writing
+frame= 1369 fps=266 q=11.0 size=N/A time=00:00:22.76 bitrate=N/A speed=4.42x    frame= 1523 fps=268 q=11.0 size=N/A time=00:00:25.33 bitrate=N/A speed=4.46x    frame= 1670 fps=269 q=9.0 size=N/A time=00:00:27.78 bitrate=N/A speed=4.48x    frame= 1816 fps=271 q=9.0 size=N/A time=00:00:30.21 bitrate=N/A speed=4.51x    frame= 1964 fps=272 q=9.0 size=N/A time=00:00:32.68 bitrate=N/A speed=4.53x    frame= 2113 fps=273 q=12.0 size=N/A time=00:00:35.16 bitrate=N/A speed=4.54x    frame= 2260 fps=274 q=9.0 size=N/A time=00:00:37.61 bitrate=N/A speed=4.56x    frame= 2408 fps=275 q=9.0 size=N/A time=N/A bitrate=N/A speed=N/A    [hls @ 00000234c8443bc0] Opening 'C:\encoded\el-negro\1080p\segment_001.ts' for writing
+[out#0/hls @ 00000234c662c380] video:3675KiB audio:11KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame= 2425 fps=275 q=11.0 Lsize=N/A time=00:00:40.36 bitrate=N/A speed=4.57x    
+[aac @ 00000234c84802c0] Qavg: 65536.000
+ffmpeg version N-119137-g46762c8b82-20250404 Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 14.2.0 (crosstool-NG 1.27.0.18_7458341)
+  configuration: --prefix=/ffbuild/prefix --pkg-config-flags=--static --pkg-config=pkg-config --cross-prefix=x86_64-w64-mingw32- --arch=x86_64 --target-os=mingw32 --enable-gpl --enable-version3 --disable-debug --enable-shared --disable-static --disable-w32threads --enable-pthreads --enable-iconv --enable-zlib --enable-libfreetype --enable-libfribidi --enable-gmp --enable-libxml2 --enable-lzma --enable-fontconfig --enable-libharfbuzz --enable-libvorbis --enable-opencl --disable-libpulse --enable-libvmaf --disable-libxcb --disable-xlib --enable-amf --enable-libaom --enable-libaribb24 --enable-avisynth --enable-chromaprint --enable-libdav1d --enable-libdavs2 --enable-libdvdread --enable-libdvdnav --disable-libfdk-aac --enable-ffnvcodec --enable-cuda-llvm --enable-frei0r --enable-libgme --enable-libkvazaar --enable-libaribcaption --enable-libass --enable-libbluray --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librist --enable-libssh --enable-libtheora --enable-libvpx --enable-libwebp --enable-libzmq --enable-lv2 --enable-libvpl --enable-openal --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenh264 --enable-libopenjpeg --enable-libopenmpt --enable-librav1e --enable-librubberband --enable-schannel --enable-sdl2 --enable-libsnappy --enable-libsoxr --enable-libsrt --enable-libsvtav1 --enable-libtwolame --enable-libuavs3d --disable-libdrm --enable-vaapi --enable-libvidstab --enable-vulkan --enable-libshaderc --enable-libplacebo --enable-libvvenc --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxvid --enable-libzimg --enable-libzvbi --extra-cflags=-DLIBTWOLAME_STATIC --extra-cxxflags= --extra-libs=-lgomp --extra-ldflags=-pthread --extra-ldexeflags= --cc=x86_64-w64-mingw32-gcc --cxx=x86_64-w64-mingw32-g++ --ar=x86_64-w64-mingw32-gcc-ar --ranlib=x86_64-w64-mingw32-gcc-ranlib --nm=x86_64-w64-mingw32-gcc-nm --extra-version=20250404
+  libavutil      60.  0.100 / 60.  0.100
+  libavcodec     62.  0.101 / 62.  0.101
+  libavformat    62.  0.100 / 62.  0.100
+  libavdevice    62.  0.100 / 62.  0.100
+  libavfilter    11.  0.100 / 11.  0.100
+  libswscale      9.  0.100 /  9.  0.100
+  libswresample   6.  0.100 /  6.  0.100
+  libpostproc    59.  0.100 / 59.  0.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\Users\DELL\Videos\el-negro.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf62.0.100
+  Duration: 00:00:40.42, start: 0.000000, bitrate: 335 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1920x1080 [SAR 1:1 DAR 16:9], 320 kb/s, 60 fps, 60 tbr, 15360 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+      encoder         : Lavc62.0.101 libx264
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 2 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (h264_nvenc))
+  Stream #0:1 -> #0:1 (aac (native) -> aac (native))
+Press [q] to stop, [?] for help
+Output #0, hls, to 'C:\encoded\el-negro\1080p\stream.m3u8':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf62.0.100
+  Stream #0:0(und): Video: h264 (Main), yuv420p(tv, bt709, progressive), 1920x1080 [SAR 1:1 DAR 16:9], q=2-31, 5000 kb/s, 60 fps, 90k tbn (default)
+    Metadata:
+      encoder         : Lavc62.0.101 h264_nvenc
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+    Side data:
+      cpb: bitrate max/min/avg: 5500000/0/5000000 buffer size: 10000000 vbv_delay: N/A
+  Stream #0:1(und): Audio: aac (LC), 48000 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      encoder         : Lavc62.0.101 aac
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+frame=   47 fps=0.0 q=20.0 size=N/A time=00:00:00.73 bitrate=N/A speed=1.45x    frame=  191 fps=185 q=11.0 size=N/A time=00:00:03.13 bitrate=N/A speed=3.04x    frame=  339 fps=219 q=12.0 size=N/A time=00:00:05.60 bitrate=N/A speed=3.62x    frame=  487 fps=237 q=12.0 size=N/A time=00:00:08.06 bitrate=N/A speed=3.92x    frame=  635 fps=247 q=11.0 size=N/A time=00:00:10.53 bitrate=N/A speed= 4.1x    frame=  785 fps=255 q=11.0 size=N/A time=00:00:13.03 bitrate=N/A speed=4.23x    frame=  938 fps=260 q=12.0 size=N/A time=00:00:15.58 bitrate=N/A speed=4.32x    frame= 1085 fps=263 q=12.0 size=N/A time=00:00:18.03 bitrate=N/A speed=4.38x    frame= 1234 fps=266 q=9.0 size=N/A time=00:00:20.51 bitrate=N/A speed=4.43x    [hls @ 0000018a21d804c0] Opening 'C:\encoded\el-negro\1080p\segment_000.ts' for writing
+frame= 1382 fps=269 q=12.0 size=N/A time=00:00:22.98 bitrate=N/A speed=4.47x    frame= 1535 fps=271 q=11.0 size=N/A time=00:00:25.53 bitrate=N/A speed=4.51x    frame= 1685 fps=273 q=12.0 size=N/A time=00:00:28.03 bitrate=N/A speed=4.54x    frame= 1832 fps=274 q=9.0 size=N/A time=00:00:30.48 bitrate=N/A speed=4.56x    frame= 1983 fps=275 q=12.0 size=N/A time=00:00:33.00 bitrate=N/A speed=4.57x    frame= 2129 fps=276 q=12.0 size=N/A time=00:00:35.43 bitrate=N/A speed=4.59x    frame= 2277 fps=276 q=11.0 size=N/A time=00:00:37.90 bitrate=N/A speed= 4.6x    frame= 2424 fps=277 q=9.0 size=N/A time=N/A bitrate=N/A speed=N/A    [hls @ 0000018a21d804c0] Opening 'C:\encoded\el-negro\1080p\segment_001.ts' for writing
+[out#0/hls @ 0000018a21d00d00] video:3675KiB audio:11KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame= 2425 fps=277 q=11.0 Lsize=N/A time=00:00:40.36 bitrate=N/A speed=4.61x    
+[aac @ 0000018a239e5cc0] Qavg: 65536.000
+ffmpeg version N-119137-g46762c8b82-20250404 Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 14.2.0 (crosstool-NG 1.27.0.18_7458341)
+  configuration: --prefix=/ffbuild/prefix --pkg-config-flags=--static --pkg-config=pkg-config --cross-prefix=x86_64-w64-mingw32- --arch=x86_64 --target-os=mingw32 --enable-gpl --enable-version3 --disable-debug --enable-shared --disable-static --disable-w32threads --enable-pthreads --enable-iconv --enable-zlib --enable-libfreetype --enable-libfribidi --enable-gmp --enable-libxml2 --enable-lzma --enable-fontconfig --enable-libharfbuzz --enable-libvorbis --enable-opencl --disable-libpulse --enable-libvmaf --disable-libxcb --disable-xlib --enable-amf --enable-libaom --enable-libaribb24 --enable-avisynth --enable-chromaprint --enable-libdav1d --enable-libdavs2 --enable-libdvdread --enable-libdvdnav --disable-libfdk-aac --enable-ffnvcodec --enable-cuda-llvm --enable-frei0r --enable-libgme --enable-libkvazaar --enable-libaribcaption --enable-libass --enable-libbluray --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librist --enable-libssh --enable-libtheora --enable-libvpx --enable-libwebp --enable-libzmq --enable-lv2 --enable-libvpl --enable-openal --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenh264 --enable-libopenjpeg --enable-libopenmpt --enable-librav1e --enable-librubberband --enable-schannel --enable-sdl2 --enable-libsnappy --enable-libsoxr --enable-libsrt --enable-libsvtav1 --enable-libtwolame --enable-libuavs3d --disable-libdrm --enable-vaapi --enable-libvidstab --enable-vulkan --enable-libshaderc --enable-libplacebo --enable-libvvenc --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxvid --enable-libzimg --enable-libzvbi --extra-cflags=-DLIBTWOLAME_STATIC --extra-cxxflags= --extra-libs=-lgomp --extra-ldflags=-pthread --extra-ldexeflags= --cc=x86_64-w64-mingw32-gcc --cxx=x86_64-w64-mingw32-g++ --ar=x86_64-w64-mingw32-gcc-ar --ranlib=x86_64-w64-mingw32-gcc-ranlib --nm=x86_64-w64-mingw32-gcc-nm --extra-version=20250404
+  libavutil      60.  0.100 / 60.  0.100
+  libavcodec     62.  0.101 / 62.  0.101
+  libavformat    62.  0.100 / 62.  0.100
+  libavdevice    62.  0.100 / 62.  0.100
+  libavfilter    11.  0.100 / 11.  0.100
+  libswscale      9.  0.100 /  9.  0.100
+  libswresample   6.  0.100 /  6.  0.100
+  libpostproc    59.  0.100 / 59.  0.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\Users\DELL\Videos\el-negro.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf62.0.100
+  Duration: 00:00:40.42, start: 0.000000, bitrate: 335 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1920x1080 [SAR 1:1 DAR 16:9], 320 kb/s, 60 fps, 60 tbr, 15360 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+      encoder         : Lavc62.0.101 libx264
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 2 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (h264_nvenc))
+  Stream #0:1 -> #0:1 (aac (native) -> aac (native))
+Press [q] to stop, [?] for help
+Output #0, hls, to 'C:\encoded\el-negro\1080p\stream.m3u8':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf62.0.100
+  Stream #0:0(und): Video: h264 (Main), yuv420p(tv, bt709, progressive), 1920x1080 [SAR 1:1 DAR 16:9], q=2-31, 5000 kb/s, 60 fps, 90k tbn (default)
+    Metadata:
+      encoder         : Lavc62.0.101 h264_nvenc
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+    Side data:
+      cpb: bitrate max/min/avg: 5500000/0/5000000 buffer size: 10000000 vbv_delay: N/A
+  Stream #0:1(und): Audio: aac (LC), 48000 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      encoder         : Lavc62.0.101 aac
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+frame=   57 fps=0.0 q=18.0 size=N/A time=00:00:00.90 bitrate=N/A speed=1.73x    frame=  201 fps=195 q=12.0 size=N/A time=00:00:03.30 bitrate=N/A speed= 3.2x    frame=  350 fps=227 q=12.0 size=N/A time=00:00:05.78 bitrate=N/A speed=3.75x    frame=  496 fps=242 q=9.0 size=N/A time=00:00:08.21 bitrate=N/A speed=   4x    frame=  649 fps=251 q=12.0 size=N/A time=00:00:10.76 bitrate=N/A speed=4.17x    frame=  799 fps=258 q=12.0 size=N/A time=00:00:13.26 bitrate=N/A speed=4.29x    frame=  946 fps=263 q=12.0 size=N/A time=00:00:15.71 bitrate=N/A speed=4.36x    frame= 1095 fps=266 q=11.0 size=N/A time=00:00:18.20 bitrate=N/A speed=4.42x    frame= 1249 fps=269 q=12.0 size=N/A time=00:00:20.76 bitrate=N/A speed=4.47x    [hls @ 000002179033c800] Opening 'C:\encoded\el-negro\1080p\segment_000.ts' for writing
+frame= 1394 fps=271 q=12.0 size=N/A time=00:00:23.18 bitrate=N/A speed= 4.5x    frame= 1535 fps=271 q=11.0 size=N/A time=00:00:25.53 bitrate=N/A speed=4.51x    frame= 1670 fps=270 q=9.0 size=N/A time=00:00:27.78 bitrate=N/A speed= 4.5x    frame= 1818 fps=271 q=12.0 size=N/A time=00:00:30.25 bitrate=N/A speed=4.51x    frame= 1958 fps=271 q=12.0 size=N/A time=00:00:32.58 bitrate=N/A speed=4.52x    frame= 2097 fps=271 q=12.0 size=N/A time=00:00:34.90 bitrate=N/A speed=4.52x    frame= 2228 fps=270 q=12.0 size=N/A time=00:00:37.08 bitrate=N/A speed= 4.5x    frame= 2368 fps=270 q=9.0 size=N/A time=00:00:39.41 bitrate=N/A speed= 4.5x    [hls @ 000002179033c800] Opening 'C:\encoded\el-negro\1080p\segment_001.ts' for writing
+[out#0/hls @ 00000217902d09c0] video:3675KiB audio:11KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame= 2425 fps=270 q=11.0 Lsize=N/A time=00:00:40.36 bitrate=N/A speed= 4.5x    
+[aac @ 00000217927a0c80] Qavg: 65536.000
+ffmpeg version N-119137-g46762c8b82-20250404 Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 14.2.0 (crosstool-NG 1.27.0.18_7458341)
+  configuration: --prefix=/ffbuild/prefix --pkg-config-flags=--static --pkg-config=pkg-config --cross-prefix=x86_64-w64-mingw32- --arch=x86_64 --target-os=mingw32 --enable-gpl --enable-version3 --disable-debug --enable-shared --disable-static --disable-w32threads --enable-pthreads --enable-iconv --enable-zlib --enable-libfreetype --enable-libfribidi --enable-gmp --enable-libxml2 --enable-lzma --enable-fontconfig --enable-libharfbuzz --enable-libvorbis --enable-opencl --disable-libpulse --enable-libvmaf --disable-libxcb --disable-xlib --enable-amf --enable-libaom --enable-libaribb24 --enable-avisynth --enable-chromaprint --enable-libdav1d --enable-libdavs2 --enable-libdvdread --enable-libdvdnav --disable-libfdk-aac --enable-ffnvcodec --enable-cuda-llvm --enable-frei0r --enable-libgme --enable-libkvazaar --enable-libaribcaption --enable-libass --enable-libbluray --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librist --enable-libssh --enable-libtheora --enable-libvpx --enable-libwebp --enable-libzmq --enable-lv2 --enable-libvpl --enable-openal --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenh264 --enable-libopenjpeg --enable-libopenmpt --enable-librav1e --enable-librubberband --enable-schannel --enable-sdl2 --enable-libsnappy --enable-libsoxr --enable-libsrt --enable-libsvtav1 --enable-libtwolame --enable-libuavs3d --disable-libdrm --enable-vaapi --enable-libvidstab --enable-vulkan --enable-libshaderc --enable-libplacebo --enable-libvvenc --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxvid --enable-libzimg --enable-libzvbi --extra-cflags=-DLIBTWOLAME_STATIC --extra-cxxflags= --extra-libs=-lgomp --extra-ldflags=-pthread --extra-ldexeflags= --cc=x86_64-w64-mingw32-gcc --cxx=x86_64-w64-mingw32-g++ --ar=x86_64-w64-mingw32-gcc-ar --ranlib=x86_64-w64-mingw32-gcc-ranlib --nm=x86_64-w64-mingw32-gcc-nm --extra-version=20250404
+  libavutil      60.  0.100 / 60.  0.100
+  libavcodec     62.  0.101 / 62.  0.101
+  libavformat    62.  0.100 / 62.  0.100
+  libavdevice    62.  0.100 / 62.  0.100
+  libavfilter    11.  0.100 / 11.  0.100
+  libswscale      9.  0.100 /  9.  0.100
+  libswresample   6.  0.100 /  6.  0.100
+  libpostproc    59.  0.100 / 59.  0.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\Users\DELL\Videos\el-negro.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf62.0.100
+  Duration: 00:00:40.42, start: 0.000000, bitrate: 335 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1920x1080 [SAR 1:1 DAR 16:9], 320 kb/s, 60 fps, 60 tbr, 15360 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+      encoder         : Lavc62.0.101 libx264
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 2 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (h264_nvenc))
+  Stream #0:1 -> #0:1 (aac (native) -> aac (native))
+Press [q] to stop, [?] for help
+Output #0, hls, to 'C:\encoded\el-negro\1080p\stream.m3u8':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf62.0.100
+  Stream #0:0(und): Video: h264 (Main), yuv420p(tv, bt709, progressive), 1920x1080 [SAR 1:1 DAR 16:9], q=2-31, 5000 kb/s, 60 fps, 90k tbn (default)
+    Metadata:
+      encoder         : Lavc62.0.101 h264_nvenc
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+    Side data:
+      cpb: bitrate max/min/avg: 5500000/0/5000000 buffer size: 10000000 vbv_delay: N/A
+  Stream #0:1(und): Audio: aac (LC), 48000 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      encoder         : Lavc62.0.101 aac
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+frame=   58 fps=0.0 q=16.0 size=N/A time=00:00:00.91 bitrate=N/A speed=1.76x    frame=  207 fps=198 q=11.0 size=N/A time=00:00:03.40 bitrate=N/A speed=3.26x    frame=  355 fps=228 q=12.0 size=N/A time=00:00:05.86 bitrate=N/A speed=3.77x    frame=  504 fps=244 q=12.0 size=N/A time=00:00:08.35 bitrate=N/A speed=4.04x    frame=  658 fps=254 q=9.0 size=N/A time=00:00:10.91 bitrate=N/A speed=4.21x    frame=  806 fps=259 q=12.0 size=N/A time=00:00:13.38 bitrate=N/A speed=4.31x    frame=  954 fps=264 q=12.0 size=N/A time=00:00:15.85 bitrate=N/A speed=4.38x    frame= 1105 fps=267 q=12.0 size=N/A time=00:00:18.36 bitrate=N/A speed=4.44x    [hls @ 000002cb25493bc0] Opening 'C:\encoded\el-negro\1080p\segment_000.ts' for writing
+frame= 1255 fps=270 q=12.0 size=N/A time=00:00:20.86 bitrate=N/A speed=4.49x    frame= 1407 fps=272 q=12.0 size=N/A time=00:00:23.40 bitrate=N/A speed=4.52x    frame= 1558 fps=274 q=9.0 size=N/A time=00:00:25.91 bitrate=N/A speed=4.56x    frame= 1709 fps=276 q=12.0 size=N/A time=00:00:28.43 bitrate=N/A speed=4.59x    frame= 1860 fps=277 q=9.0 size=N/A time=00:00:30.95 bitrate=N/A speed=4.61x    frame= 2008 fps=278 q=12.0 size=N/A time=00:00:33.41 bitrate=N/A speed=4.62x    frame= 2155 fps=278 q=11.0 size=N/A time=00:00:35.86 bitrate=N/A speed=4.63x    frame= 2302 fps=279 q=12.0 size=N/A time=00:00:38.31 bitrate=N/A speed=4.64x    [hls @ 000002cb25493bc0] Opening 'C:\encoded\el-negro\1080p\segment_001.ts' for writing
+[out#0/hls @ 000002cb236adac0] video:3675KiB audio:11KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame= 2425 fps=279 q=11.0 Lsize=N/A time=00:00:40.36 bitrate=N/A speed=4.65x    
+[aac @ 000002cb259e2180] Qavg: 65536.000
+ffmpeg version N-119137-g46762c8b82-20250404 Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 14.2.0 (crosstool-NG 1.27.0.18_7458341)
+  configuration: --prefix=/ffbuild/prefix --pkg-config-flags=--static --pkg-config=pkg-config --cross-prefix=x86_64-w64-mingw32- --arch=x86_64 --target-os=mingw32 --enable-gpl --enable-version3 --disable-debug --enable-shared --disable-static --disable-w32threads --enable-pthreads --enable-iconv --enable-zlib --enable-libfreetype --enable-libfribidi --enable-gmp --enable-libxml2 --enable-lzma --enable-fontconfig --enable-libharfbuzz --enable-libvorbis --enable-opencl --disable-libpulse --enable-libvmaf --disable-libxcb --disable-xlib --enable-amf --enable-libaom --enable-libaribb24 --enable-avisynth --enable-chromaprint --enable-libdav1d --enable-libdavs2 --enable-libdvdread --enable-libdvdnav --disable-libfdk-aac --enable-ffnvcodec --enable-cuda-llvm --enable-frei0r --enable-libgme --enable-libkvazaar --enable-libaribcaption --enable-libass --enable-libbluray --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librist --enable-libssh --enable-libtheora --enable-libvpx --enable-libwebp --enable-libzmq --enable-lv2 --enable-libvpl --enable-openal --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenh264 --enable-libopenjpeg --enable-libopenmpt --enable-librav1e --enable-librubberband --enable-schannel --enable-sdl2 --enable-libsnappy --enable-libsoxr --enable-libsrt --enable-libsvtav1 --enable-libtwolame --enable-libuavs3d --disable-libdrm --enable-vaapi --enable-libvidstab --enable-vulkan --enable-libshaderc --enable-libplacebo --enable-libvvenc --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxvid --enable-libzimg --enable-libzvbi --extra-cflags=-DLIBTWOLAME_STATIC --extra-cxxflags= --extra-libs=-lgomp --extra-ldflags=-pthread --extra-ldexeflags= --cc=x86_64-w64-mingw32-gcc --cxx=x86_64-w64-mingw32-g++ --ar=x86_64-w64-mingw32-gcc-ar --ranlib=x86_64-w64-mingw32-gcc-ranlib --nm=x86_64-w64-mingw32-gcc-nm --extra-version=20250404
+  libavutil      60.  0.100 / 60.  0.100
+  libavcodec     62.  0.101 / 62.  0.101
+  libavformat    62.  0.100 / 62.  0.100
+  libavdevice    62.  0.100 / 62.  0.100
+  libavfilter    11.  0.100 / 11.  0.100
+  libswscale      9.  0.100 /  9.  0.100
+  libswresample   6.  0.100 /  6.  0.100
+  libpostproc    59.  0.100 / 59.  0.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\Users\DELL\Videos\el-negro.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf62.0.100
+  Duration: 00:00:40.42, start: 0.000000, bitrate: 335 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1920x1080 [SAR 1:1 DAR 16:9], 320 kb/s, 60 fps, 60 tbr, 15360 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+      encoder         : Lavc62.0.101 libx264
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 2 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (h264_nvenc))
+  Stream #0:1 -> #0:1 (aac (native) -> aac (native))
+Press [q] to stop, [?] for help
+Output #0, hls, to 'C:\encoded\el-negro\720p\stream.m3u8':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf62.0.100
+  Stream #0:0(und): Video: h264 (Main), yuv420p(tv, bt709, progressive), 1280x720 [SAR 1:1 DAR 16:9], q=2-31, 2800 kb/s, 60 fps, 90k tbn (default)
+    Metadata:
+      encoder         : Lavc62.0.101 h264_nvenc
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+    Side data:
+      cpb: bitrate max/min/avg: 3000000/0/2800000 buffer size: 6000000 vbv_delay: N/A
+  Stream #0:1(und): Audio: aac (LC), 48000 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      encoder         : Lavc62.0.101 aac
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+frame=  136 fps=0.0 q=12.0 size=N/A time=00:00:02.21 bitrate=N/A speed= 4.3x    frame=  373 fps=363 q=11.0 size=N/A time=00:00:06.16 bitrate=N/A speed=6.01x    frame=  628 fps=405 q=12.0 size=N/A time=00:00:10.41 bitrate=N/A speed=6.72x    frame=  862 fps=418 q=12.0 size=N/A time=00:00:14.31 bitrate=N/A speed=6.94x    frame= 1104 fps=429 q=12.0 size=N/A time=00:00:18.35 bitrate=N/A speed=7.13x    [hls @ 000001f44bd01800] Opening 'C:\encoded\el-negro\720p\segment_000.ts' for writing
+frame= 1362 fps=442 q=12.0 size=N/A time=00:00:22.65 bitrate=N/A speed=7.34x    frame= 1605 fps=445 q=12.0 size=N/A time=00:00:26.70 bitrate=N/A speed= 7.4x    frame= 1839 fps=447 q=12.0 size=N/A time=00:00:30.60 bitrate=N/A speed=7.43x    frame= 2077 fps=447 q=12.0 size=N/A time=00:00:34.56 bitrate=N/A speed=7.44x    frame= 2305 fps=447 q=11.0 size=N/A time=00:00:38.36 bitrate=N/A speed=7.44x    [hls @ 000001f44bd01800] Opening 'C:\encoded\el-negro\720p\segment_001.ts' for writing
+[out#0/hls @ 000001f449f1c900] video:2640KiB audio:11KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame= 2425 fps=452 q=11.0 Lsize=N/A time=00:00:40.36 bitrate=N/A speed=7.52x    
+[aac @ 000001f44c8cfa80] Qavg: 65536.000
+ffmpeg version N-119137-g46762c8b82-20250404 Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 14.2.0 (crosstool-NG 1.27.0.18_7458341)
+  configuration: --prefix=/ffbuild/prefix --pkg-config-flags=--static --pkg-config=pkg-config --cross-prefix=x86_64-w64-mingw32- --arch=x86_64 --target-os=mingw32 --enable-gpl --enable-version3 --disable-debug --enable-shared --disable-static --disable-w32threads --enable-pthreads --enable-iconv --enable-zlib --enable-libfreetype --enable-libfribidi --enable-gmp --enable-libxml2 --enable-lzma --enable-fontconfig --enable-libharfbuzz --enable-libvorbis --enable-opencl --disable-libpulse --enable-libvmaf --disable-libxcb --disable-xlib --enable-amf --enable-libaom --enable-libaribb24 --enable-avisynth --enable-chromaprint --enable-libdav1d --enable-libdavs2 --enable-libdvdread --enable-libdvdnav --disable-libfdk-aac --enable-ffnvcodec --enable-cuda-llvm --enable-frei0r --enable-libgme --enable-libkvazaar --enable-libaribcaption --enable-libass --enable-libbluray --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librist --enable-libssh --enable-libtheora --enable-libvpx --enable-libwebp --enable-libzmq --enable-lv2 --enable-libvpl --enable-openal --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenh264 --enable-libopenjpeg --enable-libopenmpt --enable-librav1e --enable-librubberband --enable-schannel --enable-sdl2 --enable-libsnappy --enable-libsoxr --enable-libsrt --enable-libsvtav1 --enable-libtwolame --enable-libuavs3d --disable-libdrm --enable-vaapi --enable-libvidstab --enable-vulkan --enable-libshaderc --enable-libplacebo --enable-libvvenc --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxvid --enable-libzimg --enable-libzvbi --extra-cflags=-DLIBTWOLAME_STATIC --extra-cxxflags= --extra-libs=-lgomp --extra-ldflags=-pthread --extra-ldexeflags= --cc=x86_64-w64-mingw32-gcc --cxx=x86_64-w64-mingw32-g++ --ar=x86_64-w64-mingw32-gcc-ar --ranlib=x86_64-w64-mingw32-gcc-ranlib --nm=x86_64-w64-mingw32-gcc-nm --extra-version=20250404
+  libavutil      60.  0.100 / 60.  0.100
+  libavcodec     62.  0.101 / 62.  0.101
+  libavformat    62.  0.100 / 62.  0.100
+  libavdevice    62.  0.100 / 62.  0.100
+  libavfilter    11.  0.100 / 11.  0.100
+  libswscale      9.  0.100 /  9.  0.100
+  libswresample   6.  0.100 /  6.  0.100
+  libpostproc    59.  0.100 / 59.  0.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\Users\DELL\Videos\el-negro.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf62.0.100
+  Duration: 00:00:40.42, start: 0.000000, bitrate: 335 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1920x1080 [SAR 1:1 DAR 16:9], 320 kb/s, 60 fps, 60 tbr, 15360 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+      encoder         : Lavc62.0.101 libx264
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 2 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (h264_nvenc))
+  Stream #0:1 -> #0:1 (aac (native) -> aac (native))
+Press [q] to stop, [?] for help
+Output #0, hls, to 'C:\encoded\el-negro\480p\stream.m3u8':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf62.0.100
+  Stream #0:0(und): Video: h264 (Main), yuv420p(tv, bt709, progressive), 853x480 [SAR 2560:2559 DAR 16:9], q=2-31, 1400 kb/s, 60 fps, 90k tbn (default)
+    Metadata:
+      encoder         : Lavc62.0.101 h264_nvenc
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+    Side data:
+      cpb: bitrate max/min/avg: 1600000/0/1400000 buffer size: 3000000 vbv_delay: N/A
+  Stream #0:1(und): Audio: aac (LC), 48000 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      encoder         : Lavc62.0.101 aac
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+frame=  158 fps=0.0 q=8.0 size=N/A time=00:00:02.58 bitrate=N/A speed=5.02x    frame=  404 fps=393 q=8.0 size=N/A time=00:00:06.68 bitrate=N/A speed= 6.5x    frame=  634 fps=412 q=11.0 size=N/A time=00:00:10.51 bitrate=N/A speed=6.83x    frame=  863 fps=418 q=8.0 size=N/A time=00:00:14.35 bitrate=N/A speed=6.96x    frame= 1070 fps=416 q=8.0 size=N/A time=00:00:17.78 bitrate=N/A speed=6.92x    [hls @ 000001d29428b7c0] Opening 'C:\encoded\el-negro\480p\segment_000.ts' for writing
+frame= 1324 fps=428 q=8.0 size=N/A time=00:00:22.01 bitrate=N/A speed=7.12x    frame= 1571 fps=436 q=11.0 size=N/A time=00:00:26.13 bitrate=N/A speed=7.25x    frame= 1831 fps=445 q=12.0 size=N/A time=00:00:30.46 bitrate=N/A speed= 7.4x    frame= 2097 fps=452 q=12.0 size=N/A time=00:00:34.90 bitrate=N/A speed=7.53x    frame= 2341 fps=455 q=12.0 size=N/A time=00:00:38.98 bitrate=N/A speed=7.58x    [hls @ 000001d29428b7c0] Opening 'C:\encoded\el-negro\480p\segment_001.ts' for writing
+[out#0/hls @ 000001d29422e800] video:1613KiB audio:11KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame= 2425 fps=461 q=11.0 Lsize=N/A time=00:00:40.36 bitrate=N/A speed=7.67x    
+[aac @ 000001d296078d40] Qavg: 65536.000

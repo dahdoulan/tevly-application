@@ -3,13 +3,9 @@ package org.group15.tveely.services;
 import lombok.AllArgsConstructor;
 import org.group15.tveely.dao.VideoDao;
 import org.group15.tveely.ffmpeg.FfmpegWrapper;
-import org.group15.tveely.models.VideoAdapter;
 import org.group15.tveely.spi.EncodingService;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
-
-import java.util.List;
-
 import static org.group15.tveely.ffmpeg.FfmpegWrapper.BASH;
 import static org.group15.tveely.ffmpeg.FfmpegWrapper.CMD;
 
@@ -27,6 +23,6 @@ public class EncodingServiceImpl implements EncodingService{
     @Scheduled(fixedRate = 5000)
     @Override
     public void encode() {
-        videoDao.findVideoByStatus()
+        videoDao.findVideoByStatus("NEW").stream().forEach(video -> {build.encode()});
     }
 }

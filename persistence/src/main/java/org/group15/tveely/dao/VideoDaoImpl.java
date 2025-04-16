@@ -14,10 +14,14 @@ public class VideoDaoImpl implements VideoDao {
     private final VideoRepository videoRepository;
 
     @Override
-    public List<VideoAdapter> findVideoByStatus() {
+    public List<VideoAdapter> findVideoByStatus(String status) {
         VideoEntityToVideo mapper = new VideoEntityToVideo();
-        List<VideoEntity> entity = videoRepository.findByStatus("NEW");
+        List<VideoEntity> entity = videoRepository.findByStatus(status);
         return entity.stream().map(mapper::map).toList();
     }
 
+    @Override
+    public void updateStatusById(String id, String status) {
+        videoRepository.updateStatusById(id,status);
+    }
 }

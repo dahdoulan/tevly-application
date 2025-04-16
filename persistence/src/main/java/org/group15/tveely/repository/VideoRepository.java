@@ -7,5 +7,9 @@ import java.util.List;
 
 @Repository
 public interface VideoRepository extends CrudRepository<VideoEntity, Long> {
+
     List<VideoEntity> findByStatus(String status);
+
+    void updateStatusById(String id, String status);
+
 }
