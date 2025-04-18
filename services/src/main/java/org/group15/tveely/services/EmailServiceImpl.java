@@ -4,7 +4,8 @@ import jakarta.mail.MessagingException;
 import jakarta.mail.internet.MimeMessage;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.group15.tveely.entities.EmailTemplateName;
+import org.group15.tveely.models.email.EmailTemplateName;
+import org.group15.tveely.spi.EmailService;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.scheduling.annotation.Async;
@@ -21,10 +22,11 @@ import static org.springframework.mail.javamail.MimeMessageHelper.MULTIPART_MODE
 @Service
 @Slf4j
 @RequiredArgsConstructor
-public class EmailService {
+public class EmailServiceImpl implements EmailService {
     private final JavaMailSender mailSender;
     private final SpringTemplateEngine templateEngine;
 
+    @Override
     @Async
     public void sendEmail(
             String to,

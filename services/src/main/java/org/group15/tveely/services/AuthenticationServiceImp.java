@@ -4,12 +4,20 @@ package org.group15.tveely.services;
 
 import jakarta.mail.MessagingException;
 import lombok.RequiredArgsConstructor;
+import org.group15.dtos.authentication.AuthenticationRequest;
+import org.group15.dtos.authentication.AuthenticationResponse;
+import org.group15.dtos.authentication.RegistrationRequest;
+import org.group15.tveely.dao.RoleDao;
+import org.group15.tveely.dao.TokenDao;
+import org.group15.tveely.dao.UserDao;
 import org.group15.tveely.entities.*;
 
-import org.group15.tveely.repository.RoleRepository;
-import org.group15.tveely.repository.TokenRepository;
-import org.group15.tveely.repository.UserRepository;
 
+import org.group15.tveely.models.email.EmailTemplateName;
+
+import org.group15.tveely.spi.AuthenticationService;
+import org.group15.tveely.spi.EmailService;
+import org.group15.tveely.spi.JwtService;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -25,21 +33,21 @@ import java.util.List;
 
 @Service
 @RequiredArgsConstructor
-public class AuthenticationService {
+public class AuthenticationServiceImp implements AuthenticationService {
 
-    private final UserRepository userRepository;
+    private final UserDao userDao;
     private final PasswordEncoder passwordEncoder;
     private final JwtService jwtService;
     private final AuthenticationManager authenticationManager;
-    private final RoleRepository roleRepository;
+    private final RoleDao roleDao;
     private final EmailService emailService;
-    private final TokenRepository tokenRepository;
-
+    private final TokenDao tokenDao;
     @Value("${application.mailing.frontend.activation-url}")
     private String activationUrl;
 
+    @Override
     public void registerUser(RegistrationRequest request) throws MessagingException {
-        var userRole = roleRepository.findByName("USER")
+        var userRole = roleDao.findByName("USER")
                 .orElseThrow(() -> new IllegalStateException("ROLE USER was not initiated"));
         var user = UserEntity.builder()
                 .firstname(request.getFirstname())
@@ -52,12 +60,13 @@ public class AuthenticationService {
                 .roles(List.of(userRole))
                 .build();
 
-        userRepository.save(user);
+        userDao.save(user);
         sendValidationEmail(user);
     }
 
+    @Override
     public void registerFilmmaker(RegistrationRequest request) throws MessagingException {
-        var filmmakerRole = roleRepository.findByName("FILMMAKER")
+        var filmmakerRole = roleDao.findByName("FILMMAKER")
                 .orElseThrow(() -> new IllegalStateException("ROLE FILMMAKER was not initialized"));
         var user = UserEntity.builder()
                 .firstname(request.getFirstname())
@@ -70,11 +79,13 @@ public class AuthenticationService {
                 .roles(List.of(filmmakerRole)) // Assign FILMMAKER role
                 .build();
 
-        userRepository.save(user);
+        userDao.save(user);
         sendValidationEmail(user);
     }
+
+    @Override
     public void registerAdmin(RegistrationRequest request) throws MessagingException {
-        var adminRole = roleRepository.findByName("ADMIN")
+        var adminRole = roleDao.findByName("ADMIN")
                 .orElseThrow(() -> new IllegalStateException("ROLE ADMIN was not initialized"));
         var user = UserEntity.builder()
                 .firstname(request.getFirstname())
@@ -87,11 +98,11 @@ public class AuthenticationService {
                 .roles(List.of(adminRole)) // Assign FILMMAKER role
                 .build();
 
-        userRepository.save(user);
+        userDao.save(user);
         sendValidationEmail(user);
     }
 
-    public AuthenticationResponse authenticate(AuthenticationRequest request) {
+    public AuthenticationResponse authenticate(AuthenticationRequest request) throws MessagingException {
         var auth = authenticationManager.authenticate(
                 new UsernamePasswordAuthenticationToken(
                         request.getEmail(),
@@ -109,9 +120,9 @@ public class AuthenticationService {
                 .build();
     }
 
-    //@Transactional
+    @Override
     public void activateAccount(String token) throws MessagingException {
-        TokenEntity savedToken = tokenRepository.findByToken(token)
+        TokenEntity savedToken = tokenDao.findByToken(token)
                 //todo exception has to be defined
                 .orElseThrow(() -> new RuntimeException("Invalid token"));
         if (LocalDateTime.now().isAfter(savedToken.getExpiresAt())) {
@@ -119,13 +130,13 @@ public class AuthenticationService {
             throw new RuntimeException("Activation token has expired. A new token has been send to the same email address");
         }
 
-        var user = userRepository.findById(savedToken.getUser().getId())
+        var user = userDao.findById(savedToken.getUser().getId())
                 .orElseThrow(() -> new UsernameNotFoundException("User not found"));
         user.setEnabled(true);
-        userRepository.save(user);
+        userDao.save(user);
 
         savedToken.setValidatedAt(LocalDateTime.now());
-        tokenRepository.save(savedToken);
+        tokenDao.save(savedToken);
     }
 
     private String generateAndSaveActivationToken(UserEntity user) {
@@ -137,7 +148,7 @@ public class AuthenticationService {
                 .expiresAt(LocalDateTime.now().plusMinutes(15))
                 .user(user)
                 .build();
-        tokenRepository.save(token);
+        tokenDao.save(token);
 
         return generatedToken;
     }

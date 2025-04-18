@@ -1,4 +1,4 @@
-package org.group15.tveely.entities;
+package org.group15.tveely.config.security.exception;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.*;

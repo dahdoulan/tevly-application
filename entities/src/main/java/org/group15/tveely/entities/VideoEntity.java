@@ -33,8 +33,6 @@ public class VideoEntity {
     @Column(name = "description", length = 500)
     private String description;
 
-    @Column(name = "thumbnail_url", length = 255)
-    private String thumbnailUrl;
 
     @Column(name = "video_url", nullable = false, length = 255)
     private String videoUrl;
@@ -42,6 +40,20 @@ public class VideoEntity {
     @Lob
     @Column(name = "content")
     private Blob content;
+
+    // added by mohtaseb
+    @Lob
+    @Column(name = "thumbnail")
+    private Blob thumbnail;
+
+    // added by mohtaseb
+    @Column(name = "thumbnail_url", nullable = false, length = 255)
+    private String thumbnailUrl;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "category_id", nullable = false, foreignKey = @ForeignKey(name = "fk_video_category"))
+    private CategoryEntity categoryEntity;
+
 
     @Column(name = "created_at", nullable = false, columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP")
     private LocalDateTime createdAt;

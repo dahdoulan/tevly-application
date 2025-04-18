@@ -5,14 +5,14 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.mail.MessagingException;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
-import org.group15.tveely.entities.AuthenticationRequest;
-import org.group15.tveely.entities.AuthenticationResponse;
-import org.group15.tveely.entities.RegistrationRequest;
 
-import org.group15.tveely.services.AuthenticationService;
+
+import org.group15.dtos.authentication.AuthenticationRequest;
+import org.group15.dtos.authentication.AuthenticationResponse;
+import org.group15.dtos.authentication.RegistrationRequest;
+import org.group15.tveely.spi.AuthenticationService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -54,7 +54,11 @@ public class AuthenticationController {
     public ResponseEntity<AuthenticationResponse> authenticate(
             @RequestBody AuthenticationRequest request
     ) {
-        return ResponseEntity.ok(service.authenticate(request));
+        try {
+            return ResponseEntity.ok(service.authenticate(request));
+        } catch (MessagingException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @GetMapping("/activate-account")

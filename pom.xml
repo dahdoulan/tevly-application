@@ -25,10 +25,10 @@
         <jib.version>3.3.2</jib.version>
         <mockito.version>5.14.2</mockito.version>
         <junit.version>5.13.0-M2</junit.version>
+        <jwt.version>0.12.5</jwt.version>  <!-- For Spring Boot 3.x -->
+        <springdoc.version>2.3.0</springdoc.version>  <!-- Matches Spring Boot 3.x -->
+
     </properties>
-
-
-
 
 
     <modules>
@@ -40,6 +40,7 @@
         <module>persistence</module>
         <module>core</module>
         <module>models</module>
+        <module>DTOs</module>
     </modules>
 
     <build>

@@ -1,4 +1,4 @@
-package org.group15.tveely.services;
+package org.group15.tveely.config;
 
 
 import lombok.RequiredArgsConstructor;

@@ -23,21 +23,4 @@ public class LauncherApplication {
         SpringApplication.run(LauncherApplication.class, args);
     }
 
-
-
-    @Bean
-    public CommandLineRunner runner(RoleRepository roleRepository) {
-        return args -> {
-            if (roleRepository.findByName("USER").isEmpty()) {
-                roleRepository.save(RoleEntity.builder().name("USER").build());
-            }
-            if (roleRepository.findByName("FILMMAKER").isEmpty()) {
-                roleRepository.save(RoleEntity.builder().name("FILMMAKER").build());
-            }
-            if (roleRepository.findByName("ADMIN").isEmpty()) {
-                roleRepository.save(RoleEntity.builder().name("ADMIN").build());
-            }
-        };
-    }
-
 }

@@ -1,6 +1,6 @@
-package org.group15.tveely.config.security;
+package org.group15.tveely.services;
 
-import org.group15.tveely.repository.UserRepository;
+import org.group15.tveely.dao.UserDao;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -12,11 +12,11 @@ import org.springframework.stereotype.Service;
 @Service
 @RequiredArgsConstructor
 public class UserDetailsServiceImpl implements UserDetailsService {
-    private final UserRepository repository;
+    private final UserDao userDao;
 
     @Override
     @Transactional
     public UserDetails loadUserByUsername(String userEmail) throws UsernameNotFoundException {
-        return repository.findByEmail(userEmail).orElseThrow(()->new UsernameNotFoundException("User not found"));
+        return userDao.findByEmail(userEmail).orElseThrow(()->new UsernameNotFoundException("User not found"));
     }
 }

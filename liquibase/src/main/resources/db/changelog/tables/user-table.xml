@@ -6,7 +6,7 @@
 
     <changeSet id="create-user-table" author="tveely">
         <createTable tableName="_user">
-            <column name="id" type="INTEGER" autoIncrement="true">
+            <column name="id" type="BIGINT" autoIncrement="true">
                 <constraints primaryKey="true" nullable="false" />
             </column>
             <column name="firstname" type="VARCHAR(255)" />
@@ -18,7 +18,7 @@
             <column name="password" type="VARCHAR(255)" />
             <column name="account_locked" type="BOOLEAN" defaultValue="false" />
             <column name="enabled" type="BOOLEAN" defaultValue="true" />
-            <column name="created_date" type="TIMESTAMP">
+            <column name="created_date" type="TIMESTAMP" >
                 <constraints nullable="false" />
             </column>
             <column name="last_modified_date" type="TIMESTAMP" />
@@ -26,14 +26,47 @@
 
         <!-- Many-to-Many Relationship Table: user_roles -->
         <createTable tableName="user_roles">
-            <column name="user_id" type="INTEGER">
+            <column name="user_id" type="BIGINT">
                 <constraints nullable="false" foreignKeyName="fk_user_roles_user" references="_user(id)" />
             </column>
-            <column name="role_id" type="INTEGER">
+            <column name="role_id" type="BIGINT">
                 <constraints nullable="false" foreignKeyName="fk_user_roles_role" references="role(id)" />
             </column>
 
         </createTable>
+
+
+
+        <createIndex indexName="idx__user_email" tableName="_user">
+            <column name="email"/>
+        </createIndex>
+        <createIndex indexName="idx__user_id" tableName="_user">
+            <column name="id"/>
+        </createIndex>
+
+    </changeSet>
+    
+    
+    
+    
+    <changeSet id="insert_admin" author="tveely">
+        <insert tableName="_user">
+            <column name="firstname" value="mohtaseb"/>
+            <column name="lastname" value="malkawi"/>
+            <column name="email" value="moe@gmail.com"/>
+            <column name="password" value="highsky11"/>
+            <column name="date_of_birth" value="1995-04-07"/>
+            <column name="account_locked" valueBoolean="false"/>
+            <column name="enabled" valueBoolean="true"/>
+            <column name="created_date" valueDate="CURRENT_TIMESTAMP"/>
+        </insert>
+
+
+
+        <insert tableName="user_roles">
+            <column name="user_id" value="1"/>
+            <column name="role_id" value="3"/>
+        </insert>
 
     </changeSet>
 </databaseChangeLog>

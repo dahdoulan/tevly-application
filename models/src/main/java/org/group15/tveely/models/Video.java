@@ -13,4 +13,6 @@ public class Video {
     private String thumbnailUrl;
     private String videoUrl;
     private byte[] content;
+    private byte[] thumbnail;
+    private String category;
 }

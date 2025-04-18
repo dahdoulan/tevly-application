@@ -1,4 +1,4 @@
-package org.group15.tveely.models.exception;
+package org.group15.tveely.config.security.exception;
 
 public class OperationNotPermittedException extends RuntimeException {
 

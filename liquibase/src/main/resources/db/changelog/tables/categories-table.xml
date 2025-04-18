@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.19.xsd">
+
+    <changeSet id="create_categories_table" author="tveely">
+        <comment>Create categories table for videos with specified attributes</comment>
+
+        <createTable tableName="categories">
+            <column name="id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false" />
+            </column>
+            <column name="category" type="VARCHAR(255)">
+                <constraints unique="true" nullable="false" />
+            </column>
+
+               </createTable>
+
+        <createIndex indexName="idx_categories_category" tableName="categories">
+            <column name="category"/>
+        </createIndex>
+
+        <createIndex indexName="idx_categories_id" tableName="categories">
+            <column name="id"/>
+        </createIndex>
+    </changeSet>
+
+
+    <changeSet id="insert_list_of_categories" author="tveely">
+        <comment>Insert categories into categories table</comment>
+
+        <insert tableName="categories">
+            <column name="category" value="Horror"/>
+        </insert>
+
+
+        <insert tableName="categories">
+            <column name="category" value="Action"/>
+        </insert>
+
+
+
+        <insert tableName="categories">
+            <column name="category" value="Adventure"/>
+        </insert>
+
+
+
+        <insert tableName="categories">
+            <column name="category" value="Comedy"/>
+        </insert>
+
+
+
+        <insert tableName="categories">
+            <column name="category" value="Crime and mystery"/>
+        </insert>
+
+
+
+        <insert tableName="categories">
+            <column name="category" value="Fantasy"/>
+        </insert>
+
+
+
+        <insert tableName="categories">
+            <column name="category" value="Historical"/>
+        </insert>
+
+
+
+        <insert tableName="categories">
+            <column name="category" value="Romance"/>
+        </insert>
+
+
+
+        <insert tableName="categories">
+            <column name="category" value="Science fiction"/>
+        </insert>
+
+
+
+        <insert tableName="categories">
+            <column name="category" value="Thriller"/>
+        </insert>
+
+
+
+        <insert tableName="categories">
+            <column name="category" value="Other"/>
+        </insert>
+
+
+
+        <insert tableName="categories">
+            <column name="category" value="Animation"/>
+        </insert>
+
+
+
+        <insert tableName="categories">
+            <column name="category" value="Drama"/>
+        </insert>
+
+
+
+        <insert tableName="categories">
+            <column name="category" value="Western"/>
+        </insert>
+
+
+
+        <insert tableName="categories">
+            <column name="category" value="documentary"/>
+        </insert>
+
+
+
+
+
+
+    </changeSet>
+
+</databaseChangeLog>

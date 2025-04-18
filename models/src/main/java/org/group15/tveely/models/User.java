@@ -11,7 +11,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 public class User {
-    private Integer id;
+    private Long id;
     private String firstname;
     private String lastname;
     private LocalDate dateOfBirth;

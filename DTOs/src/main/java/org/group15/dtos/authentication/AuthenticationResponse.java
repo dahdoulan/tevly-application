@@ -1,4 +1,4 @@
-package org.group15.tveely.entities;
+package org.group15.dtos.authentication;
 
 import lombok.Builder;
 import lombok.Getter;
