@@ -1,6 +1,7 @@
 package org.group15.tveely.dao;
 
 import org.group15.tveely.entities.VideoEntity;
+import org.group15.tveely.filesystem.FileSystem;
 import org.group15.tveely.mappers.VideoToVideoEntity;
 import org.group15.tveely.models.Video;
 import org.group15.tveely.repository.UploadRepository;
@@ -15,17 +16,20 @@ class UploadDaoImplTest {
     private UploadDaoImpl dao;
     private UploadRepository repo;
     private final VideoToVideoEntity mapper = new VideoToVideoEntity();
+    private FileSystem fileSystem;
 
     @BeforeEach
     void setUp() {
+        fileSystem = mock(FileSystem.class);
         repo = mock(UploadRepository.class);
-        dao = new UploadDaoImpl(repo, mapper);
+        dao = new UploadDaoImpl(repo, mapper, fileSystem);
     }
 
     @Test
     void whenUploadVideo_thenRepoShouldBeCalled() {
         Video video = createVideo();
         when(repo.save(any())).thenReturn(new VideoEntity());
+        doNothing().when(fileSystem).storeVideo(any());
         dao.uploadVideo(video);
         verify(repo, times(1)).save(any(VideoEntity.class));
     }

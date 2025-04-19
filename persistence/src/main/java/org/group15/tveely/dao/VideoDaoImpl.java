@@ -3,6 +3,7 @@ package org.group15.tveely.dao;
 import lombok.AllArgsConstructor;
 import org.group15.tveely.entities.VideoEntity;
 import org.group15.tveely.mappers.VideoEntityToVideo;
+import org.group15.tveely.mappers.VideoToVideoEntity;
 import org.group15.tveely.models.VideoAdapter;
 import org.group15.tveely.repository.VideoRepository;
 import org.springframework.stereotype.Component;
@@ -21,7 +22,7 @@ public class VideoDaoImpl implements VideoDao {
     }
 
     @Override
-    public void updateStatusById(String id, String status) {
-        videoRepository.updateStatusById(id,status);
+    public void updateVideoStatus(VideoAdapter video, String status) {
+        videoRepository.updateStatusById(video.getId(), status);
     }
 }

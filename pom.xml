@@ -25,6 +25,7 @@
         <jib.version>3.3.2</jib.version>
         <mockito.version>5.14.2</mockito.version>
         <junit.version>5.13.0-M2</junit.version>
+        <slf4j.version>2.0.17</slf4j.version>
     </properties>
 
 

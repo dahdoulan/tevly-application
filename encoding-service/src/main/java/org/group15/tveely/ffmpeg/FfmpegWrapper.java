@@ -106,7 +106,7 @@ public class FfmpegWrapper {
                 "-hls_time", "20",
                 "-hls_playlist_type", "vod",
                 "-hls_flags", "independent_segments",
-                "-hls_segment_filename", streamPath + File.separator + "segment_%03d.ts",
+                "-hls_segment_filename", streamPath + File.separator + "segment_%03d.webm",
                 streamPath + File.separator + "stream.m3u8"
         ));
     }

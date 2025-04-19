@@ -39,6 +39,9 @@ public class VideoEntity {
     @Column(name = "video_url", nullable = false, length = 255)
     private String videoUrl;
 
+    @Column(name = "processing_path", length = 255)
+    private String processingPath;
+
     @Lob
     @Column(name = "content")
     private Blob content;

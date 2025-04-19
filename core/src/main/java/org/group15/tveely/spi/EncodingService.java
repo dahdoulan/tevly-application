@@ -2,5 +2,5 @@ package org.group15.tveely.spi;
 
 @FunctionalInterface
 public interface EncodingService {
-    void encode();
+    void process();
 }
