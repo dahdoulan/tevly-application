@@ -7,9 +7,9 @@ import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 
 
-import org.group15.dtos.authentication.AuthenticationRequest;
-import org.group15.dtos.authentication.AuthenticationResponse;
-import org.group15.dtos.authentication.RegistrationRequest;
+import org.group15.tveely.DTOs.AuthenticationRequest;
+import org.group15.tveely.DTOs.AuthenticationResponse;
+import org.group15.tveely.DTOs.RegistrationRequest;
 import org.group15.tveely.spi.AuthenticationService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

@@ -1,7 +1,7 @@
 package org.group15.tveely.controllers;
 
 import org.group15.tveely.mappers.MultipartToVideo;
-import org.group15.tveely.services.UploadServiceImpl;
+import org.group15.tveely.UploadServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.http.HttpStatus;

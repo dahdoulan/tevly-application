@@ -1,6 +1,6 @@
 package org.group15.tveely.mappers;
 
-import org.group15.tveely.entities.VideoEntity;
+import org.group15.tveely.VideoEntity;
 import org.group15.tveely.models.Video;
 import org.hibernate.engine.jdbc.BlobProxy;
 import org.springframework.stereotype.Component;

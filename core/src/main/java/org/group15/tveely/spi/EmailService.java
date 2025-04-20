@@ -1,7 +1,7 @@
 package org.group15.tveely.spi;
 
 import jakarta.mail.MessagingException;
-import org.group15.tveely.models.email.EmailTemplateName;
+import org.group15.tveely.EmailTemplateName;
 
 public interface EmailService {
 

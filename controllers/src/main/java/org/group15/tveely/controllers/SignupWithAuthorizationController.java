@@ -4,7 +4,7 @@ package org.group15.tveely.controllers;
 import jakarta.mail.MessagingException;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
-import org.group15.dtos.authentication.RegistrationRequest;
+import org.group15.tveely.DTOs.RegistrationRequest;
 import org.group15.tveely.spi.AuthenticationService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

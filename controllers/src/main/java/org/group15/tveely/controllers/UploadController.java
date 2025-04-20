@@ -3,7 +3,6 @@ package org.group15.tveely.controllers;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.group15.tveely.mappers.MultipartToVideo;
-import org.group15.tveely.services.UploadServiceImpl;
 import org.group15.tveely.spi.UploadService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;

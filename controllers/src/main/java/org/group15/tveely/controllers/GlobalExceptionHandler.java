@@ -1,9 +1,9 @@
 package org.group15.tveely.controllers;
 
 import jakarta.mail.MessagingException;
-import org.group15.tveely.config.security.exception.ExceptionResponse;
-import org.group15.tveely.config.security.exception.ActivationTokenException;
-import org.group15.tveely.config.security.exception.OperationNotPermittedException;
+import org.group15.tveely.DTOs.ExceptionResponse;
+import org.group15.tveely.DTOs.ActivationTokenException;
+import org.group15.tveely.DTOs.OperationNotPermittedException;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.DisabledException;
@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 import java.util.HashSet;
 import java.util.Set;
 
-import static org.group15.tveely.config.security.exception.BusinessErrorCodes.*;
+import static org.group15.tveely.BusinessErrorCodes.*;
 import static org.springframework.http.HttpStatus.INTERNAL_SERVER_ERROR;
 import static org.springframework.http.HttpStatus.BAD_REQUEST;
 import static org.springframework.http.HttpStatus.UNAUTHORIZED;

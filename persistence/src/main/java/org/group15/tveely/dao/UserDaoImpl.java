@@ -1,7 +1,7 @@
 package org.group15.tveely.dao;
 
 import lombok.AllArgsConstructor;
-import org.group15.tveely.entities.UserEntity;
+import org.group15.tveely.UserEntity;
 import org.group15.tveely.repository.UserRepository;
 import org.springframework.stereotype.Component;
 
