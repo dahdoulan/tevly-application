@@ -16,7 +16,6 @@ import org.springframework.web.multipart.MultipartFile;
 @RestController
 public class UploadController {
 
-    //private final UploadServiceImpl uploadServiceImpl;
     private final UploadService uploadService;
     private final MultipartToVideo multipartToVideo;
 

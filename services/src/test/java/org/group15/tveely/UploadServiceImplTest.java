@@ -1,6 +1,6 @@
 package org.group15.tveely;
 
-import org.group15.tveely.dao.UploadDao;
+import org.group15.tveely.dao.VideoDao;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -9,21 +9,21 @@ import static org.mockito.Mockito.*;
 class UploadServiceImplTest {
 
     private UploadServiceImpl uploadService;
-    private UploadDao uploadDao;
+    private VideoDao videoDao;
     private Video video;
 
     @BeforeEach
     void setUp() {
-        uploadDao = mock(UploadDao.class);
-        uploadService = new UploadServiceImpl(uploadDao);
+        videoDao = mock(VideoDao.class);
+        uploadService = new UploadServiceImpl(videoDao);
         video = createVideo();
     }
 
     @Test
     void whenUploadVideo_thenShouldCallDao(){
-        doNothing().when(uploadDao).uploadVideo(video);
+        doNothing().when(videoDao).uploadVideo(video);
         uploadService.uploadVideo(video);
-        verify(uploadDao, times(1)).uploadVideo(video);
+        verify(videoDao, times(1)).uploadVideo(video);
     }
 
     private Video createVideo(){

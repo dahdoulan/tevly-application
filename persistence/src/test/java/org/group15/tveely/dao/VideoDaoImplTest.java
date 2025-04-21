@@ -1,25 +1,30 @@
 package org.group15.tveely.dao;
 
 import org.group15.tveely.VideoEntity;
+import org.group15.tveely.mappers.CategoryToCategoryEntity;
 import org.group15.tveely.mappers.VideoToVideoEntity;
 import org.group15.tveely.Video;
-import org.group15.tveely.repository.UploadRepository;
+import org.group15.tveely.repository.VideoRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.*;
 
-class UploadDaoImplTest {
+class VideoDaoImplTest {
 
-    private UploadDaoImpl dao;
-    private UploadRepository repo;
-    private final VideoToVideoEntity mapper = new VideoToVideoEntity();
+    private VideoDaoImpl dao;
+    private VideoRepository repo;
+    private VideoToVideoEntity mapper;
+    private CategoryToCategoryEntity categoryMapper;
 
     @BeforeEach
     void setUp() {
-        repo = mock(UploadRepository.class);
-        dao = new UploadDaoImpl(repo, mapper);
+        repo = mock(VideoRepository.class);
+        CategoryDao categoryDao = mock(CategoryDao.class);
+        categoryMapper = new CategoryToCategoryEntity(categoryDao);
+        mapper = new VideoToVideoEntity(categoryMapper);
+        dao = new VideoDaoImpl(repo, mapper);
     }
 
     @Test
@@ -30,7 +35,7 @@ class UploadDaoImplTest {
         verify(repo, times(1)).save(any(VideoEntity.class));
     }
 
-    private Video createVideo(){
+    private Video createVideo() {
         Video video = new Video();
         video.setTitle("title");
         video.setDescription("description");
@@ -38,6 +43,8 @@ class UploadDaoImplTest {
         video.setStatus("RAW");
         video.setThumbnailUrl("thumbnailUrl");
         video.setContent(new byte[]{});
+        video.setThumbnail(new byte[]{});
+        video.setCategory("Action");
         return video;
     }
 }
