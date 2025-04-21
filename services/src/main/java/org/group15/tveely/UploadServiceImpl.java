@@ -2,7 +2,6 @@ package org.group15.tveely;
 
 import lombok.AllArgsConstructor;
 import org.group15.tveely.dao.UploadDao;
-import org.group15.tveely.models.Video;
 import org.group15.tveely.spi.UploadService;
 import org.springframework.stereotype.Service;
 

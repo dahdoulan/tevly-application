@@ -1,7 +1,6 @@
 package org.group15.tveely;
 
 import org.group15.tveely.dao.UploadDao;
-import org.group15.tveely.models.Video;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

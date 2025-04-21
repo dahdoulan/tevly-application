@@ -2,7 +2,7 @@ package org.group15.tveely.dao;
 
 import lombok.AllArgsConstructor;
 import org.group15.tveely.mappers.VideoToVideoEntity;
-import org.group15.tveely.models.Video;
+import org.group15.tveely.Video;
 import org.group15.tveely.repository.UploadRepository;
 import org.springframework.stereotype.Component;
 
@@ -15,6 +15,6 @@ public class UploadDaoImpl implements UploadDao<Video> {
 
     @Override
     public void uploadVideo(Video videoEntity) {
-        uploadRepository.save(videoToVideoEntity.map(videoEntity));
+            uploadRepository.save(videoToVideoEntity.map(videoEntity));
     }
 }

@@ -1,4 +1,4 @@
-package org.group15.tveely.models;
+package org.group15.tveely;
 
 
 import lombok.*;

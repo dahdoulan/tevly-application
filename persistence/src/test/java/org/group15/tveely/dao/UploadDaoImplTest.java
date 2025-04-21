@@ -2,7 +2,7 @@ package org.group15.tveely.dao;
 
 import org.group15.tveely.VideoEntity;
 import org.group15.tveely.mappers.VideoToVideoEntity;
-import org.group15.tveely.models.Video;
+import org.group15.tveely.Video;
 import org.group15.tveely.repository.UploadRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

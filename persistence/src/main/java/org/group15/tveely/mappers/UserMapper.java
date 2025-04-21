@@ -2,7 +2,7 @@ package org.group15.tveely.mappers;
 
 import org.group15.tveely.RoleEntity;
 import org.group15.tveely.UserEntity;
-import org.group15.tveely.models.User;
+import org.group15.tveely.User;
 import org.springframework.stereotype.Component;
 
 import java.util.List;

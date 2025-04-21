@@ -1,6 +1,6 @@
 package org.group15.tveely.mappers;
 
-import org.group15.tveely.models.Video;
+import org.group15.tveely.Video;
 import org.springframework.stereotype.Component;
 import org.springframework.web.multipart.MultipartFile;
 

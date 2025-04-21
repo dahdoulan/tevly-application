@@ -41,12 +41,10 @@ public class VideoEntity {
     @Column(name = "content")
     private Blob content;
 
-    // added by mohtaseb
     @Lob
     @Column(name = "thumbnail")
     private Blob thumbnail;
 
-    // added by mohtaseb
     @Column(name = "thumbnail_url", nullable = false, length = 255)
     private String thumbnailUrl;
 
@@ -62,7 +60,7 @@ public class VideoEntity {
     private LocalDateTime updatedAt;
 
     @OneToMany(mappedBy = "video")
-    private List<Comment> comments;
+    private List<CommentEntity> commentEntities;
 
     @OneToMany(mappedBy = "video")
     private List<Review> reviews;
