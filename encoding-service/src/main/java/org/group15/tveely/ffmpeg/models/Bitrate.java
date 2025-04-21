@@ -7,8 +7,8 @@ import java.util.Map;
 public class Bitrate {
     public static Map<String, Bitrate> bitrates = Map.of(
             "1080p", new Bitrate("5000k", "5500k", "10000k"),
-            "720p", new Bitrate("2800k", "3000k", "6000k"),
-            "480p", new Bitrate("1400k", "1600k", "3000k")
+            "720p", new Bitrate("2800k", "3000k", "6000k")
+         //   "480p", new Bitrate("1400k", "1600k", "3000k")
     );
 
     private String bitrate;

@@ -21,9 +21,9 @@ public class FfmpegWrapper {
 
     public int encode(String path) throws Exception {
         String outputDirectory = createOutputDirectory(path);
-        List<String> resolutions = List.of("1080p", "720p", "480p");
+        List<String> resolutions = List.of("1080p", "720p" );
         for (String resolution : resolutions) {
-            createMasterPlaylist(outputDirectory);
+           // createMasterPlaylist(outputDirectory);
             int exitCode = processCommand(resolution, outputDirectory, path);
             if (exitCode != 0) {
                 throw new IllegalStateException("Error while processing video.");
@@ -53,8 +53,7 @@ public class FfmpegWrapper {
             writer.println("#EXT-X-STREAM-INF:BANDWIDTH=3000000,RESOLUTION=1280x720");
             writer.println("720p/stream.m3u8");
 
-            writer.println("#EXT-X-STREAM-INF:BANDWIDTH=1600000,RESOLUTION=854x480");
-            writer.println("480p/stream.m3u8");
+
         }
     }
 
@@ -87,27 +86,20 @@ public class FfmpegWrapper {
                 width = "1280";
                 height = "720";
             }
-            case "480p" -> {
-                width = "854";
-                height = "480";
-            }
         }
         return new ArrayList<>(List.of(
                 "ffmpeg",
                 "-i", inputPath,
                 "-vf", "scale=w=" + width + ":h=" + height + ":force_original_aspect_ratio=decrease",
-                "-c:v", "h264_nvenc",
+                "-c:v", "libx264",
+                "-preset", "fast",
                 "-b:v", bitrate.getBitrate(),
                 "-maxrate", bitrate.getMaxRate(),
                 "-bufsize", bitrate.getBufferSize(),
                 "-c:a", "aac",
                 "-b:a", "128k",
-                "-f", "hls",
-                "-hls_time", "20",
-                "-hls_playlist_type", "vod",
-                "-hls_flags", "independent_segments",
-                "-hls_segment_filename", streamPath + File.separator + "segment_%03d.webm",
-                streamPath + File.separator + "stream.m3u8"
+                "-movflags","+faststart",
+                streamPath + File.separator + "stream.mp4"
         ));
     }
 

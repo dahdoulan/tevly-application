@@ -23,7 +23,7 @@ public class EncodingServiceImpl implements EncodingService {
             .scale("1920:1080")
             .terminal(BASH)
             .expected("-c")
-            .outputDir("C:\\encoded")
+            .outputDir("E:\\encoded")
             .build();
 
     @Scheduled(fixedRate = 5000)
