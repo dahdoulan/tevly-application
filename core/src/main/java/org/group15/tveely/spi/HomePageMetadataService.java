@@ -6,5 +6,6 @@ import java.util.List;
 
 public interface HomePageMetadataService {
 
-    public List<VideoMetadata> getHomePageMetadata() ;
+    List<VideoMetadata> getHomePageMetadata() ;
+    byte[] getThumbnailBytes(Long videoId);
 }

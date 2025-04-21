@@ -1,6 +1,7 @@
 package org.group15.tveely.dao;
 
 import lombok.AllArgsConstructor;
+import org.group15.tveely.DTOs.ThumbnailProjection;
 import org.group15.tveely.DTOs.VideoMetadata;
 import org.group15.tveely.mappers.VideoToVideoEntity;
 import org.group15.tveely.Video;
@@ -8,6 +9,7 @@ import org.group15.tveely.repository.VideoRepository;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
+import java.util.Optional;
 
 @Component
 @AllArgsConstructor
@@ -27,4 +29,8 @@ public class VideoDaoImpl implements VideoDao<Video> {
         return videoRepository.findByStatus(status);
     }
 
+    @Override
+    public Optional<ThumbnailProjection> findThumbnailById(Long id) {
+        return videoRepository.findThumbnailById(id);
+    }
 }
