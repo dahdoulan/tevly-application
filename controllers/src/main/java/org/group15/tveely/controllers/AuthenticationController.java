@@ -61,7 +61,7 @@ public class AuthenticationController {
         }
     }
 
-    @GetMapping("/activate-account")
+    @PostMapping("/activate-account")
     public void confirm(
             @RequestParam("token") String token
     ) throws MessagingException {

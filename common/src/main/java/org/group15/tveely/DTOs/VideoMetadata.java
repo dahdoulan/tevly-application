@@ -3,8 +3,6 @@ package org.group15.tveely.DTOs;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.group15.tveely.CategoryEntity;
 
-import java.time.LocalDateTime;
-
 public interface VideoMetadata {
     Long getId();
     String getTitle();
@@ -12,6 +10,10 @@ public interface VideoMetadata {
     String getVideoUrl();
     @JsonIgnore
     CategoryEntity getCategoryEntity();
+
+   default String getThumbnailUrl() {
+       return "/videos/"+getId()+"/thumbnail";
+   }
 
     default String getCategory() {
         return getCategoryEntity().getCategory();
