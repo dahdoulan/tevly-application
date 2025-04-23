@@ -11,6 +11,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.scheduling.annotation.EnableAsync;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
 @ComponentScan(basePackages = {"org.group15.tveely.*"})
 @EntityScan(basePackages = "org.group15.tveely.*")
@@ -18,6 +19,7 @@ import org.springframework.scheduling.annotation.EnableAsync;
 @SpringBootApplication
 @EnableJpaAuditing
 @EnableAsync
+@EnableScheduling
 public class LauncherApplication {
     public static void main(String[] args) {
         SpringApplication.run(LauncherApplication.class, args);

@@ -1,5 +1,6 @@
 package org.group15.tveely.models;
 
+
 import lombok.Data;
 
 import java.time.LocalDateTime;
@@ -12,5 +13,6 @@ public class Video {
     private String description;
     private String thumbnailUrl;
     private String videoUrl;
+    private String processingPath;
     private byte[] content;
 }

@@ -30,6 +30,7 @@
             <column name="updated_at" type="TIMESTAMP" defaultValueDate="CURRENT_TIMESTAMP">
                 <constraints nullable="false"/>
             </column>
+            <column name="processing_path" type="VARCHAR(255)"></column>
         </createTable>
 
         <createIndex indexName="idx_videos_title" tableName="video">
