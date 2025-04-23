@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.8.xsd">
+
+    <changeSet id="create-token-table" author="tveely">
+        <createTable tableName="token_entity">
+            <column name="id" type="INTEGER" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false" />
+            </column>
+            <column name="token" type="VARCHAR(255)">
+                <constraints unique="true" nullable="false" />
+            </column>
+            <column name="created_at" type="TIMESTAMP" />
+            <column name="expires_at" type="TIMESTAMP" />
+            <column name="validated_at" type="TIMESTAMP" />
+            <column name="user_id" type="INTEGER">
+                <constraints nullable="false" foreignKeyName="fk_token_user" references="_user(id)" />
+            </column>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>
