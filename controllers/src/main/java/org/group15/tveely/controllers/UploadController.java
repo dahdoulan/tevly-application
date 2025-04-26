@@ -19,9 +19,9 @@ public class UploadController {
     private final UploadService uploadService;
     private final MultipartToVideo multipartToVideo;
 
-    @PreAuthorize("hasAnyRole('FILMMAKER','ADMIN')")
+   @PreAuthorize("hasAnyRole('FILMMAKER','ADMIN')")
     @PostMapping("/api/video/upload")
-    public ResponseEntity uploadVideo(@RequestParam(name = "video") MultipartFile video, @RequestParam(name = "title") String title, @RequestParam(name = "description") String description , @RequestParam(name = "thumbnail") MultipartFile thumbnail, @RequestParam(name = "category") String category) {
+        public ResponseEntity uploadVideo(@RequestParam(name = "video") MultipartFile video, @RequestParam(name = "title") String title, @RequestParam(name = "description") String description , @RequestParam(name = "thumbnail") MultipartFile thumbnail, @RequestParam(name = "category") String category) {
         try{
             uploadService.uploadVideo(multipartToVideo.map(video, title, description,thumbnail,category));
             return ResponseEntity.noContent().build();

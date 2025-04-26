@@ -54,7 +54,7 @@
             <column name="firstname" value="mohtaseb"/>
             <column name="lastname" value="malkawi"/>
             <column name="email" value="moe@gmail.com"/>
-            <column name="password" value="highsky11"/>
+            <column name="password" value="$2a$10$vbEl4GsXRhqsYjPMsLJcteiIb4a1uqDJwZqgG16ySdepaWI94067i"/>
             <column name="date_of_birth" value="1995-04-07"/>
             <column name="account_locked" valueBoolean="false"/>
             <column name="enabled" valueBoolean="true"/>
