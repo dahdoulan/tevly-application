@@ -1,6 +1,6 @@
 package org.group15.tveely.filesystem;
 
-import org.group15.tveely.models.Video;
+import org.group15.tveely.Video;
 import org.springframework.stereotype.Component;
 
 import java.io.IOException;

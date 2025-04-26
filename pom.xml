@@ -21,16 +21,18 @@
         <springdata.version>3.3.4</springdata.version>
         <liquibase.version>4.27.0</liquibase.version>
         <jakarta.persistence.version>3.1.0</jakarta.persistence.version>
-        <lombok.version>1.18.30</lombok.version>
+        <lombok.version>1.18.32</lombok.version>
         <jib.version>3.3.2</jib.version>
         <mockito.version>5.14.2</mockito.version>
         <junit.version>5.13.0-M2</junit.version>
+        <jwt.version>0.11.5</jwt.version>  <!-- For Spring Boot 3.x -->
+        <springdoc.version>2.3.0</springdoc.version>  <!-- Matches Spring Boot 3.x -->
+        <jakarta.validation.version>3.0.2</jakarta.validation.version>
+        <org.eclipse.angus.version>2.0.3</org.eclipse.angus.version>
+        <org.springframework.security.version>6.4.3</org.springframework.security.version>
+        <org.hibernate.orm.version>6.5.3.Final</org.hibernate.orm.version>
         <slf4j.version>2.0.17</slf4j.version>
     </properties>
-
-
-
-
 
     <modules>
         <module>launcher</module>
@@ -42,6 +44,7 @@
         <module>core</module>
         <module>models</module>
         <module>encoding-service</module>
+        <module>common</module>
     </modules>
 
     <build>
@@ -62,7 +65,35 @@
                             <password>${env.DOCKER_PASSWORD}</password>
                         </auth>
                     </to>
-                    <mainClass>org.group15.LauncherApplication</mainClass>
+                    <mainClass>org.group15.tveely.LauncherApplication</mainClass>
+                </configuration>
+
+            </plugin>
+
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.13.0</version>
+                <configuration>
+                    <release>17</release>
+                    <annotationProcessorPaths>
+                        <!-- Lombok must come first -->
+                        <path>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok</artifactId>
+                            <version>${lombok.version}</version>
+                        </path>
+                        <!-- Add Spring annotation processors -->
+                        <path>
+                            <groupId>org.springframework.boot</groupId>
+                            <artifactId>spring-boot-configuration-processor</artifactId>
+                            <version>${springboot.version}</version>
+                        </path>
+                    </annotationProcessorPaths>
+                    <compilerArgs>
+                        <arg>-Amapstruct.defaultComponentModel=spring</arg>
+                    </compilerArgs>
                 </configuration>
             </plugin>
         </plugins>

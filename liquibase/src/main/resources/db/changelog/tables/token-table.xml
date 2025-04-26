@@ -6,7 +6,7 @@
 
     <changeSet id="create-token-table" author="tveely">
         <createTable tableName="token_entity">
-            <column name="id" type="INTEGER" autoIncrement="true">
+            <column name="id" type="BIGINT" autoIncrement="true">
                 <constraints primaryKey="true" nullable="false" />
             </column>
             <column name="token" type="VARCHAR(255)">
@@ -15,9 +15,16 @@
             <column name="created_at" type="TIMESTAMP" />
             <column name="expires_at" type="TIMESTAMP" />
             <column name="validated_at" type="TIMESTAMP" />
-            <column name="user_id" type="INTEGER">
+            <column name="user_id" type="BIGINT">
                 <constraints nullable="false" foreignKeyName="fk_token_user" references="_user(id)" />
             </column>
         </createTable>
+
+        <createIndex indexName="idx_token_entity_token" tableName="token_entity">
+            <column name="token"/>
+        </createIndex>
+        <createIndex indexName="idx_token_entity_id" tableName="token_entity">
+            <column name="id"/>
+        </createIndex>
     </changeSet>
 </databaseChangeLog>
