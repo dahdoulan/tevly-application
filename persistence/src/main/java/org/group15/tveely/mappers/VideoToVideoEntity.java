@@ -27,6 +27,7 @@ public class VideoToVideoEntity {
         videoEntity.setThumbnailUrl(video.getThumbnailUrl());
         videoEntity.setCategoryEntity(categoryToCategoryEntity.map(video.getCategory())
                 .orElseThrow(() -> new IllegalArgumentException("Category not found")));
+        videoEntity.setProcessingPath(video.getProcessingPath());
         return videoEntity;
     }
 

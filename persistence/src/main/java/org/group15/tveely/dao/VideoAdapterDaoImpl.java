@@ -43,6 +43,6 @@ public class VideoAdapterDaoImpl implements VideoDao<VideoAdapter>{
 
     @Override
     public void updateVideoStatus(VideoAdapter video, String status) {
-
+        videoRepository.updateStatusById(video.getId(), status);
     }
 }

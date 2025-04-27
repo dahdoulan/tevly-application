@@ -2,15 +2,18 @@ package org.group15.tveely.dao;
 
 import lombok.AllArgsConstructor;
 import org.group15.tveely.VideoEntity;
+import org.group15.tveely.filesystem.FileSystem;
 import org.group15.tveely.mappers.VideoEntityToVideo;
 import org.group15.tveely.DTOs.ThumbnailProjection;
 import org.group15.tveely.DTOs.VideoMetadata;
 import org.group15.tveely.mappers.VideoToVideoEntity;
 import org.group15.tveely.models.VideoAdapter;
 import org.group15.tveely.Video;
+import org.group15.tveely.repository.UploadRepository;
 import org.group15.tveely.repository.VideoRepository;
 import org.springframework.stereotype.Component;
 
+import java.nio.file.Path;
 import java.util.List;
 import java.util.Optional;
 
@@ -20,10 +23,21 @@ public class VideoDaoImpl implements VideoDao<Video> {
 
     private final VideoRepository videoRepository;
     private final VideoToVideoEntity videoToVideoEntity;
+    private final FileSystem fileSystem;
+    private final UploadRepository uploadRepository;
 
     @Override
     public void uploadVideo(Video videoEntity) {
-        videoRepository.save(videoToVideoEntity.map(videoEntity));
+        String path = videoEntity.getTitle();
+        String directory = "./resources/users/";
+        try{
+            Path videoPath = fileSystem.resolvePath(directory, path);
+            fileSystem.storeVideo(videoEntity, videoPath);
+            videoEntity.setProcessingPath(videoPath.toString());
+            uploadRepository.save(videoToVideoEntity.map(videoEntity));
+        }catch (Exception e){
+            e.printStackTrace();
+        }
     }
 
     @Override
