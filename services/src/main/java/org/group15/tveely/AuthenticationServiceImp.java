@@ -27,6 +27,7 @@ import java.security.SecureRandom;
 import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
@@ -112,8 +113,15 @@ public class AuthenticationServiceImp implements AuthenticationService {
         claims.put("fullName", user.getFullName());
 
         var jwtToken = jwtService.generateToken(claims, (UserEntity) auth.getPrincipal());
+
+        String roles = user.getRoles().stream()
+                .map(RoleEntity::getName)
+                .collect(Collectors.joining(",")); // will join multiple roles with a comma
+
+
         return AuthenticationResponse.builder()
                 .token(jwtToken)
+                .role(roles) // <-- setting the role
                 .build();
     }
 

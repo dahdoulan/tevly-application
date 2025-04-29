@@ -90,7 +90,7 @@ public class FfmpegWrapper {
         return new ArrayList<>(List.of(
                 "ffmpeg",
                 "-i", inputPath,
-                "-vf", "scale=w=" + width + ":h=" + height + ":force_original_aspect_ratio=decrease",
+                "-vf", "scale=w=" + width + ":h=" + height + ":force_original_aspect_ratio=decrease:force_divisible_by=2",
                 "-c:v", "libx264",
                 "-preset", "fast",
                 "-b:v", bitrate.getBitrate(),
