@@ -39,7 +39,7 @@ public class HomePageMetadataServiceImpl implements HomePageMetadataService {
                             .map(comment -> new CommentResponseDTO(
                                     comment.getComment(),
                                     comment.getUser().getFullName(),
-                                    comment.getCreateDate().toLocalDate()))
+                                    comment.getCreateDate()))
                             .collect(Collectors.toList());
 
                     // Create a new VideoMetadataDTO with comments

@@ -13,4 +13,5 @@ public interface VideoDao<T>{
     Optional<ThumbnailProjection> findThumbnailById(Long id);
     List<VideoAdapter> findVideoByStatus(String status);
     void updateVideoStatus(VideoAdapter video, String status);
+
 }

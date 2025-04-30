@@ -28,4 +28,6 @@ public interface VideoRepository extends CrudRepository<VideoEntity, Long> {
 
     @Query("SELECT thumbnail AS thumbnail FROM VideoEntity WHERE id = :id")
     Optional<ThumbnailProjection> findThumbnailById(@Param("id") Long id);
+
+    VideoEntity findVideoEntityById(Long id);
 }
