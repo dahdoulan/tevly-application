@@ -4,22 +4,22 @@ import jakarta.persistence.*;
 import lombok.Data;
 
 import java.time.LocalDateTime;
-
 @Data
 @Entity
-@Table(name = "review")
-public class Review {
+@Table(name = "ratings")
+public class RatingEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
     private Long id;
 
-    @Column(name = "user_id", nullable = false)
-    private Long userId;
+    @ManyToOne
+    @JoinColumn(name = "user_id", nullable = false, foreignKey = @ForeignKey(name = "fk_rating_User"))
+    private UserEntity user;
 
     @ManyToOne
-    @JoinColumn(name = "video_id", nullable = false, foreignKey = @ForeignKey(name = "fk_review_video"))
+    @JoinColumn(name = "video_id", nullable = false, foreignKey = @ForeignKey(name = "fk_rating_video"))
     private VideoEntity video;
 
     @Column(name = "rating", nullable = false)
@@ -27,7 +27,4 @@ public class Review {
 
     @Column(name = "create_date", nullable = false, columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP")
     private LocalDateTime createDate;
-
-    @ManyToOne
-    private UserEntity createdBy;
 }

@@ -6,9 +6,13 @@
     <changeSet id="create-video-table" author="tveely">
         <comment>Create videos table with specified attributes</comment>
         <createTable tableName="video">
+
             <column name="id" type="BIGINT" autoIncrement="true">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
+
+
+
             <column name="title" type="VARCHAR(255)">
                 <constraints nullable="false"/>
             </column>
@@ -32,7 +36,8 @@
                 <constraints nullable="false" foreignKeyName="fk_video_category" references="categories(id)" />
             </column>
 
-
+            <column name="average_rating" type="BIGINT" >
+            </column>
             <column name="created_at" type="TIMESTAMP" defaultValueDate="CURRENT_TIMESTAMP">
                 <constraints nullable="false"/>
             </column>

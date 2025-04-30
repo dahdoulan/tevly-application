@@ -15,7 +15,6 @@ import java.time.LocalDateTime;
 @RequiredArgsConstructor
 public class CommentMapper {
     private final UserDao userDao;
-    private final UserMapper userMapper;
     public CommentEntity toEntity(Comment comment) {
         CommentEntity entity = new CommentEntity();
 

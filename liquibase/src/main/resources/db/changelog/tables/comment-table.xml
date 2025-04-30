@@ -21,7 +21,7 @@
             </column>
 
             <column name="video_id" type="BIGINT">
-                <constraints nullable="false" foreignKeyName="fk_comment_video" references="video(id)"/>
+                <constraints nullable="false" foreignKeyName="fk_Comment_video" references="video(id)"/>
             </column>
 
             <column name="comment" type="TEXT">
