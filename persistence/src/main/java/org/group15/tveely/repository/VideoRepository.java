@@ -1,7 +1,7 @@
 package org.group15.tveely.repository;
 
 import org.group15.tveely.DTOs.ThumbnailProjection;
-import org.group15.tveely.DTOs.VideoMetadata;
+import org.group15.tveely.DTOs.videometadata.VideoMetadata;
 import org.group15.tveely.VideoEntity;
 import org.springframework.data.jpa.repository.EntityGraph;
 import jakarta.transaction.Transactional;

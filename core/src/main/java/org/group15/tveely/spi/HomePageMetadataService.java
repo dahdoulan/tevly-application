@@ -1,11 +1,12 @@
 package org.group15.tveely.spi;
 
-import org.group15.tveely.DTOs.VideoMetadata;
+import org.group15.tveely.DTOs.videometadata.VideoMetadata;
+import org.group15.tveely.DTOs.videometadata.VideoMetadataDTO;
 
 import java.util.List;
 
 public interface HomePageMetadataService {
 
-    List<VideoMetadata> getHomePageMetadata() ;
+    List<VideoMetadataDTO> getHomePageMetadata() ;
     byte[] getThumbnailBytes(Long videoId);
 }

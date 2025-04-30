@@ -3,41 +3,40 @@
                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
                    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.19.xsd">
-    <changeSet id="create-review-table" author="tveely">
-        <comment>Create reviews table with specified attributes</comment>
-        <createTable tableName="review">
+    <changeSet id="create-rate-table" author="tveely">
+        <comment>Create rates table with specified attributes</comment>
+        <createTable tableName="rate">
+
             <column name="id" type="BIGINT" autoIncrement="true">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
+
             <column name="user_id" type="BIGINT">
+                <constraints nullable="false" foreignKeyName="fk_Rate_User" references="_user(id)"/>
+            </column>
+
+            <column name="video_id" type="BIGINT" >
+                <constraints nullable="false" foreignKeyName="fk_comment_video" references="video(id)"/>
+            </column>
+
+            <column name="rate" type="BIGINT">
                 <constraints nullable="false"/>
             </column>
-            <column name="video_id" type="BIGINT">
-                <constraints nullable="false"/>
-            </column>
-            <column name="rating" type="BIGINT">
-                <constraints nullable="false"/>
-            </column>
+
             <column name="create_date" type="TIMESTAMP" defaultValueDate="CURRENT_TIMESTAMP">
                 <constraints nullable="false"/>
             </column>
         </createTable>
 
-        <createIndex indexName="idx_review_video_id" tableName="review">
+        <createIndex indexName="idx_rate_video_id" tableName="rate">
             <column name="video_id"/>
         </createIndex>
 
-        <createIndex indexName="idx_review_user_id" tableName="review">
+        <createIndex indexName="idx_rate_user_id" tableName="rate">
             <column name="user_id"/>
         </createIndex>
 
-        <addForeignKeyConstraint
-                constraintName="fk_review_video"
-                baseTableName="review"
-                baseColumnNames="video_id"
-                referencedTableName="video"
-                referencedColumnNames="id"
-                onDelete="CASCADE"/>
+
     </changeSet>
 
 

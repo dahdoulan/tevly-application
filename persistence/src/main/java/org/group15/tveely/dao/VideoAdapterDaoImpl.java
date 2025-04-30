@@ -2,10 +2,9 @@ package org.group15.tveely.dao;
 
 import lombok.AllArgsConstructor;
 import org.group15.tveely.DTOs.ThumbnailProjection;
-import org.group15.tveely.DTOs.VideoMetadata;
+import org.group15.tveely.DTOs.videometadata.VideoMetadata;
 import org.group15.tveely.VideoEntity;
 import org.group15.tveely.mappers.VideoEntityToVideo;
-import org.group15.tveely.mappers.VideoToVideoEntity;
 import org.group15.tveely.models.VideoAdapter;
 import org.group15.tveely.repository.VideoRepository;
 import org.springframework.stereotype.Component;

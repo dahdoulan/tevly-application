@@ -2,6 +2,7 @@ package org.group15.tveely;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import org.springframework.data.annotation.CreatedDate;
 
 import java.time.LocalDateTime;
 
@@ -15,8 +16,9 @@ public class CommentEntity {
     @Column(name = "id", nullable = false)
     private Long id;
 
-    @Column(name = "user_id", nullable = false)
-    private Long userId;
+    @ManyToOne
+    @JoinColumn(name = "user_id", nullable = false, foreignKey = @ForeignKey(name = "fk_Comment_User"))
+    private UserEntity user;  // <--- changed from Long userId to UserEntity user
 
     @ManyToOne
     @JoinColumn(name = "video_id", nullable = false, foreignKey = @ForeignKey(name = "fk_comment_video"))
@@ -25,9 +27,7 @@ public class CommentEntity {
     @Column(name = "comment", nullable = false, columnDefinition = "TEXT")
     private String comment;
 
-    @Column(name = "create_date", nullable = false, columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP")
+    @CreatedDate
+    @Column(name = "create_date",nullable = false, updatable = false,columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP")
     private LocalDateTime createDate;
-
-    @ManyToOne
-    private UserEntity createdBy;
 }

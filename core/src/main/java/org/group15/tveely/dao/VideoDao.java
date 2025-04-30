@@ -1,7 +1,7 @@
 package org.group15.tveely.dao;
 
 import org.group15.tveely.DTOs.ThumbnailProjection;
-import org.group15.tveely.DTOs.VideoMetadata;
+import org.group15.tveely.DTOs.videometadata.VideoMetadata;
 import org.group15.tveely.models.VideoAdapter;
 
 import java.util.List;
