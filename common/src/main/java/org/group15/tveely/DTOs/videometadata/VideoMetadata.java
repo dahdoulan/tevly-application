@@ -14,7 +14,8 @@ public interface VideoMetadata {
     @JsonIgnore
     CategoryEntity getCategoryEntity();
     List<CommentResponseDTO> getComments();
-
+    int getAverageRating();
+    int getUserRating();
    default String getThumbnailUrl() {
        return "/videos/"+getId()+"/thumbnail";
    }

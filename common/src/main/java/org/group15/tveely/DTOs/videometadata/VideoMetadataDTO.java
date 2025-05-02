@@ -12,15 +12,19 @@ public class VideoMetadataDTO implements VideoMetadata {
     private final String videoUrl;
     private final CategoryEntity categoryEntity;
     private final List<CommentResponseDTO> comments;
+    private final int averageRating;
+    private final int userRating;
 
     public VideoMetadataDTO(Long id, String title, String description, String videoUrl,
-                            CategoryEntity categoryEntity, List<CommentResponseDTO> comments) {
+                            CategoryEntity categoryEntity, List<CommentResponseDTO> comments,int averageRating, int userRating) {
         this.id = id;
         this.title = title;
         this.description = description;
         this.videoUrl = videoUrl;
         this.categoryEntity = categoryEntity;
         this.comments = comments;
+        this.averageRating = averageRating;
+        this.userRating = userRating;
     }
 
     // Implement all interface methods
@@ -41,4 +45,9 @@ public class VideoMetadataDTO implements VideoMetadata {
 
     @Override
     public List<CommentResponseDTO> getComments() { return comments; }
+
+    @Override
+    public int getAverageRating() { return averageRating; }
+    @Override
+    public int getUserRating() { return userRating; }
 }

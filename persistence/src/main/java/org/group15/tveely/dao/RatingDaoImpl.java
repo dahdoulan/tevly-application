@@ -31,4 +31,10 @@ public class RatingDaoImpl implements RatingDao {
         return ratingRepository.findByVideo_Id(videoId);
     }
 
+    @Override
+    public Optional<RatingEntity> findByUser_Id(Long userId) {
+        return ratingRepository.findByUser_Id(userId);
+    }
+
+
 }

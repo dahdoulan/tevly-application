@@ -10,5 +10,6 @@ public interface RatingDao {
     void save(RatingEntity ratingEntity);
     Optional<RatingEntity> findByUserIdAndVideoId(Long userId, Long videoId);
     Optional<List<RatingEntity>> findByVideo_Id(Long videoId);
+    Optional<RatingEntity> findByUser_Id(Long userId);
 
 }
