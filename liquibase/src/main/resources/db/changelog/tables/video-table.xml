@@ -36,7 +36,7 @@
                 <constraints nullable="false" foreignKeyName="fk_video_category" references="categories(id)" />
             </column>
 
-            <column name="average_rating" type="BIGINT" >
+            <column name="average_rating" type="INT" >
             </column>
             <column name="created_at" type="TIMESTAMP" defaultValueDate="CURRENT_TIMESTAMP">
                 <constraints nullable="false"/>

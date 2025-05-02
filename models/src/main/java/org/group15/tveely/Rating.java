@@ -10,5 +10,5 @@ import lombok.NoArgsConstructor;
 public class Rating {
     private Long userId;
     private Long videoId;
-    private Long rating;
+    private int rating;
 }

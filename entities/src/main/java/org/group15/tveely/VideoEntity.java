@@ -68,5 +68,5 @@ public class VideoEntity {
     private List<RatingEntity> ratingEntities;
 
     @Column(name = "average_rating")
-    private Long averageRating;
+    private int averageRating;
 }

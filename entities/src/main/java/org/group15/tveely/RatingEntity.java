@@ -23,7 +23,7 @@ public class RatingEntity {
     private VideoEntity video;
 
     @Column(name = "rating", nullable = false)
-    private Long rating;
+    private int rating;
 
     @Column(name = "create_date", nullable = false, columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP")
     private LocalDateTime createDate;

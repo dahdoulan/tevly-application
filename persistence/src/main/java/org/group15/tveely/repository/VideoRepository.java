@@ -30,4 +30,10 @@ public interface VideoRepository extends CrudRepository<VideoEntity, Long> {
     Optional<ThumbnailProjection> findThumbnailById(@Param("id") Long id);
 
     VideoEntity findVideoEntityById(Long id);
+
+    @Modifying
+    @Transactional
+    @Query("UPDATE VideoEntity v SET v.averageRating = :averageRating WHERE v.id = :id")
+    void updateAverageRatingById(@Param("id") Long id, @Param("averageRating") int averageRating);
+
 }

@@ -11,5 +11,5 @@ import lombok.NoArgsConstructor;
 public class RatingRequest {
     private String email;
     private Long videoId;
-    private Long rating;
+    private int rating;
 }

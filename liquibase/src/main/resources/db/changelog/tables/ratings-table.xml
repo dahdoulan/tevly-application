@@ -19,7 +19,7 @@
                 <constraints nullable="false" foreignKeyName="fk_rating_video" references="video(id)"/>
             </column>
 
-            <column name="rating" type="BIGINT">
+            <column name="rating" type="INT">
                 <constraints nullable="false"/>
             </column>
 

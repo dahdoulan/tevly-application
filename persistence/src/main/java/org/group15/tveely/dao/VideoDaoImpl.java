@@ -30,12 +30,12 @@ public class VideoDaoImpl implements VideoDao<Video> {
     public void uploadVideo(Video videoEntity) {
         String path = videoEntity.getTitle();
         String directory = "./resources/users/";
-        try{
+        try {
             Path videoPath = fileSystem.resolvePath(directory, path);
             fileSystem.storeVideo(videoEntity, videoPath);
             videoEntity.setProcessingPath(videoPath.toString());
             uploadRepository.save(videoToVideoEntity.map(videoEntity));
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
@@ -61,5 +61,16 @@ public class VideoDaoImpl implements VideoDao<Video> {
     public Optional<ThumbnailProjection> findThumbnailById(Long id) {
         return videoRepository.findThumbnailById(id);
     }
+
+    @Override
+    public VideoEntity findVideoEntityById(Long id) {
+        return videoRepository.findVideoEntityById(id);
+    }
+
+    @Override
+    public void updateAverageRatingById(Long id, int averageRating) {
+        videoRepository.updateAverageRatingById(id, averageRating);
+    }
+
 }
 

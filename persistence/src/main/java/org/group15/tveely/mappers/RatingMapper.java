@@ -9,6 +9,9 @@ import org.group15.tveely.VideoEntity;
 import org.group15.tveely.dao.UserDao;
 import org.springframework.stereotype.Component;
 
+import java.time.LocalDateTime;
+
+
 
 @Component
 @RequiredArgsConstructor
@@ -42,7 +45,7 @@ public class RatingMapper {
         }
 
         RatingEntity entity = new RatingEntity();
-
+        entity.setCreateDate(LocalDateTime.now());
         entity.setUser(userDao.findById(rating.getUserId())
                 .orElseThrow(() -> new RuntimeException("User not found")));
 
