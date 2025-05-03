@@ -6,6 +6,7 @@ import org.group15.tveely.mappers.MultipartToVideo;
 import org.group15.tveely.spi.UploadService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -23,7 +24,10 @@ public class UploadController {
     @PostMapping("/api/video/upload")
         public ResponseEntity uploadVideo(@RequestParam(name = "video") MultipartFile video, @RequestParam(name = "title") String title, @RequestParam(name = "description") String description , @RequestParam(name = "thumbnail") MultipartFile thumbnail, @RequestParam(name = "category") String category) {
         try{
-            uploadService.uploadVideo(multipartToVideo.map(video, title, description,thumbnail,category));
+            String authenticatedEmail = SecurityContextHolder.getContext().getAuthentication().getName();
+            log.info("Email: {}", authenticatedEmail);
+
+            uploadService.uploadVideo(multipartToVideo.map(video, title, description,thumbnail,category, authenticatedEmail));
             return ResponseEntity.noContent().build();
         }catch (Exception e){
             log.error("ERROR WHILE UPLOADING VIDEO | ERROR MESSAGE : {}", e.getMessage());

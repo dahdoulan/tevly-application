@@ -55,6 +55,10 @@ public class VideoEntity {
     @JoinColumn(name = "category_id", nullable = false, foreignKey = @ForeignKey(name = "fk_video_category"))
     private CategoryEntity categoryEntity;
 
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "filmmaker_id", nullable = false, foreignKey = @ForeignKey(name = "fk_video_filmmaker"))
+    private UserEntity filmmaker;
+
     @Column(name = "created_at", nullable = false, columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP")
     private LocalDateTime createdAt;
 

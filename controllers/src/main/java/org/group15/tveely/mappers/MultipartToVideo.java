@@ -12,7 +12,7 @@ import static java.util.Objects.nonNull;
 
 @Component
 public class MultipartToVideo {
-    public Video map(MultipartFile file, String title, String description, MultipartFile thumbnail, String category) throws IOException {
+    public Video map(MultipartFile file, String title, String description, MultipartFile thumbnail, String category, String email) throws IOException {
 
 
         Video video = new Video();
@@ -26,11 +26,11 @@ public class MultipartToVideo {
         video.setThumbnail(thumbnail.getBytes());
 
         video.setUploadDate(LocalDateTime.now());
+        video.setFilmmakerEmail(email);
         return video;
     }
 
 
-    // function create a Unique Filename modified by mohtaseb
     public String Create_Unique_Filename(MultipartFile file) {
         String originalFilename = file.getOriginalFilename();
         if (nonNull(originalFilename)) {
