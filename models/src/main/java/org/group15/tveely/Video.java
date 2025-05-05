@@ -17,4 +17,5 @@ public class Video {
     private byte[] content;
     private byte[] thumbnail;
     private String category;
+    private String filmmakerEmail;
 }

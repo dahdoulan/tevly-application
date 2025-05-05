@@ -6,13 +6,9 @@
     <changeSet id="create-video-table" author="tveely">
         <comment>Create videos table with specified attributes</comment>
         <createTable tableName="video">
-
             <column name="id" type="BIGINT" autoIncrement="true">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
-
-
-
             <column name="title" type="VARCHAR(255)">
                 <constraints nullable="false"/>
             </column>
