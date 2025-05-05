@@ -1,7 +1,7 @@
 package org.group15.tveely.repository;
 
 import org.group15.tveely.DTOs.ThumbnailProjection;
-import org.group15.tveely.DTOs.VideoMetadata;
+import org.group15.tveely.DTOs.videometadata.VideoMetadata;
 import org.group15.tveely.VideoEntity;
 import org.springframework.data.jpa.repository.EntityGraph;
 import jakarta.transaction.Transactional;
@@ -28,4 +28,12 @@ public interface VideoRepository extends CrudRepository<VideoEntity, Long> {
 
     @Query("SELECT thumbnail AS thumbnail FROM VideoEntity WHERE id = :id")
     Optional<ThumbnailProjection> findThumbnailById(@Param("id") Long id);
+
+    VideoEntity findVideoEntityById(Long id);
+
+    @Modifying
+    @Transactional
+    @Query("UPDATE VideoEntity v SET v.averageRating = :averageRating WHERE v.id = :id")
+    void updateAverageRatingById(@Param("id") Long id, @Param("averageRating") int averageRating);
+
 }

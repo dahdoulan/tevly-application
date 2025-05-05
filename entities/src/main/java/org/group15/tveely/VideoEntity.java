@@ -65,5 +65,8 @@ public class VideoEntity {
     private List<CommentEntity> commentEntities;
 
     @OneToMany(mappedBy = "video")
-    private List<Review> reviews;
+    private List<RatingEntity> ratingEntities;
+
+    @Column(name = "average_rating")
+    private int averageRating;
 }
