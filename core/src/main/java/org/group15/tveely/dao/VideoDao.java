@@ -1,7 +1,8 @@
 package org.group15.tveely.dao;
 
 import org.group15.tveely.DTOs.ThumbnailProjection;
-import org.group15.tveely.DTOs.VideoMetadata;
+import org.group15.tveely.DTOs.videometadata.VideoMetadata;
+import org.group15.tveely.VideoEntity;
 import org.group15.tveely.models.VideoAdapter;
 
 import java.util.List;
@@ -13,4 +14,7 @@ public interface VideoDao<T>{
     Optional<ThumbnailProjection> findThumbnailById(Long id);
     List<VideoAdapter> findVideoByStatus(String status);
     void updateVideoStatus(VideoAdapter video, String status);
+    VideoEntity findVideoEntityById(Long id);
+    void updateAverageRatingById(Long id, int averageRating);
+
 }

@@ -2,10 +2,9 @@ package org.group15.tveely.dao;
 
 import lombok.AllArgsConstructor;
 import org.group15.tveely.DTOs.ThumbnailProjection;
-import org.group15.tveely.DTOs.VideoMetadata;
+import org.group15.tveely.DTOs.videometadata.VideoMetadata;
 import org.group15.tveely.VideoEntity;
 import org.group15.tveely.mappers.VideoEntityToVideo;
-import org.group15.tveely.mappers.VideoToVideoEntity;
 import org.group15.tveely.models.VideoAdapter;
 import org.group15.tveely.repository.VideoRepository;
 import org.springframework.stereotype.Component;
@@ -45,4 +44,16 @@ public class VideoAdapterDaoImpl implements VideoDao<VideoAdapter>{
     public void updateVideoStatus(VideoAdapter video, String status) {
         videoRepository.updateStatusById(video.getId(), status);
     }
+
+    @Override
+    public VideoEntity findVideoEntityById(Long id){
+        return videoRepository.findVideoEntityById(id);
+    }
+
+    @Override
+    public void updateAverageRatingById(Long id, int averageRating){
+        videoRepository.updateAverageRatingById(id,averageRating);
+    }
+
+
 }

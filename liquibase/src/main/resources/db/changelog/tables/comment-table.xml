@@ -6,22 +6,38 @@
     <changeSet id="create-comment-table" author="tveely">
         <comment>Create comments table with specified attributes</comment>
         <createTable tableName="comment">
+
+
+
+
+
             <column name="id" type="BIGINT" autoIncrement="true">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
+
+
             <column name="user_id" type="BIGINT">
-                <constraints nullable="false"/>
+                <constraints nullable="false" foreignKeyName="fk_Comment_User" references="_user(id)"/>
             </column>
+
             <column name="video_id" type="BIGINT">
-                <constraints nullable="false" foreignKeyName="fk_comment_video" references="video(id)"/>
+                <constraints nullable="false" foreignKeyName="fk_Comment_video" references="video(id)"/>
             </column>
+
             <column name="comment" type="TEXT">
                 <constraints nullable="false"/>
             </column>
+
             <column name="create_date" type="TIMESTAMP" defaultValueDate="CURRENT_TIMESTAMP">
                 <constraints nullable="false"/>
             </column>
+
         </createTable>
+
+
+
+
+
 
         <createIndex indexName="idx_comment_video_id" tableName="comment">
             <column name="video_id"/>
@@ -31,19 +47,10 @@
             <column name="user_id"/>
         </createIndex>
 
-        <dropForeignKeyConstraint baseTableName="comment" constraintName="fk_comment_video"/>
 
-        <addForeignKeyConstraint
-                constraintName="fk_comment_video"
-                baseTableName="comment"
-                baseColumnNames="video_id"
-                referencedTableName="video"
-                referencedColumnNames="id"
-                onDelete="CASCADE"/>
 
 
     </changeSet>
-
 
 
 </databaseChangeLog>

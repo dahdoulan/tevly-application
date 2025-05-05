@@ -3,11 +3,12 @@ package org.group15.tveely.controllers;
 
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.group15.tveely.DTOs.VideoMetadata;
+import org.group15.tveely.DTOs.videometadata.VideoMetadataDTO;
 import org.group15.tveely.spi.HomePageMetadataService;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -19,9 +20,12 @@ public class HomePageMetadataController {
 
     @PreAuthorize("hasAnyRole('USER','ADMIN')")
     @PostMapping("/api/homepage/metadata")
-    public ResponseEntity<List<VideoMetadata>> getHomePageMetadata() {
+    public ResponseEntity<List<VideoMetadataDTO>> getHomePageMetadata() {
+        String authenticatedEmail = SecurityContextHolder.getContext().getAuthentication().getName();
+        log.info("Email: {}", authenticatedEmail);
+
         log.info("Fetching homepage metadata");
-        List<VideoMetadata> result = homePageMetadataService.getHomePageMetadata();
+        List<VideoMetadataDTO> result = homePageMetadataService.getHomePageMetadata(authenticatedEmail);
         log.debug("Found {} metadata entries", result.size());
         return ResponseEntity.ok(result);
     }

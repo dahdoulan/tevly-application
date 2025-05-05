@@ -3,14 +3,19 @@
                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
                    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.19.xsd">
-    <include file="db/changelog/tables/categories-table.xml"/>
-    <include file="db/changelog/tables/video-table.xml"/>
-    <include file="db/changelog/tables/subscription-table.xml"/>
-    <include file="db/changelog/tables/comment-table.xml"/>
-    <include file="db/changelog/tables/review-table.xml"/>
-    <include file="db/changelog/tables/payment-table.xml"/>
+
+
+
     <include file="db/changelog/tables/role-table.xml"/>
     <include file="db/changelog/tables/user-table.xml"/>
+    <include file="db/changelog/tables/categories-table.xml"/>
+    <include file="db/changelog/tables/video-table.xml"/>
+
+    <include file="db/changelog/tables/subscription-table.xml"/>
+    <include file="db/changelog/tables/comment-table.xml"/>
+    <include file="/db/changelog/tables/ratings-table.xml"/>
+    <include file="db/changelog/tables/payment-table.xml"/>
+
     <include file="db/changelog/tables/token-table.xml"/>
 
 </databaseChangeLog>

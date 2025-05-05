@@ -1,7 +1,10 @@
-package org.group15.tveely.DTOs;
+package org.group15.tveely.DTOs.videometadata;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.group15.tveely.CategoryEntity;
+import org.group15.tveely.DTOs.comment.CommentResponseDTO;
+
+import java.util.List;
 
 public interface VideoMetadata {
     Long getId();
@@ -10,7 +13,9 @@ public interface VideoMetadata {
     String getVideoUrl();
     @JsonIgnore
     CategoryEntity getCategoryEntity();
-
+    List<CommentResponseDTO> getComments();
+    int getAverageRating();
+    int getUserRating();
    default String getThumbnailUrl() {
        return "/videos/"+getId()+"/thumbnail";
    }
