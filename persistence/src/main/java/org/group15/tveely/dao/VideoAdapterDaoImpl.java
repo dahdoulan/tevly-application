@@ -55,5 +55,9 @@ public class VideoAdapterDaoImpl implements VideoDao<VideoAdapter>{
         videoRepository.updateAverageRatingById(id,averageRating);
     }
 
+    @Override
+    public List<VideoEntity> findVideoEntityByStatus(String status) {
+        return List.of();
+    }
 
 }
