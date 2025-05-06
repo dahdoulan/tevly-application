@@ -8,5 +8,6 @@ public interface ReviewingContentService {
 
 
      List<ReviewingContentResponse> getAllReviewingContent();
-
+     void approveContent(Long contentId);
+     void rejectContent(Long contentId);
     }

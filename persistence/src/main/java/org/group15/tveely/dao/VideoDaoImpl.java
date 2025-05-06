@@ -79,5 +79,10 @@ public class VideoDaoImpl implements VideoDao<Video> {
         videoRepository.updateAverageRatingById(id, averageRating);
     }
 
+    @Override
+    public void updateVideoStatus(Long id, String status) {
+        videoRepository.updateStatusById(id, status);
+    }
+
 }
 

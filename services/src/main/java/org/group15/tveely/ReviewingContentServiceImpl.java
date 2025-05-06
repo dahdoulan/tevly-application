@@ -8,11 +8,14 @@ import org.group15.tveely.spi.ReviewingContentService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+
 @Service
 @AllArgsConstructor
 public class ReviewingContentServiceImpl implements ReviewingContentService {
     private final VideoDao<Video> videoDao;
     private final ReviewingContentMapper mapper;
+
+
     @Override
     public List<ReviewingContentResponse> getAllReviewingContent() {
         List<VideoEntity> videoEntities = videoDao.findVideoEntityByStatus("ENCODING");
@@ -23,5 +26,14 @@ public class ReviewingContentServiceImpl implements ReviewingContentService {
         return reviewingContentResponses;
     }
 
+    @Override
+    public void approveContent(Long contentId) {
+        videoDao.updateVideoStatus(contentId, "APPROVED");
+    }
+
+    @Override
+    public void rejectContent(Long contentId) {
+        videoDao.updateVideoStatus(contentId, "REJECTED");
+    }
 
 }

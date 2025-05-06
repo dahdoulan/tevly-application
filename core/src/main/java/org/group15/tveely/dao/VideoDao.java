@@ -17,5 +17,6 @@ public interface VideoDao<T>{
     VideoEntity findVideoEntityById(Long id);
     void updateAverageRatingById(Long id, int averageRating);
     public List<VideoEntity> findVideoEntityByStatus(String status);
+    void updateVideoStatus( Long id, String status);
 
 }

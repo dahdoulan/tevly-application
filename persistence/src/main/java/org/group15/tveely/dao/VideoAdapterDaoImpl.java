@@ -60,4 +60,9 @@ public class VideoAdapterDaoImpl implements VideoDao<VideoAdapter>{
         return List.of();
     }
 
+    @Override
+    public void updateVideoStatus( Long id, String status){
+
+    }
+
 }
