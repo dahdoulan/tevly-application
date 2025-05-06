@@ -37,6 +37,11 @@
             <column name="created_at" type="TIMESTAMP" defaultValueDate="CURRENT_TIMESTAMP">
                 <constraints nullable="false"/>
             </column>
+
+                      <column name="filmmaker_id" type="BIGINT">
+                <constraints nullable="false" foreignKeyName="fk_video_filmmaker" references="_user(id)" />
+            </column>
+
             <column name="updated_at" type="TIMESTAMP" defaultValueDate="CURRENT_TIMESTAMP">
                 <constraints nullable="false"/>
             </column>
