@@ -31,7 +31,7 @@ public class HomePageMetadataController {
     }
 
     @PreAuthorize("hasAnyRole('USER','ADMIN')")
-    @PostMapping("/api/videos/{videoId}/thumbnail")
+    @GetMapping("/api/videos/{videoId}/thumbnail")
     public ResponseEntity<byte[]> getThumbnail(@PathVariable("videoId") Long videoId) {
         log.info("Fetching thumbnail for video ID: {}", videoId);
         byte[] thumbnailBytes = homePageMetadataService.getThumbnailBytes(videoId);

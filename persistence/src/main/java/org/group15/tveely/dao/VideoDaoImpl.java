@@ -48,6 +48,13 @@ public class VideoDaoImpl implements VideoDao<Video> {
     }
 
     @Override
+    public List<VideoEntity> findVideoEntityByStatus(String status) {
+
+        return videoRepository.findVideoEntitiesByStatus(status);
+    }
+
+
+    @Override
     public void updateVideoStatus(VideoAdapter video, String status) {
         videoRepository.updateStatusById(video.getId(), status);
     }
@@ -70,6 +77,11 @@ public class VideoDaoImpl implements VideoDao<Video> {
     @Override
     public void updateAverageRatingById(Long id, int averageRating) {
         videoRepository.updateAverageRatingById(id, averageRating);
+    }
+
+    @Override
+    public void updateVideoStatus(Long id, String status) {
+        videoRepository.updateStatusById(id, status);
     }
 
 }
