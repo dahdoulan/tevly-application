@@ -18,7 +18,7 @@ public class ReviewingContentServiceImpl implements ReviewingContentService {
 
     @Override
     public List<ReviewingContentResponse> getAllReviewingContent() {
-        List<VideoEntity> videoEntities = videoDao.findVideoEntityByStatus("ENCODING");
+        List<VideoEntity> videoEntities = videoDao.findVideoEntityByStatus("ENCODED");
         List<ReviewingContentResponse> reviewingContentResponses = videoEntities.stream()
                 .map(mapper::toDto)
                 .toList();
