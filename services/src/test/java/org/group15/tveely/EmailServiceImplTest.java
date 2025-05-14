@@ -119,9 +119,9 @@ class EmailServiceImplTest {
     }
 
     @Test
-    void sendEmail_HandlesMessagingException() throws MessagingException {
+    void sendEmail_HandlesMessagingException() {
         // Arrange
-        when(mailSender.createMimeMessage()).thenThrow(new MessagingException("Test exception"));
+        when(mailSender.createMimeMessage()).thenThrow(new RuntimeException("Test exception"));
 
         // Act & Assert
         assertThatThrownBy(() -> emailService.sendEmail(
@@ -131,6 +131,7 @@ class EmailServiceImplTest {
                 "http://error",
                 "000000",
                 "Failing Subject"
-        )).isInstanceOf(MessagingException.class);
+        )).isInstanceOf(RuntimeException.class)
+                .hasMessageContaining("Test exception");
     }
 }
