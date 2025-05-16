@@ -7,13 +7,15 @@ import org.springframework.web.multipart.MultipartFile;
 import java.io.IOException;
 import java.time.LocalDateTime;
 
+import static org.group15.tveely.enums.VideoStatus.NEW;
+
 @Component
 public class MultipartToVideo {
     public Video map (MultipartFile file, String title, String description) throws IOException {
         Video video = new Video();
         video.setTitle(title);
         video.setDescription(description);
-        video.setStatus("NEW");
+        video.setStatus(NEW.name());
         video.setContent(file.getBytes());
         video.setVideoUrl(file.getOriginalFilename());
         video.setUploadDate(LocalDateTime.now());

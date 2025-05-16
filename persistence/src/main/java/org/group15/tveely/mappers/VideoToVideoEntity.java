@@ -18,7 +18,7 @@ public class VideoToVideoEntity {
         videoEntity.setProcessingPath(video.getProcessingPath());
         videoEntity.setUpdatedAt(video.getUploadDate());
         videoEntity.setCreatedAt(video.getUploadDate());
-        videoEntity.setContent(BlobProxy.generateProxy(video.getContent()));
+        videoEntity.setContent(video.getContent());
         return videoEntity;
     }
 
@@ -32,8 +32,8 @@ public class VideoToVideoEntity {
         videoEntity.setUploadDate(video.getUploadDate());
         videoEntity.setUpdatedAt(video.getUploadDate());
         videoEntity.setCreatedAt(video.getUploadDate());
-        videoEntity.setContent(BlobProxy.generateProxy(video.getContent()));
+        videoEntity.setProcessingPath(video.getProcessingPath());
+        videoEntity.setContent(video.getContent());
         return videoEntity;
     }
-
 }

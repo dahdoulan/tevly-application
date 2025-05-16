@@ -1,5 +1,6 @@
 package org.group15.tveely.dao;
 
+import jakarta.transaction.Transactional;
 import lombok.AllArgsConstructor;
 import org.group15.tveely.entities.VideoEntity;
 import org.group15.tveely.mappers.VideoEntityToVideo;
@@ -24,5 +25,12 @@ public class VideoDaoImpl implements VideoDao {
     @Override
     public void updateVideoStatus(VideoAdapter video, String status) {
         videoRepository.updateStatusById(video.getId(), status);
+    }
+
+    @Transactional
+    @Override
+    public void updateVideo(VideoAdapter video) {
+        VideoToVideoEntity mapper = new VideoToVideoEntity();
+        videoRepository.save(mapper.map(video));
     }
 }

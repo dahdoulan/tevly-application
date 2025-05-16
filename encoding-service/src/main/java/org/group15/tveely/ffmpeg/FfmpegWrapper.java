@@ -16,7 +16,6 @@ public class FfmpegWrapper {
     public static String CMD = "cmd.exe";
     private String terminal;
     private String expected;
-    private String scale;
     private String outputDir;
 
     public int encode(String path) throws Exception {

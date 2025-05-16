@@ -44,7 +44,7 @@ public class VideoEntity {
 
     @Lob
     @Column(name = "content")
-    private Blob content;
+    private byte[] content;
 
     @Column(name = "created_at", nullable = false, columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP")
     private LocalDateTime createdAt;
@@ -57,4 +57,7 @@ public class VideoEntity {
 
     @OneToMany(mappedBy = "video")
     private List<Review> reviews;
+
+    @OneToMany(mappedBy = "video")
+    private List<EncodedVideoEntity> encodedVideos;
 }

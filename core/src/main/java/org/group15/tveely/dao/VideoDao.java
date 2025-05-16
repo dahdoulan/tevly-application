@@ -7,4 +7,5 @@ import java.util.List;
 public interface VideoDao {
      List<VideoAdapter> findVideoByStatus(String status);
      void updateVideoStatus(VideoAdapter video, String status);
+     void updateVideo(VideoAdapter video);
 }

@@ -1,5 +1,7 @@
 package org.group15.tveely.models;
 
+import java.sql.Blob;
+import java.sql.SQLException;
 import java.time.LocalDateTime;
 
 public interface VideoAdapter {
@@ -20,6 +22,6 @@ public interface VideoAdapter {
     void setDescription(String description);
     void setThumbnailUrl(String thumbnailUrl);
     void setVideoUrl(String videoUrl);
-    void setContent(byte[] content);
+    void setContent(byte[] content) throws SQLException;
     void setProcessingPath(String processingPath);
 }

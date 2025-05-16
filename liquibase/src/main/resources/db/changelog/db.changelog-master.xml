@@ -11,5 +11,6 @@
     <include file="db/changelog/tables/role-table.xml"/>
     <include file="db/changelog/tables/user-table.xml"/>
     <include file="db/changelog/tables/token-table.xml"/>
+    <include file="db/changelog/tables/encoded-video-table.xml"/>
 
 </databaseChangeLog>

@@ -6,7 +6,7 @@ import org.group15.tveely.models.VideoAdapter;
 
 public class VideoEntityToVideo {
 
-    public VideoAdapter map(VideoEntity videoEntity) {
+    public VideoAdapter map(VideoEntity videoEntity)  {
         EncodedVideo video = new EncodedVideo();
         video.setId(videoEntity.getId());
         video.setVideoUrl(videoEntity.getVideoUrl());
@@ -15,7 +15,7 @@ public class VideoEntityToVideo {
         video.setStatus(videoEntity.getStatus());
         video.setUploadDate(videoEntity.getUploadDate());
         video.setProcessingPath(videoEntity.getProcessingPath());
-        video.setContent(video.getContent());
+        video.setContent(videoEntity.getContent());
         return video;
     }
 }
