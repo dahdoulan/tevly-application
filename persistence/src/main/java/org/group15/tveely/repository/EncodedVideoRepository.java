@@ -1,6 +1,6 @@
 package org.group15.tveely.repository;
 
-import org.group15.tveely.entities.EncodedVideoEntity;
+import org.group15.tveely.EncodedVideoEntity;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

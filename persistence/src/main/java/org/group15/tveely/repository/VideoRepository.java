@@ -1,7 +1,7 @@
 package org.group15.tveely.repository;
 
 import jakarta.transaction.Transactional;
-import org.group15.tveely.entities.VideoEntity;
+import org.group15.tveely.VideoEntity;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;

@@ -1,6 +1,6 @@
 package org.group15.tveely.repository;
 
-import org.group15.tveely.entities.RoleEntity;
+import org.group15.tveely.RoleEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 

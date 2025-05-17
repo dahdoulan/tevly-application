@@ -1,6 +1,6 @@
 package org.group15.tveely.repository;
 
-import org.group15.tveely.entities.UserEntity;
+import org.group15.tveely.UserEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

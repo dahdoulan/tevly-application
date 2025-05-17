@@ -1,9 +1,8 @@
-package org.group15.tveely.entities;
+package org.group15.tveely;
 
 import jakarta.persistence.*;
 import lombok.Data;
 
-import java.sql.Blob;
 import java.time.LocalDateTime;
 import java.util.List;
 

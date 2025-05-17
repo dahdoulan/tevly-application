@@ -1,6 +1,6 @@
 package org.group15.tveely.mappers;
 
-import org.group15.tveely.entities.EncodedVideoEntity;
+import org.group15.tveely.EncodedVideoEntity;
 import org.group15.tveely.models.EncodedVideoAdapter;
 
 public class EncodedVideoAdapterToEncodedVideoEntity {

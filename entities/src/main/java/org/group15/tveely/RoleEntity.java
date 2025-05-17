@@ -1,4 +1,4 @@
-package org.group15.tveely.entities;
+package org.group15.tveely;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;

@@ -1,4 +1,4 @@
-package org.group15.tveely.entities;
+package org.group15.tveely;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -12,7 +12,6 @@ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
-import org.group15.tveely.entities.RoleEntity;
 
 import java.security.Principal;
 import java.time.LocalDate;

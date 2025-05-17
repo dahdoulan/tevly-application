@@ -1,6 +1,6 @@
 package org.group15.tveely.dao;
 
-import org.group15.tveely.entities.VideoEntity;
+import org.group15.tveely.VideoEntity;
 import org.group15.tveely.filesystem.FileSystemImpl;
 import org.group15.tveely.mappers.VideoToVideoEntity;
 import org.group15.tveely.models.Video;

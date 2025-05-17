@@ -4,7 +4,7 @@ package org.group15.tveely.services;
 
 import jakarta.mail.MessagingException;
 import lombok.RequiredArgsConstructor;
-import org.group15.tveely.entities.*;
+import org.group15.tveely.*;
 
 import org.group15.tveely.repository.RoleRepository;
 import org.group15.tveely.repository.TokenRepository;

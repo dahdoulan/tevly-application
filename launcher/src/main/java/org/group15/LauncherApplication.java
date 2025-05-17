@@ -1,6 +1,6 @@
 package org.group15;
 
-import org.group15.tveely.entities.RoleEntity;
+import org.group15.tveely.RoleEntity;
 import org.group15.tveely.repository.RoleRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;

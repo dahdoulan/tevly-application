@@ -1,7 +1,6 @@
 package org.group15.tveely.repository;
 
-import org.antlr.v4.runtime.Token;
-import org.group15.tveely.entities.TokenEntity;
+import org.group15.tveely.TokenEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;
