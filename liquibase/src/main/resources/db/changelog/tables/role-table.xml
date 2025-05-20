@@ -7,19 +7,39 @@
 
     <changeSet id="create-role-table" author="tveely">
         <createTable tableName="role">
-            <column name="id" type="INTEGER" autoIncrement="true">
-                <constraints primaryKey="true" nullable="false" />
+            <column name="id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
             </column>
             <column name="name" type="VARCHAR(255)">
-                <constraints unique="true" nullable="false" />
+                <constraints unique="true" nullable="false"/>
             </column>
             <column name="created_date" type="TIMESTAMP" defaultValueComputed="CURRENT_TIMESTAMP">
-                <constraints nullable="false" />
+                <constraints nullable="false"/>
             </column>
             <column name="last_modified_date" type="TIMESTAMP">
-                <constraints nullable="true" />
+                <constraints nullable="true"/>
             </column>
         </createTable>
     </changeSet>
 
+
+    <changeSet id="insert_list_of_roles" author="tveely">
+        <comment>Insert categories into categories table</comment>
+
+        <insert tableName="role">
+            <column name="id" valueNumeric="1"/>
+            <column name="name" value="USER"/>
+        </insert>
+
+        <insert tableName="role">
+            <column name="id" valueNumeric="2"/>
+            <column name="name" value="FILMMAKER"/>
+        </insert>
+
+        <insert tableName="role">
+            <column name="id" valueNumeric="3"/>
+            <column name="name" value="ADMIN"/>
+        </insert>
+
+    </changeSet>
 </databaseChangeLog>

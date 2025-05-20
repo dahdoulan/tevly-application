@@ -1,20 +1,12 @@
 services:
-  keycloak:
-    container_name: keycloak-teveely
-    image: quay.io/keycloak/keycloak:24.0.2
+  mail-dev:
+    container_name: mail-dev-bsn
+    image: maildev/maildev
     ports:
-      - 9090:8080
-    environment:
-      KEYCLOAK_ADMIN: admin
-      KEYCLOAK_ADMIN_PASSWORD: admin
-    networks:
-      - spring-demo
-    command:
-      - "start-dev"
+      - 1080:1080
+      - 1025:1025
+
 networks:
   spring-demo:
     driver: bridge
 
-volumes:
-  keycloak:
-    driver: local

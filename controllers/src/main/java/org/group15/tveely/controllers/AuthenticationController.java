@@ -5,10 +5,10 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.mail.MessagingException;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
-import org.group15.tveely.AuthenticationRequest;
-import org.group15.tveely.AuthenticationResponse;
-import org.group15.tveely.RegistrationRequest;
-import org.group15.tveely.services.AuthenticationService;
+import org.group15.tveely.DTOs.AuthenticationRequest;
+import org.group15.tveely.DTOs.AuthenticationResponse;
+import org.group15.tveely.DTOs.RegistrationRequest;
+import org.group15.tveely.spi.AuthenticationService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -29,6 +29,9 @@ public class AuthenticationController {
         return ResponseEntity.accepted().build();
     }
 
+
+
+
     @PostMapping("/register/filmmaker")
     @ResponseStatus(HttpStatus.ACCEPTED)
     public ResponseEntity<?> registerFilmmaker(
@@ -43,10 +46,14 @@ public class AuthenticationController {
     public ResponseEntity<AuthenticationResponse> authenticate(
             @RequestBody AuthenticationRequest request
     ) {
-        return ResponseEntity.ok(service.authenticate(request));
+        try {
+            return ResponseEntity.ok(service.authenticate(request));
+        } catch (MessagingException e) {
+            throw new RuntimeException(e);
+        }
     }
 
-    @GetMapping("/activate-account")
+    @PostMapping("/activate-account")
     public void confirm(
             @RequestParam("token") String token
     ) throws MessagingException {

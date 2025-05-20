@@ -13,6 +13,7 @@ import org.group15.tveely.models.VideoAdapter;
 import org.group15.tveely.spi.EncodingService;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
+import lombok.extern.slf4j.Slf4j;
 
 import java.util.UUID;
 import java.util.concurrent.ExecutorService;
@@ -26,7 +27,7 @@ import static org.group15.tveely.ffmpeg.FfmpegWrapper.BASH;
 @Slf4j
 public class EncodingServiceImpl implements EncodingService {
     private final FileSystem fileSystem;
-    private final VideoDao videoDao;
+    private final VideoDao<VideoAdapter> videoDao;
     private final EncodedVideoDao encodedVideoDao;
     private final UploadDao<EncodedVideoAdapter> uploadDao;
     private final ExecutorService executor = Executors.newFixedThreadPool(10);

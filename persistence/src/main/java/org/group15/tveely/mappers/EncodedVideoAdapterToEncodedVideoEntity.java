@@ -5,7 +5,7 @@ import org.group15.tveely.models.EncodedVideoAdapter;
 
 public class EncodedVideoAdapterToEncodedVideoEntity {
     public EncodedVideoEntity map(EncodedVideoAdapter encodedVideoAdapter) {
-        VideoToVideoEntity mapper = new VideoToVideoEntity();
+        VideoToVideoEntity mapper = new VideoToVideoEntity(null, null);
         EncodedVideoEntity encodedVideoEntity = new EncodedVideoEntity();
         encodedVideoEntity.setVideo(mapper.map(encodedVideoAdapter.getVideo()));
         encodedVideoEntity.setEncodedVideoUrl(encodedVideoAdapter.getUrl());

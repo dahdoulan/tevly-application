@@ -5,7 +5,7 @@ import org.group15.tveely.filesystem.FileSystemImpl;
 import org.group15.tveely.mappers.VideoEntityToVideo;
 import org.group15.tveely.mappers.VideoToVideoEntity;
 import org.group15.tveely.models.FileSystem;
-import org.group15.tveely.models.Video;
+import org.group15.tveely.Video;
 import org.group15.tveely.models.VideoAdapter;
 import org.group15.tveely.repository.UploadRepository;
 import org.springframework.stereotype.Component;

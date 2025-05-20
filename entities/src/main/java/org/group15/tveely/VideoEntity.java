@@ -3,6 +3,7 @@ package org.group15.tveely;
 import jakarta.persistence.*;
 import lombok.Data;
 
+import java.sql.Blob;
 import java.time.LocalDateTime;
 import java.util.List;
 
@@ -32,8 +33,6 @@ public class VideoEntity {
     @Column(name = "description", length = 500)
     private String description;
 
-    @Column(name = "thumbnail_url", length = 255)
-    private String thumbnailUrl;
 
     @Column(name = "video_url", nullable = false, length = 255)
     private String videoUrl;
@@ -45,6 +44,21 @@ public class VideoEntity {
     @Column(name = "content")
     private byte[] content;
 
+    @Lob
+    @Column(name = "thumbnail")
+    private Blob thumbnail;
+
+    @Column(name = "thumbnail_url", nullable = false, length = 255)
+    private String thumbnailUrl;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "category_id", nullable = false, foreignKey = @ForeignKey(name = "fk_video_category"))
+    private CategoryEntity categoryEntity;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "filmmaker_id", nullable = false, foreignKey = @ForeignKey(name = "fk_video_filmmaker"))
+    private UserEntity filmmaker;
+
     @Column(name = "created_at", nullable = false, columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP")
     private LocalDateTime createdAt;
 
@@ -52,10 +66,13 @@ public class VideoEntity {
     private LocalDateTime updatedAt;
 
     @OneToMany(mappedBy = "video")
-    private List<Comment> comments;
+    private List<CommentEntity> commentEntities;
 
     @OneToMany(mappedBy = "video")
-    private List<Review> reviews;
+    private List<RatingEntity> ratingEntities;
+
+    @Column(name = "average_rating")
+    private int averageRating;
 
     @OneToMany(mappedBy = "video")
     private List<EncodedVideoEntity> encodedVideos;

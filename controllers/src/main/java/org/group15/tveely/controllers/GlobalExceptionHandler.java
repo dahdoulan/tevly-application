@@ -1,9 +1,11 @@
 package org.group15.tveely.controllers;
 
 import jakarta.mail.MessagingException;
-import org.group15.tveely.ExceptionResponse;
-import org.group15.tveely.models.exception.ActivationTokenException;
-import org.group15.tveely.models.exception.OperationNotPermittedException;
+import org.group15.tveely.DTOs.ExceptionResponse;
+import org.group15.tveely.DTOs.ActivationTokenException;
+import org.group15.tveely.DTOs.OperationNotPermittedException;
+import org.springframework.dao.EmptyResultDataAccessException;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.DisabledException;
@@ -126,5 +128,12 @@ public class GlobalExceptionHandler {
                                 .build()
                 );
     }
+
+
+    @ExceptionHandler(EmptyResultDataAccessException.class)
+    public ResponseEntity<String> handleNoMetadataFound(EmptyResultDataAccessException ex) {
+        return ResponseEntity.status(HttpStatus.NOT_FOUND).body("No approved videos found");
+    }
+
 }
 

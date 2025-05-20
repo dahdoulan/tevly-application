@@ -1,7 +1,7 @@
 package org.group15.tveely.filesystem;
 
 import org.group15.tveely.models.FileSystem;
-import org.group15.tveely.models.Video;
+import org.group15.tveely.Video;
 import org.group15.tveely.models.VideoAdapter;
 import org.hibernate.engine.jdbc.BlobProxy;
 import org.springframework.stereotype.Component;

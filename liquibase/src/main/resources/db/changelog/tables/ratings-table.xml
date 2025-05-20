@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.19.xsd">
+    <changeSet id="create-rating-table" author="tveely">
+        <comment>Create rating table with specified attributes</comment>
+        <createTable tableName="ratings">
+
+            <column name="id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+
+            <column name="user_id" type="BIGINT">
+                <constraints nullable="false" foreignKeyName="fk_rating_User" references="_user(id)"/>
+            </column>
+
+            <column name="video_id" type="BIGINT" >
+                <constraints nullable="false" foreignKeyName="fk_rating_video" references="video(id)"/>
+            </column>
+
+            <column name="rating" type="INT">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="create_date" type="TIMESTAMP" defaultValueDate="CURRENT_TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <createIndex indexName="idx_rating_video_id" tableName="ratings">
+            <column name="video_id"/>
+        </createIndex>
+
+        <createIndex indexName="idx_rating_user_id" tableName="ratings">
+            <column name="user_id"/>
+        </createIndex>
+
+    </changeSet>
+
+
+
+</databaseChangeLog>

@@ -1,7 +1,7 @@
 package org.group15.tveely.controllers;
 
 import org.group15.tveely.mappers.MultipartToVideo;
-import org.group15.tveely.services.UploadServiceImpl;
+import org.group15.tveely.UploadServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.http.HttpStatus;
@@ -28,7 +28,7 @@ class UploadControllerTest {
 
     @Test
     void givenValidRequest_whenUploadVideo_thenShouldReturnNoContentStatus() throws IOException {
-        ResponseEntity responseEntity = controller.uploadVideo(null, "", "");
+        ResponseEntity responseEntity = controller.uploadVideo(null, "", "",null,"");
         assertEquals(HttpStatus.NO_CONTENT, responseEntity.getStatusCode());
     }
 
@@ -38,7 +38,7 @@ class UploadControllerTest {
         }
 
         @Override
-        public ResponseEntity uploadVideo(MultipartFile video, String title, String description) {
+        public ResponseEntity uploadVideo(MultipartFile video, String title, String description, MultipartFile thumbnail, String category) {
             if(isValidRequest) {
                 return ResponseEntity.noContent().build();
             }
