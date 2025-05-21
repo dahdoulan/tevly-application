@@ -14,7 +14,11 @@ public interface VideoAdapter {
     String getVideoUrl();
     String getProcessingPath();
     byte[] getContent();
+    CategoryAdapter getCategory();
+    UserDetailsAdapter getFilmmaker();
 
+    void setFilmmaker(UserDetailsAdapter filmmaker);
+    void setCategory(CategoryAdapter category);
     void setId(Long id);
     void setTitle(String title);
     void setUploadDate(LocalDateTime uploadDate);

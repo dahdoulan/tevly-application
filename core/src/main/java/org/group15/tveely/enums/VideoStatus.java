@@ -5,7 +5,7 @@ public enum VideoStatus {
     PROCESSING,
     PROCESSED,
     FAILED,
-    UPLOADED,
+    ENCODED,
     APPROVED,
     REJECTED
 }

@@ -1,9 +1,7 @@
 package org.group15.tveely.filesystem;
 
-import org.group15.tveely.models.FileSystem;
 import org.group15.tveely.Video;
-import org.group15.tveely.models.VideoAdapter;
-import org.hibernate.engine.jdbc.BlobProxy;
+import org.group15.tveely.models.FileSystem;
 import org.springframework.stereotype.Component;
 
 import java.io.File;
@@ -11,7 +9,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.sql.SQLException;
+import java.util.UUID;
 
 @Component
 public class FileSystemImpl implements FileSystem<Video> {
@@ -22,7 +20,8 @@ public class FileSystemImpl implements FileSystem<Video> {
         if (!Files.exists(userDir)) {
             Files.createDirectories(userDir);
         }
-        return userDir.resolve(path.concat(".mp4"));
+        return userDir.resolve(path.concat("-")
+                .concat(UUID.randomUUID().toString()).concat(".mp4"));
     }
 
     @Override
@@ -41,3 +40,4 @@ public class FileSystemImpl implements FileSystem<Video> {
             throw new IllegalStateException("Could not delete file");
     }
 }
+

@@ -2,6 +2,7 @@ package org.group15.tveely;
 
 
 import lombok.*;
+import org.group15.tveely.models.UserDetailsAdapter;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -10,7 +11,7 @@ import java.util.List;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class User {
+public class User implements UserDetailsAdapter {
     private Long id;
     private String firstname;
     private String lastname;

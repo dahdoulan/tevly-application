@@ -16,4 +16,6 @@ public class EncodedVideo implements Serializable, VideoAdapter {
     private String videoUrl;
     private String processingPath;
     private byte[] content;
+    private CategoryAdapter category;
+    private UserDetailsAdapter filmmaker;
 }

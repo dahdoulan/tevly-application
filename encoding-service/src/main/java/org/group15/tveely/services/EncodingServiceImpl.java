@@ -13,7 +13,6 @@ import org.group15.tveely.models.VideoAdapter;
 import org.group15.tveely.spi.EncodingService;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
-import lombok.extern.slf4j.Slf4j;
 
 import java.util.UUID;
 import java.util.concurrent.ExecutorService;
@@ -67,7 +66,7 @@ public class EncodingServiceImpl implements EncodingService {
         uploadToBlobStorage(video, "720p");
         uploadToBlobStorage(video, "1080p");
         fileSystem.removeVideo(video.getProcessingPath());
-        video.setStatus(UPLOADED.name());
+        video.setStatus(ENCODED.name());
         videoDao.updateVideo(video);
     }
 

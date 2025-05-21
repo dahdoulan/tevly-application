@@ -51,11 +51,11 @@ public class VideoEntity {
     @Column(name = "thumbnail_url", nullable = false, length = 255)
     private String thumbnailUrl;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "category_id", nullable = false, foreignKey = @ForeignKey(name = "fk_video_category"))
     private CategoryEntity categoryEntity;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "filmmaker_id", nullable = false, foreignKey = @ForeignKey(name = "fk_video_filmmaker"))
     private UserEntity filmmaker;
 

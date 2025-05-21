@@ -3,7 +3,6 @@ package org.group15.tveely.dao;
 import lombok.AllArgsConstructor;
 import org.group15.tveely.mappers.EncodedVideoAdapterToEncodedVideoEntity;
 import org.group15.tveely.mappers.EncodedVideoEntityToEncodedVideo;
-import org.group15.tveely.mappers.VideoEntityToVideo;
 import org.group15.tveely.models.EncodedVideoAdapter;
 import org.group15.tveely.repository.EncodedVideoRepository;
 import org.springframework.stereotype.Component;

@@ -1,12 +1,15 @@
 package org.group15.tveely.mappers;
 
+import org.group15.tveely.Category;
 import org.group15.tveely.VideoEntity;
 import org.group15.tveely.models.EncodedVideo;
 import org.group15.tveely.models.VideoAdapter;
+import org.springframework.stereotype.Component;
 
+@Component
 public class VideoEntityToVideo {
-
     public VideoAdapter map(VideoEntity videoEntity)  {
+        UserMapper userMapper = new UserMapper();
         EncodedVideo video = new EncodedVideo();
         video.setId(videoEntity.getId());
         video.setVideoUrl(videoEntity.getVideoUrl());
@@ -16,6 +19,11 @@ public class VideoEntityToVideo {
         video.setUploadDate(videoEntity.getUploadDate());
         video.setProcessingPath(videoEntity.getProcessingPath());
         video.setContent(videoEntity.getContent());
+        Category category = new Category();
+        category.setId(videoEntity.getCategoryEntity().getId());
+        category.setCategory(videoEntity.getCategoryEntity().getCategory());
+        video.setFilmmaker(userMapper.toModel(videoEntity.getFilmmaker()));
+        video.setCategory(category);
         return video;
     }
 }

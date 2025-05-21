@@ -18,7 +18,7 @@ import java.util.List;
 @Entity
 @Table(name = "role")
 @EntityListeners(AuditingEntityListener.class)
-public class RoleEntity {
+public class RoleEntity{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -38,7 +38,4 @@ public class RoleEntity {
     @LastModifiedDate
     @Column(insertable = false)
     private LocalDateTime lastModifiedDate;
-
-
-
 }

@@ -1,10 +1,10 @@
 package org.group15.tveely.mappers;
 
-import org.group15.tveely.VideoEntity;
-import org.group15.tveely.Video;
-import org.group15.tveely.dao.UserDao;
-import org.group15.tveely.models.VideoAdapter;
 import lombok.RequiredArgsConstructor;
+import org.group15.tveely.*;
+import org.group15.tveely.dao.UserDao;
+import org.group15.tveely.models.CategoryAdapter;
+import org.group15.tveely.models.VideoAdapter;
 import org.hibernate.engine.jdbc.BlobProxy;
 import org.springframework.stereotype.Component;
 
@@ -32,12 +32,12 @@ public class VideoToVideoEntity {
                 .orElseThrow(() -> new IllegalArgumentException("Category not found")));
         videoEntity.setFilmmaker(userDao.findByEmail(video.getFilmmakerEmail())
                 .orElseThrow(() -> new IllegalArgumentException("User not found")));
-
         videoEntity.setProcessingPath(video.getProcessingPath());
         return videoEntity;
     }
 
     public VideoEntity map(VideoAdapter video) {
+        UserMapper userMapper = new UserMapper();
         VideoEntity videoEntity = new VideoEntity();
         videoEntity.setId(video.getId());
         videoEntity.setVideoUrl(video.getVideoUrl());
@@ -49,6 +49,11 @@ public class VideoToVideoEntity {
         videoEntity.setCreatedAt(video.getUploadDate());
         videoEntity.setProcessingPath(video.getProcessingPath());
         videoEntity.setContent(video.getContent());
+        CategoryEntity categoryEntity = new CategoryEntity();
+        categoryEntity.setCategory(video.getCategory().getCategory());
+        categoryEntity.setId(video.getCategory().getId());
+        videoEntity.setFilmmaker(userMapper.toEntity(video.getFilmmaker()));
+        videoEntity.setCategoryEntity(categoryEntity);
         return videoEntity;
     }
 

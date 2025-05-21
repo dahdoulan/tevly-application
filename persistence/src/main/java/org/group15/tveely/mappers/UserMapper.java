@@ -3,6 +3,7 @@ package org.group15.tveely.mappers;
 import org.group15.tveely.RoleEntity;
 import org.group15.tveely.UserEntity;
 import org.group15.tveely.User;
+import org.group15.tveely.models.UserDetailsAdapter;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -11,7 +12,7 @@ import java.util.stream.Collectors;
 @Component
 public class UserMapper {
 
-    public User toModel(UserEntity userEntity) {
+    public UserDetailsAdapter toModel(UserEntity userEntity) {
         if (userEntity == null) {
             return null;
         }
@@ -36,7 +37,7 @@ public class UserMapper {
         return model;
     }
 
-    public UserEntity toEntity(User model) {
+    public UserEntity toEntity(UserDetailsAdapter model) {
         if (model == null) {
             return null;
         }
