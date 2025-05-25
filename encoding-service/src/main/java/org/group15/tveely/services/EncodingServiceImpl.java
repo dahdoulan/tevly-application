@@ -13,6 +13,7 @@ import org.group15.tveely.models.VideoAdapter;
 import org.group15.tveely.spi.EncodingService;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.UUID;
 import java.util.concurrent.ExecutorService;
@@ -36,6 +37,7 @@ public class EncodingServiceImpl implements EncodingService {
             .outputDir(System.getenv("ENCODING_OUTPUT_DIRECTORY"))
             .build();
 
+    @Transactional
     @Scheduled(fixedRate = 5000)
     @Override
     public void process() {
