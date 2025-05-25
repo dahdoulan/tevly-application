@@ -1,5 +1,6 @@
 package org.group15.tveely;
 
+import jakarta.transaction.Transactional;
 import lombok.AllArgsConstructor;
 import org.group15.tveely.dao.RatingDao;
 import org.group15.tveely.dao.VideoDao;
@@ -18,7 +19,7 @@ public class AddRatingServiceImpl implements AddRatingService {
     private final RatingDao ratingDao;
     private final RatingMapper ratingMapper;
     private final VideoDao<Video> videoDao;
-
+    @Transactional
     @Override
     public void addRating(RatingAdapter rating) {
         Optional<RatingEntity> existingRating = ratingDao.findByUserIdAndVideoId(

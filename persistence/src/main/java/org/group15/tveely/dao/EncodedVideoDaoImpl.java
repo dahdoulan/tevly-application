@@ -1,5 +1,6 @@
 package org.group15.tveely.dao;
 
+import jakarta.transaction.Transactional;
 import lombok.AllArgsConstructor;
 import org.group15.tveely.mappers.EncodedVideoAdapterToEncodedVideoEntity;
 import org.group15.tveely.mappers.EncodedVideoEntityToEncodedVideo;
@@ -21,7 +22,7 @@ public class EncodedVideoDaoImpl implements EncodedVideoDao {
                 = new EncodedVideoAdapterToEncodedVideoEntity();
         encodedVideoRepository.save(mapper.map(encodedVideo));
     }
-
+@Transactional
     @Override
     public List<EncodedVideoAdapter> getVideosById(Long id) {
         return encodedVideoRepository

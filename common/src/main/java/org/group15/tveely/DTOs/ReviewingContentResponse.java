@@ -4,6 +4,8 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.time.LocalDateTime;
+
 @Getter
 @Setter
 @Builder
@@ -16,4 +18,5 @@ public class ReviewingContentResponse {
     private String filmmakerFullName;
     private String thumbnailUrl;
     private String category;
+    private LocalDateTime date;
 }

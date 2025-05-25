@@ -47,7 +47,7 @@ public class VideoDaoImpl implements VideoDao<Video> {
         List<VideoEntity> entity = videoRepository.findVideoEntitiesByStatus(status);
         return entity.stream().map(mapper::map).toList();
     }
-
+    @Transactional
     @Override
     public List<VideoEntity> findVideoEntityByStatus(String status) {
 
