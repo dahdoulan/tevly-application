@@ -13,11 +13,8 @@ import org.group15.tveely.spi.HomePageMetadataService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.io.InputStream;
-import java.sql.Blob;
-import java.sql.SQLException;
 import java.util.List;
-import java.io.IOException;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
@@ -67,19 +64,12 @@ public class HomePageMetadataServiceImpl implements HomePageMetadataService {
     @Override
     @Transactional // Add this annotation
     public byte[] getThumbnailBytes(Long videoId) {
-        ThumbnailProjection projection = videoDao.findThumbnailById(videoId)
-                .orElseThrow(() -> new RuntimeException("Video not found"));
-
-        Blob thumbnailBlob = projection.getThumbnail();
-        if (thumbnailBlob == null) {
-            throw new RuntimeException("Thumbnail not found for video ID: " + videoId);
+        Optional<ThumbnailProjection> optional = videoDao.findThumbnailById(videoId);
+        if(optional.isPresent() && optional.get().getThumbnail().length > 0) {
+            return optional.get().getThumbnail();
         }
-
-        try (InputStream inputStream = thumbnailBlob.getBinaryStream()) {
-            return inputStream.readAllBytes();
-        } catch (SQLException | IOException e) {
-            throw new RuntimeException("Failed to read thumbnail", e);
-        }
+        // This is an exception; you know it is an exception because it is.
+        throw new IllegalArgumentException("No thumbnail found for video with id " + videoId);
     }
 
 

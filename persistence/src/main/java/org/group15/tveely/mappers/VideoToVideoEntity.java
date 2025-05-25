@@ -26,7 +26,7 @@ public class VideoToVideoEntity {
         videoEntity.setUpdatedAt(video.getUploadDate());
         videoEntity.setCreatedAt(video.getUploadDate());
         videoEntity.setContent(video.getContent());
-        videoEntity.setThumbnail(BlobProxy.generateProxy(video.getThumbnail()));
+        videoEntity.setThumbnail(video.getThumbnail());
         videoEntity.setThumbnailUrl(video.getThumbnailUrl());
         videoEntity.setCategoryEntity(categoryToCategoryEntity.map(video.getCategory())
                 .orElseThrow(() -> new IllegalArgumentException("Category not found")));
@@ -49,6 +49,7 @@ public class VideoToVideoEntity {
         videoEntity.setCreatedAt(video.getUploadDate());
         videoEntity.setProcessingPath(video.getProcessingPath());
         videoEntity.setContent(video.getContent());
+        videoEntity.setThumbnail(video.getThumbnail());
         CategoryEntity categoryEntity = new CategoryEntity();
         categoryEntity.setCategory(video.getCategory().getCategory());
         categoryEntity.setId(video.getCategory().getId());

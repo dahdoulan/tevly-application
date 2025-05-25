@@ -5,6 +5,6 @@ import java.sql.Blob;
 public interface ThumbnailProjection  {
 
 
-    Blob getThumbnail();  // Directly map to the Blob
+    byte[] getThumbnail();  // Directly map to the Blob
 
 }

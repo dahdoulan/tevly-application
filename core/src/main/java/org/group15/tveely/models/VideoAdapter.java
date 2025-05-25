@@ -14,6 +14,7 @@ public interface VideoAdapter {
     String getVideoUrl();
     String getProcessingPath();
     byte[] getContent();
+    byte[] getThumbnail();
     CategoryAdapter getCategory();
     UserDetailsAdapter getFilmmaker();
 
@@ -27,5 +28,6 @@ public interface VideoAdapter {
     void setThumbnailUrl(String thumbnailUrl);
     void setVideoUrl(String videoUrl);
     void setContent(byte[] content) throws SQLException;
+    void setThumbnail(byte[] thumbnail) throws SQLException;
     void setProcessingPath(String processingPath);
 }

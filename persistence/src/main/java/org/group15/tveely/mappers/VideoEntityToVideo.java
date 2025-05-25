@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class VideoEntityToVideo {
-    public VideoAdapter map(VideoEntity videoEntity)  {
+    public VideoAdapter map(VideoEntity videoEntity){
         UserMapper userMapper = new UserMapper();
         EncodedVideo video = new EncodedVideo();
         video.setId(videoEntity.getId());
@@ -19,6 +19,11 @@ public class VideoEntityToVideo {
         video.setUploadDate(videoEntity.getUploadDate());
         video.setProcessingPath(videoEntity.getProcessingPath());
         video.setContent(videoEntity.getContent());
+        try{
+            video.setThumbnail(videoEntity.getThumbnail());
+        }catch (Exception e){
+            e.printStackTrace();
+        }
         Category category = new Category();
         category.setId(videoEntity.getCategoryEntity().getId());
         category.setCategory(videoEntity.getCategoryEntity().getCategory());

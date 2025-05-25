@@ -46,7 +46,7 @@ public class VideoEntity {
 
     @Lob
     @Column(name = "thumbnail")
-    private Blob thumbnail;
+    private byte[] thumbnail;
 
     @Column(name = "thumbnail_url", nullable = false, length = 255)
     private String thumbnailUrl;

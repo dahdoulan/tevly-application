@@ -79,7 +79,7 @@ public class VideoDaoImpl implements VideoDao<Video> {
 
     @Override
     public VideoEntity findVideoEntityById(Long id) {
-        return null;
+        return videoRepository.findVideoEntityById(id);
     }
 
     @Override
