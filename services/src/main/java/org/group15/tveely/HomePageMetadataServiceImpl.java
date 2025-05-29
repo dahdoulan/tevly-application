@@ -56,7 +56,8 @@ public class HomePageMetadataServiceImpl implements HomePageMetadataService {
                             video.getCategoryEntity(),
                             commentDTOs,
                             video.getAverageRating(),
-                            userRating
+                            userRating,
+                            video.getFilmmaker()
                     );
                 })
                 .collect(Collectors.toList());

@@ -44,4 +44,15 @@ public class ReviewingContentController {
     }
 
 
+
+    @PreAuthorize("hasAnyRole('ADMIN')")
+    @PostMapping("/api/reviewing/rejected/content")
+    public ResponseEntity<List<ReviewingContentResponse>> getAllRejectContent() {
+        log.info("Fetching all rejected reviewing content");
+        List<ReviewingContentResponse> result = reviewingContentService.getAllRejectContent();
+        log.debug("Found {} reviewing content entries", result.size());
+        return ResponseEntity.ok(result);
+    }
+
+
 }
