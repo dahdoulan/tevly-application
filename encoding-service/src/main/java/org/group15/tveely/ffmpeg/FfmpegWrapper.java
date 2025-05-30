@@ -22,7 +22,6 @@ public class FfmpegWrapper {
         String outputDirectory = createOutputDirectory(path);
         List<String> resolutions = List.of("1080p", "720p" );
         for (String resolution : resolutions) {
-           // createMasterPlaylist(outputDirectory);
             int exitCode = processCommand(resolution, outputDirectory, path);
             if (exitCode != 0) {
                 throw new IllegalStateException("Error while processing video.");
@@ -37,23 +36,6 @@ public class FfmpegWrapper {
         String videoOutputDir = outputDir + File.separator + baseName;
         new File(videoOutputDir).mkdirs();
         return videoOutputDir;
-    }
-
-
-    private void createMasterPlaylist(String videoOutputDir) throws IOException {
-        File master = new File(videoOutputDir + File.separator + "master.m3u8");
-        try (PrintWriter writer = new PrintWriter(master)) {
-            writer.println("#EXTM3U");
-            writer.println("#EXT-X-VERSION:3");
-
-            writer.println("#EXT-X-STREAM-INF:BANDWIDTH=5500000,RESOLUTION=1920x1080");
-            writer.println("1080p/stream.m3u8");
-
-            writer.println("#EXT-X-STREAM-INF:BANDWIDTH=3000000,RESOLUTION=1280x720");
-            writer.println("720p/stream.m3u8");
-
-
-        }
     }
 
     private int processCommand(String resolution, String directory, String inputPath) throws InterruptedException, IOException {

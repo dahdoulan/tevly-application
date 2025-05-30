@@ -1,10 +1,9 @@
-package org.group15.tveely.models;
+package org.group15.tveely.dto;
 
-import java.sql.Blob;
 import java.sql.SQLException;
 import java.time.LocalDateTime;
 
-public interface VideoAdapter {
+public interface VideoDto {
     Long getId();
     String getTitle();
     LocalDateTime getUploadDate();
@@ -15,11 +14,11 @@ public interface VideoAdapter {
     String getProcessingPath();
     byte[] getContent();
     byte[] getThumbnail();
-    CategoryAdapter getCategory();
-    UserDetailsAdapter getFilmmaker();
+    CategoryDto getCategory();
+    UserDetailsDto getFilmmaker();
 
-    void setFilmmaker(UserDetailsAdapter filmmaker);
-    void setCategory(CategoryAdapter category);
+    void setFilmmaker(UserDetailsDto filmmaker);
+    void setCategory(CategoryDto category);
     void setId(Long id);
     void setTitle(String title);
     void setUploadDate(LocalDateTime uploadDate);

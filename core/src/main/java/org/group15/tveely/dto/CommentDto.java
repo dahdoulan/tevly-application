@@ -1,8 +1,8 @@
-package org.group15.tveely.models;
+package org.group15.tveely.dto;
 
 import java.time.LocalDateTime;
 
-public interface CommentAdapter {
+public interface CommentDto {
     Long getUserId();
     void setUserId(Long userId);
 

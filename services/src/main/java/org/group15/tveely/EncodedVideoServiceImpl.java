@@ -8,7 +8,7 @@ import com.azure.storage.blob.sas.BlobServiceSasSignatureValues;
 import com.azure.storage.common.sas.SasProtocol;
 import lombok.AllArgsConstructor;
 import org.group15.tveely.dao.EncodedVideoDao;
-import org.group15.tveely.models.EncodedVideoAdapter;
+import org.group15.tveely.dto.EncodedVideoDto;
 import org.group15.tveely.spi.EncodedVideoService;
 import org.springframework.stereotype.Service;
 
@@ -24,8 +24,8 @@ public class EncodedVideoServiceImpl implements EncodedVideoService {
     private final BlobServiceClient blobServiceClient;
 
     @Override
-    public List<EncodedVideoAdapter> getEncodedVideo(Long id) {
-        List<EncodedVideoAdapter> videos = encodedVideoRepository.getVideosById(id);
+    public List<EncodedVideoDto> getEncodedVideo(Long id) {
+        List<EncodedVideoDto> videos = encodedVideoRepository.getVideosById(id);
         return videos.stream()
                 .peek(video -> {
                     String sasToken = generateSas(video);
@@ -34,7 +34,7 @@ public class EncodedVideoServiceImpl implements EncodedVideoService {
                 .collect(Collectors.toList());
     }
 
-    private String generateSas(EncodedVideoAdapter video) {
+    private String generateSas(EncodedVideoDto video) {
         BlobClient blobClient = retrieveClient(video.getTitle());
         BlobSasPermission sasPermission = new BlobSasPermission()
                 .setReadPermission(true);

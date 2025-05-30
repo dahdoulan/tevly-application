@@ -1,14 +1,14 @@
 package org.group15.tveely.mappers;
 
 import org.group15.tveely.EncodedVideoEntity;
-import org.group15.tveely.models.EncodedVideoAdapter;
-import org.group15.tveely.models.EncodedVideoAdapterImpl;
+import org.group15.tveely.dto.EncodedVideoDto;
+import org.group15.tveely.models.EncodedVideoDtoImpl;
 
 public class EncodedVideoEntityToEncodedVideo {
 
-    public static EncodedVideoAdapter map(EncodedVideoEntity videoEntity) {
+    public static EncodedVideoDto map(EncodedVideoEntity videoEntity) {
         VideoEntityToVideo mapper = new VideoEntityToVideo();
-        EncodedVideoAdapterImpl adapter = new EncodedVideoAdapterImpl();
+        EncodedVideoDtoImpl adapter = new EncodedVideoDtoImpl();
         adapter.setId(videoEntity.getId());
         adapter.setVideo(mapper.map(videoEntity.getVideo()));
         adapter.setUrl(videoEntity.getEncodedVideoUrl());

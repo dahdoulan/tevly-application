@@ -6,7 +6,7 @@
         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.19.xsd">
 
     <changeSet id="create-subscription-table" author="tveely">
-        <comment>Create subscription table with specified attributes</comment>
+        <commentDtoImpl>Create subscription table with specified attributes</commentDtoImpl>
 
         <createTable tableName="subscription">
             <column name="id" type="BIGINT" autoIncrement="true">

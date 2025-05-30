@@ -1,6 +1,6 @@
-package org.group15.tveely.models;
+package org.group15.tveely.dto;
 
-public interface RatingAdapter {
+public interface RatingDto {
     Long getUserId();
     void setUserId(Long userId);
 

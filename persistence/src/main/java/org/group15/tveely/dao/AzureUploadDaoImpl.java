@@ -4,19 +4,17 @@ import com.azure.storage.blob.BlobClient;
 import com.azure.storage.blob.BlobContainerClient;
 import com.azure.storage.blob.BlobServiceClient;
 import lombok.AllArgsConstructor;
-import org.group15.tveely.models.EncodedVideoAdapter;
+import org.group15.tveely.dto.EncodedVideoDto;
 import org.springframework.stereotype.Component;
-
-import java.util.UUID;
 
 @AllArgsConstructor
 @Component
-public class AzureUploadDaoImpl implements UploadDao<EncodedVideoAdapter>{
+public class AzureUploadDaoImpl implements UploadDao<EncodedVideoDto>{
 
     private final BlobServiceClient blobServiceClient;
 
     @Override
-    public void uploadVideo(EncodedVideoAdapter video) {
+    public void uploadVideo(EncodedVideoDto video) {
         throw new IllegalStateException("AzureUploadDao Does NOT have an Implementation of uploadVideo");
     }
 
@@ -28,7 +26,7 @@ public class AzureUploadDaoImpl implements UploadDao<EncodedVideoAdapter>{
     }
 
     private BlobClient retrieveClient(String title) {
-        BlobContainerClient container = blobServiceClient.getBlobContainerClient("tveely");
+        BlobContainerClient container = blobServiceClient.getBlobContainerClient(System.getenv("AZURE_CONTAINER_NAME"));
         container.createIfNotExists();
         BlobClient blobClient = container.getBlobClient(title);
         return blobClient;

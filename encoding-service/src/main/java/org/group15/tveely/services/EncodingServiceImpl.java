@@ -6,10 +6,10 @@ import org.group15.tveely.dao.EncodedVideoDao;
 import org.group15.tveely.dao.UploadDao;
 import org.group15.tveely.dao.VideoDao;
 import org.group15.tveely.ffmpeg.FfmpegWrapper;
-import org.group15.tveely.models.EncodedVideoAdapter;
-import org.group15.tveely.models.EncodedVideoAdapterImpl;
-import org.group15.tveely.models.FileSystem;
-import org.group15.tveely.models.VideoAdapter;
+import org.group15.tveely.dto.EncodedVideoDto;
+import org.group15.tveely.models.EncodedVideoDtoImpl;
+import org.group15.tveely.persistence.FileSystem;
+import org.group15.tveely.dto.VideoDto;
 import org.group15.tveely.spi.EncodingService;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
@@ -27,9 +27,9 @@ import static org.group15.tveely.ffmpeg.FfmpegWrapper.BASH;
 @Slf4j
 public class EncodingServiceImpl implements EncodingService {
     private final FileSystem fileSystem;
-    private final VideoDao<VideoAdapter> videoDao;
+    private final VideoDao<VideoDto> videoDao;
     private final EncodedVideoDao encodedVideoDao;
-    private final UploadDao<EncodedVideoAdapter> uploadDao;
+    private final UploadDao<EncodedVideoDto> uploadDao;
     private final ExecutorService executor = Executors.newFixedThreadPool(10);
     private final FfmpegWrapper ffmpeg = FfmpegWrapper.builder()
             .terminal(BASH)
@@ -54,7 +54,7 @@ public class EncodingServiceImpl implements EncodingService {
                 }));
     }
 
-    private void processVideo(VideoAdapter video) throws Exception {
+    private void processVideo(VideoDto video) throws Exception {
         int exitCode = ffmpeg.encode(video.getProcessingPath());
         if (exitCode != 0) {
             videoDao.updateVideoStatus(video, FAILED.name());
@@ -63,7 +63,7 @@ public class EncodingServiceImpl implements EncodingService {
         }
     }
 
-    private void handleUpload(VideoAdapter video) {
+    private void handleUpload(VideoDto video) {
         videoDao.updateVideoStatus(video, PROCESSED.name());
         uploadToBlobStorage(video, "720p");
         uploadToBlobStorage(video, "1080p");
@@ -72,15 +72,15 @@ public class EncodingServiceImpl implements EncodingService {
         videoDao.updateVideo(video);
     }
 
-    private void uploadToBlobStorage(VideoAdapter video, String resolution) {
+    private void uploadToBlobStorage(VideoDto video, String resolution) {
         String videoName = resolveEncodedVideoPath(resolveVideoName(video.getProcessingPath()), resolution);
         String title = generateTitle(resolution);
         String videoUrl = uploadDao.uploadVideoToObjectStorage(videoName, title);
-        EncodedVideoAdapter encodedVideoEntity = createEncodedVideo(video, videoUrl, title);
+        EncodedVideoDto encodedVideoEntity = createEncodedVideo(video, videoUrl, title);
         encodedVideoDao.saveVideo(encodedVideoEntity);
     }
 
-    private EncodedVideoAdapter createEncodedVideo(VideoAdapter video, String url, String title) {
+    private EncodedVideoDto createEncodedVideo(VideoDto video, String url, String title) {
         return mapTodEncodedVideoAdapter(video, url, title);
     }
 
@@ -96,9 +96,9 @@ public class EncodingServiceImpl implements EncodingService {
         return fullFileName.replaceFirst("[.][^.]+$", "");
     }
 
-    private EncodedVideoAdapter mapTodEncodedVideoAdapter(VideoAdapter videoAdapter, String url, String title) {
-        EncodedVideoAdapterImpl videoAdapterImpl = new EncodedVideoAdapterImpl();
-        videoAdapterImpl.setVideo(videoAdapter);
+    private EncodedVideoDto mapTodEncodedVideoAdapter(VideoDto videoDto, String url, String title) {
+        EncodedVideoDtoImpl videoAdapterImpl = new EncodedVideoDtoImpl();
+        videoAdapterImpl.setVideo(videoDto);
         videoAdapterImpl.setUrl(url);
         videoAdapterImpl.setTitle(title);
         return videoAdapterImpl;

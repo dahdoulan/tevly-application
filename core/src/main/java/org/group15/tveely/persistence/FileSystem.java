@@ -1,4 +1,4 @@
-package org.group15.tveely.models;
+package org.group15.tveely.persistence;
 
 import java.io.IOException;
 import java.nio.file.Path;

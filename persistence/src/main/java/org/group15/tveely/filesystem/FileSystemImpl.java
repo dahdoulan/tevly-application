@@ -1,7 +1,7 @@
 package org.group15.tveely.filesystem;
 
 import org.group15.tveely.Video;
-import org.group15.tveely.models.FileSystem;
+import org.group15.tveely.persistence.FileSystem;
 import org.springframework.stereotype.Component;
 
 import java.io.File;

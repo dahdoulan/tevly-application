@@ -1,17 +1,17 @@
-package org.group15.tveely.models;
+package org.group15.tveely.dto;
 
 import java.time.LocalDateTime;
 import java.util.List;
 
-public interface RoleAdapter {
+public interface RoleDto {
     Long getId();
     void setId(Long id);
 
     String getName();
     void setName(String name);
 
-    List<UserDetailsAdapter> getUsers();
-    void setUsers(List<UserDetailsAdapter> users);
+    List<UserDetailsDto> getUsers();
+    void setUsers(List<UserDetailsDto> users);
 
     LocalDateTime getCreatedDate();
     void setCreatedDate(LocalDateTime createdDate);

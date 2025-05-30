@@ -3,7 +3,7 @@ package org.group15.tveely;
 import lombok.AllArgsConstructor;
 import org.group15.tveely.dao.CommentDao;
 import org.group15.tveely.mappers.CommentMapper;
-import org.group15.tveely.models.CommentAdapter;
+import org.group15.tveely.dto.CommentDto;
 import org.group15.tveely.spi.SaveCommentService;
 import org.springframework.stereotype.Service;
 
@@ -15,7 +15,7 @@ public class SaveCommentServiceImpl implements SaveCommentService {
     private final CommentMapper commentMapper;
 
     @Override
-    public void saveComment(CommentAdapter comment) {
+    public void saveComment(CommentDto comment) {
         commentDao.save(commentMapper.toEntity(comment));
     }
 

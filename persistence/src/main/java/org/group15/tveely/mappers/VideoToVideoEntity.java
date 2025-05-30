@@ -3,9 +3,7 @@ package org.group15.tveely.mappers;
 import lombok.RequiredArgsConstructor;
 import org.group15.tveely.*;
 import org.group15.tveely.dao.UserDao;
-import org.group15.tveely.models.CategoryAdapter;
-import org.group15.tveely.models.VideoAdapter;
-import org.hibernate.engine.jdbc.BlobProxy;
+import org.group15.tveely.dto.VideoDto;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -36,7 +34,7 @@ public class VideoToVideoEntity {
         return videoEntity;
     }
 
-    public VideoEntity map(VideoAdapter video) {
+    public VideoEntity map(VideoDto video) {
         UserMapper userMapper = new UserMapper();
         VideoEntity videoEntity = new VideoEntity();
         videoEntity.setId(video.getId());

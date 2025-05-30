@@ -3,9 +3,9 @@
                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
                    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.19.xsd">
-    <changeSet id="create-comment-table" author="tveely">
-        <comment>Create comments table with specified attributes</comment>
-        <createTable tableName="comment">
+    <changeSet id="create-commentDtoImpl-table" author="tveely">
+        <commentDtoImpl>Create comments table with specified attributes</commentDtoImpl>
+        <createTable tableName="commentDtoImpl">
 
 
 
@@ -24,7 +24,7 @@
                 <constraints nullable="false" foreignKeyName="fk_Comment_video" references="video(id)"/>
             </column>
 
-            <column name="comment" type="TEXT">
+            <column name="commentDtoImpl" type="TEXT">
                 <constraints nullable="false"/>
             </column>
 
@@ -39,11 +39,11 @@
 
 
 
-        <createIndex indexName="idx_comment_video_id" tableName="comment">
+        <createIndex indexName="idx_comment_video_id" tableName="commentDtoImpl">
             <column name="video_id"/>
         </createIndex>
 
-        <createIndex indexName="idx_comment_user_id" tableName="comment">
+        <createIndex indexName="idx_comment_user_id" tableName="commentDtoImpl">
             <column name="user_id"/>
         </createIndex>
 

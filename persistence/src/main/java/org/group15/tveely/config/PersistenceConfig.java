@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 public class PersistenceConfig {
     @Bean
     public BlobServiceClient blobServiceClient() {
-        String connectionString = "DefaultEndpointsProtocol=https;AccountName=dahdoulan;AccountKey=xDszwiRear5pb4fAjOK1FAPQUwoX40M17qy18nqT03IlG9YA3yo4GxX7EV/Rgs6U11evM/S6hQ/f+AStrnPCHA==;EndpointSuffix=core.windows.net";
+        String connectionString = System.getenv("AZURE_STORAGE_CONNECTION_STRING");
         return new BlobServiceClientBuilder()
                 .connectionString(connectionString)
                 .buildClient();

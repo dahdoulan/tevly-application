@@ -1,6 +1,6 @@
-package org.group15.tveely.models;
+package org.group15.tveely.dto;
 
-public interface CategoryAdapter {
+public interface CategoryDto {
     void setId(Long id);
     void setCategory(String category);
     Long getId();

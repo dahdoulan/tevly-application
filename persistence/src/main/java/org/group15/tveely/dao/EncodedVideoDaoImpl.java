@@ -4,7 +4,7 @@ import jakarta.transaction.Transactional;
 import lombok.AllArgsConstructor;
 import org.group15.tveely.mappers.EncodedVideoAdapterToEncodedVideoEntity;
 import org.group15.tveely.mappers.EncodedVideoEntityToEncodedVideo;
-import org.group15.tveely.models.EncodedVideoAdapter;
+import org.group15.tveely.dto.EncodedVideoDto;
 import org.group15.tveely.repository.EncodedVideoRepository;
 import org.springframework.stereotype.Component;
 
@@ -17,14 +17,14 @@ public class EncodedVideoDaoImpl implements EncodedVideoDao {
     private EncodedVideoRepository encodedVideoRepository;
 
     @Override
-    public void saveVideo(EncodedVideoAdapter encodedVideo) {
+    public void saveVideo(EncodedVideoDto encodedVideo) {
         EncodedVideoAdapterToEncodedVideoEntity mapper
                 = new EncodedVideoAdapterToEncodedVideoEntity();
         encodedVideoRepository.save(mapper.map(encodedVideo));
     }
 @Transactional
     @Override
-    public List<EncodedVideoAdapter> getVideosById(Long id) {
+    public List<EncodedVideoDto> getVideosById(Long id) {
         return encodedVideoRepository
                 .findAllByVideoId(id)
                 .stream()

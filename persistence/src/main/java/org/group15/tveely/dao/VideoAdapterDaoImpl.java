@@ -6,7 +6,7 @@ import org.group15.tveely.DTOs.videometadata.VideoMetadata;
 import org.group15.tveely.VideoEntity;
 import org.group15.tveely.mappers.VideoEntityToVideo;
 import org.group15.tveely.mappers.VideoToVideoEntity;
-import org.group15.tveely.models.VideoAdapter;
+import org.group15.tveely.dto.VideoDto;
 import org.group15.tveely.repository.VideoRepository;
 import org.springframework.stereotype.Component;
 
@@ -15,19 +15,19 @@ import java.util.Optional;
 
 @Component
 @AllArgsConstructor
-public class VideoAdapterDaoImpl implements VideoDao<VideoAdapter>{
+public class VideoAdapterDaoImpl implements VideoDao<VideoDto>{
 
     private final VideoRepository videoRepository;
 
     @Override
-    public List<VideoAdapter> findVideoByStatus(String status) {
+    public List<VideoDto> findVideoByStatus(String status) {
         VideoEntityToVideo mapper = new VideoEntityToVideo();
         List<VideoEntity> entity = videoRepository.findVideoEntitiesByStatus(status);
         return entity.stream().map(mapper::map).toList();
     }
 
     @Override
-    public void uploadVideo(VideoAdapter video) {
+    public void uploadVideo(VideoDto video) {
 
     }
 
@@ -42,7 +42,7 @@ public class VideoAdapterDaoImpl implements VideoDao<VideoAdapter>{
     }
 
     @Override
-    public void updateVideoStatus(VideoAdapter video, String status) {
+    public void updateVideoStatus(VideoDto video, String status) {
         videoRepository.updateStatusById(video.getId(), status);
     }
 
@@ -62,7 +62,7 @@ public class VideoAdapterDaoImpl implements VideoDao<VideoAdapter>{
     }
 
     @Override
-    public void updateVideo(VideoAdapter video) {
+    public void updateVideo(VideoDto video) {
         VideoToVideoEntity mapper = new VideoToVideoEntity(null, null);
         videoRepository.save(mapper.map(video));
     }

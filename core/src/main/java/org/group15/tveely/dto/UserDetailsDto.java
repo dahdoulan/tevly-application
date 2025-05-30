@@ -1,11 +1,10 @@
-package org.group15.tveely.models;
+package org.group15.tveely.dto;
 
-import javax.management.relation.Role;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.List;
 
-public interface UserDetailsAdapter {
+public interface UserDetailsDto {
     Long getId();
     void setId(Long id);
 

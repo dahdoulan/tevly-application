@@ -1,13 +1,13 @@
-package org.group15.tveely.models;
+package org.group15.tveely.dto;
 
-public interface EncodedVideoAdapter {
+public interface EncodedVideoDto {
     void setId(Long id);
-    void setVideo(VideoAdapter video);
+    void setVideo(VideoDto video);
     void setUrl(String url);
     void setTitle(String title);
 
     Long getId();
-    VideoAdapter getVideo();
+    VideoDto getVideo();
     String getUrl();
     String getTitle();
 }

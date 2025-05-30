@@ -5,7 +5,7 @@ import lombok.AllArgsConstructor;
 import org.group15.tveely.dao.RatingDao;
 import org.group15.tveely.dao.VideoDao;
 import org.group15.tveely.mappers.RatingMapper;
-import org.group15.tveely.models.RatingAdapter;
+import org.group15.tveely.dto.RatingDto;
 import org.group15.tveely.spi.AddRatingService;
 import org.springframework.stereotype.Service;
 
@@ -21,7 +21,7 @@ public class AddRatingServiceImpl implements AddRatingService {
     private final VideoDao<Video> videoDao;
     @Transactional
     @Override
-    public void addRating(RatingAdapter rating) {
+    public void addRating(RatingDto rating) {
         Optional<RatingEntity> existingRating = ratingDao.findByUserIdAndVideoId(
                 rating.getUserId(),
                 rating.getVideoId()

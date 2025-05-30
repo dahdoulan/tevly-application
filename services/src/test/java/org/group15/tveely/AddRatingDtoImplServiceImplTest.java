@@ -16,7 +16,7 @@ import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
-class AddRatingServiceImplTest {
+class AddRatingDtoImplServiceImplTest {
 
     @Mock
     private RatingDao ratingDao;
@@ -33,7 +33,7 @@ class AddRatingServiceImplTest {
     @Test
     void addRating_NewRating_SavesNewEntityAndUpdatesAverage() {
         // Given
-        Rating rating = new Rating(1L, 1L, 5);
+        RatingDtoImpl ratingDtoImpl = new RatingDtoImpl(1L, 1L, 5);
         RatingEntity newEntity = new RatingEntity();
 
         UserEntity user = new UserEntity();
@@ -47,11 +47,11 @@ class AddRatingServiceImplTest {
         newEntity.setRating(5);
 
         when(ratingDao.findByUserIdAndVideoId(1L, 1L)).thenReturn(Optional.empty());
-        when(ratingMapper.ratingToEntity(rating)).thenReturn(newEntity);
+        when(ratingMapper.ratingToEntity(ratingDtoImpl)).thenReturn(newEntity);
         when(ratingDao.findByVideo_Id(1L)).thenReturn(Optional.of(List.of(newEntity)));
 
         // When
-        service.addRating(rating);
+        service.addRating(ratingDtoImpl);
 
         // Then
         verify(ratingDao).save(newEntity);
@@ -61,7 +61,7 @@ class AddRatingServiceImplTest {
     @Test
     void addRating_ExistingRating_UpdatesEntityAndUpdatesAverage() {
         // Given
-        Rating rating = new Rating(1L, 1L, 5);
+        RatingDtoImpl ratingDtoImpl = new RatingDtoImpl(1L, 1L, 5);
         RatingEntity existingEntity = new RatingEntity();
         UserEntity user = new UserEntity();
         user.setId(1L);
@@ -77,7 +77,7 @@ class AddRatingServiceImplTest {
         when(ratingDao.findByVideo_Id(1L)).thenReturn(Optional.of(List.of(existingEntity)));
 
         // When
-        service.addRating(rating);
+        service.addRating(ratingDtoImpl);
 
         // Then
         assertThat(existingEntity.getRating()).isEqualTo(5);
@@ -88,7 +88,7 @@ class AddRatingServiceImplTest {
     @Test
     void addRating_MultipleRatings_CalculatesCorrectAverage() {
         // Given
-        Rating rating = new Rating(1L, 1L, 5);
+        RatingDtoImpl ratingDtoImpl = new RatingDtoImpl(1L, 1L, 5);
         RatingEntity existing1 = new RatingEntity();
         existing1.setRating(4);
         RatingEntity existing2 = new RatingEntity();
@@ -98,11 +98,11 @@ class AddRatingServiceImplTest {
         when(ratingDao.findByUserIdAndVideoId(1L, 1L)).thenReturn(Optional.empty());
         RatingEntity newEntity = new RatingEntity();
         newEntity.setRating(5);
-        when(ratingMapper.ratingToEntity(rating)).thenReturn(newEntity);
+        when(ratingMapper.ratingToEntity(ratingDtoImpl)).thenReturn(newEntity);
         when(ratingDao.findByVideo_Id(1L)).thenReturn(Optional.of(List.of(existing1, existing2, newEntity)));
 
         // When
-        service.addRating(rating);
+        service.addRating(ratingDtoImpl);
 
         // Then
         verify(videoDao).updateAverageRatingById(1L, 4); // (4+3+5)/3 = 4.0
@@ -111,7 +111,7 @@ class AddRatingServiceImplTest {
     @Test
     void addRating_AverageRoundsCorrectly() {
         // Given
-        Rating rating = new Rating(1L, 1L, 3);
+        RatingDtoImpl ratingDtoImpl = new RatingDtoImpl(1L, 1L, 3);
         RatingEntity existing1 = new RatingEntity();
         existing1.setRating(4);
         RatingEntity existing2 = new RatingEntity();
@@ -121,11 +121,11 @@ class AddRatingServiceImplTest {
         when(ratingDao.findByUserIdAndVideoId(1L, 1L)).thenReturn(Optional.empty());
         RatingEntity newEntity = new RatingEntity();
         newEntity.setRating(3);
-        when(ratingMapper.ratingToEntity(rating)).thenReturn(newEntity);
+        when(ratingMapper.ratingToEntity(ratingDtoImpl)).thenReturn(newEntity);
         when(ratingDao.findByVideo_Id(1L)).thenReturn(Optional.of(List.of(existing1, existing2, newEntity)));
 
         // When
-        service.addRating(rating);
+        service.addRating(ratingDtoImpl);
 
         // Then
         verify(videoDao).updateAverageRatingById(1L, 3); // (4+3+3)/3 ≈ 3.33 → rounds to 3
@@ -134,7 +134,7 @@ class AddRatingServiceImplTest {
     @Test
     void addRating_UpdateSingleRating_UpdatesAverage() {
         // Given
-        Rating rating = new Rating(1L, 1L, 5);
+        RatingDtoImpl ratingDtoImpl = new RatingDtoImpl(1L, 1L, 5);
         RatingEntity existingEntity = new RatingEntity();
 
         UserEntity user = new UserEntity();
@@ -150,7 +150,7 @@ class AddRatingServiceImplTest {
         when(ratingDao.findByVideo_Id(1L)).thenReturn(Optional.of(List.of(existingEntity)));
 
         // When
-        service.addRating(rating);
+        service.addRating(ratingDtoImpl);
 
         // Then
         verify(videoDao).updateAverageRatingById(1L, 5);

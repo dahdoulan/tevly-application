@@ -1,8 +1,11 @@
 package org.group15.tveely.models;
 
-public class EncodedVideoAdapterImpl implements EncodedVideoAdapter {
+import org.group15.tveely.dto.EncodedVideoDto;
+import org.group15.tveely.dto.VideoDto;
+
+public class EncodedVideoDtoImpl implements EncodedVideoDto {
     private Long id;
-    private VideoAdapter videoAdapter;
+    private VideoDto videoDto;
     private String url;
     private String title;
 
@@ -12,8 +15,8 @@ public class EncodedVideoAdapterImpl implements EncodedVideoAdapter {
     }
 
     @Override
-    public void setVideo(VideoAdapter video) {
-        this.videoAdapter = video;
+    public void setVideo(VideoDto video) {
+        this.videoDto = video;
     }
 
     @Override
@@ -37,8 +40,8 @@ public class EncodedVideoAdapterImpl implements EncodedVideoAdapter {
     }
 
     @Override
-    public VideoAdapter getVideo() {
-        return this.videoAdapter;
+    public VideoDto getVideo() {
+        return this.videoDto;
     }
 
     @Override

@@ -1,9 +1,9 @@
 package org.group15.tveely.spi;
 
 
-import org.group15.tveely.models.CommentAdapter;
+import org.group15.tveely.dto.CommentDto;
 
 public interface SaveCommentService {
 
-    void saveComment(CommentAdapter comment);
+    void saveComment(CommentDto comment);
 }

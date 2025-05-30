@@ -13,16 +13,9 @@ import static org.mockito.Mockito.when;
 
 
 import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
-
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
-import org.mockito.InjectMocks;
-import org.mockito.Mock;
-import org.mockito.junit.jupiter.MockitoExtension;
 
 @ExtendWith(MockitoExtension.class)
-class SaveCommentServiceImplTest {
+class SaveCommentDtoImplServiceImplTest {
 
     @Mock
     private CommentDao commentDao;
@@ -36,10 +29,10 @@ class SaveCommentServiceImplTest {
     @Test
     void saveComment_ShouldMapAndSaveEntity() {
         // Arrange
-        Comment comment = new Comment();
-        comment.setComment("Great video!");
-        comment.setUserId(123L);
-        comment.setVideoId(456L);
+        CommentDtoImpl commentDtoImpl = new CommentDtoImpl();
+        commentDtoImpl.setComment("Great video!");
+        commentDtoImpl.setUserId(123L);
+        commentDtoImpl.setVideoId(456L);
 
         UserEntity user = new UserEntity();
         user.setId(123L);
@@ -52,13 +45,13 @@ class SaveCommentServiceImplTest {
         expectedEntity.setUser(user);
         expectedEntity.setVideo(video);
 
-        when(commentMapper.toEntity(comment)).thenReturn(expectedEntity);
+        when(commentMapper.toEntity(commentDtoImpl)).thenReturn(expectedEntity);
 
         // Act
-        service.saveComment(comment);
+        service.saveComment(commentDtoImpl);
 
         // Assert
-        verify(commentMapper).toEntity(comment);
+        verify(commentMapper).toEntity(commentDtoImpl);
         verify(commentDao).save(expectedEntity);
     }
 

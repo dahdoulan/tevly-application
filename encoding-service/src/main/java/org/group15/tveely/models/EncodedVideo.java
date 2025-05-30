@@ -1,12 +1,15 @@
 package org.group15.tveely.models;
 
 import lombok.Data;
+import org.group15.tveely.dto.CategoryDto;
+import org.group15.tveely.dto.UserDetailsDto;
+import org.group15.tveely.dto.VideoDto;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
 
 @Data
-public class EncodedVideo implements Serializable, VideoAdapter {
+public class EncodedVideo implements Serializable, VideoDto {
     private Long id;
     private String title;
     private LocalDateTime uploadDate;
@@ -17,6 +20,6 @@ public class EncodedVideo implements Serializable, VideoAdapter {
     private String processingPath;
     private byte[] content;
     private byte[] thumbnail;
-    private CategoryAdapter category;
-    private UserDetailsAdapter filmmaker;
+    private CategoryDto category;
+    private UserDetailsDto filmmaker;
 }
