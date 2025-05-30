@@ -1,10 +1,9 @@
 package org.group15.tveely.spi;
 
-import org.group15.tveely.Rating;
+
+import org.group15.tveely.dto.RatingDto;
 
 public interface AddRatingService {
 
-    void addRating(Rating rate);
-
-
+    void addRating(RatingDto rate);
 }

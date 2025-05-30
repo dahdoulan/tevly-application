@@ -67,6 +67,11 @@
             <artifactId>encoding-service</artifactId>
             <version>${revision}</version>
         </dependency>
+        <dependency>
+            <groupId>com.azure</groupId>
+            <artifactId>azure-storage-blob</artifactId>
+            <version>${azure.blob.version}</version>
+        </dependency>
     </dependencies>
     <build>
         <plugins>

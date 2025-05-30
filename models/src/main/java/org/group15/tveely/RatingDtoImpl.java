@@ -3,16 +3,13 @@ package org.group15.tveely;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-import java.time.LocalDateTime;
+import org.group15.tveely.dto.RatingDto;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Comment {
-
+public class RatingDtoImpl implements RatingDto {
     private Long userId;
     private Long videoId;
-    private String comment;
-    private LocalDateTime createDate;
+    private int rating;
 }

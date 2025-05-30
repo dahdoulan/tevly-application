@@ -5,21 +5,21 @@
                    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.19.xsd">
 
     <changeSet id="create_categories_table" author="tveely">
-        <comment>Create categories table for videos with specified attributes</comment>
+        <commentDtoImpl>Create categories table for videos with specified attributes</commentDtoImpl>
 
         <createTable tableName="categories">
             <column name="id" type="BIGINT" autoIncrement="true">
                 <constraints primaryKey="true" nullable="false" />
             </column>
 
-            <column name="category" type="VARCHAR(255)">
+            <column name="categoryDtoImpl" type="VARCHAR(255)">
                 <constraints unique="true" nullable="false" />
             </column>
 
                </createTable>
 
         <createIndex indexName="idx_categories_category" tableName="categories">
-            <column name="category"/>
+            <column name="categoryDtoImpl"/>
         </createIndex>
 
         <createIndex indexName="idx_categories_id" tableName="categories">
@@ -29,93 +29,93 @@
 
 
     <changeSet id="insert_list_of_categories" author="tveely">
-        <comment>Insert categories into categories table</comment>
+        <commentDtoImpl>Insert categories into categories table</commentDtoImpl>
 
         <insert tableName="categories">
-            <column name="category" value="Horror"/>
+            <column name="categoryDtoImpl" value="Horror"/>
         </insert>
 
 
         <insert tableName="categories">
-            <column name="category" value="Action"/>
-        </insert>
-
-
-
-        <insert tableName="categories">
-            <column name="category" value="Adventure"/>
+            <column name="categoryDtoImpl" value="Action"/>
         </insert>
 
 
 
         <insert tableName="categories">
-            <column name="category" value="Comedy"/>
+            <column name="categoryDtoImpl" value="Adventure"/>
         </insert>
 
 
 
         <insert tableName="categories">
-            <column name="category" value="Crime and mystery"/>
+            <column name="categoryDtoImpl" value="Comedy"/>
         </insert>
 
 
 
         <insert tableName="categories">
-            <column name="category" value="Fantasy"/>
+            <column name="categoryDtoImpl" value="Crime and mystery"/>
         </insert>
 
 
 
         <insert tableName="categories">
-            <column name="category" value="Historical"/>
+            <column name="categoryDtoImpl" value="Fantasy"/>
         </insert>
 
 
 
         <insert tableName="categories">
-            <column name="category" value="Romance"/>
+            <column name="categoryDtoImpl" value="Historical"/>
         </insert>
 
 
 
         <insert tableName="categories">
-            <column name="category" value="Science fiction"/>
+            <column name="categoryDtoImpl" value="Romance"/>
         </insert>
 
 
 
         <insert tableName="categories">
-            <column name="category" value="Thriller"/>
+            <column name="categoryDtoImpl" value="Science fiction"/>
         </insert>
 
 
 
         <insert tableName="categories">
-            <column name="category" value="Other"/>
+            <column name="categoryDtoImpl" value="Thriller"/>
         </insert>
 
 
 
         <insert tableName="categories">
-            <column name="category" value="Animation"/>
+            <column name="categoryDtoImpl" value="Other"/>
         </insert>
 
 
 
         <insert tableName="categories">
-            <column name="category" value="Drama"/>
+            <column name="categoryDtoImpl" value="Animation"/>
         </insert>
 
 
 
         <insert tableName="categories">
-            <column name="category" value="Western"/>
+            <column name="categoryDtoImpl" value="Drama"/>
         </insert>
 
 
 
         <insert tableName="categories">
-            <column name="category" value="documentary"/>
+            <column name="categoryDtoImpl" value="Western"/>
+        </insert>
+
+
+
+        <insert tableName="categories">
+            <column name="categoryDtoImpl" value="documentary"/>
         </insert>
 
 

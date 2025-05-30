@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.19.xsd">
+
+    <changeSet id="encoded-video-table" author="tveely">
+        <createTable tableName="encoded_video">
+            <column name="id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="video_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="encoded_video_url" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="encoded_video_title" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <addForeignKeyConstraint baseTableName="encoded_video"
+                                 baseColumnNames="video_id"
+                                 constraintName="fk_encoded_video_video"
+                                 referencedTableName="video"
+                                 referencedColumnNames="id"/>
+    </changeSet>
+</databaseChangeLog>

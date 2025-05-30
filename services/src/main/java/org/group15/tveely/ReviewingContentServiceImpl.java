@@ -26,6 +26,17 @@ public class ReviewingContentServiceImpl implements ReviewingContentService {
         return reviewingContentResponses;
     }
 
+
+    @Override
+    public List<ReviewingContentResponse> getAllRejectContent() {
+        List<VideoEntity> videoEntities = videoDao.findVideoEntityByStatus("REJECTED");
+        List<ReviewingContentResponse> reviewingContentResponses = videoEntities.stream()
+                .map(mapper::toDto)
+                .toList();
+
+        return reviewingContentResponses;
+    }
+
     @Override
     public void approveContent(Long contentId) {
         videoDao.updateVideoStatus(contentId, "APPROVED");

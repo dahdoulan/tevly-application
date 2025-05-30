@@ -12,7 +12,6 @@ public class UploadServiceImpl implements UploadService<Video> {
     private final VideoDao<Video> videoDao;
     @Override
     public void uploadVideo(Video video) {
-
         videoDao.uploadVideo(video);
     }
 }

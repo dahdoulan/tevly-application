@@ -20,6 +20,7 @@ public class ReviewingContentMapper {
                 .filmmakerEmail(videoEntity.getFilmmaker().getEmail())
                 .filmmakerFullName(videoEntity.getFilmmaker().getFullName())
                 .thumbnailUrl("/videos/" + videoEntity.getId() + "/thumbnail")
+                .date(videoEntity.getCreatedAt())
                 .build();
     }
 }

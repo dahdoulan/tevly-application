@@ -10,6 +10,8 @@ import java.util.UUID;
 
 import static java.util.Objects.nonNull;
 
+import static org.group15.tveely.enums.VideoStatus.NEW;
+
 @Component
 public class MultipartToVideo {
     public Video map(MultipartFile file, String title, String description, MultipartFile thumbnail, String category, String email) throws IOException {
@@ -18,7 +20,7 @@ public class MultipartToVideo {
         Video video = new Video();
         video.setTitle(title);
         video.setDescription(description);
-        video.setStatus("NEW");
+        video.setStatus(NEW.name());
         video.setContent(file.getBytes());
         video.setVideoUrl(Create_Unique_Filename(file));
         video.setCategory(category);

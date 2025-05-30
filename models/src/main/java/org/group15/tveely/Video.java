@@ -3,10 +3,13 @@ package org.group15.tveely;
 
 import lombok.Data;
 
+import java.sql.Blob;
+import java.sql.SQLException;
 import java.time.LocalDateTime;
 
 @Data
-public class Video {
+public class Video{
+    private Long id;
     private String title;
     private LocalDateTime uploadDate;
     private String status;

@@ -2,7 +2,8 @@ package org.group15.tveely.mappers;
 
 import org.group15.tveely.RoleEntity;
 import org.group15.tveely.UserEntity;
-import org.group15.tveely.User;
+import org.group15.tveely.UserDtoImpl;
+import org.group15.tveely.dto.UserDetailsDto;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -11,12 +12,12 @@ import java.util.stream.Collectors;
 @Component
 public class UserMapper {
 
-    public User toModel(UserEntity userEntity) {
+    public UserDetailsDto toModel(UserEntity userEntity) {
         if (userEntity == null) {
             return null;
         }
 
-        User model = new User();
+        UserDtoImpl model = new UserDtoImpl();
         model.setId(userEntity.getId());
         model.setFirstname(userEntity.getFirstname());
         model.setLastname(userEntity.getLastname());
@@ -36,7 +37,7 @@ public class UserMapper {
         return model;
     }
 
-    public UserEntity toEntity(User model) {
+    public UserEntity toEntity(UserDetailsDto model) {
         if (model == null) {
             return null;
         }

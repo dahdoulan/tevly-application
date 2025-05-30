@@ -32,6 +32,7 @@
         <org.springframework.security.version>6.4.3</org.springframework.security.version>
         <org.hibernate.orm.version>6.5.3.Final</org.hibernate.orm.version>
         <slf4j.version>2.0.17</slf4j.version>
+        <azure.blob.version>12.28.1</azure.blob.version>
     </properties>
 
     <modules>

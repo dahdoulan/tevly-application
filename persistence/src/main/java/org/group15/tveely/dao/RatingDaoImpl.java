@@ -1,5 +1,6 @@
 package org.group15.tveely.dao;
 
+import jakarta.transaction.Transactional;
 import lombok.AllArgsConstructor;
 import org.group15.tveely.RatingEntity;
 import org.group15.tveely.repository.RatingRepository;
@@ -25,7 +26,7 @@ public class RatingDaoImpl implements RatingDao {
         return ratingRepository.findByUser_IdAndVideo_Id(userId, videoId);
     }
 
-
+    @Transactional
     @Override
     public Optional<List<RatingEntity>> findByVideo_Id(Long videoId){
         return ratingRepository.findByVideo_Id(videoId);

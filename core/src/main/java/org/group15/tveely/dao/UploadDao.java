@@ -1,7 +1,6 @@
 package org.group15.tveely.dao;
 
-import org.group15.tveely.Video;
-
-public interface UploadDao {
-    void uploadVideo(Video videoEntity);
+public interface UploadDao <T>{
+    void uploadVideo(T video);
+    String uploadVideoToObjectStorage(String processingPath, String title);
 }
