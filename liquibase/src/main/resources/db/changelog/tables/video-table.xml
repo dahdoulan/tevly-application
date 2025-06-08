@@ -4,7 +4,7 @@
                    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
                    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.19.xsd">
     <changeSet id="create-video-table" author="tveely">
-        <commentDtoImpl>Create videos table with specified attributes</commentDtoImpl>
+        <comment>Create videos table with specified attributes</comment>
         <createTable tableName="video">
             <column name="id" type="BIGINT" autoIncrement="true">
                 <constraints primaryKey="true" nullable="false"/>

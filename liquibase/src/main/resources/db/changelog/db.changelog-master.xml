@@ -12,7 +12,7 @@
     <include file="db/changelog/tables/video-table.xml"/>
 
     <include file="db/changelog/tables/subscription-table.xml"/>
-    <include file="db/changelog/tables/commentDtoImpl-table.xml"/>
+    <include file="db/changelog/tables/comment-table.xml"/>
     <include file="/db/changelog/tables/ratings-table.xml"/>
     <include file="db/changelog/tables/payment-table.xml"/>
 
