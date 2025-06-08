@@ -3,8 +3,8 @@
                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
                    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.19.xsd">
-    <changeSet id="create-ratingDtoImpl-table" author="tveely">
-        <commentDtoImpl>Create ratingDtoImpl table with specified attributes</commentDtoImpl>
+    <changeSet id="create-rating-table" author="tveely">
+        <comment>Create rating table with specified attributes</comment>
         <createTable tableName="ratings">
 
             <column name="id" type="BIGINT" autoIncrement="true">
@@ -19,7 +19,7 @@
                 <constraints nullable="false" foreignKeyName="fk_rating_video" references="video(id)"/>
             </column>
 
-            <column name="ratingDtoImpl" type="INT">
+            <column name="rating" type="INT">
                 <constraints nullable="false"/>
             </column>
 

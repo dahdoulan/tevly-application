@@ -24,7 +24,7 @@
 
 
     <changeSet id="insert_list_of_roles" author="tveely">
-        <commentDtoImpl>Insert categories into categories table</commentDtoImpl>
+        <comment>Insert categories into categories table</comment>
 
         <insert tableName="role">
             <column name="id" valueNumeric="1"/>

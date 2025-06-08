@@ -6,7 +6,7 @@
         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.19.xsd">
 
     <changeSet id="create-payment-table" author="tveely">
-        <commentDtoImpl>Create payment table and establish foreign key constraints</commentDtoImpl>
+        <comment>Create payment table and establish foreign key constraints</comment>
 
         <createTable tableName="payment">
             <column name="id" type="BIGINT" autoIncrement="true">
