@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class ViewingUserProfileController {
     private ViewingUserProfileService viewingUserProfileService;
     @GetMapping("/api/user/profile")
-    @PreAuthorize("hasAnyRole('USER','ADMIN')")
+    @PreAuthorize("hasAnyRole('USER','ADMIN', 'FILMMAKER')")
     public ResponseEntity<ViewingUserProfileDTO> fetchingUserProfile() {
         String authenticatedEmail = SecurityContextHolder.getContext().getAuthentication().getName();
         log.info("Email: {}", authenticatedEmail);

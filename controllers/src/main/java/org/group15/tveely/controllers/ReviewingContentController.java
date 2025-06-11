@@ -18,7 +18,7 @@ import java.util.List;
 public class ReviewingContentController {
     private final ReviewingContentService reviewingContentService;
 
-    @PreAuthorize("hasAnyRole('ADMIN')")
+    @PreAuthorize("hasAnyRole('ADMIN','FILMMAKER')")
     @PostMapping("/api/reviewing-content")
     public ResponseEntity<List<ReviewingContentResponse>> getAllReviewingContent() {
         log.info("Fetching all reviewing content");
